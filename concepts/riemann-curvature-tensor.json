@@ -1,7 +1,7 @@
 {
   "id": "riemann-curvature-tensor",
   "title": "Riemann Curvature Tensor",
-  "description": "The tensor of an affine connection that measures the noncommutativity of covariant derivatives and the local failure of a manifold to be flat.",
+  "description": "The tensor of an affine connection that measures the noncommutativity of covariant derivatives and the failure of the connection to be locally flat.",
   "domains": [
     "mathematics",
     "relativity",
@@ -23,7 +23,7 @@
     {
       "type": "derived-from",
       "target": "affine-connection",
-      "note": "It is constructed from the connection coefficients and their first derivatives."
+      "note": "In coordinates it is constructed from first derivatives and quadratic combinations of the connection coefficients."
     }
   ]
 }

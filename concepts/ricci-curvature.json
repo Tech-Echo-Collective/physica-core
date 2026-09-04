@@ -1,7 +1,7 @@
 {
   "id": "ricci-curvature",
   "title": "Ricci Curvature",
-  "description": "The symmetric rank-two tensor obtained by contracting the Riemann curvature tensor, encoding averaged volume distortion and entering Einstein's field equations.",
+  "description": "A rank-two contraction of the Riemann curvature tensor; for a Levi-Civita connection it is symmetric, governs infinitesimal volume distortion, and enters Einstein's field equations.",
   "domains": [
     "mathematics",
     "relativity",

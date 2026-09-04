@@ -2,6 +2,11 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.2.1 - 2026-09-05
+
+- Clarify the scope of metric, connection, Riemann-curvature, Ricci-curvature,
+  and Christoffel Symbol descriptions without changing IDs or graph edges.
+
 ## 0.2.0 - 2026-09-05
 
 - Add 12 canonical differential-geometry concepts spanning manifolds, tangent

@@ -1,5 +1,5 @@
 {
-  "core_version": "0.2.0",
+  "core_version": "0.2.1",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-mechanics",
@@ -64,7 +64,7 @@
     {
       "id": "christoffel-symbol",
       "title": "Christoffel Symbol",
-      "description": "A coordinate representation of connection coefficients; in this initial scope it means the Levi-Civita connection computed from a metric and its first derivatives.",
+      "description": "The coefficients of the Levi-Civita connection in a coordinate basis, computed from a metric and its first derivatives in the scope used here.",
       "domains": [
         "mathematics",
         "relativity"
@@ -103,7 +103,7 @@
         {
           "type": "used-in",
           "target": "riemann-curvature-tensor",
-          "note": "They enter the coordinate expression for the Riemann curvature tensor."
+          "note": "In the Levi-Civita case they enter the coordinate expression for the Riemann curvature tensor."
         }
       ]
     },
@@ -324,7 +324,7 @@
     {
       "id": "metric",
       "title": "Metric",
-      "description": "In the differential-geometric and relativistic scope used here, a metric tensor defines invariant intervals, lengths, angles, and the causal structure of spacetime.",
+      "description": "A smooth nondegenerate symmetric covariant rank-two tensor that defines lengths, angles, and volume in Riemannian geometry, and invariant intervals and causal structure when it has Lorentzian signature.",
       "domains": [
         "mathematics",
         "relativity"
@@ -457,7 +457,7 @@
     {
       "id": "ricci-curvature",
       "title": "Ricci Curvature",
-      "description": "The symmetric rank-two tensor obtained by contracting the Riemann curvature tensor, encoding averaged volume distortion and entering Einstein's field equations.",
+      "description": "A rank-two contraction of the Riemann curvature tensor; for a Levi-Civita connection it is symmetric, governs infinitesimal volume distortion, and enters Einstein's field equations.",
       "domains": [
         "mathematics",
         "relativity",
@@ -486,7 +486,7 @@
     {
       "id": "riemann-curvature-tensor",
       "title": "Riemann Curvature Tensor",
-      "description": "The tensor of an affine connection that measures the noncommutativity of covariant derivatives and the local failure of a manifold to be flat.",
+      "description": "The tensor of an affine connection that measures the noncommutativity of covariant derivatives and the failure of the connection to be locally flat.",
       "domains": [
         "mathematics",
         "relativity",
@@ -508,7 +508,7 @@
         {
           "type": "derived-from",
           "target": "affine-connection",
-          "note": "It is constructed from the connection coefficients and their first derivatives."
+          "note": "In coordinates it is constructed from first derivatives and quadratic combinations of the connection coefficients."
         }
       ]
     },

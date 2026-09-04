@@ -1,7 +1,7 @@
 {
   "id": "metric",
   "title": "Metric",
-  "description": "In the differential-geometric and relativistic scope used here, a metric tensor defines invariant intervals, lengths, angles, and the causal structure of spacetime.",
+  "description": "A smooth nondegenerate symmetric covariant rank-two tensor that defines lengths, angles, and volume in Riemannian geometry, and invariant intervals and causal structure when it has Lorentzian signature.",
   "domains": [
     "mathematics",
     "relativity"

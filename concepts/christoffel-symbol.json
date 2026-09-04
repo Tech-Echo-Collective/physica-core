@@ -1,7 +1,7 @@
 {
   "id": "christoffel-symbol",
   "title": "Christoffel Symbol",
-  "description": "A coordinate representation of connection coefficients; in this initial scope it means the Levi-Civita connection computed from a metric and its first derivatives.",
+  "description": "The coefficients of the Levi-Civita connection in a coordinate basis, computed from a metric and its first derivatives in the scope used here.",
   "domains": [
     "mathematics",
     "relativity"
@@ -40,7 +40,7 @@
     {
       "type": "used-in",
       "target": "riemann-curvature-tensor",
-      "note": "They enter the coordinate expression for the Riemann curvature tensor."
+      "note": "In the Levi-Civita case they enter the coordinate expression for the Riemann curvature tensor."
     }
   ]
 }
