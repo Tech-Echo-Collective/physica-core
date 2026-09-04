@@ -1,5 +1,5 @@
 {
-  "core_version": "0.1.0",
+  "core_version": "0.2.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-mechanics",
@@ -17,6 +17,37 @@
     "analogous-to"
   ],
   "concepts": [
+    {
+      "id": "affine-connection",
+      "title": "Affine Connection",
+      "description": "A rule for covariantly differentiating vector fields on a smooth manifold, enabling comparison of tangent vectors along directions and curves.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Linear connection",
+        "Covariant derivative"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "generalizes",
+          "target": "levi-civita-connection"
+        }
+      ]
+    },
     {
       "id": "calculus",
       "title": "Calculus",
@@ -56,6 +87,10 @@
           "target": "metric"
         },
         {
+          "type": "requires",
+          "target": "levi-civita-connection"
+        },
+        {
           "type": "derived-from",
           "target": "metric",
           "note": "The Levi-Civita Christoffel symbols are computed from the metric and its first derivatives."
@@ -64,6 +99,37 @@
           "type": "used-in",
           "target": "geodesic",
           "note": "They appear in the coordinate form of the geodesic equation."
+        },
+        {
+          "type": "used-in",
+          "target": "riemann-curvature-tensor",
+          "note": "They enter the coordinate expression for the Riemann curvature tensor."
+        }
+      ]
+    },
+    {
+      "id": "cotangent-space",
+      "title": "Cotangent Space",
+      "description": "The linear dual of a tangent space, consisting of covectors that map tangent vectors at a point of a smooth manifold to scalars.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Dual tangent space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        },
+        {
+          "type": "derived-from",
+          "target": "tangent-space",
+          "note": "The cotangent space is obtained as the linear dual of the tangent space at the same point."
         }
       ]
     },
@@ -86,6 +152,10 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
         }
       ]
     },
@@ -122,6 +192,14 @@
           "target": "special-relativity"
         },
         {
+          "type": "requires",
+          "target": "lorentzian-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "ricci-curvature"
+        },
+        {
           "type": "generalizes",
           "target": "special-relativity",
           "note": "Special relativity is recovered in the flat-spacetime, nongravitating limit and locally in freely falling frames."
@@ -153,6 +231,10 @@
           "target": "metric"
         },
         {
+          "type": "requires",
+          "target": "parallel-transport"
+        },
+        {
           "type": "used-in",
           "target": "schwarzschild-spacetime",
           "note": "Geodesics describe idealized free-fall and light propagation in Schwarzschild spacetime."
@@ -181,6 +263,34 @@
       ]
     },
     {
+      "id": "levi-civita-connection",
+      "title": "Levi-Civita Connection",
+      "description": "The unique affine connection associated with a metric that is torsion-free and compatible with that metric.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Riemannian connection",
+        "Metric-compatible torsion-free connection"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "derived-from",
+          "target": "metric",
+          "note": "It is uniquely determined by the metric through the Koszul formula."
+        }
+      ]
+    },
+    {
       "id": "linear-algebra",
       "title": "Linear Algebra",
       "description": "The study of vector spaces, linear maps, matrices, eigenvalues, and inner products that supplies core mathematical language for classical and quantum physics.",
@@ -191,6 +301,25 @@
         "Vector and matrix algebra"
       ],
       "relations": []
+    },
+    {
+      "id": "lorentzian-manifold",
+      "title": "Lorentzian Manifold",
+      "description": "A pseudo-Riemannian manifold whose metric has one timelike and the remaining spacelike directions, providing the geometric model of relativistic spacetime.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Lorentz manifold",
+        "Lorentzian spacetime manifold"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "pseudo-riemannian-manifold"
+        }
+      ]
     },
     {
       "id": "metric",
@@ -208,6 +337,10 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        },
+        {
+          "type": "requires",
+          "target": "tensor-field"
         }
       ]
     },
@@ -234,6 +367,69 @@
         {
           "type": "requires",
           "target": "special-relativity"
+        },
+        {
+          "type": "requires",
+          "target": "lorentzian-manifold"
+        }
+      ]
+    },
+    {
+      "id": "parallel-transport",
+      "title": "Parallel Transport",
+      "description": "A connection-dependent rule for moving tangent vectors along a curve while their covariant derivative along that curve vanishes.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Parallel translation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        },
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "requires",
+          "target": "calculus"
+        }
+      ]
+    },
+    {
+      "id": "pseudo-riemannian-manifold",
+      "title": "Pseudo-Riemannian Manifold",
+      "description": "A smooth manifold equipped with a nondegenerate symmetric metric tensor of arbitrary signature, encompassing both Riemannian and Lorentzian geometries.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Semi-Riemannian manifold",
+        "Pseudo-Riemannian space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "generalizes",
+          "target": "riemannian-manifold",
+          "note": "Riemannian manifolds are the positive-definite-signature special case."
+        },
+        {
+          "type": "generalizes",
+          "target": "lorentzian-manifold",
+          "note": "Lorentzian manifolds are the one-timelike-direction signature special case."
         }
       ]
     },
@@ -255,6 +451,85 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "ricci-curvature",
+      "title": "Ricci Curvature",
+      "description": "The symmetric rank-two tensor obtained by contracting the Riemann curvature tensor, encoding averaged volume distortion and entering Einstein's field equations.",
+      "domains": [
+        "mathematics",
+        "relativity",
+        "gravitation"
+      ],
+      "aliases": [
+        "Ricci tensor",
+        "Ricci curvature tensor"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "riemann-curvature-tensor"
+        },
+        {
+          "type": "requires",
+          "target": "tensor-field"
+        },
+        {
+          "type": "derived-from",
+          "target": "riemann-curvature-tensor",
+          "note": "It is obtained by contracting one upper and one lower index of the Riemann tensor."
+        }
+      ]
+    },
+    {
+      "id": "riemann-curvature-tensor",
+      "title": "Riemann Curvature Tensor",
+      "description": "The tensor of an affine connection that measures the noncommutativity of covariant derivatives and the local failure of a manifold to be flat.",
+      "domains": [
+        "mathematics",
+        "relativity",
+        "gravitation"
+      ],
+      "aliases": [
+        "Riemann tensor",
+        "Riemann-Christoffel curvature tensor"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        },
+        {
+          "type": "requires",
+          "target": "tensor-field"
+        },
+        {
+          "type": "derived-from",
+          "target": "affine-connection",
+          "note": "It is constructed from the connection coefficients and their first derivatives."
+        }
+      ]
+    },
+    {
+      "id": "riemannian-manifold",
+      "title": "Riemannian Manifold",
+      "description": "A smooth manifold equipped with a smoothly varying positive-definite metric tensor, defining lengths, angles, volumes, and geodesic distance.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Riemannian space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
         }
       ]
     },
@@ -286,6 +561,28 @@
       ]
     },
     {
+      "id": "smooth-manifold",
+      "title": "Smooth Manifold",
+      "description": "A topological manifold equipped with a compatible smooth atlas, making differentiation of functions, curves, and maps well-defined across coordinate charts.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Differentiable manifold",
+        "C-infinity manifold"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
       "id": "special-relativity",
       "title": "Special Relativity",
       "description": "The theory of space and time for inertial physics without gravitation, built on Lorentz invariance and a frame-independent speed of light.",
@@ -303,6 +600,59 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "tangent-space",
+      "title": "Tangent Space",
+      "description": "The vector space at a point of a smooth manifold whose elements represent tangent directions, equivalently velocities of curves or derivations at that point.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Tangent vector space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "tensor-field",
+      "title": "Tensor Field",
+      "description": "A smooth assignment of a multilinear tensor, built from tangent and cotangent spaces, to every point of a smooth manifold.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Smooth tensor field",
+        "Tensor-valued field"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "requires",
+          "target": "cotangent-space"
+        },
+        {
+          "type": "generalizes",
+          "target": "metric",
+          "note": "A metric is a nondegenerate symmetric covariant rank-two tensor field."
         }
       ]
     },

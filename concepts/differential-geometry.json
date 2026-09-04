@@ -17,6 +17,10 @@
     {
       "type": "requires",
       "target": "linear-algebra"
+    },
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
     }
   ]
 }

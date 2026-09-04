@@ -1,0 +1,28 @@
+{
+  "id": "levi-civita-connection",
+  "title": "Levi-Civita Connection",
+  "description": "The unique affine connection associated with a metric that is torsion-free and compatible with that metric.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Riemannian connection",
+    "Metric-compatible torsion-free connection"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "affine-connection"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "derived-from",
+      "target": "metric",
+      "note": "It is uniquely determined by the metric through the Koszul formula."
+    }
+  ]
+}

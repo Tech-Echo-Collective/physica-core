@@ -1,0 +1,29 @@
+{
+  "id": "riemann-curvature-tensor",
+  "title": "Riemann Curvature Tensor",
+  "description": "The tensor of an affine connection that measures the noncommutativity of covariant derivatives and the local failure of a manifold to be flat.",
+  "domains": [
+    "mathematics",
+    "relativity",
+    "gravitation"
+  ],
+  "aliases": [
+    "Riemann tensor",
+    "Riemann-Christoffel curvature tensor"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "affine-connection"
+    },
+    {
+      "type": "requires",
+      "target": "tensor-field"
+    },
+    {
+      "type": "derived-from",
+      "target": "affine-connection",
+      "note": "It is constructed from the connection coefficients and their first derivatives."
+    }
+  ]
+}

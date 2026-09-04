@@ -1,0 +1,33 @@
+{
+  "id": "pseudo-riemannian-manifold",
+  "title": "Pseudo-Riemannian Manifold",
+  "description": "A smooth manifold equipped with a nondegenerate symmetric metric tensor of arbitrary signature, encompassing both Riemannian and Lorentzian geometries.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Semi-Riemannian manifold",
+    "Pseudo-Riemannian space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "generalizes",
+      "target": "riemannian-manifold",
+      "note": "Riemannian manifolds are the positive-definite-signature special case."
+    },
+    {
+      "type": "generalizes",
+      "target": "lorentzian-manifold",
+      "note": "Lorentzian manifolds are the one-timelike-direction signature special case."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "cotangent-space",
+  "title": "Cotangent Space",
+  "description": "The linear dual of a tangent space, consisting of covectors that map tangent vectors at a point of a smooth manifold to scalars.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Dual tangent space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "tangent-space"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    },
+    {
+      "type": "derived-from",
+      "target": "tangent-space",
+      "note": "The cotangent space is obtained as the linear dual of the tangent space at the same point."
+    }
+  ]
+}

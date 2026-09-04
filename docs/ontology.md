@@ -1,6 +1,6 @@
 # Ontology semantics
 
-Physica Core 0.1 is a small concept graph, not an exhaustive physics taxonomy.
+Physica Core 0.2 is a small concept graph, not an exhaustive physics taxonomy.
 Each file in `concepts/` defines one canonical node. Its `relations` array
 defines outgoing edges from that node to another canonical concept ID.
 
@@ -16,7 +16,7 @@ defines outgoing edges from that node to another canonical concept ID.
 | `relations` | Direct semantic edges authored on this concept. |
 
 Domain slugs use the same lowercase kebab-case convention as concept IDs. In
-0.1, domains are lightweight facets derived into the registry rather than
+0.2, domains are lightweight facets derived into the registry rather than
 separate nodes with their own hierarchy.
 
 ## Relation direction

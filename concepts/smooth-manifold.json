@@ -1,0 +1,22 @@
+{
+  "id": "smooth-manifold",
+  "title": "Smooth Manifold",
+  "description": "A topological manifold equipped with a compatible smooth atlas, making differentiation of functions, curves, and maps well-defined across coordinate charts.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Differentiable manifold",
+    "C-infinity manifold"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    }
+  ]
+}

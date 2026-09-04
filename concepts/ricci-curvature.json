@@ -1,0 +1,29 @@
+{
+  "id": "ricci-curvature",
+  "title": "Ricci Curvature",
+  "description": "The symmetric rank-two tensor obtained by contracting the Riemann curvature tensor, encoding averaged volume distortion and entering Einstein's field equations.",
+  "domains": [
+    "mathematics",
+    "relativity",
+    "gravitation"
+  ],
+  "aliases": [
+    "Ricci tensor",
+    "Ricci curvature tensor"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "riemann-curvature-tensor"
+    },
+    {
+      "type": "requires",
+      "target": "tensor-field"
+    },
+    {
+      "type": "derived-from",
+      "target": "riemann-curvature-tensor",
+      "note": "It is obtained by contracting one upper and one lower index of the Riemann tensor."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "tensor-field",
+  "title": "Tensor Field",
+  "description": "A smooth assignment of a multilinear tensor, built from tangent and cotangent spaces, to every point of a smooth manifold.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Smooth tensor field",
+    "Tensor-valued field"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "tangent-space"
+    },
+    {
+      "type": "requires",
+      "target": "cotangent-space"
+    },
+    {
+      "type": "generalizes",
+      "target": "metric",
+      "note": "A metric is a nondegenerate symmetric covariant rank-two tensor field."
+    }
+  ]
+}

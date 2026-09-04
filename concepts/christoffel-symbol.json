@@ -24,6 +24,10 @@
       "target": "metric"
     },
     {
+      "type": "requires",
+      "target": "levi-civita-connection"
+    },
+    {
       "type": "derived-from",
       "target": "metric",
       "note": "The Levi-Civita Christoffel symbols are computed from the metric and its first derivatives."
@@ -32,6 +36,11 @@
       "type": "used-in",
       "target": "geodesic",
       "note": "They appear in the coordinate form of the geodesic equation."
+    },
+    {
+      "type": "used-in",
+      "target": "riemann-curvature-tensor",
+      "note": "They enter the coordinate expression for the Riemann curvature tensor."
     }
   ]
 }

@@ -21,6 +21,10 @@
     {
       "type": "requires",
       "target": "special-relativity"
+    },
+    {
+      "type": "requires",
+      "target": "lorentzian-manifold"
     }
   ]
 }

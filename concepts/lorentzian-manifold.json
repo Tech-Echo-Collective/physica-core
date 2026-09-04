@@ -1,0 +1,19 @@
+{
+  "id": "lorentzian-manifold",
+  "title": "Lorentzian Manifold",
+  "description": "A pseudo-Riemannian manifold whose metric has one timelike and the remaining spacelike directions, providing the geometric model of relativistic spacetime.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Lorentz manifold",
+    "Lorentzian spacetime manifold"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "pseudo-riemannian-manifold"
+    }
+  ]
+}

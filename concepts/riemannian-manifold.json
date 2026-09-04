@@ -1,0 +1,21 @@
+{
+  "id": "riemannian-manifold",
+  "title": "Riemannian Manifold",
+  "description": "A smooth manifold equipped with a smoothly varying positive-definite metric tensor, defining lengths, angles, volumes, and geodesic distance.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Riemannian space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    }
+  ]
+}

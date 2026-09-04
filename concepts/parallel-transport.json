@@ -1,0 +1,26 @@
+{
+  "id": "parallel-transport",
+  "title": "Parallel Transport",
+  "description": "A connection-dependent rule for moving tangent vectors along a curve while their covariant derivative along that curve vanishes.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Parallel translation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "affine-connection"
+    },
+    {
+      "type": "requires",
+      "target": "tangent-space"
+    },
+    {
+      "type": "requires",
+      "target": "calculus"
+    }
+  ]
+}

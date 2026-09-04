@@ -1,0 +1,31 @@
+{
+  "id": "affine-connection",
+  "title": "Affine Connection",
+  "description": "A rule for covariantly differentiating vector fields on a smooth manifold, enabling comparison of tangent vectors along directions and curves.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Linear connection",
+    "Covariant derivative"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "tangent-space"
+    },
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "generalizes",
+      "target": "levi-civita-connection"
+    }
+  ]
+}

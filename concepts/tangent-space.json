@@ -1,0 +1,21 @@
+{
+  "id": "tangent-space",
+  "title": "Tangent Space",
+  "description": "The vector space at a point of a smooth manifold whose elements represent tangent directions, equivalently velocities of curves or derivations at that point.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Tangent vector space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    }
+  ]
+}
