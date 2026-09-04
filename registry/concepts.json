@@ -1,0 +1,329 @@
+{
+  "core_version": "0.1.0",
+  "source_of_truth": "concepts/*.json",
+  "domains": [
+    "classical-mechanics",
+    "gravitation",
+    "mathematical-physics",
+    "mathematics",
+    "quantum-physics",
+    "relativity"
+  ],
+  "relation_types": [
+    "requires",
+    "generalizes",
+    "derived-from",
+    "used-in",
+    "analogous-to"
+  ],
+  "concepts": [
+    {
+      "id": "calculus",
+      "title": "Calculus",
+      "description": "The mathematical study of continuous change and accumulation through derivatives, integrals, limits, and related constructions used throughout theoretical physics.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Differential and integral calculus",
+        "Infinitesimal calculus"
+      ],
+      "relations": []
+    },
+    {
+      "id": "christoffel-symbol",
+      "title": "Christoffel Symbol",
+      "description": "A coordinate representation of connection coefficients; in this initial scope it means the Levi-Civita connection computed from a metric and its first derivatives.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Christoffel symbols",
+        "Levi-Civita connection coefficients"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "differential-geometry"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "derived-from",
+          "target": "metric",
+          "note": "The Levi-Civita Christoffel symbols are computed from the metric and its first derivatives."
+        },
+        {
+          "type": "used-in",
+          "target": "geodesic",
+          "note": "They appear in the coordinate form of the geodesic equation."
+        }
+      ]
+    },
+    {
+      "id": "differential-geometry",
+      "title": "Differential Geometry",
+      "description": "The study of smooth manifolds and geometric structures using differential calculus, providing the language for curvature, connections, and relativistic spacetime.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Geometry of smooth manifolds"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "general-relativity",
+      "title": "General Relativity",
+      "description": "The relativistic theory of gravitation in which matter and energy are related to the geometry of curved spacetime through Einstein's field equations.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "General theory of relativity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "differential-geometry"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "requires",
+          "target": "special-relativity"
+        },
+        {
+          "type": "generalizes",
+          "target": "special-relativity",
+          "note": "Special relativity is recovered in the flat-spacetime, nongravitating limit and locally in freely falling frames."
+        }
+      ]
+    },
+    {
+      "id": "geodesic",
+      "title": "Geodesic",
+      "description": "A curve that parallel-transports its own tangent; for a metric-compatible Levi-Civita connection it describes locally straight motion and, with suitable qualification, extremal interval or length.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Geodesic curve"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "differential-geometry"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "used-in",
+          "target": "schwarzschild-spacetime",
+          "note": "Geodesics describe idealized free-fall and light propagation in Schwarzschild spacetime."
+        }
+      ]
+    },
+    {
+      "id": "lagrangian-mechanics",
+      "title": "Lagrangian Mechanics",
+      "description": "A formulation of classical mechanics in which equations of motion follow from a Lagrangian and a stationary-action variational principle rather than directly from force balance.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Lagrangian formulation of mechanics"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "variational-principle"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra",
+      "title": "Linear Algebra",
+      "description": "The study of vector spaces, linear maps, matrices, eigenvalues, and inner products that supplies core mathematical language for classical and quantum physics.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Vector and matrix algebra"
+      ],
+      "relations": []
+    },
+    {
+      "id": "metric",
+      "title": "Metric",
+      "description": "In the differential-geometric and relativistic scope used here, a metric tensor defines invariant intervals, lengths, angles, and the causal structure of spacetime.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Metric tensor",
+        "Spacetime metric"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "minkowski-spacetime",
+      "title": "Minkowski Spacetime",
+      "description": "The flat four-dimensional spacetime of special relativity, equipped with the Lorentzian Minkowski metric and no gravitational curvature.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Minkowski space",
+        "Flat spacetime"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "requires",
+          "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "quantum-mechanics",
+      "title": "Quantum Mechanics",
+      "description": "The framework describing quantum states, observables, probabilities, and dynamics, with linear operators on complex vector spaces as its central mathematical structure.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Quantum theory"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "schwarzschild-spacetime",
+      "title": "Schwarzschild Spacetime",
+      "description": "The static, spherically symmetric vacuum spacetime outside an uncharged, non-rotating gravitating mass, represented by the Schwarzschild solution of general relativity.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Schwarzschild geometry",
+        "Schwarzschild metric"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "differential-geometry"
+        },
+        {
+          "type": "requires",
+          "target": "general-relativity"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        }
+      ]
+    },
+    {
+      "id": "special-relativity",
+      "title": "Special Relativity",
+      "description": "The theory of space and time for inertial physics without gravitation, built on Lorentz invariance and a frame-independent speed of light.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Special theory of relativity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "variational-principle",
+      "title": "Variational Principle",
+      "description": "A formulation in which physical configurations or trajectories are characterized as stationary points of a functional, especially the action in mechanics and field theory.",
+      "domains": [
+        "classical-mechanics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Principle of stationary action",
+        "Stationary-action principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        }
+      ]
+    }
+  ]
+}

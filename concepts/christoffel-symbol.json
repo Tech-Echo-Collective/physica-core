@@ -1,0 +1,37 @@
+{
+  "id": "christoffel-symbol",
+  "title": "Christoffel Symbol",
+  "description": "A coordinate representation of connection coefficients; in this initial scope it means the Levi-Civita connection computed from a metric and its first derivatives.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Christoffel symbols",
+    "Levi-Civita connection coefficients"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "requires",
+      "target": "differential-geometry"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "derived-from",
+      "target": "metric",
+      "note": "The Levi-Civita Christoffel symbols are computed from the metric and its first derivatives."
+    },
+    {
+      "type": "used-in",
+      "target": "geodesic",
+      "note": "They appear in the coordinate form of the geodesic equation."
+    }
+  ]
+}

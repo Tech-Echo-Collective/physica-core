@@ -1,0 +1,19 @@
+{
+  "id": "metric",
+  "title": "Metric",
+  "description": "In the differential-geometric and relativistic scope used here, a metric tensor defines invariant intervals, lengths, angles, and the causal structure of spacetime.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Metric tensor",
+    "Spacetime metric"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    }
+  ]
+}

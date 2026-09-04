@@ -1,0 +1,31 @@
+{
+  "id": "geodesic",
+  "title": "Geodesic",
+  "description": "A curve that parallel-transports its own tangent; for a metric-compatible Levi-Civita connection it describes locally straight motion and, with suitable qualification, extremal interval or length.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Geodesic curve"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "requires",
+      "target": "differential-geometry"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "used-in",
+      "target": "schwarzschild-spacetime",
+      "note": "Geodesics describe idealized free-fall and light propagation in Schwarzschild spacetime."
+    }
+  ]
+}

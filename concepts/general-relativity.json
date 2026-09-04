@@ -1,0 +1,39 @@
+{
+  "id": "general-relativity",
+  "title": "General Relativity",
+  "description": "The relativistic theory of gravitation in which matter and energy are related to the geometry of curved spacetime through Einstein's field equations.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "General theory of relativity"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "requires",
+      "target": "differential-geometry"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "requires",
+      "target": "special-relativity"
+    },
+    {
+      "type": "generalizes",
+      "target": "special-relativity",
+      "note": "Special relativity is recovered in the flat-spacetime, nongravitating limit and locally in freely falling frames."
+    }
+  ]
+}

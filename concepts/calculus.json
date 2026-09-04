@@ -1,0 +1,13 @@
+{
+  "id": "calculus",
+  "title": "Calculus",
+  "description": "The mathematical study of continuous change and accumulation through derivatives, integrals, limits, and related constructions used throughout theoretical physics.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Differential and integral calculus",
+    "Infinitesimal calculus"
+  ],
+  "relations": []
+}

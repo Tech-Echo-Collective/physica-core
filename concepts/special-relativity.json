@@ -1,0 +1,21 @@
+{
+  "id": "special-relativity",
+  "title": "Special Relativity",
+  "description": "The theory of space and time for inertial physics without gravitation, built on Lorentz invariance and a frame-independent speed of light.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Special theory of relativity"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    }
+  ]
+}

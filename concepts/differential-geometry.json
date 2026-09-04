@@ -1,0 +1,22 @@
+{
+  "id": "differential-geometry",
+  "title": "Differential Geometry",
+  "description": "The study of smooth manifolds and geometric structures using differential calculus, providing the language for curvature, connections, and relativistic spacetime.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Geometry of smooth manifolds"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    }
+  ]
+}

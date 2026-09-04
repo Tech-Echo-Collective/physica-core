@@ -1,0 +1,12 @@
+{
+  "id": "linear-algebra",
+  "title": "Linear Algebra",
+  "description": "The study of vector spaces, linear maps, matrices, eigenvalues, and inner products that supplies core mathematical language for classical and quantum physics.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Vector and matrix algebra"
+  ],
+  "relations": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "minkowski-spacetime",
+  "title": "Minkowski Spacetime",
+  "description": "The flat four-dimensional spacetime of special relativity, equipped with the Lorentzian Minkowski metric and no gravitational curvature.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Minkowski space",
+    "Flat spacetime"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "requires",
+      "target": "special-relativity"
+    }
+  ]
+}

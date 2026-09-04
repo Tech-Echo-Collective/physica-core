@@ -1,0 +1,27 @@
+{
+  "id": "schwarzschild-spacetime",
+  "title": "Schwarzschild Spacetime",
+  "description": "The static, spherically symmetric vacuum spacetime outside an uncharged, non-rotating gravitating mass, represented by the Schwarzschild solution of general relativity.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Schwarzschild geometry",
+    "Schwarzschild metric"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "differential-geometry"
+    },
+    {
+      "type": "requires",
+      "target": "general-relativity"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    }
+  ]
+}

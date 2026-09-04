@@ -1,0 +1,19 @@
+{
+  "id": "variational-principle",
+  "title": "Variational Principle",
+  "description": "A formulation in which physical configurations or trajectories are characterized as stationary points of a functional, especially the action in mechanics and field theory.",
+  "domains": [
+    "classical-mechanics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Principle of stationary action",
+    "Stationary-action principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    }
+  ]
+}

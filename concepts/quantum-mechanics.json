@@ -1,0 +1,21 @@
+{
+  "id": "quantum-mechanics",
+  "title": "Quantum Mechanics",
+  "description": "The framework describing quantum states, observables, probabilities, and dynamics, with linear operators on complex vector spaces as its central mathematical structure.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Quantum theory"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    }
+  ]
+}

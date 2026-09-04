@@ -1,0 +1,21 @@
+{
+  "id": "lagrangian-mechanics",
+  "title": "Lagrangian Mechanics",
+  "description": "A formulation of classical mechanics in which equations of motion follow from a Lagrangian and a stationary-action variational principle rather than directly from force balance.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Lagrangian formulation of mechanics"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "requires",
+      "target": "variational-principle"
+    }
+  ]
+}
