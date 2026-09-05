@@ -1,0 +1,22 @@
+{
+  "id": "differential-form",
+  "title": "Differential Form",
+  "description": "A smooth covariant tensor field of degree k that is alternating in its tangent-vector arguments. Differential forms provide a coordinate-independent language for integration on smooth manifolds.",
+  "domains": ["mathematics", "mathematical-physics"],
+  "aliases": ["Differential forms", "Exterior differential form", "Smooth differential k-form"],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "tensor-field"
+    },
+    {
+      "type": "generalizes",
+      "target": "closed-form",
+      "note": "Closed forms satisfy the additional condition that their exterior derivative vanishes."
+    },
+    {
+      "type": "used-in",
+      "target": "differential-geometry"
+    }
+  ]
+}

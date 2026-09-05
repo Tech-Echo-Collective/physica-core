@@ -2,6 +2,12 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.3.0 - 2026-09-05
+
+- Add Manifold and the differential-form concepts Wedge Product, Exterior Derivative, Closed Form, and Exact Form (31 concepts, 86 relations).
+- Make the smooth/metric refinement chain and alternating tensor specialization explicit, without treating product navigation groups as ontology relations.
+- Record mathematical sources and the distinction between local closedness and global exactness in docs/geometry-sources.md.
+
 ## 0.2.1 - 2026-09-05
 
 - Clarify the scope of metric, connection, Riemann-curvature, Ricci-curvature,

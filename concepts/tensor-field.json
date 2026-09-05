@@ -2,15 +2,14 @@
   "id": "tensor-field",
   "title": "Tensor Field",
   "description": "A smooth assignment of a multilinear tensor, built from tangent and cotangent spaces, to every point of a smooth manifold.",
-  "domains": [
-    "mathematics",
-    "relativity"
-  ],
-  "aliases": [
-    "Smooth tensor field",
-    "Tensor-valued field"
-  ],
+  "domains": ["mathematics", "relativity"],
+  "aliases": ["Smooth tensor field", "Tensor-valued field"],
   "relations": [
+    {
+      "type": "generalizes",
+      "target": "differential-form",
+      "note": "Differential k-forms are alternating covariant tensor fields of rank k."
+    },
     {
       "type": "requires",
       "target": "smooth-manifold"

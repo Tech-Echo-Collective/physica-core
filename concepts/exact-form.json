@@ -1,0 +1,13 @@
+{
+  "id": "exact-form",
+  "title": "Exact Form",
+  "description": "A differential form omega of positive degree for which omega = d eta for a globally defined form eta of one lower degree. Every exact form is closed.",
+  "domains": ["mathematics"],
+  "aliases": ["Exact differential form"],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "exterior-derivative"
+    }
+  ]
+}

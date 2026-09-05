@@ -1,0 +1,13 @@
+{
+  "id": "wedge-product",
+  "title": "Wedge Product",
+  "description": "The exterior multiplication operation on differential forms, combining a p-form and a q-form into a form of degree p+q. Its sign changes according to the degrees when the factors are exchanged.",
+  "domains": ["mathematics"],
+  "aliases": ["Exterior product", "Wedge product of differential forms"],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "differential-form"
+    }
+  ]
+}

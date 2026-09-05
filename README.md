@@ -3,7 +3,7 @@
 Physica Core is the language-neutral ontology, schema, and contract layer shared
 by Atlas Physicus, Illuminatio Physica, and Theatrum Physicum.
 
-Current version: **0.2.1**. This is an early, intentionally small contract. It
+Current version: **0.3.0**. This is an early, intentionally small contract. It
 is not a frozen 1.0 standard.
 
 ## What Core owns
@@ -55,9 +55,10 @@ physica-core/
 
 ## Concept set
 
-Version 0.2.0 contains 25 concepts. It retains the initial 13-node physics
-backbone and adds a 12-concept differential-geometry expansion for focused
-learning views. The small relation vocabulary remains:
+Version 0.3.0 contains 31 concepts and 86 relations. It retains the initial
+physics backbone and adds manifolds and differential forms for structured
+learning views. Mathematical sources are recorded in docs/geometry-sources.md.
+The small relation vocabulary remains:
 
 - `requires`
 - `generalizes`
@@ -85,7 +86,7 @@ the checked-in registry is current.
 
 ## Consumer rule
 
-Pin an exact release tag such as `v0.2.1` (or a commit), read
+Pin an exact release tag such as `v0.3.0` (or a commit), read
 `registry/concepts.json`, and store canonical IDs as strings. Do not couple one
 Physica product to another product's database schema or runtime URL. See the
 [`integration guide`](docs/integration.md) and

@@ -1,0 +1,18 @@
+{
+  "id": "closed-form",
+  "title": "Closed Form",
+  "description": "A differential form omega satisfying d omega = 0. Closedness does not, on a general manifold, imply the existence of a globally defined form whose exterior derivative is omega.",
+  "domains": ["mathematics"],
+  "aliases": ["Closed differential form"],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "exterior-derivative"
+    },
+    {
+      "type": "generalizes",
+      "target": "exact-form",
+      "note": "Every exact form is closed because d squared is zero; the converse need not hold globally."
+    }
+  ]
+}

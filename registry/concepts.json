@@ -1,5 +1,5 @@
 {
-  "core_version": "0.2.1",
+  "core_version": "0.3.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-mechanics",
@@ -108,6 +108,28 @@
       ]
     },
     {
+      "id": "closed-form",
+      "title": "Closed Form",
+      "description": "A differential form omega satisfying d omega = 0. Closedness does not, on a general manifold, imply the existence of a globally defined form whose exterior derivative is omega.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Closed differential form"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "exterior-derivative"
+        },
+        {
+          "type": "generalizes",
+          "target": "exact-form",
+          "note": "Every exact form is closed because d squared is zero; the converse need not hold globally."
+        }
+      ]
+    },
+    {
       "id": "cotangent-space",
       "title": "Cotangent Space",
       "description": "The linear dual of a tangent space, consisting of covectors that map tangent vectors at a point of a smooth manifold to scalars.",
@@ -134,6 +156,35 @@
       ]
     },
     {
+      "id": "differential-form",
+      "title": "Differential Form",
+      "description": "A smooth covariant tensor field of degree k that is alternating in its tangent-vector arguments. Differential forms provide a coordinate-independent language for integration on smooth manifolds.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Differential forms",
+        "Exterior differential form",
+        "Smooth differential k-form"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tensor-field"
+        },
+        {
+          "type": "generalizes",
+          "target": "closed-form",
+          "note": "Closed forms satisfy the additional condition that their exterior derivative vanishes."
+        },
+        {
+          "type": "used-in",
+          "target": "differential-geometry"
+        }
+      ]
+    },
+    {
       "id": "differential-geometry",
       "title": "Differential Geometry",
       "description": "The study of smooth manifolds and geometric structures using differential calculus, providing the language for curvature, connections, and relativistic spacetime.",
@@ -156,6 +207,47 @@
         {
           "type": "requires",
           "target": "smooth-manifold"
+        }
+      ]
+    },
+    {
+      "id": "exact-form",
+      "title": "Exact Form",
+      "description": "A differential form omega of positive degree for which omega = d eta for a globally defined form eta of one lower degree. Every exact form is closed.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Exact differential form"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "exterior-derivative"
+        }
+      ]
+    },
+    {
+      "id": "exterior-derivative",
+      "title": "Exterior Derivative",
+      "description": "The natural differential operator d that raises the degree of a differential form by one, extends differentiation of functions, obeys the graded product rule, and satisfies d squared equals zero.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Exterior differentiation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "wedge-product",
+          "note": "The wedge product enters the defining graded product rule."
+        },
+        {
+          "type": "requires",
+          "target": "calculus",
+          "note": "Local expressions differentiate the coefficient functions of a differential form."
         }
       ]
     },
@@ -318,6 +410,25 @@
         {
           "type": "requires",
           "target": "pseudo-riemannian-manifold"
+        }
+      ]
+    },
+    {
+      "id": "manifold",
+      "title": "Manifold",
+      "description": "A Hausdorff, second-countable topological space locally modeled on Euclidean space of a fixed dimension. This record uses the convention of manifolds without boundary.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Manifolds",
+        "Topological manifold"
+      ],
+      "relations": [
+        {
+          "type": "generalizes",
+          "target": "smooth-manifold",
+          "note": "A smooth manifold adds a compatible smooth atlas to an underlying topological manifold."
         }
       ]
     },
@@ -574,6 +685,15 @@
       "relations": [
         {
           "type": "requires",
+          "target": "manifold"
+        },
+        {
+          "type": "generalizes",
+          "target": "pseudo-riemannian-manifold",
+          "note": "Forgetting the chosen nondegenerate metric leaves a smooth manifold."
+        },
+        {
+          "type": "requires",
           "target": "calculus"
         },
         {
@@ -638,6 +758,11 @@
       ],
       "relations": [
         {
+          "type": "generalizes",
+          "target": "differential-form",
+          "note": "Differential k-forms are alternating covariant tensor fields of rank k."
+        },
+        {
           "type": "requires",
           "target": "smooth-manifold"
         },
@@ -672,6 +797,24 @@
         {
           "type": "requires",
           "target": "calculus"
+        }
+      ]
+    },
+    {
+      "id": "wedge-product",
+      "title": "Wedge Product",
+      "description": "The exterior multiplication operation on differential forms, combining a p-form and a q-form into a form of degree p+q. Its sign changes according to the degrees when the factors are exchanged.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Exterior product",
+        "Wedge product of differential forms"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "differential-form"
         }
       ]
     }

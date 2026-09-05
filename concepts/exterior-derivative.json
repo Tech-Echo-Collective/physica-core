@@ -1,0 +1,19 @@
+{
+  "id": "exterior-derivative",
+  "title": "Exterior Derivative",
+  "description": "The natural differential operator d that raises the degree of a differential form by one, extends differentiation of functions, obeys the graded product rule, and satisfies d squared equals zero.",
+  "domains": ["mathematics", "mathematical-physics"],
+  "aliases": ["Exterior differentiation"],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "wedge-product",
+      "note": "The wedge product enters the defining graded product rule."
+    },
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "Local expressions differentiate the coefficient functions of a differential form."
+    }
+  ]
+}

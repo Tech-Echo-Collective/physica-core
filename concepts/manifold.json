@@ -1,0 +1,14 @@
+{
+  "id": "manifold",
+  "title": "Manifold",
+  "description": "A Hausdorff, second-countable topological space locally modeled on Euclidean space of a fixed dimension. This record uses the convention of manifolds without boundary.",
+  "domains": ["mathematics"],
+  "aliases": ["Manifolds", "Topological manifold"],
+  "relations": [
+    {
+      "type": "generalizes",
+      "target": "smooth-manifold",
+      "note": "A smooth manifold adds a compatible smooth atlas to an underlying topological manifold."
+    }
+  ]
+}
