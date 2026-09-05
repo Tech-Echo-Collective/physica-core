@@ -1,5 +1,5 @@
 {
-  "core_version": "0.7.0",
+  "core_version": "0.8.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -340,6 +340,38 @@
         {
           "type": "used-in",
           "target": "quantum-field-theory"
+        }
+      ]
+    },
+    {
+      "id": "canonical-transformation",
+      "title": "Canonical Transformation",
+      "description": "A smooth, locally invertible transformation of canonical phase-space coordinates that preserves their Poisson-bracket structure. Time-dependent transformations are allowed, with the Hamiltonian transformed accordingly.",
+      "domains": [
+        "classical-mechanics",
+        "mathematics"
+      ],
+      "aliases": [
+        "Canonical transformations"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "poisson-bracket"
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian-mechanics"
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-mechanics",
+          "note": "Canonical changes of phase-space coordinates preserve the Liouville volume used in classical phase-space ensemble integrals."
+        },
+        {
+          "type": "used-in",
+          "target": "hamilton-jacobi-equation",
+          "note": "A generating function can construct canonical coordinates in which the transformed Hamiltonian vanishes; the resulting condition is the Hamilton–Jacobi equation."
         }
       ]
     },
@@ -1664,6 +1696,40 @@
       ]
     },
     {
+      "id": "fourier-transform",
+      "title": "Fourier Transform",
+      "description": "A linear transform representing a suitable function by continuous frequency or wave-number components. Its integral definition, inversion and extensions depend on the chosen normalization and function space.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Continuous Fourier transform"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus",
+          "note": "The introductory integral representation uses calculus; generalized transforms require additional function-space and convergence machinery."
+        },
+        {
+          "type": "used-in",
+          "target": "partial-differential-equation",
+          "note": "For suitable functions, Fourier transformation turns constant-coefficient differential operators into frequency-space multipliers."
+        },
+        {
+          "type": "used-in",
+          "target": "propagator",
+          "note": "Fourier transformation relates spacetime and momentum-space propagators, with the appropriate distributional prescription."
+        },
+        {
+          "type": "used-in",
+          "target": "wavefunction",
+          "note": "Relates position and wave-number or momentum representations, with the appropriate normalization and momentum p = hbar k."
+        }
+      ]
+    },
+    {
       "id": "functional",
       "title": "Functional",
       "description": "A scalar-valued map whose arguments are functions or paths; in variational problems it assigns a number to each admissible candidate.",
@@ -2136,6 +2202,43 @@
           "type": "used-in",
           "target": "quantum-mechanics",
           "note": "Symmetry groups organize quantum states and transformations."
+        }
+      ]
+    },
+    {
+      "id": "hamilton-jacobi-equation",
+      "title": "Hamilton–Jacobi Equation",
+      "description": "A first-order partial differential equation for Hamilton's principal function in classical Hamiltonian mechanics. Its coordinate derivatives give canonical momenta, while its time derivative is minus the Hamiltonian evaluated at those momenta.",
+      "domains": [
+        "classical-mechanics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Hamilton-Jacobi equation",
+        "Hamilton–Jacobi theory"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hamiltonian"
+        },
+        {
+          "type": "requires",
+          "target": "partial-differential-equation"
+        },
+        {
+          "type": "derived-from",
+          "target": "action-functional",
+          "note": "Endpoint variation of the action evaluated on stationary classical trajectories yields the equation."
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian-mechanics"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Describes the leading classical-action equation in suitable semiclassical approximations, not exact quantum evolution."
         }
       ]
     },
@@ -3802,6 +3905,40 @@
           "type": "used-in",
           "target": "exterior-derivative",
           "note": "Coordinate formulas differentiate coefficient functions with respect to individual coordinates."
+        }
+      ]
+    },
+    {
+      "id": "partial-differential-equation",
+      "title": "Partial Differential Equation",
+      "description": "An equation involving an unknown function of two or more independent variables and its partial derivatives. PDEs may be linear or nonlinear, occur in coupled systems, and require specified domains and data for particular solution problems.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "PDE",
+        "Partial differential equations"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "partial-derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "classical-field-theory",
+          "note": "Local field equations commonly involve spacetime partial derivatives."
+        },
+        {
+          "type": "used-in",
+          "target": "einstein-field-equations",
+          "note": "In coordinates, the field equations constrain metric and matter fields through a coupled system of partial differential equations."
+        },
+        {
+          "type": "used-in",
+          "target": "schrodinger-equation",
+          "note": "Position-representation evolution with a local differential Hamiltonian is a PDE; abstract Hilbert-space evolution need not be."
         }
       ]
     },

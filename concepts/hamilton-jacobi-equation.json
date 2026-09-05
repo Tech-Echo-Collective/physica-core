@@ -1,0 +1,37 @@
+{
+  "id": "hamilton-jacobi-equation",
+  "title": "Hamilton–Jacobi Equation",
+  "description": "A first-order partial differential equation for Hamilton's principal function in classical Hamiltonian mechanics. Its coordinate derivatives give canonical momenta, while its time derivative is minus the Hamiltonian evaluated at those momenta.",
+  "domains": [
+    "classical-mechanics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Hamilton-Jacobi equation",
+    "Hamilton–Jacobi theory"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "hamiltonian"
+    },
+    {
+      "type": "requires",
+      "target": "partial-differential-equation"
+    },
+    {
+      "type": "derived-from",
+      "target": "action-functional",
+      "note": "Endpoint variation of the action evaluated on stationary classical trajectories yields the equation."
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian-mechanics"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Describes the leading classical-action equation in suitable semiclassical approximations, not exact quantum evolution."
+    }
+  ]
+}

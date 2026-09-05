@@ -1,0 +1,32 @@
+{
+  "id": "canonical-transformation",
+  "title": "Canonical Transformation",
+  "description": "A smooth, locally invertible transformation of canonical phase-space coordinates that preserves their Poisson-bracket structure. Time-dependent transformations are allowed, with the Hamiltonian transformed accordingly.",
+  "domains": [
+    "classical-mechanics",
+    "mathematics"
+  ],
+  "aliases": [
+    "Canonical transformations"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "poisson-bracket"
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian-mechanics"
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-mechanics",
+      "note": "Canonical changes of phase-space coordinates preserve the Liouville volume used in classical phase-space ensemble integrals."
+    },
+    {
+      "type": "used-in",
+      "target": "hamilton-jacobi-equation",
+      "note": "A generating function can construct canonical coordinates in which the transformed Hamiltonian vanishes; the resulting condition is the Hamilton–Jacobi equation."
+    }
+  ]
+}

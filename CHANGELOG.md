@@ -2,6 +2,13 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.8.0 - 2026-09-05
+
+- Add four reviewed concepts: Canonical Transformation, Hamilton–Jacobi Equation, Fourier Transform and Partial Differential Equation (221 concepts, 653 relations).
+- Preserve all 217 previous concept records and 636 relations unchanged. Add 17 scoped relations without changing schemas or domains.
+- Distinguish PDEs from ODEs, continuous Fourier transforms from Fourier series/DFT, and semiclassical Hamilton–Jacobi use from exact quantum evolution.
+- Record primary-source review in docs/transform-methods-sources.md. Consumer-owned formulas and placements remain outside Core.
+
 ## 0.7.0 - 2026-09-05
 
 - Add 38 concepts for Newtonian foundations, work and energy, rotation, oscillators, central-force motion, and shared ODE/phase-space tools (217 concepts, 636 relations).

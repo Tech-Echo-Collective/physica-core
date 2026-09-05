@@ -1,0 +1,34 @@
+{
+  "id": "fourier-transform",
+  "title": "Fourier Transform",
+  "description": "A linear transform representing a suitable function by continuous frequency or wave-number components. Its integral definition, inversion and extensions depend on the chosen normalization and function space.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Continuous Fourier transform"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "The introductory integral representation uses calculus; generalized transforms require additional function-space and convergence machinery."
+    },
+    {
+      "type": "used-in",
+      "target": "partial-differential-equation",
+      "note": "For suitable functions, Fourier transformation turns constant-coefficient differential operators into frequency-space multipliers."
+    },
+    {
+      "type": "used-in",
+      "target": "propagator",
+      "note": "Fourier transformation relates spacetime and momentum-space propagators, with the appropriate distributional prescription."
+    },
+    {
+      "type": "used-in",
+      "target": "wavefunction",
+      "note": "Relates position and wave-number or momentum representations, with the appropriate normalization and momentum p = hbar k."
+    }
+  ]
+}
