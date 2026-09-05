@@ -13,8 +13,8 @@
   "relations": [
     {
       "type": "requires",
-      "target": "calculus",
-      "note": "The conjugate variable is defined using derivatives."
+      "target": "partial-derivative",
+      "note": "The smooth local transform uses derivatives in the transformed variables while holding other arguments fixed."
     },
     {
       "type": "used-in",

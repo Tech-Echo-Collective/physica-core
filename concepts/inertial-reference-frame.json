@@ -10,6 +10,16 @@
   ],
   "relations": [
     {
+      "type": "requires",
+      "target": "acceleration",
+      "note": "The introductory Newtonian criterion identifies unaccelerated free-particle motion."
+    },
+    {
+      "type": "requires",
+      "target": "force",
+      "note": "The free-particle criterion refers to motion without a net force."
+    },
+    {
       "type": "used-in",
       "target": "special-relativity"
     }

@@ -1,0 +1,13 @@
+{
+  "id": "euclidean-vector",
+  "title": "Euclidean Vector",
+  "description": "An elementary geometric vector represented by a directed displacement in Euclidean space. It has a magnitude and, unless zero, a direction; translating its arrow without changing these leaves the vector unchanged. In n dimensions, Cartesian components form a real n-tuple, with addition and scalar multiplication performed component by component.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Geometric vector",
+    "Free vector"
+  ],
+  "relations": []
+}

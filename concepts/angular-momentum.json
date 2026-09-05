@@ -20,8 +20,8 @@
     },
     {
       "type": "requires",
-      "target": "linear-algebra",
-      "note": "The particle definition uses a vector cross product."
+      "target": "cross-product",
+      "note": "In oriented three-dimensional Euclidean space, a particle's orbital angular momentum is position crossed with linear momentum."
     },
     {
       "type": "used-in",
@@ -34,4 +34,3 @@
     }
   ]
 }
-

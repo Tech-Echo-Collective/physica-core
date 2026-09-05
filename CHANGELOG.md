@@ -2,6 +2,14 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.10.0 - 2026-09-05
+
+- **BREAKING:** revise classical-mechanics prerequisites, removing 11 old relations and adding 27 scoped relations. All 229 previous IDs, definitions, aliases and domains are preserved; relation meanings and schemas are unchanged.
+- Add Euclidean Vector, Dot Product and Cross Product as elementary shared mathematics (232 concepts, 685 relations, 11 domains).
+- Replace abstract-algebra prerequisites in introductory mechanics with the specific vector operations; add missing force, motion, differentiation, integration, action and ODE foundations.
+- Represent optional holonomic-constraint, two-body, canonical-momentum and inertia-tensor treatments with scoped application edges. Keep the established regular-Hamiltonian and oscillator teaching routes.
+- Migration: no ID remapping is needed. Pin `v0.10.0`, replace the complete registry rather than appending edges, and rebuild prerequisite closures and consumer caches. See [the exact change audit](docs/mechanics-prerequisite-audit.md) and [integration guide](docs/integration.md).
+
 ## 0.9.0 - 2026-09-05
 
 - Add eight independently reviewed concepts for quantum states/uncertainty, normal and quotient groups, thermodynamic potentials, and statistical ensembles (229 concepts, 669 relations).

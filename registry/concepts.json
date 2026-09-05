@@ -1,5 +1,5 @@
 {
-  "core_version": "0.9.0",
+  "core_version": "0.10.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -65,6 +65,11 @@
           "type": "requires",
           "target": "lagrangian",
           "note": "The mechanical action integrates a Lagrangian."
+        },
+        {
+          "type": "requires",
+          "target": "riemann-integral",
+          "note": "The introductory smooth mechanical action is a definite time integral over a finite interval."
         },
         {
           "type": "used-in",
@@ -153,8 +158,8 @@
         },
         {
           "type": "requires",
-          "target": "linear-algebra",
-          "note": "The particle definition uses a vector cross product."
+          "target": "cross-product",
+          "note": "In oriented three-dimensional Euclidean space, a particle's orbital angular momentum is position crossed with linear momentum."
         },
         {
           "type": "used-in",
@@ -188,8 +193,8 @@
         },
         {
           "type": "requires",
-          "target": "linear-algebra",
-          "note": "The three-dimensional description uses vectors and the cross product."
+          "target": "cross-product",
+          "note": "In oriented three-dimensional Euclidean space, the cross product relates angular velocity to a rigid body's point velocities."
         },
         {
           "type": "used-in",
@@ -762,6 +767,11 @@
           "target": "linear-momentum"
         },
         {
+          "type": "requires",
+          "target": "force",
+          "note": "The conservation condition distinguishes cancelling internal forces from the net external force."
+        },
+        {
           "type": "derived-from",
           "target": "newtons-second-law",
           "note": "Summing particle momentum balances yields conservation when internal forces cancel and the net external force vanishes."
@@ -936,6 +946,25 @@
           "type": "used-in",
           "target": "quantum-field",
           "note": "Free-field mode expansions are expressed through creation and annihilation operators."
+        }
+      ]
+    },
+    {
+      "id": "cross-product",
+      "title": "Cross Product",
+      "description": "An order-sensitive product of two vectors in oriented three-dimensional Euclidean space. Its result is perpendicular to both inputs, with length equal to the area of the parallelogram they span. The chosen orientation fixes its sign through the right-hand rule. Parallel inputs, or a zero input, give the zero vector.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Vector product",
+        "Three-dimensional cross product"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "euclidean-vector",
+          "note": "Uses three-dimensional vector components, lengths, and directions."
         }
       ]
     },
@@ -1166,6 +1195,25 @@
       ]
     },
     {
+      "id": "dot-product",
+      "title": "Dot Product",
+      "description": "A scalar-valued operation on two real Euclidean vectors of the same dimension, calculated by summing the products of corresponding Cartesian components. It measures directional alignment: for nonzero vectors, it equals their lengths multiplied by the cosine of the angle between them. A vector’s dot product with itself is its squared length.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Scalar product",
+        "Euclidean dot product"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "euclidean-vector",
+          "note": "Uses real vector components and elementary vector geometry."
+        }
+      ]
+    },
+    {
       "id": "driven-harmonic-oscillator",
       "title": "Driven Harmonic Oscillator",
       "description": "A linear restoring-force oscillator family with an externally prescribed drive and optional linear damping, including zero drive as a limiting case. Its motion combines homogeneous transients with a forced response; sinusoidal forcing reveals frequency-dependent amplitude and phase.",
@@ -1365,6 +1413,19 @@
       ]
     },
     {
+      "id": "euclidean-vector",
+      "title": "Euclidean Vector",
+      "description": "An elementary geometric vector represented by a directed displacement in Euclidean space. It has a magnitude and, unless zero, a direction; translating its arrow without changing these leaves the vector unchanged. In n dimensions, Cartesian components form a real n-tuple, with addition and scalar multiplication performed component by component.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Geometric vector",
+        "Free vector"
+      ],
+      "relations": []
+    },
+    {
       "id": "euler-lagrange-equation",
       "title": "Euler-Lagrange Equation",
       "description": "The equation partial L / partial q_i - d/dt(partial L / partial qdot_i) = 0 characterizing sufficiently smooth stationary paths of a first-order action under fixed-endpoint variations.",
@@ -1377,6 +1438,16 @@
         "Lagrange's equations of the second kind"
       ],
       "relations": [
+        {
+          "type": "requires",
+          "target": "action-functional",
+          "note": "The mechanical equation characterizes stationary paths of the chosen first-order action."
+        },
+        {
+          "type": "requires",
+          "target": "partial-derivative",
+          "note": "The equation differentiates independent configuration and velocity arguments before evaluating them along a path."
+        },
         {
           "type": "requires",
           "target": "first-variation",
@@ -1614,6 +1685,11 @@
           "note": "Variations differentiate functionals with respect to perturbations."
         },
         {
+          "type": "requires",
+          "target": "derivative",
+          "note": "The first variation differentiates the perturbed functional with respect to its scalar perturbation parameter."
+        },
+        {
           "type": "used-in",
           "target": "variational-principle",
           "note": "Stationarity requires the first variation to vanish for all admissible perturbations."
@@ -1656,8 +1732,8 @@
       "relations": [
         {
           "type": "requires",
-          "target": "vector-space",
-          "note": "Forces in ordinary Euclidean mechanics are added as vectors."
+          "target": "euclidean-vector",
+          "note": "Forces in ordinary Euclidean mechanics combine by geometric vector addition."
         },
         {
           "type": "generalizes",
@@ -1996,9 +2072,19 @@
           "note": "Conjugate momentum differentiates the Lagrangian with respect to velocity."
         },
         {
+          "type": "requires",
+          "target": "partial-derivative",
+          "note": "The velocity derivative holds the other independent Lagrangian arguments fixed."
+        },
+        {
           "type": "used-in",
           "target": "hamiltonian",
           "note": "Conjugate momenta replace velocities in a regular Hamiltonian formulation."
+        },
+        {
+          "type": "used-in",
+          "target": "phase-space",
+          "note": "Conjugate momenta provide the momentum coordinates in the canonical Hamiltonian representation of phase space."
         }
       ]
     },
@@ -2337,6 +2423,11 @@
       "relations": [
         {
           "type": "requires",
+          "target": "phase-space",
+          "note": "The classical Hamiltonian is a function of a system's phase-space state and possibly time."
+        },
+        {
+          "type": "requires",
           "target": "legendre-transform",
           "note": "The standard passage from a regular Lagrangian uses a Legendre transform."
         },
@@ -2366,6 +2457,11 @@
         {
           "type": "requires",
           "target": "hamiltonian"
+        },
+        {
+          "type": "requires",
+          "target": "ordinary-differential-equation",
+          "note": "Finite-dimensional Hamiltonian evolution is a system of first-order ordinary differential equations."
         },
         {
           "type": "used-in",
@@ -2443,6 +2539,11 @@
           "type": "used-in",
           "target": "lagrangian-mechanics",
           "note": "Regular holonomic constraints can be eliminated using suitable generalized coordinates."
+        },
+        {
+          "type": "used-in",
+          "target": "simple-pendulum",
+          "note": "The fixed pivot-to-bob distance is a holonomic constraint in a constrained-mechanics description of the ideal pendulum."
         }
       ]
     },
@@ -2488,6 +2589,16 @@
         "Inertial frame"
       ],
       "relations": [
+        {
+          "type": "requires",
+          "target": "acceleration",
+          "note": "The introductory Newtonian criterion identifies unaccelerated free-particle motion."
+        },
+        {
+          "type": "requires",
+          "target": "force",
+          "note": "The free-particle criterion refers to motion without a net force."
+        },
         {
           "type": "used-in",
           "target": "special-relativity"
@@ -2697,10 +2808,6 @@
         {
           "type": "requires",
           "target": "effective-potential"
-        },
-        {
-          "type": "requires",
-          "target": "two-body-problem"
         },
         {
           "type": "derived-from",
@@ -2935,8 +3042,8 @@
       "relations": [
         {
           "type": "requires",
-          "target": "calculus",
-          "note": "The conjugate variable is defined using derivatives."
+          "target": "partial-derivative",
+          "note": "The smooth local transform uses derivatives in the transformed variables while holding other arguments fixed."
         },
         {
           "type": "used-in",
@@ -3448,6 +3555,11 @@
         {
           "type": "used-in",
           "target": "linear-algebra"
+        },
+        {
+          "type": "used-in",
+          "target": "moment-of-inertia",
+          "note": "Matrices represent the inertia tensor in the general three-dimensional extension; the scalar moment about a fixed axis does not require this representation."
         }
       ]
     },
@@ -3714,11 +3826,6 @@
         {
           "type": "requires",
           "target": "rigid-body"
-        },
-        {
-          "type": "requires",
-          "target": "linear-algebra",
-          "note": "An inertia tensor is a symmetric linear map; its axis projections give scalar moments."
         },
         {
           "type": "used-in",
@@ -4141,10 +4248,6 @@
           "target": "configuration-space"
         },
         {
-          "type": "requires",
-          "target": "generalized-momentum"
-        },
-        {
           "type": "used-in",
           "target": "hamiltonian-mechanics"
         },
@@ -4222,8 +4325,8 @@
       "relations": [
         {
           "type": "requires",
-          "target": "vector-space",
-          "note": "The Euclidean position-vector representation uses vector components after choosing an origin."
+          "target": "euclidean-vector",
+          "note": "After choosing an origin, the elementary Euclidean representation describes position with a geometric vector."
         },
         {
           "type": "used-in",
@@ -4978,6 +5081,11 @@
         },
         {
           "type": "requires",
+          "target": "angular-velocity",
+          "note": "Instantaneous angular velocity describes the rotational motion whose changes are studied."
+        },
+        {
+          "type": "requires",
           "target": "moment-of-inertia",
           "note": "A standard prerequisite for the rigid-body models studied in rotational dynamics."
         },
@@ -5183,6 +5291,11 @@
       "relations": [
         {
           "type": "requires",
+          "target": "newtons-second-law",
+          "note": "The introductory mechanical restoring-force model relates the net force to acceleration."
+        },
+        {
+          "type": "requires",
           "target": "ordinary-differential-equation"
         },
         {
@@ -5215,8 +5328,8 @@
       "relations": [
         {
           "type": "requires",
-          "target": "holonomic-constraint",
-          "note": "The bob remains a fixed distance from the pivot."
+          "target": "newtons-second-law",
+          "note": "The introductory mechanical model uses tangential force balance to determine angular acceleration."
         },
         {
           "type": "requires",
@@ -5829,8 +5942,8 @@
         },
         {
           "type": "requires",
-          "target": "linear-algebra",
-          "note": "Three-dimensional torque is represented by a cross product."
+          "target": "cross-product",
+          "note": "In oriented three-dimensional Euclidean space, torque is the lever-arm vector crossed with the force."
         },
         {
           "type": "used-in",
@@ -5861,6 +5974,11 @@
           "type": "derived-from",
           "target": "newtons-second-law",
           "note": "The separated equations follow by summing and subtracting the two particle equations with equal-and-opposite internal forces."
+        },
+        {
+          "type": "used-in",
+          "target": "kepler-orbit",
+          "note": "An isolated attractive inverse-square two-body interaction reduces to a Kepler problem for the relative coordinate."
         }
       ]
     },
@@ -6074,12 +6192,17 @@
         },
         {
           "type": "requires",
+          "target": "position",
+          "note": "Displacement records the change in position of the force's point of application."
+        },
+        {
+          "type": "requires",
           "target": "riemann-integral",
           "note": "Parameterizing the trajectory converts work to an ordinary definite integral."
         },
         {
           "type": "requires",
-          "target": "inner-product-space",
+          "target": "dot-product",
           "note": "The Euclidean dot product selects the component of force along the displacement."
         },
         {

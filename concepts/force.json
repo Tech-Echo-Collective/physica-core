@@ -11,8 +11,8 @@
   "relations": [
     {
       "type": "requires",
-      "target": "vector-space",
-      "note": "Forces in ordinary Euclidean mechanics are added as vectors."
+      "target": "euclidean-vector",
+      "note": "Forces in ordinary Euclidean mechanics combine by geometric vector addition."
     },
     {
       "type": "generalizes",
@@ -25,4 +25,3 @@
     }
   ]
 }
-

@@ -22,6 +22,11 @@
       "note": "The mechanical action integrates a Lagrangian."
     },
     {
+      "type": "requires",
+      "target": "riemann-integral",
+      "note": "The introductory smooth mechanical action is a definite time integral over a finite interval."
+    },
+    {
       "type": "used-in",
       "target": "variational-principle",
       "note": "Physical trajectories are characterized by stationarity, not necessarily minimization, of action."

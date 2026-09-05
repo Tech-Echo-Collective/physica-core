@@ -16,10 +16,6 @@
       "target": "configuration-space"
     },
     {
-      "type": "requires",
-      "target": "generalized-momentum"
-    },
-    {
       "type": "used-in",
       "target": "hamiltonian-mechanics"
     },
@@ -30,4 +26,3 @@
     }
   ]
 }
-

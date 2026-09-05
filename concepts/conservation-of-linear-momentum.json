@@ -14,6 +14,11 @@
       "target": "linear-momentum"
     },
     {
+      "type": "requires",
+      "target": "force",
+      "note": "The conservation condition distinguishes cancelling internal forces from the net external force."
+    },
+    {
       "type": "derived-from",
       "target": "newtons-second-law",
       "note": "Summing particle momentum balances yields conservation when internal forces cancel and the net external force vanishes."
@@ -24,4 +29,3 @@
     }
   ]
 }
-

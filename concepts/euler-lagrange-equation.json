@@ -13,6 +13,16 @@
   "relations": [
     {
       "type": "requires",
+      "target": "action-functional",
+      "note": "The mechanical equation characterizes stationary paths of the chosen first-order action."
+    },
+    {
+      "type": "requires",
+      "target": "partial-derivative",
+      "note": "The equation differentiates independent configuration and velocity arguments before evaluating them along a path."
+    },
+    {
+      "type": "requires",
       "target": "first-variation",
       "note": "The equation is obtained by setting the first variation to zero."
     },

@@ -11,8 +11,8 @@
   "relations": [
     {
       "type": "requires",
-      "target": "holonomic-constraint",
-      "note": "The bob remains a fixed distance from the pivot."
+      "target": "newtons-second-law",
+      "note": "The introductory mechanical model uses tangential force balance to determine angular acceleration."
     },
     {
       "type": "requires",
@@ -25,4 +25,3 @@
     }
   ]
 }
-

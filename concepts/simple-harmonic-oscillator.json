@@ -12,6 +12,11 @@
   "relations": [
     {
       "type": "requires",
+      "target": "newtons-second-law",
+      "note": "The introductory mechanical restoring-force model relates the net force to acceleration."
+    },
+    {
+      "type": "requires",
       "target": "ordinary-differential-equation"
     },
     {
@@ -31,4 +36,3 @@
     }
   ]
 }
-

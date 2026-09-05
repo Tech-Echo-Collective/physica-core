@@ -1,0 +1,19 @@
+{
+  "id": "cross-product",
+  "title": "Cross Product",
+  "description": "An order-sensitive product of two vectors in oriented three-dimensional Euclidean space. Its result is perpendicular to both inputs, with length equal to the area of the parallelogram they span. The chosen orientation fixes its sign through the right-hand rule. Parallel inputs, or a zero input, give the zero vector.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Vector product",
+    "Three-dimensional cross product"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "euclidean-vector",
+      "note": "Uses three-dimensional vector components, lengths, and directions."
+    }
+  ]
+}

@@ -19,6 +19,11 @@
       "type": "used-in",
       "target": "lagrangian-mechanics",
       "note": "Regular holonomic constraints can be eliminated using suitable generalized coordinates."
+    },
+    {
+      "type": "used-in",
+      "target": "simple-pendulum",
+      "note": "The fixed pivot-to-bob distance is a holonomic constraint in a constrained-mechanics description of the ideal pendulum."
     }
   ]
 }

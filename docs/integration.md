@@ -23,7 +23,7 @@ Core ID. A paper mapping can remain an Atlas record such as:
 {
   "paper_id": "atlas-owned-paper-id",
   "concept_id": "geodesic",
-  "core_version": "0.6.0",
+  "core_version": "0.10.0",
   "mapping_method": "reviewed-manual"
 }
 ```
@@ -60,7 +60,7 @@ A Theatrum template can declare the concepts it demonstrates:
 ```json
 {
   "id": "schwarzschild-geodesic-demo",
-  "core_version": "0.6.0",
+  "core_version": "0.10.0",
   "concept_ids": [
     "schwarzschild-spacetime",
     "geodesic",
@@ -84,7 +84,17 @@ URL, transport, authentication, endpoint, or business-operation fields.
 
 ## Version pinning
 
-Consumers must not track `main` as a production contract. Pin `v0.6.0` or an
+Consumers must not track `main` as a production contract. Pin `v0.10.0` or an
 exact commit, record the selected Core version with mappings/templates, and
 upgrade deliberately after running consumer tests. Generated language bindings
 may be added later, but JSON Schema and JSON data remain authoritative.
+
+### Upgrading to 0.10.0
+
+This release preserves every previous concept ID but removes 11 prerequisite
+relations while adding three concepts and 27 relations. Replace the full
+registry and rebuild prerequisite closures, learning paths and any layout
+caches derived from those edges. An append-only edge merge would retain
+superseded prerequisites. No ID remapping is needed; mappings using
+`euclidean-vector`, `dot-product` or `cross-product` require the new registry.
+See the [exact changes and reviewed evidence](mechanics-prerequisite-audit.md).

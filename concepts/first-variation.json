@@ -17,6 +17,11 @@
       "note": "Variations differentiate functionals with respect to perturbations."
     },
     {
+      "type": "requires",
+      "target": "derivative",
+      "note": "The first variation differentiates the perturbed functional with respect to its scalar perturbation parameter."
+    },
+    {
       "type": "used-in",
       "target": "variational-principle",
       "note": "Stationarity requires the first variation to vanish for all admissible perturbations."

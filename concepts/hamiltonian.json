@@ -12,6 +12,11 @@
   "relations": [
     {
       "type": "requires",
+      "target": "phase-space",
+      "note": "The classical Hamiltonian is a function of a system's phase-space state and possibly time."
+    },
+    {
+      "type": "requires",
       "target": "legendre-transform",
       "note": "The standard passage from a regular Lagrangian uses a Legendre transform."
     },

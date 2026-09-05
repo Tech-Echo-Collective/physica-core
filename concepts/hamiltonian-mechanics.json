@@ -14,6 +14,11 @@
       "target": "hamiltonian"
     },
     {
+      "type": "requires",
+      "target": "ordinary-differential-equation",
+      "note": "Finite-dimensional Hamiltonian evolution is a system of first-order ordinary differential equations."
+    },
+    {
       "type": "used-in",
       "target": "classical-mechanics"
     }

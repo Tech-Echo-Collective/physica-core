@@ -21,7 +21,11 @@
       "type": "derived-from",
       "target": "newtons-second-law",
       "note": "The separated equations follow by summing and subtracting the two particle equations with equal-and-opposite internal forces."
+    },
+    {
+      "type": "used-in",
+      "target": "kepler-orbit",
+      "note": "An isolated attractive inverse-square two-body interaction reduces to a Kepler problem for the relative coordinate."
     }
   ]
 }
-

@@ -19,8 +19,8 @@
     },
     {
       "type": "requires",
-      "target": "linear-algebra",
-      "note": "The three-dimensional description uses vectors and the cross product."
+      "target": "cross-product",
+      "note": "In oriented three-dimensional Euclidean space, the cross product relates angular velocity to a rigid body's point velocities."
     },
     {
       "type": "used-in",
@@ -28,4 +28,3 @@
     }
   ]
 }
-

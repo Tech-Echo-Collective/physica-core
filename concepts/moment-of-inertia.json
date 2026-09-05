@@ -15,14 +15,8 @@
       "target": "rigid-body"
     },
     {
-      "type": "requires",
-      "target": "linear-algebra",
-      "note": "An inertia tensor is a symmetric linear map; its axis projections give scalar moments."
-    },
-    {
       "type": "used-in",
       "target": "rotational-dynamics"
     }
   ]
 }
-

@@ -17,9 +17,19 @@
       "note": "Conjugate momentum differentiates the Lagrangian with respect to velocity."
     },
     {
+      "type": "requires",
+      "target": "partial-derivative",
+      "note": "The velocity derivative holds the other independent Lagrangian arguments fixed."
+    },
+    {
       "type": "used-in",
       "target": "hamiltonian",
       "note": "Conjugate momenta replace velocities in a regular Hamiltonian formulation."
+    },
+    {
+      "type": "used-in",
+      "target": "phase-space",
+      "note": "Conjugate momenta provide the momentum coordinates in the canonical Hamiltonian representation of phase space."
     }
   ]
 }

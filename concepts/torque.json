@@ -19,8 +19,8 @@
     },
     {
       "type": "requires",
-      "target": "linear-algebra",
-      "note": "Three-dimensional torque is represented by a cross product."
+      "target": "cross-product",
+      "note": "In oriented three-dimensional Euclidean space, torque is the lever-arm vector crossed with the force."
     },
     {
       "type": "used-in",
@@ -28,4 +28,3 @@
     }
   ]
 }
-

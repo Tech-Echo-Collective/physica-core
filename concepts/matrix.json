@@ -18,6 +18,11 @@
     {
       "type": "used-in",
       "target": "linear-algebra"
+    },
+    {
+      "type": "used-in",
+      "target": "moment-of-inertia",
+      "note": "Matrices represent the inertia tensor in the general three-dimensional extension; the scalar moment about a fixed axis does not require this representation."
     }
   ]
 }

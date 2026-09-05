@@ -1,0 +1,19 @@
+{
+  "id": "dot-product",
+  "title": "Dot Product",
+  "description": "A scalar-valued operation on two real Euclidean vectors of the same dimension, calculated by summing the products of corresponding Cartesian components. It measures directional alignment: for nonzero vectors, it equals their lengths multiplied by the cosine of the angle between them. A vector’s dot product with itself is its squared length.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Scalar product",
+    "Euclidean dot product"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "euclidean-vector",
+      "note": "Uses real vector components and elementary vector geometry."
+    }
+  ]
+}

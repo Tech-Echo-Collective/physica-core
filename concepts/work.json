@@ -15,12 +15,17 @@
     },
     {
       "type": "requires",
+      "target": "position",
+      "note": "Displacement records the change in position of the force's point of application."
+    },
+    {
+      "type": "requires",
       "target": "riemann-integral",
       "note": "Parameterizing the trajectory converts work to an ordinary definite integral."
     },
     {
       "type": "requires",
-      "target": "inner-product-space",
+      "target": "dot-product",
       "note": "The Euclidean dot product selects the component of force along the displacement."
     },
     {
@@ -30,4 +35,3 @@
     }
   ]
 }
-

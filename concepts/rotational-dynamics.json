@@ -23,6 +23,11 @@
     },
     {
       "type": "requires",
+      "target": "angular-velocity",
+      "note": "Instantaneous angular velocity describes the rotational motion whose changes are studied."
+    },
+    {
+      "type": "requires",
       "target": "moment-of-inertia",
       "note": "A standard prerequisite for the rigid-body models studied in rotational dynamics."
     },
@@ -32,4 +37,3 @@
     }
   ]
 }
-

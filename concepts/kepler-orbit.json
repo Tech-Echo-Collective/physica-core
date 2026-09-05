@@ -18,14 +18,9 @@
       "target": "effective-potential"
     },
     {
-      "type": "requires",
-      "target": "two-body-problem"
-    },
-    {
       "type": "derived-from",
       "target": "newtonian-gravitation",
       "note": "The gravitational two-body case follows from the attractive inverse-square law and the relative equation of motion."
     }
   ]
 }
-
