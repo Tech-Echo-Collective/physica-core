@@ -1,0 +1,19 @@
+{
+  "id": "boltzmann-distribution",
+  "title": "Boltzmann Distribution",
+  "description": "The equilibrium probability law assigning each microscopic state a normalized weight proportional to the exponential of minus its energy divided by Boltzmann's constant times temperature.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "canonical-ensemble"
+    },
+    {
+      "type": "requires",
+      "target": "partition-function"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "enthalpy",
+  "title": "Enthalpy",
+  "description": "A thermodynamic potential defined by adding pressure times volume to internal energy. Equality between an enthalpy change and exchanged heat requires additional process conditions.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "internal-energy"
+    },
+    {
+      "type": "used-in",
+      "target": "thermodynamics"
+    }
+  ]
+}

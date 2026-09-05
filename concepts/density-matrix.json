@@ -1,0 +1,22 @@
+{
+  "id": "density-matrix",
+  "title": "Density Matrix",
+  "description": "An operator representation of a quantum state formed from pure-state projectors with nonnegative statistical weights summing to one, representing both pure and mixed states and their measurement statistics.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Density operator"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state"
+    },
+    {
+      "type": "used-in",
+      "target": "mixed-quantum-state",
+      "note": "Statistical mixtures are represented by weighted sums of pure-state projectors."
+    }
+  ]
+}

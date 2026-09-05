@@ -1,0 +1,21 @@
+{
+  "id": "uncertainty-principle",
+  "title": "Uncertainty Principle",
+  "description": "A constraint on statistical spreads of quantum observables in a given state. The Robertson bound relates the product of their standard deviations to the expectation value of their commutator, subject to the relevant operator-domain conditions.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Heisenberg uncertainty principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-observable"
+    },
+    {
+      "type": "requires",
+      "target": "variance"
+    }
+  ]
+}

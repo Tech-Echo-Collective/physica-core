@@ -1,0 +1,21 @@
+{
+  "id": "helmholtz-free-energy",
+  "title": "Helmholtz Free Energy",
+  "description": "The thermodynamic potential obtained by subtracting temperature times entropy from internal energy. In the usual closed-system setting it is minimized at equilibrium under fixed temperature, volume, and particle number.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Helmholtz energy"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "internal-energy"
+    },
+    {
+      "type": "requires",
+      "target": "thermodynamic-entropy"
+    }
+  ]
+}

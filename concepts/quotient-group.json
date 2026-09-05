@@ -1,0 +1,22 @@
+{
+  "id": "quotient-group",
+  "title": "Quotient Group",
+  "description": "The group of cosets of a normal subgroup, with multiplication induced by the original group operation. Normality makes the coset operation well-defined.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Factor group"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "normal-subgroup"
+    },
+    {
+      "type": "used-in",
+      "target": "group-homomorphism",
+      "note": "The natural quotient map is surjective and has the chosen normal subgroup as its kernel."
+    }
+  ]
+}

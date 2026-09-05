@@ -1,0 +1,22 @@
+{
+  "id": "normal-subgroup",
+  "title": "Normal Subgroup",
+  "description": "A subgroup preserved by conjugation with every element of its ambient group. Normality is a property relative to that ambient group.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Invariant subgroup"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "subgroup"
+    },
+    {
+      "type": "used-in",
+      "target": "group-homomorphism",
+      "note": "The kernel of a group homomorphism is a normal subgroup of its domain."
+    }
+  ]
+}

@@ -2,6 +2,13 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.9.0 - 2026-09-05
+
+- Add eight independently reviewed concepts for quantum states/uncertainty, normal and quotient groups, thermodynamic potentials, and statistical ensembles (229 concepts, 669 relations).
+- Preserve all 221 prior records and all 653 prior relations unchanged. No schema/domain changes.
+- Keep article identity, source reads, placement proposals, queues and publication receipts in the organizing product; no Wikipedia article bodies are stored in Core.
+- Record scoped scientific evidence in docs/live-foundations-sources.md.
+
 ## 0.8.0 - 2026-09-05
 
 - Add four reviewed concepts: Canonical Transformation, Hamilton–Jacobi Equation, Fourier Transform and Partial Differential Equation (221 concepts, 653 relations).

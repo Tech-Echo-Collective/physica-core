@@ -1,5 +1,5 @@
 {
-  "core_version": "0.8.0",
+  "core_version": "0.9.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -217,6 +217,25 @@
           "type": "used-in",
           "target": "matrix",
           "note": "Chosen bases specify coordinates and the matrix of a finite-dimensional linear map."
+        }
+      ]
+    },
+    {
+      "id": "boltzmann-distribution",
+      "title": "Boltzmann Distribution",
+      "description": "The equilibrium probability law assigning each microscopic state a normalized weight proportional to the exponential of minus its energy divided by Boltzmann's constant times temperature.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "canonical-ensemble"
+        },
+        {
+          "type": "requires",
+          "target": "partition-function"
         }
       ]
     },
@@ -1021,6 +1040,28 @@
       ]
     },
     {
+      "id": "density-matrix",
+      "title": "Density Matrix",
+      "description": "An operator representation of a quantum state formed from pure-state projectors with nonnegative statistical weights summing to one, representing both pure and mixed states and their measurement statistics.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Density operator"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state"
+        },
+        {
+          "type": "used-in",
+          "target": "mixed-quantum-state",
+          "note": "Statistical mixtures are represented by weighted sums of pure-state projectors."
+        }
+      ]
+    },
+    {
       "id": "derivative",
       "title": "Derivative",
       "description": "For a real-valued function of one real variable, the limit of its difference quotient at a point when that finite limit exists, measuring the function's local rate of change.",
@@ -1279,6 +1320,25 @@
         {
           "type": "used-in",
           "target": "classical-field-theory"
+        }
+      ]
+    },
+    {
+      "id": "enthalpy",
+      "title": "Enthalpy",
+      "description": "A thermodynamic potential defined by adding pressure times volume to internal energy. Equality between an enthalpy change and exchanged heat requires additional process conditions.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "internal-energy"
+        },
+        {
+          "type": "used-in",
+          "target": "thermodynamics"
         }
       ]
     },
@@ -2071,6 +2131,27 @@
       ]
     },
     {
+      "id": "grand-canonical-ensemble",
+      "title": "Grand Canonical Ensemble",
+      "description": "An equilibrium statistical ensemble for a system exchanging energy and particles with reservoirs, at fixed temperature, chemical potentials, and mechanical parameters such as volume.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Grand ensemble"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "statistical-ensemble"
+        },
+        {
+          "type": "requires",
+          "target": "temperature"
+        }
+      ]
+    },
+    {
       "id": "gravitational-time-dilation",
       "title": "Gravitational Time Dilation",
       "description": "Differences between clock proper-time rates associated with gravitational geometry; comparing stationary clocks requires a specified stationary setting and a common time normalization.",
@@ -2289,6 +2370,27 @@
         {
           "type": "used-in",
           "target": "classical-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "helmholtz-free-energy",
+      "title": "Helmholtz Free Energy",
+      "description": "The thermodynamic potential obtained by subtracting temperature times entropy from internal energy. In the usual closed-system setting it is minimized at equilibrium under fixed temperature, volume, and particle number.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Helmholtz energy"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "internal-energy"
+        },
+        {
+          "type": "requires",
+          "target": "thermodynamic-entropy"
         }
       ]
     },
@@ -3817,6 +3919,28 @@
       ]
     },
     {
+      "id": "normal-subgroup",
+      "title": "Normal Subgroup",
+      "description": "A subgroup preserved by conjugation with every element of its ambient group. Normality is a property relative to that ambient group.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Invariant subgroup"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "subgroup"
+        },
+        {
+          "type": "used-in",
+          "target": "group-homomorphism",
+          "note": "The kernel of a group homomorphism is a normal subgroup of its domain."
+        }
+      ]
+    },
+    {
       "id": "ordinary-differential-equation",
       "title": "Ordinary Differential Equation",
       "description": "An equation relating unknown functions of one independent variable to their derivatives with respect to that variable. It may be scalar or a system, linear or nonlinear, and is a shared mathematical construction rather than a physics-specific law.",
@@ -4537,6 +4661,28 @@
         {
           "type": "used-in",
           "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "quotient-group",
+      "title": "Quotient Group",
+      "description": "The group of cosets of a normal subgroup, with multiplication induced by the original group operation. Normality makes the coset operation well-defined.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Factor group"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "normal-subgroup"
+        },
+        {
+          "type": "used-in",
+          "target": "group-homomorphism",
+          "note": "The natural quotient map is surjective and has the chosen normal subgroup as its kernel."
         }
       ]
     },
@@ -5715,6 +5861,27 @@
           "type": "derived-from",
           "target": "newtons-second-law",
           "note": "The separated equations follow by summing and subtracting the two particle equations with equal-and-opposite internal forces."
+        }
+      ]
+    },
+    {
+      "id": "uncertainty-principle",
+      "title": "Uncertainty Principle",
+      "description": "A constraint on statistical spreads of quantum observables in a given state. The Robertson bound relates the product of their standard deviations to the expectation value of their commutator, subject to the relevant operator-domain conditions.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Heisenberg uncertainty principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-observable"
+        },
+        {
+          "type": "requires",
+          "target": "variance"
         }
       ]
     },

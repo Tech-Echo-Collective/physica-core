@@ -1,0 +1,21 @@
+{
+  "id": "grand-canonical-ensemble",
+  "title": "Grand Canonical Ensemble",
+  "description": "An equilibrium statistical ensemble for a system exchanging energy and particles with reservoirs, at fixed temperature, chemical potentials, and mechanical parameters such as volume.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Grand ensemble"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "statistical-ensemble"
+    },
+    {
+      "type": "requires",
+      "target": "temperature"
+    }
+  ]
+}
