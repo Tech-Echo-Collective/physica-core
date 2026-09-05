@@ -1,0 +1,19 @@
+{
+  "id": "relativity",
+  "title": "Relativity",
+  "description": "The family of physical theories relating spacetime, motion, and reference frames, including special relativity and the general-relativistic description of gravitation.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Theory of relativity",
+    "Relativistic physics"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "principle-of-relativity",
+      "note": "Relativity begins by distinguishing coordinate descriptions from observer-independent physical laws."
+    }
+  ]
+}

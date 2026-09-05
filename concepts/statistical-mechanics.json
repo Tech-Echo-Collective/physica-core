@@ -1,0 +1,28 @@
+{
+  "id": "statistical-mechanics",
+  "title": "Statistical Mechanics",
+  "description": "The probabilistic description of many-body systems that connects microscopic dynamics and states to macroscopic properties, including equilibrium thermodynamics and fluctuations.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Statistical mechanical theory"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "statistical-ensemble",
+      "note": "Ensembles encode microscopic probabilities."
+    },
+    {
+      "type": "requires",
+      "target": "macrostate",
+      "note": "Macroscopic observables connect the two descriptions."
+    },
+    {
+      "type": "used-in",
+      "target": "thermodynamics",
+      "note": "Equilibrium statistics supplies microscopic models of thermodynamic behavior."
+    }
+  ]
+}

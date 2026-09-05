@@ -1,0 +1,23 @@
+{
+  "id": "second-law-of-thermodynamics",
+  "title": "Second Law of Thermodynamics",
+  "description": "The thermodynamic law that total entropy cannot decrease in an isolated system, restricting process direction beyond energy conservation.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Entropy increase principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "thermodynamic-entropy",
+      "note": "The entropy formulation quantifies irreversibility."
+    },
+    {
+      "type": "used-in",
+      "target": "thermodynamics",
+      "note": "It constrains equilibrium and energy conversion."
+    }
+  ]
+}

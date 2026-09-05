@@ -1,0 +1,23 @@
+{
+  "id": "thermal-equilibrium",
+  "title": "Thermal Equilibrium",
+  "description": "A relation between systems that exhibit no net heat transfer when placed in thermal contact under otherwise fixed constraints.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Mutual thermal equilibrium"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "temperature",
+      "note": "Equilibrium classes underpin empirical temperature."
+    },
+    {
+      "type": "used-in",
+      "target": "canonical-ensemble",
+      "note": "The system equilibrates with a thermal reservoir."
+    }
+  ]
+}

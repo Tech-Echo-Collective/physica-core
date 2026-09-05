@@ -1,0 +1,28 @@
+{
+  "id": "electromagnetic-field",
+  "title": "Electromagnetic Field",
+  "description": "The classical field whose electric and magnetic components combine relativistically into an antisymmetric rank-two field-strength tensor, equivalently a spacetime two-form.",
+  "domains": [
+    "classical-field-theory",
+    "relativity"
+  ],
+  "aliases": [
+    "Classical electromagnetic field",
+    "EM field"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "classical-field"
+    },
+    {
+      "type": "requires",
+      "target": "differential-form",
+      "note": "The relativistic field strength is a differential two-form."
+    },
+    {
+      "type": "used-in",
+      "target": "classical-field-theory"
+    }
+  ]
+}

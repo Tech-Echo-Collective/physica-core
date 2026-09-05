@@ -1,0 +1,24 @@
+{
+  "id": "temperature",
+  "title": "Temperature",
+  "description": "An intensive thermodynamic variable characterizing thermal equilibrium; its absolute scale relates reversible heat transfer to entropy change.",
+  "domains": [
+    "thermodynamics",
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Thermodynamic temperature"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "thermal-equilibrium",
+      "note": "Thermal equilibrium underpins temperature comparison."
+    },
+    {
+      "type": "used-in",
+      "target": "canonical-ensemble",
+      "note": "Reservoir temperature controls equilibrium probabilities."
+    }
+  ]
+}

@@ -21,6 +21,11 @@
       "type": "requires",
       "target": "lagrangian",
       "note": "The formulation begins with a Lagrangian for the system."
+    },
+    {
+      "type": "used-in",
+      "target": "classical-mechanics",
+      "note": "Lagrangian mechanics is a formulation of classical mechanical dynamics, not a distinct special-case theory."
     }
   ]
 }

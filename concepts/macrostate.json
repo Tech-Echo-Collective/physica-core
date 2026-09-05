@@ -1,0 +1,24 @@
+{
+  "id": "macrostate",
+  "title": "Macrostate",
+  "description": "A specification of macroscopic observables or constraints that generally leaves many compatible microscopic states unresolved.",
+  "domains": [
+    "statistical-physics",
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Macroscopic state"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "microstate",
+      "note": "Coarse macroscopic information groups compatible microstates."
+    },
+    {
+      "type": "used-in",
+      "target": "boltzmann-entropy",
+      "note": "Compatible-state multiplicity defines Boltzmann entropy."
+    }
+  ]
+}

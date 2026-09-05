@@ -1,13 +1,18 @@
 {
-  "core_version": "0.5.0",
+  "core_version": "0.6.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
+    "classical-field-theory",
     "classical-mechanics",
     "gravitation",
     "mathematical-physics",
     "mathematics",
+    "probability",
+    "quantum-mechanics",
     "quantum-physics",
-    "relativity"
+    "relativity",
+    "statistical-physics",
+    "thermodynamics"
   ],
   "relation_types": [
     "requires",
@@ -129,6 +134,30 @@
       ]
     },
     {
+      "id": "boltzmann-entropy",
+      "title": "Boltzmann Entropy",
+      "description": "An entropy S = kB ln Ω assigned to a macrostate, where Ω counts compatible microscopic states or a dimensionless coarse-grained phase-space volume.",
+      "domains": [
+        "statistical-physics",
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Boltzmann's entropy formula"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "macrostate",
+          "note": "The multiplicity is relative to specified macroscopic constraints."
+        },
+        {
+          "type": "used-in",
+          "target": "thermodynamic-entropy",
+          "note": "Equilibrium multiplicities provide a statistical interpretation of thermodynamic entropy."
+        }
+      ]
+    },
+    {
       "id": "born-rule",
       "title": "Born Rule",
       "description": "The quantum probability rule assigning Tr(rho P) to a projective measurement event P in state rho, reducing to the squared projected amplitude for a normalized pure state.",
@@ -165,7 +194,67 @@
         "Differential and integral calculus",
         "Infinitesimal calculus"
       ],
-      "relations": []
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "mathematical-methods",
+          "note": "Differential and integral techniques support physical models."
+        }
+      ]
+    },
+    {
+      "id": "canonical-ensemble",
+      "title": "Canonical Ensemble",
+      "description": "An equilibrium ensemble at fixed temperature, volume, and particle number, with microscopic probabilities proportional to exp(−E/kBT) and energy allowed to fluctuate.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [
+        "NVT ensemble"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "statistical-ensemble",
+          "note": "It specifies an equilibrium probability distribution."
+        },
+        {
+          "type": "requires",
+          "target": "temperature",
+          "note": "Temperature is fixed by a thermal reservoir."
+        },
+        {
+          "type": "used-in",
+          "target": "partition-function",
+          "note": "Its normalization defines the canonical partition function."
+        }
+      ]
+    },
+    {
+      "id": "canonical-quantization",
+      "title": "Canonical Quantization",
+      "description": "An approach that promotes selected classical canonical variables to quantum operators with canonical commutation or graded relations, requiring care with ordering, domains, and constraints rather than a unique quantization of every observable.",
+      "domains": [
+        "quantum-physics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Canonical quantisation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hamiltonian-mechanics"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-mechanics"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-field-theory"
+        }
+      ]
     },
     {
       "id": "causal-character-of-vectors",
@@ -249,6 +338,100 @@
           "type": "used-in",
           "target": "geodesic-equation",
           "note": "Levi-Civita coefficients supply the connection terms for metric geodesics."
+        },
+        {
+          "type": "used-in",
+          "target": "general-relativity",
+          "note": "Levi-Civita coefficients enter the coordinate expressions for spacetime covariant derivatives, geodesics and curvature."
+        }
+      ]
+    },
+    {
+      "id": "classical-field",
+      "title": "Classical Field",
+      "description": "A non-quantum assignment of scalar values or geometric quantities to points of space or spacetime, providing continuously distributed degrees of freedom rather than quantum operators.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Classical physical field"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "generalizes",
+          "target": "classical-scalar-field",
+          "note": "Scalar fields are one class of classical field."
+        },
+        {
+          "type": "generalizes",
+          "target": "electromagnetic-field",
+          "note": "The classical electromagnetic field is a particular tensor-valued field."
+        }
+      ]
+    },
+    {
+      "id": "classical-field-theory",
+      "title": "Classical Field Theory",
+      "description": "The study of non-quantum fields with degrees of freedom distributed over space or spacetime, including their equations of motion, symmetries, and conservation laws.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Classical field dynamics"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "classical-field"
+        },
+        {
+          "type": "requires",
+          "target": "variational-principle",
+          "note": "This introductory route emphasizes action-based field theories."
+        }
+      ]
+    },
+    {
+      "id": "classical-mechanics",
+      "title": "Classical Mechanics",
+      "description": "The non-quantum study of motion and interactions, including particle, rigid-body, and continuum systems, using Newtonian, Lagrangian, Hamiltonian, and other formulations.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Classical dynamics"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus",
+          "note": "Continuous-time mechanical dynamics uses differentiation and integration."
+        }
+      ]
+    },
+    {
+      "id": "classical-scalar-field",
+      "title": "Classical Scalar Field",
+      "description": "A real- or complex-valued classical field whose value at a spacetime event is unchanged by a coordinate transformation, although the coordinates labeling that event change.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Classical Lorentz scalar field"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "classical-field"
+        },
+        {
+          "type": "used-in",
+          "target": "classical-field-theory",
+          "note": "Scalar-field models provide a simple setting for local action dynamics."
         }
       ]
     },
@@ -491,6 +674,34 @@
           "type": "requires",
           "target": "linear-map",
           "note": "Covectors are scalar-valued linear maps on the tangent space."
+        }
+      ]
+    },
+    {
+      "id": "creation-and-annihilation-operators",
+      "title": "Creation and Annihilation Operators",
+      "description": "Operators that raise or lower occupation in specified particle modes, with bosonic commutation or fermionic anticommutation relations and the appropriate normalization on Fock states.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Creation operator",
+        "Annihilation operator",
+        "Particle ladder operators"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "fock-space"
+        },
+        {
+          "type": "requires",
+          "target": "linear-operator"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-field",
+          "note": "Free-field mode expansions are expressed through creation and annihilation operators."
         }
       ]
     },
@@ -749,6 +960,34 @@
       ]
     },
     {
+      "id": "electromagnetic-field",
+      "title": "Electromagnetic Field",
+      "description": "The classical field whose electric and magnetic components combine relativistically into an antisymmetric rank-two field-strength tensor, equivalently a spacetime two-form.",
+      "domains": [
+        "classical-field-theory",
+        "relativity"
+      ],
+      "aliases": [
+        "Classical electromagnetic field",
+        "EM field"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "classical-field"
+        },
+        {
+          "type": "requires",
+          "target": "differential-form",
+          "note": "The relativistic field strength is a differential two-form."
+        },
+        {
+          "type": "used-in",
+          "target": "classical-field-theory"
+        }
+      ]
+    },
+    {
       "id": "equivalence-principle",
       "title": "Equivalence Principle",
       "description": "In its Einstein form, local nongravitational experiments in a freely falling laboratory obey special relativity; this does not eliminate tidal curvature over a finite region.",
@@ -845,6 +1084,36 @@
       ]
     },
     {
+      "id": "expected-value",
+      "title": "Expected Value",
+      "description": "The probability-weighted average of a random variable, defined by integration with respect to its probability measure. A finite expectation exists when the absolute value is integrable; some distributions have no finite mean.",
+      "domains": [
+        "mathematics",
+        "probability"
+      ],
+      "aliases": [
+        "Expectation",
+        "Mathematical expectation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "random-variable",
+          "note": "Expectation summarizes a random variable."
+        },
+        {
+          "type": "requires",
+          "target": "probability-distribution",
+          "note": "Its probability law supplies the weights used in the average."
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-mechanics",
+          "note": "Ensemble expectations calculate mean physical observables such as energy."
+        }
+      ]
+    },
+    {
       "id": "exterior-derivative",
       "title": "Exterior Derivative",
       "description": "The natural differential operator d that raises the degree of a differential form by one, extends differentiation of functions, obeys the graded product rule, and satisfies d squared equals zero.",
@@ -874,6 +1143,104 @@
       ]
     },
     {
+      "id": "feynman-diagram",
+      "title": "Feynman Diagram",
+      "description": "A graphical representation of a term in a perturbative expansion of quantum-field correlation functions or amplitudes, with lines and vertices encoding mathematical factors rather than literal particle trajectories.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Feynman graph"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "propagator"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-field-theory"
+        }
+      ]
+    },
+    {
+      "id": "field-action",
+      "title": "Field Action",
+      "description": "A functional of complete field configurations obtained by integrating a Lagrangian density over a spacetime region, with admissible variations and boundary data specified.",
+      "domains": [
+        "classical-field-theory",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Field-theoretic action",
+        "Action for fields"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "lagrangian-density"
+        },
+        {
+          "type": "requires",
+          "target": "functional"
+        },
+        {
+          "type": "used-in",
+          "target": "classical-field-theory"
+        }
+      ]
+    },
+    {
+      "id": "field-euler-lagrange-equation",
+      "title": "Field Euler–Lagrange Equation",
+      "description": "For a first-order local field action, the equation partial L / partial phi_a minus partial_mu(partial L / partial(partial_mu phi_a)) = 0 obtained from stationarity under admissible variations with vanishing boundary terms.",
+      "domains": [
+        "classical-field-theory",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Euler-Lagrange field equations",
+        "Field equations of Euler-Lagrange type"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "field-action"
+        },
+        {
+          "type": "requires",
+          "target": "first-variation"
+        },
+        {
+          "type": "used-in",
+          "target": "classical-field-theory"
+        }
+      ]
+    },
+    {
+      "id": "first-law-of-thermodynamics",
+      "title": "First Law of Thermodynamics",
+      "description": "Energy conservation for thermodynamic processes; for a closed system with unchanged bulk kinetic and potential energies, ΔU = Q − W, with heat Q entering and work W done by the system.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "First law of thermodynamics energy balance"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "internal-energy",
+          "note": "The energy balance distinguishes stored energy from transfer."
+        },
+        {
+          "type": "used-in",
+          "target": "thermodynamics",
+          "note": "The law constrains energy exchange."
+        }
+      ]
+    },
+    {
       "id": "first-variation",
       "title": "First Variation",
       "description": "The first-order change of a differentiable functional under an admissible perturbation, computed as d J[y + epsilon eta] / d epsilon at epsilon = 0.",
@@ -895,6 +1262,29 @@
           "type": "used-in",
           "target": "variational-principle",
           "note": "Stationarity requires the first variation to vanish for all admissible perturbations."
+        }
+      ]
+    },
+    {
+      "id": "fock-space",
+      "title": "Fock Space",
+      "description": "The Hilbert direct sum of all n-particle sectors including the vacuum sector, constructed from symmetric tensor powers of a one-particle space for bosons or antisymmetric powers for fermions.",
+      "domains": [
+        "quantum-physics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Particle Fock space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hilbert-space"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-field-theory",
+          "note": "Fock representations describe free particles and perturbative asymptotic states, not every interacting representation without qualification."
         }
       ]
     },
@@ -1005,6 +1395,11 @@
           "type": "generalizes",
           "target": "action-functional",
           "note": "An action is a particular functional used to specify dynamics."
+        },
+        {
+          "type": "generalizes",
+          "target": "field-action",
+          "note": "A field action is a scalar-valued functional of field configurations."
         }
       ]
     },
@@ -1055,6 +1450,35 @@
         {
           "type": "requires",
           "target": "continuity"
+        }
+      ]
+    },
+    {
+      "id": "gauge-symmetry",
+      "title": "Gauge Symmetry",
+      "description": "A redundancy of field variables under transformations that identify physically equivalent configurations; which transformations count as gauge depends on the constraints and boundary conditions.",
+      "domains": [
+        "classical-field-theory",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Gauge redundancy",
+        "Local gauge freedom"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "classical-field"
+        },
+        {
+          "type": "used-in",
+          "target": "electromagnetic-field",
+          "note": "Different admissible potential descriptions can encode the same electromagnetic field strength."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-field-theory",
+          "note": "Gauge descriptions must preserve the physical state space and observables."
         }
       ]
     },
@@ -1194,6 +1618,11 @@
           "type": "used-in",
           "target": "schwarzschild-spacetime",
           "note": "Geodesics describe idealized free-fall and light propagation in Schwarzschild spacetime."
+        },
+        {
+          "type": "used-in",
+          "target": "general-relativity",
+          "note": "Geodesics model idealized freely falling test particles and light rays in general relativity."
         }
       ]
     },
@@ -1317,6 +1746,110 @@
       ]
     },
     {
+      "id": "group",
+      "title": "Group",
+      "description": "A set equipped with an associative binary operation, an identity element, and an inverse for every element.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Abstract group"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "group-theory",
+          "note": "Groups encode composable invertible transformations."
+        },
+        {
+          "type": "generalizes",
+          "target": "lie-group",
+          "note": "Lie groups add compatible smooth structure."
+        }
+      ]
+    },
+    {
+      "id": "group-homomorphism",
+      "title": "Group Homomorphism",
+      "description": "A map between groups that preserves multiplication, f(ab) = f(a)f(b), and therefore preserves identity elements and inverses.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Homomorphism of groups"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "group",
+          "note": "The map respects group operations."
+        },
+        {
+          "type": "used-in",
+          "target": "group-representation",
+          "note": "A representation is a homomorphism into invertible linear maps."
+        }
+      ]
+    },
+    {
+      "id": "group-representation",
+      "title": "Group Representation",
+      "description": "A homomorphism from a group to the invertible linear transformations of a vector space, representing group multiplication by composition of linear maps.",
+      "domains": [
+        "mathematics",
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Linear representation of a group"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "group-homomorphism",
+          "note": "Multiplication must be preserved."
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra",
+          "note": "The representation acts by invertible linear maps."
+        },
+        {
+          "type": "generalizes",
+          "target": "irreducible-representation",
+          "note": "Irreducibility adds an invariant-subspace restriction."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Representations describe rotational symmetry and angular-momentum states."
+        }
+      ]
+    },
+    {
+      "id": "group-theory",
+      "title": "Group Theory",
+      "description": "The mathematical study of groups, their structure, and their representations, providing a language for discrete and continuous symmetries.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Theory of groups"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "group",
+          "note": "Groups are the basic objects."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Symmetry groups organize quantum states and transformations."
+        }
+      ]
+    },
+    {
       "id": "hamiltonian",
       "title": "Hamiltonian",
       "description": "A classical phase-space function H(q, p, t) generating Hamilton's equations; for a regular Lagrangian it can be constructed locally by Legendre transformation in the velocity variables.",
@@ -1337,6 +1870,32 @@
           "type": "requires",
           "target": "generalized-momentum",
           "note": "Canonical momenta are phase-space variables."
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-mechanics",
+          "note": "Classical equilibrium ensembles use phase-space energies."
+        }
+      ]
+    },
+    {
+      "id": "hamiltonian-mechanics",
+      "title": "Hamiltonian Mechanics",
+      "description": "A formulation of classical dynamics on phase space in which a Hamiltonian function generates the evolution of canonical coordinates and momenta through Hamilton's equations.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Hamiltonian formulation of mechanics"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hamiltonian"
+        },
+        {
+          "type": "used-in",
+          "target": "classical-mechanics"
         }
       ]
     },
@@ -1360,6 +1919,11 @@
           "type": "used-in",
           "target": "quantum-mechanics",
           "note": "Complex Hilbert spaces provide the standard state-space framework."
+        },
+        {
+          "type": "generalizes",
+          "target": "fock-space",
+          "note": "A Fock space is a Hilbert space with a specified particle-sector construction."
         }
       ]
     },
@@ -1514,6 +2078,30 @@
       ]
     },
     {
+      "id": "internal-energy",
+      "title": "Internal Energy",
+      "description": "A thermodynamic state function accounting for energy stored within a system, excluding kinetic and external potential energy associated with the system as a whole.",
+      "domains": [
+        "thermodynamics",
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Thermodynamic internal energy"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "first-law-of-thermodynamics",
+          "note": "Its change enters the energy balance."
+        },
+        {
+          "type": "used-in",
+          "target": "thermodynamics",
+          "note": "Internal energy is an equilibrium state variable."
+        }
+      ]
+    },
+    {
       "id": "inverse-metric",
       "title": "Inverse Metric",
       "description": "The contravariant rank-two tensor whose coordinate matrix is inverse to the metric matrix, satisfying g^{ac} g_cb = δ^a_b.",
@@ -1540,6 +2128,30 @@
         {
           "type": "used-in",
           "target": "christoffel-symbol"
+        }
+      ]
+    },
+    {
+      "id": "irreducible-representation",
+      "title": "Irreducible Representation",
+      "description": "A nonzero linear group representation with no invariant subspaces except the zero subspace and the whole representation space.",
+      "domains": [
+        "mathematics",
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Irrep"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "group-representation",
+          "note": "Irreducibility is a property of a representation."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Rotational multiplets are organized by irreducible representations."
         }
       ]
     },
@@ -1596,6 +2208,11 @@
           "type": "used-in",
           "target": "variational-principle",
           "note": "Multipliers incorporate regular constraints into variational equations."
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-ensemble",
+          "note": "Equilibrium probabilities can be obtained by constrained entropy maximization."
         }
       ]
     },
@@ -1620,6 +2237,32 @@
           "type": "used-in",
           "target": "action-functional",
           "note": "Integrating the Lagrangian along a trajectory constructs the mechanical action."
+        }
+      ]
+    },
+    {
+      "id": "lagrangian-density",
+      "title": "Lagrangian Density",
+      "description": "A local spacetime density built from fields and, in first-order models, their first derivatives, whose spacetime integral defines the field action.",
+      "domains": [
+        "classical-field-theory",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Field Lagrangian density"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "classical-field"
+        },
+        {
+          "type": "requires",
+          "target": "partial-derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "field-action"
         }
       ]
     },
@@ -1670,6 +2313,11 @@
           "type": "requires",
           "target": "lagrangian",
           "note": "The formulation begins with a Lagrangian for the system."
+        },
+        {
+          "type": "used-in",
+          "target": "classical-mechanics",
+          "note": "Lagrangian mechanics is a formulation of classical mechanical dynamics, not a distinct special-case theory."
         }
       ]
     },
@@ -1760,6 +2408,35 @@
       ]
     },
     {
+      "id": "lie-algebra",
+      "title": "Lie Algebra",
+      "description": "A vector space over the real or complex numbers with a bilinear antisymmetric bracket satisfying the Jacobi identity; a Lie group's tangent space at the identity carries such a bracket.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Real or complex Lie algebra"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-space",
+          "note": "The bracket is a bilinear operation on a vector space."
+        },
+        {
+          "type": "used-in",
+          "target": "lie-group",
+          "note": "The associated Lie algebra describes infinitesimal group structure."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Commutators encode continuous-symmetry generators."
+        }
+      ]
+    },
+    {
       "id": "lie-derivative",
       "title": "Lie Derivative",
       "description": "The rate of change of a tensor field measured after transporting it back along the local flow generated by a smooth vector field, which on differential forms obeys Cartan's formula L_X = d i_X + i_X d.",
@@ -1778,6 +2455,35 @@
         {
           "type": "used-in",
           "target": "differential-geometry"
+        }
+      ]
+    },
+    {
+      "id": "lie-group",
+      "title": "Lie Group",
+      "description": "A finite-dimensional smooth manifold with a group structure whose multiplication and inversion maps are smooth.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Smooth group"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "group",
+          "note": "A Lie group has a group operation."
+        },
+        {
+          "type": "requires",
+          "target": "smooth-manifold",
+          "note": "Group operations are compatible with a smooth manifold."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Continuous symmetry groups organize quantum transformations."
         }
       ]
     },
@@ -1865,7 +2571,13 @@
       "aliases": [
         "Vector and matrix algebra"
       ],
-      "relations": []
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "mathematical-methods",
+          "note": "Vector and operator techniques support physical models."
+        }
+      ]
     },
     {
       "id": "linear-map",
@@ -1991,6 +2703,30 @@
       ]
     },
     {
+      "id": "macrostate",
+      "title": "Macrostate",
+      "description": "A specification of macroscopic observables or constraints that generally leaves many compatible microscopic states unresolved.",
+      "domains": [
+        "statistical-physics",
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Macroscopic state"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "microstate",
+          "note": "Coarse macroscopic information groups compatible microstates."
+        },
+        {
+          "type": "used-in",
+          "target": "boltzmann-entropy",
+          "note": "Compatible-state multiplicity defines Boltzmann entropy."
+        }
+      ]
+    },
+    {
       "id": "manifold",
       "title": "Manifold",
       "description": "A Hausdorff, second-countable topological space locally modeled on Euclidean space of a fixed dimension. This record uses the convention of manifolds without boundary.",
@@ -2029,6 +2765,41 @@
           "type": "used-in",
           "target": "integration-of-differential-forms",
           "note": "The chosen orientation determines the sign of an integral of a top-degree form."
+        }
+      ]
+    },
+    {
+      "id": "mathematical-methods",
+      "title": "Mathematical Methods",
+      "description": "Mathematical techniques used to formulate, analyze, and approximate physical models, including calculus, linear algebra, differential equations, and variational methods.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Mathematical methods in physics",
+        "Mathematical methods for physics"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus",
+          "note": "Calculus supplies differential and integral techniques."
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra",
+          "note": "Linear algebra supplies vector and operator techniques."
+        },
+        {
+          "type": "used-in",
+          "target": "lagrangian-mechanics",
+          "note": "Variational methods formulate equations of motion."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Linear and differential methods analyze quantum models."
         }
       ]
     },
@@ -2171,6 +2942,52 @@
         {
           "type": "used-in",
           "target": "integration-of-differential-forms"
+        }
+      ]
+    },
+    {
+      "id": "microcanonical-ensemble",
+      "title": "Microcanonical Ensemble",
+      "description": "An equilibrium ensemble of an isolated system with fixed conserved quantities, assigning equal statistical weight to accessible states in a specified narrow energy range.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [
+        "NVE ensemble"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "statistical-ensemble",
+          "note": "This is an ensemble with isolation constraints."
+        },
+        {
+          "type": "used-in",
+          "target": "boltzmann-entropy",
+          "note": "Accessible-state multiplicity yields the microcanonical entropy."
+        }
+      ]
+    },
+    {
+      "id": "microstate",
+      "title": "Microstate",
+      "description": "A complete microscopic specification of a system in its chosen model, such as particle positions and momenta classically or a pure quantum state.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Microscopic state"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "macrostate",
+          "note": "Many microscopic configurations can realize one macrostate."
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-ensemble",
+          "note": "Ensembles assign probabilities over microscopic states."
         }
       ]
     },
@@ -2333,6 +3150,11 @@
           "type": "used-in",
           "target": "lagrangian-mechanics",
           "note": "Continuous symmetries reveal conserved mechanical quantities."
+        },
+        {
+          "type": "used-in",
+          "target": "classical-field-theory",
+          "note": "The field-theoretic version relates global continuous variational symmetries to conserved currents; gauge redundancy needs separate care."
         }
       ]
     },
@@ -2385,6 +3207,63 @@
       ]
     },
     {
+      "id": "partition-function",
+      "title": "Partition Function",
+      "description": "A statistical-mechanical normalization sum or integral over weighted microscopic states; in the canonical ensemble, Z sums exp(−E/kBT) and determines equilibrium thermodynamic quantities.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Statistical partition function"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "canonical-ensemble",
+          "note": "The canonical partition function normalizes Boltzmann weights."
+        },
+        {
+          "type": "used-in",
+          "target": "internal-energy",
+          "note": "Canonical mean energy follows from a derivative of log Z."
+        },
+        {
+          "type": "used-in",
+          "target": "thermodynamic-entropy",
+          "note": "Canonical equilibrium entropy follows from Z and its temperature dependence."
+        }
+      ]
+    },
+    {
+      "id": "path-integral-formulation",
+      "title": "Path Integral Formulation",
+      "description": "A quantum formulation using appropriately defined or regulated sums over histories, with oscillatory action weights exp(i S / hbar) in real time, extending from particle paths to field configurations.",
+      "domains": [
+        "quantum-physics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Path-integral formulation",
+        "Sum-over-histories formulation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-mechanics"
+        },
+        {
+          "type": "requires",
+          "target": "action-functional",
+          "note": "Mechanical action provides the introductory particle-path construction."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-field-theory",
+          "note": "Field-theory versions integrate over field histories and require a suitable definition or regulator."
+        }
+      ]
+    },
+    {
       "id": "poincare-lemma",
       "title": "Poincaré Lemma",
       "description": "The result that every closed differential form of positive degree is locally exact on a smooth manifold, with global exactness on star-shaped open subsets of Euclidean space.",
@@ -2429,6 +3308,76 @@
         {
           "type": "used-in",
           "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "probability-distribution",
+      "title": "Probability Distribution",
+      "description": "A probability measure specifying how total probability is assigned to possible outcomes or values of a random variable. Discrete laws may be represented by probability masses; only laws with a density admit a probability-density representation.",
+      "domains": [
+        "mathematics",
+        "probability"
+      ],
+      "aliases": [
+        "Probability law"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "probability-theory",
+          "note": "A distribution obeys the axioms of probability."
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-ensemble",
+          "note": "An ensemble assigns probabilities to microscopic states under specified macroscopic conditions."
+        }
+      ]
+    },
+    {
+      "id": "probability-theory",
+      "title": "Probability Theory",
+      "description": "The mathematical study of uncertainty using probability spaces, random variables, distributions, and their relationships. It provides a framework for assigning consistent probabilities to events and analyzing random phenomena.",
+      "domains": [
+        "mathematics",
+        "probability"
+      ],
+      "aliases": [
+        "Mathematical probability"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "statistical-mechanics",
+          "note": "Probabilities describe microscopic states, ensemble averages, and fluctuations."
+        },
+        {
+          "type": "used-in",
+          "target": "mathematical-methods",
+          "note": "Probability is a supporting mathematical framework for physical models with uncertainty or many microscopic possibilities."
+        }
+      ]
+    },
+    {
+      "id": "propagator",
+      "title": "Propagator",
+      "description": "In quantum field theory, a two-point field correlation or Green function with specified ordering and boundary conditions; the Feynman propagator uses time ordering and appears in perturbative diagrams.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Quantum-field propagator"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-field"
+        },
+        {
+          "type": "used-in",
+          "target": "feynman-diagram",
+          "note": "Internal lines represent propagator factors according to the chosen theory and convention."
         }
       ]
     },
@@ -2572,6 +3521,85 @@
       ]
     },
     {
+      "id": "quantum-field",
+      "title": "Quantum Field",
+      "description": "A spacetime-indexed operator-valued distribution whose smearing with suitable test functions gives operators on quantum states, rather than an ordinary classical field value at each point.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Quantum field operator",
+        "Operator-valued quantum field"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-operator"
+        },
+        {
+          "type": "requires",
+          "target": "hilbert-space"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-field-theory"
+        }
+      ]
+    },
+    {
+      "id": "quantum-field-theory",
+      "title": "Quantum Field Theory",
+      "description": "The quantum framework for local field degrees of freedom and their interactions, used in relativistic physics and many-body systems; this introductory branch emphasizes relativistic theories.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "QFT"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-mechanics"
+        },
+        {
+          "type": "requires",
+          "target": "classical-field-theory",
+          "note": "Classical actions and fields organize the introductory quantization route."
+        },
+        {
+          "type": "requires",
+          "target": "special-relativity",
+          "note": "Lorentz symmetry is a prerequisite for the relativistic emphasis here, not for every many-body quantum field theory."
+        }
+      ]
+    },
+    {
+      "id": "quantum-hamiltonian",
+      "title": "Quantum Hamiltonian",
+      "description": "A self-adjoint energy operator generating quantum time evolution under the appropriate domain and evolution assumptions, distinct from the classical Hamiltonian function on phase space.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Hamiltonian operator",
+        "Quantum energy operator"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-observable"
+        },
+        {
+          "type": "used-in",
+          "target": "schrodinger-equation"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-field-theory"
+        }
+      ]
+    },
+    {
       "id": "quantum-mechanics",
       "title": "Quantum Mechanics",
       "description": "The framework describing quantum states, observables, probabilities, and dynamics, with linear operators on complex vector spaces as its central mathematical structure.",
@@ -2611,6 +3639,11 @@
         {
           "type": "used-in",
           "target": "quantum-mechanics"
+        },
+        {
+          "type": "generalizes",
+          "target": "quantum-hamiltonian",
+          "note": "The quantum Hamiltonian is the energy observable that generates time evolution."
         }
       ]
     },
@@ -2660,6 +3693,49 @@
         {
           "type": "used-in",
           "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "random-variable",
+      "title": "Random Variable",
+      "description": "A measurable function on a probability space that assigns a numerical value to each possible outcome. Its distribution records the probabilities of its possible values or ranges of values.",
+      "domains": [
+        "mathematics",
+        "probability"
+      ],
+      "aliases": [
+        "Stochastic variable"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "probability-theory",
+          "note": "A random variable is defined on a probability space."
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-mechanics",
+          "note": "Classical observables such as energy can be treated as random variables on an ensemble of microstates."
+        }
+      ]
+    },
+    {
+      "id": "relativity",
+      "title": "Relativity",
+      "description": "The family of physical theories relating spacetime, motion, and reference frames, including special relativity and the general-relativistic description of gravitation.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Theory of relativity",
+        "Relativistic physics"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "principle-of-relativity",
+          "note": "Relativity begins by distinguishing coordinate descriptions from observer-independent physical laws."
         }
       ]
     },
@@ -2843,6 +3919,11 @@
           "type": "requires",
           "target": "self-adjoint-operator",
           "note": "A self-adjoint Hamiltonian gives unitary dynamics under the appropriate evolution hypotheses."
+        },
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian",
+          "note": "The Hamiltonian operator specifies the equation's generator."
         }
       ]
     },
@@ -2919,6 +4000,29 @@
         {
           "type": "requires",
           "target": "metric"
+        }
+      ]
+    },
+    {
+      "id": "second-law-of-thermodynamics",
+      "title": "Second Law of Thermodynamics",
+      "description": "The thermodynamic law that total entropy cannot decrease in an isolated system, restricting process direction beyond energy conservation.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Entropy increase principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "thermodynamic-entropy",
+          "note": "The entropy formulation quantifies irreversibility."
+        },
+        {
+          "type": "used-in",
+          "target": "thermodynamics",
+          "note": "It constrains equilibrium and energy conversion."
         }
       ]
     },
@@ -3126,6 +4230,67 @@
       ]
     },
     {
+      "id": "statistical-ensemble",
+      "title": "Statistical Ensemble",
+      "description": "A probability distribution over possible microscopic states of a system, used to calculate averages and fluctuations subject to specified macroscopic conditions.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Gibbs ensemble"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "microstate",
+          "note": "Probabilities are assigned to microscopic states."
+        },
+        {
+          "type": "generalizes",
+          "target": "microcanonical-ensemble",
+          "note": "Fixed-energy equilibrium gives the microcanonical ensemble."
+        },
+        {
+          "type": "generalizes",
+          "target": "canonical-ensemble",
+          "note": "Thermal-reservoir equilibrium gives the canonical ensemble."
+        },
+        {
+          "type": "requires",
+          "target": "probability-distribution",
+          "note": "The ensemble specifies a probability law over microscopic states."
+        }
+      ]
+    },
+    {
+      "id": "statistical-mechanics",
+      "title": "Statistical Mechanics",
+      "description": "The probabilistic description of many-body systems that connects microscopic dynamics and states to macroscopic properties, including equilibrium thermodynamics and fluctuations.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Statistical mechanical theory"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "statistical-ensemble",
+          "note": "Ensembles encode microscopic probabilities."
+        },
+        {
+          "type": "requires",
+          "target": "macrostate",
+          "note": "Macroscopic observables connect the two descriptions."
+        },
+        {
+          "type": "used-in",
+          "target": "thermodynamics",
+          "note": "Equilibrium statistics supplies microscopic models of thermodynamic behavior."
+        }
+      ]
+    },
+    {
       "id": "stokes-theorem",
       "title": "Stokes' Theorem",
       "description": "For an oriented smooth n-manifold M with boundary and a compactly supported smooth (n-1)-form omega, the integral of d omega over M equals the integral of the boundary pullback of omega with the induced boundary orientation.",
@@ -3177,6 +4342,34 @@
         {
           "type": "used-in",
           "target": "einstein-field-equations"
+        },
+        {
+          "type": "used-in",
+          "target": "classical-field-theory",
+          "note": "Field theories encode energy and momentum in stress-energy tensors."
+        }
+      ]
+    },
+    {
+      "id": "subgroup",
+      "title": "Subgroup",
+      "description": "A subset of a group containing its identity and closed under the inherited multiplication and inverses, so that it is itself a group.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Group subgroup"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "group",
+          "note": "The operation is inherited from an ambient group."
+        },
+        {
+          "type": "used-in",
+          "target": "group-homomorphism",
+          "note": "Kernels and images are subgroups."
         }
       ]
     },
@@ -3283,6 +4476,30 @@
       ]
     },
     {
+      "id": "temperature",
+      "title": "Temperature",
+      "description": "An intensive thermodynamic variable characterizing thermal equilibrium; its absolute scale relates reversible heat transfer to entropy change.",
+      "domains": [
+        "thermodynamics",
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Thermodynamic temperature"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "thermal-equilibrium",
+          "note": "Thermal equilibrium underpins temperature comparison."
+        },
+        {
+          "type": "used-in",
+          "target": "canonical-ensemble",
+          "note": "Reservoir temperature controls equilibrium probabilities."
+        }
+      ]
+    },
+    {
       "id": "tensor-field",
       "title": "Tensor Field",
       "description": "A smooth assignment of a multilinear tensor, built from tangent and cotangent spaces, to every point of a smooth manifold.",
@@ -3332,6 +4549,85 @@
       ]
     },
     {
+      "id": "thermal-equilibrium",
+      "title": "Thermal Equilibrium",
+      "description": "A relation between systems that exhibit no net heat transfer when placed in thermal contact under otherwise fixed constraints.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Mutual thermal equilibrium"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "temperature",
+          "note": "Equilibrium classes underpin empirical temperature."
+        },
+        {
+          "type": "used-in",
+          "target": "canonical-ensemble",
+          "note": "The system equilibrates with a thermal reservoir."
+        }
+      ]
+    },
+    {
+      "id": "thermodynamic-entropy",
+      "title": "Thermodynamic Entropy",
+      "description": "An equilibrium state function satisfying dS = δQrev/T along a reversible path, whose total change is nonnegative for an isolated system.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Clausius entropy"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "temperature",
+          "note": "Absolute temperature relates reversible heat to entropy."
+        },
+        {
+          "type": "used-in",
+          "target": "second-law-of-thermodynamics",
+          "note": "Entropy expresses the direction of allowed processes."
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-mechanics",
+          "note": "Macroscopic entropy is related to microscopic state statistics."
+        }
+      ]
+    },
+    {
+      "id": "thermodynamics",
+      "title": "Thermodynamics",
+      "description": "The macroscopic study of energy transfer, equilibrium, and constraints on physical processes, using thermodynamic laws without resolving individual microscopic states.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Thermodynamic theory"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "thermal-equilibrium",
+          "note": "Equilibrium gives the reference states."
+        },
+        {
+          "type": "requires",
+          "target": "internal-energy",
+          "note": "Energy accounting is fundamental."
+        },
+        {
+          "type": "requires",
+          "target": "thermodynamic-entropy",
+          "note": "Entropy constrains possible processes."
+        }
+      ]
+    },
+    {
       "id": "time-dilation",
       "title": "Time Dilation",
       "description": "In special relativity, elapsed coordinate time in an inertial frame exceeds a moving clock's proper time; at constant speed, Δt = γ Δτ.",
@@ -3361,6 +4657,35 @@
       ]
     },
     {
+      "id": "variance",
+      "title": "Variance",
+      "description": "For a real random variable with a finite mean, the expected squared deviation from that mean. A finite second moment gives Var(X) = E[X²] − E[X]²; if the second moment diverges, the variance need not be finite.",
+      "domains": [
+        "mathematics",
+        "probability"
+      ],
+      "aliases": [
+        "Second central moment"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "expected-value",
+          "note": "Variance is an expectation of squared deviations from the mean."
+        },
+        {
+          "type": "requires",
+          "target": "random-variable",
+          "note": "Variance quantifies the spread of a real random variable."
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-mechanics",
+          "note": "Variances measure equilibrium fluctuations, including energy fluctuations in a canonical ensemble."
+        }
+      ]
+    },
+    {
       "id": "variational-principle",
       "title": "Variational Principle",
       "description": "A formulation in which physical configurations or trajectories are characterized as stationary points of a functional, especially the action in mechanics and field theory.",
@@ -3381,6 +4706,11 @@
           "type": "requires",
           "target": "first-variation",
           "note": "Stationarity is expressed by vanishing admissible first variations."
+        },
+        {
+          "type": "used-in",
+          "target": "mathematical-methods",
+          "note": "Stationary-function methods formulate physical models."
         }
       ]
     },

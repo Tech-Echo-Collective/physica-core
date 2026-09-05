@@ -1,0 +1,33 @@
+{
+  "id": "statistical-ensemble",
+  "title": "Statistical Ensemble",
+  "description": "A probability distribution over possible microscopic states of a system, used to calculate averages and fluctuations subject to specified macroscopic conditions.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Gibbs ensemble"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "microstate",
+      "note": "Probabilities are assigned to microscopic states."
+    },
+    {
+      "type": "generalizes",
+      "target": "microcanonical-ensemble",
+      "note": "Fixed-energy equilibrium gives the microcanonical ensemble."
+    },
+    {
+      "type": "generalizes",
+      "target": "canonical-ensemble",
+      "note": "Thermal-reservoir equilibrium gives the canonical ensemble."
+    },
+    {
+      "type": "requires",
+      "target": "probability-distribution",
+      "note": "The ensemble specifies a probability law over microscopic states."
+    }
+  ]
+}

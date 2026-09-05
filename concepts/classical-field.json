@@ -1,0 +1,27 @@
+{
+  "id": "classical-field",
+  "title": "Classical Field",
+  "description": "A non-quantum assignment of scalar values or geometric quantities to points of space or spacetime, providing continuously distributed degrees of freedom rather than quantum operators.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Classical physical field"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "generalizes",
+      "target": "classical-scalar-field",
+      "note": "Scalar fields are one class of classical field."
+    },
+    {
+      "type": "generalizes",
+      "target": "electromagnetic-field",
+      "note": "The classical electromagnetic field is a particular tensor-valued field."
+    }
+  ]
+}

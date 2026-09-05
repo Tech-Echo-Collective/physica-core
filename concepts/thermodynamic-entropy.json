@@ -1,0 +1,28 @@
+{
+  "id": "thermodynamic-entropy",
+  "title": "Thermodynamic Entropy",
+  "description": "An equilibrium state function satisfying dS = δQrev/T along a reversible path, whose total change is nonnegative for an isolated system.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Clausius entropy"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "temperature",
+      "note": "Absolute temperature relates reversible heat to entropy."
+    },
+    {
+      "type": "used-in",
+      "target": "second-law-of-thermodynamics",
+      "note": "Entropy expresses the direction of allowed processes."
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-mechanics",
+      "note": "Macroscopic entropy is related to microscopic state statistics."
+    }
+  ]
+}

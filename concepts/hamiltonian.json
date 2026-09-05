@@ -19,6 +19,11 @@
       "type": "requires",
       "target": "generalized-momentum",
       "note": "Canonical momenta are phase-space variables."
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-mechanics",
+      "note": "Classical equilibrium ensembles use phase-space energies."
     }
   ]
 }

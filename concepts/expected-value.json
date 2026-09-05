@@ -1,0 +1,30 @@
+{
+  "id": "expected-value",
+  "title": "Expected Value",
+  "description": "The probability-weighted average of a random variable, defined by integration with respect to its probability measure. A finite expectation exists when the absolute value is integrable; some distributions have no finite mean.",
+  "domains": [
+    "mathematics",
+    "probability"
+  ],
+  "aliases": [
+    "Expectation",
+    "Mathematical expectation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "random-variable",
+      "note": "Expectation summarizes a random variable."
+    },
+    {
+      "type": "requires",
+      "target": "probability-distribution",
+      "note": "Its probability law supplies the weights used in the average."
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-mechanics",
+      "note": "Ensemble expectations calculate mean physical observables such as energy."
+    }
+  ]
+}

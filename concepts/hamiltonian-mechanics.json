@@ -1,0 +1,21 @@
+{
+  "id": "hamiltonian-mechanics",
+  "title": "Hamiltonian Mechanics",
+  "description": "A formulation of classical dynamics on phase space in which a Hamiltonian function generates the evolution of canonical coordinates and momenta through Hamilton's equations.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Hamiltonian formulation of mechanics"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "hamiltonian"
+    },
+    {
+      "type": "used-in",
+      "target": "classical-mechanics"
+    }
+  ]
+}

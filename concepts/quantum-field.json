@@ -1,0 +1,26 @@
+{
+  "id": "quantum-field",
+  "title": "Quantum Field",
+  "description": "A spacetime-indexed operator-valued distribution whose smearing with suitable test functions gives operators on quantum states, rather than an ordinary classical field value at each point.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Quantum field operator",
+    "Operator-valued quantum field"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-operator"
+    },
+    {
+      "type": "requires",
+      "target": "hilbert-space"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory"
+    }
+  ]
+}

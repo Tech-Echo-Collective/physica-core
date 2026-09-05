@@ -1,0 +1,23 @@
+{
+  "id": "subgroup",
+  "title": "Subgroup",
+  "description": "A subset of a group containing its identity and closed under the inherited multiplication and inverses, so that it is itself a group.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Group subgroup"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "group",
+      "note": "The operation is inherited from an ambient group."
+    },
+    {
+      "type": "used-in",
+      "target": "group-homomorphism",
+      "note": "Kernels and images are subgroups."
+    }
+  ]
+}

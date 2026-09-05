@@ -50,6 +50,11 @@
       "type": "used-in",
       "target": "geodesic-equation",
       "note": "Levi-Civita coefficients supply the connection terms for metric geodesics."
+    },
+    {
+      "type": "used-in",
+      "target": "general-relativity",
+      "note": "Levi-Civita coefficients enter the coordinate expressions for spacetime covariant derivatives, geodesics and curvature."
     }
   ]
 }

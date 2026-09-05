@@ -1,0 +1,29 @@
+{
+  "id": "lie-group",
+  "title": "Lie Group",
+  "description": "A finite-dimensional smooth manifold with a group structure whose multiplication and inversion maps are smooth.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Smooth group"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "group",
+      "note": "A Lie group has a group operation."
+    },
+    {
+      "type": "requires",
+      "target": "smooth-manifold",
+      "note": "Group operations are compatible with a smooth manifold."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Continuous symmetry groups organize quantum transformations."
+    }
+  ]
+}

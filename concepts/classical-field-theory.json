@@ -1,0 +1,22 @@
+{
+  "id": "classical-field-theory",
+  "title": "Classical Field Theory",
+  "description": "The study of non-quantum fields with degrees of freedom distributed over space or spacetime, including their equations of motion, symmetries, and conservation laws.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Classical field dynamics"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "classical-field"
+    },
+    {
+      "type": "requires",
+      "target": "variational-principle",
+      "note": "This introductory route emphasizes action-based field theories."
+    }
+  ]
+}

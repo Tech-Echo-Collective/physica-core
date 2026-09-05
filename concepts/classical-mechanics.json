@@ -1,0 +1,18 @@
+{
+  "id": "classical-mechanics",
+  "title": "Classical Mechanics",
+  "description": "The non-quantum study of motion and interactions, including particle, rigid-body, and continuum systems, using Newtonian, Lagrangian, Hamiltonian, and other formulations.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Classical dynamics"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "Continuous-time mechanical dynamics uses differentiation and integration."
+    }
+  ]
+}

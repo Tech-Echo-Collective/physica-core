@@ -1,0 +1,24 @@
+{
+  "id": "random-variable",
+  "title": "Random Variable",
+  "description": "A measurable function on a probability space that assigns a numerical value to each possible outcome. Its distribution records the probabilities of its possible values or ranges of values.",
+  "domains": [
+    "mathematics",
+    "probability"
+  ],
+  "aliases": [
+    "Stochastic variable"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "probability-theory",
+      "note": "A random variable is defined on a probability space."
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-mechanics",
+      "note": "Classical observables such as energy can be treated as random variables on an ensemble of microstates."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "canonical-quantization",
+  "title": "Canonical Quantization",
+  "description": "An approach that promotes selected classical canonical variables to quantum operators with canonical commutation or graded relations, requiring care with ordering, domains, and constraints rather than a unique quantization of every observable.",
+  "domains": [
+    "quantum-physics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Canonical quantisation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "hamiltonian-mechanics"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-mechanics"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory"
+    }
+  ]
+}

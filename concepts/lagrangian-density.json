@@ -1,0 +1,26 @@
+{
+  "id": "lagrangian-density",
+  "title": "Lagrangian Density",
+  "description": "A local spacetime density built from fields and, in first-order models, their first derivatives, whose spacetime integral defines the field action.",
+  "domains": [
+    "classical-field-theory",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Field Lagrangian density"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "classical-field"
+    },
+    {
+      "type": "requires",
+      "target": "partial-derivative"
+    },
+    {
+      "type": "used-in",
+      "target": "field-action"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "boltzmann-entropy",
+  "title": "Boltzmann Entropy",
+  "description": "An entropy S = kB ln Ω assigned to a macrostate, where Ω counts compatible microscopic states or a dimensionless coarse-grained phase-space volume.",
+  "domains": [
+    "statistical-physics",
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Boltzmann's entropy formula"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "macrostate",
+      "note": "The multiplicity is relative to specified macroscopic constraints."
+    },
+    {
+      "type": "used-in",
+      "target": "thermodynamic-entropy",
+      "note": "Equilibrium multiplicities provide a statistical interpretation of thermodynamic entropy."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "field-action",
+  "title": "Field Action",
+  "description": "A functional of complete field configurations obtained by integrating a Lagrangian density over a spacetime region, with admissible variations and boundary data specified.",
+  "domains": [
+    "classical-field-theory",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Field-theoretic action",
+    "Action for fields"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lagrangian-density"
+    },
+    {
+      "type": "requires",
+      "target": "functional"
+    },
+    {
+      "type": "used-in",
+      "target": "classical-field-theory"
+    }
+  ]
+}

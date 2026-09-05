@@ -1,0 +1,29 @@
+{
+  "id": "gauge-symmetry",
+  "title": "Gauge Symmetry",
+  "description": "A redundancy of field variables under transformations that identify physically equivalent configurations; which transformations count as gauge depends on the constraints and boundary conditions.",
+  "domains": [
+    "classical-field-theory",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Gauge redundancy",
+    "Local gauge freedom"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "classical-field"
+    },
+    {
+      "type": "used-in",
+      "target": "electromagnetic-field",
+      "note": "Different admissible potential descriptions can encode the same electromagnetic field strength."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory",
+      "note": "Gauge descriptions must preserve the physical state space and observables."
+    }
+  ]
+}

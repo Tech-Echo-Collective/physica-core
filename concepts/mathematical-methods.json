@@ -1,0 +1,35 @@
+{
+  "id": "mathematical-methods",
+  "title": "Mathematical Methods",
+  "description": "Mathematical techniques used to formulate, analyze, and approximate physical models, including calculus, linear algebra, differential equations, and variational methods.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Mathematical methods in physics",
+    "Mathematical methods for physics"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "Calculus supplies differential and integral techniques."
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra",
+      "note": "Linear algebra supplies vector and operator techniques."
+    },
+    {
+      "type": "used-in",
+      "target": "lagrangian-mechanics",
+      "note": "Variational methods formulate equations of motion."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Linear and differential methods analyze quantum models."
+    }
+  ]
+}

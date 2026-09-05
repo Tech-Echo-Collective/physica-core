@@ -1,0 +1,29 @@
+{
+  "id": "path-integral-formulation",
+  "title": "Path Integral Formulation",
+  "description": "A quantum formulation using appropriately defined or regulated sums over histories, with oscillatory action weights exp(i S / hbar) in real time, extending from particle paths to field configurations.",
+  "domains": [
+    "quantum-physics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Path-integral formulation",
+    "Sum-over-histories formulation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-mechanics"
+    },
+    {
+      "type": "requires",
+      "target": "action-functional",
+      "note": "Mechanical action provides the introductory particle-path construction."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory",
+      "note": "Field-theory versions integrate over field histories and require a suitable definition or regulator."
+    }
+  ]
+}

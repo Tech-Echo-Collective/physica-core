@@ -9,5 +9,11 @@
     "Differential and integral calculus",
     "Infinitesimal calculus"
   ],
-  "relations": []
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "mathematical-methods",
+      "note": "Differential and integral techniques support physical models."
+    }
+  ]
 }

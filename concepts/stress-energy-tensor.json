@@ -18,6 +18,11 @@
     {
       "type": "used-in",
       "target": "einstein-field-equations"
+    },
+    {
+      "type": "used-in",
+      "target": "classical-field-theory",
+      "note": "Field theories encode energy and momentum in stress-energy tensors."
     }
   ]
 }

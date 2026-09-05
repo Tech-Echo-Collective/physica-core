@@ -1,0 +1,28 @@
+{
+  "id": "partition-function",
+  "title": "Partition Function",
+  "description": "A statistical-mechanical normalization sum or integral over weighted microscopic states; in the canonical ensemble, Z sums exp(−E/kBT) and determines equilibrium thermodynamic quantities.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Statistical partition function"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "canonical-ensemble",
+      "note": "The canonical partition function normalizes Boltzmann weights."
+    },
+    {
+      "type": "used-in",
+      "target": "internal-energy",
+      "note": "Canonical mean energy follows from a derivative of log Z."
+    },
+    {
+      "type": "used-in",
+      "target": "thermodynamic-entropy",
+      "note": "Canonical equilibrium entropy follows from Z and its temperature dependence."
+    }
+  ]
+}

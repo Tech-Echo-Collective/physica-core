@@ -1,0 +1,24 @@
+{
+  "id": "probability-distribution",
+  "title": "Probability Distribution",
+  "description": "A probability measure specifying how total probability is assigned to possible outcomes or values of a random variable. Discrete laws may be represented by probability masses; only laws with a density admit a probability-density representation.",
+  "domains": [
+    "mathematics",
+    "probability"
+  ],
+  "aliases": [
+    "Probability law"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "probability-theory",
+      "note": "A distribution obeys the axioms of probability."
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-ensemble",
+      "note": "An ensemble assigns probabilities to microscopic states under specified macroscopic conditions."
+    }
+  ]
+}

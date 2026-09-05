@@ -18,6 +18,11 @@
       "type": "used-in",
       "target": "quantum-mechanics",
       "note": "Complex Hilbert spaces provide the standard state-space framework."
+    },
+    {
+      "type": "generalizes",
+      "target": "fock-space",
+      "note": "A Fock space is a Hilbert space with a specified particle-sector construction."
     }
   ]
 }

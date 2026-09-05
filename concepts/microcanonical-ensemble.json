@@ -1,0 +1,23 @@
+{
+  "id": "microcanonical-ensemble",
+  "title": "Microcanonical Ensemble",
+  "description": "An equilibrium ensemble of an isolated system with fixed conserved quantities, assigning equal statistical weight to accessible states in a specified narrow energy range.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [
+    "NVE ensemble"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "statistical-ensemble",
+      "note": "This is an ensemble with isolation constraints."
+    },
+    {
+      "type": "used-in",
+      "target": "boltzmann-entropy",
+      "note": "Accessible-state multiplicity yields the microcanonical entropy."
+    }
+  ]
+}

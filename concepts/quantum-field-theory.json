@@ -1,0 +1,27 @@
+{
+  "id": "quantum-field-theory",
+  "title": "Quantum Field Theory",
+  "description": "The quantum framework for local field degrees of freedom and their interactions, used in relativistic physics and many-body systems; this introductory branch emphasizes relativistic theories.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "QFT"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-mechanics"
+    },
+    {
+      "type": "requires",
+      "target": "classical-field-theory",
+      "note": "Classical actions and fields organize the introductory quantization route."
+    },
+    {
+      "type": "requires",
+      "target": "special-relativity",
+      "note": "Lorentz symmetry is a prerequisite for the relativistic emphasis here, not for every many-body quantum field theory."
+    }
+  ]
+}

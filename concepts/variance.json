@@ -1,0 +1,29 @@
+{
+  "id": "variance",
+  "title": "Variance",
+  "description": "For a real random variable with a finite mean, the expected squared deviation from that mean. A finite second moment gives Var(X) = E[X²] − E[X]²; if the second moment diverges, the variance need not be finite.",
+  "domains": [
+    "mathematics",
+    "probability"
+  ],
+  "aliases": [
+    "Second central moment"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "expected-value",
+      "note": "Variance is an expectation of squared deviations from the mean."
+    },
+    {
+      "type": "requires",
+      "target": "random-variable",
+      "note": "Variance quantifies the spread of a real random variable."
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-mechanics",
+      "note": "Variances measure equilibrium fluctuations, including energy fluctuations in a canonical ensemble."
+    }
+  ]
+}

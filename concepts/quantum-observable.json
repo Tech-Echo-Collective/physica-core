@@ -17,6 +17,11 @@
     {
       "type": "used-in",
       "target": "quantum-mechanics"
+    },
+    {
+      "type": "generalizes",
+      "target": "quantum-hamiltonian",
+      "note": "The quantum Hamiltonian is the energy observable that generates time evolution."
     }
   ]
 }

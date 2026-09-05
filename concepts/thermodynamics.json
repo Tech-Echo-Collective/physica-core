@@ -1,0 +1,28 @@
+{
+  "id": "thermodynamics",
+  "title": "Thermodynamics",
+  "description": "The macroscopic study of energy transfer, equilibrium, and constraints on physical processes, using thermodynamic laws without resolving individual microscopic states.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Thermodynamic theory"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "thermal-equilibrium",
+      "note": "Equilibrium gives the reference states."
+    },
+    {
+      "type": "requires",
+      "target": "internal-energy",
+      "note": "Energy accounting is fundamental."
+    },
+    {
+      "type": "requires",
+      "target": "thermodynamic-entropy",
+      "note": "Entropy constrains possible processes."
+    }
+  ]
+}

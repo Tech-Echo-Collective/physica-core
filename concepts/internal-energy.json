@@ -1,0 +1,24 @@
+{
+  "id": "internal-energy",
+  "title": "Internal Energy",
+  "description": "A thermodynamic state function accounting for energy stored within a system, excluding kinetic and external potential energy associated with the system as a whole.",
+  "domains": [
+    "thermodynamics",
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Thermodynamic internal energy"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "first-law-of-thermodynamics",
+      "note": "Its change enters the energy balance."
+    },
+    {
+      "type": "used-in",
+      "target": "thermodynamics",
+      "note": "Internal energy is an equilibrium state variable."
+    }
+  ]
+}

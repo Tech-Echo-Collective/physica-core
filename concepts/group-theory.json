@@ -1,0 +1,24 @@
+{
+  "id": "group-theory",
+  "title": "Group Theory",
+  "description": "The mathematical study of groups, their structure, and their representations, providing a language for discrete and continuous symmetries.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Theory of groups"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "group",
+      "note": "Groups are the basic objects."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Symmetry groups organize quantum states and transformations."
+    }
+  ]
+}

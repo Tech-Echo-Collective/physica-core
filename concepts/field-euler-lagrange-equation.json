@@ -1,0 +1,27 @@
+{
+  "id": "field-euler-lagrange-equation",
+  "title": "Field Euler–Lagrange Equation",
+  "description": "For a first-order local field action, the equation partial L / partial phi_a minus partial_mu(partial L / partial(partial_mu phi_a)) = 0 obtained from stationarity under admissible variations with vanishing boundary terms.",
+  "domains": [
+    "classical-field-theory",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Euler-Lagrange field equations",
+    "Field equations of Euler-Lagrange type"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "field-action"
+    },
+    {
+      "type": "requires",
+      "target": "first-variation"
+    },
+    {
+      "type": "used-in",
+      "target": "classical-field-theory"
+    }
+  ]
+}

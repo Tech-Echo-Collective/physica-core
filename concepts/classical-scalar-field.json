@@ -1,0 +1,22 @@
+{
+  "id": "classical-scalar-field",
+  "title": "Classical Scalar Field",
+  "description": "A real- or complex-valued classical field whose value at a spacetime event is unchanged by a coordinate transformation, although the coordinates labeling that event change.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Classical Lorentz scalar field"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "classical-field"
+    },
+    {
+      "type": "used-in",
+      "target": "classical-field-theory",
+      "note": "Scalar-field models provide a simple setting for local action dynamics."
+    }
+  ]
+}

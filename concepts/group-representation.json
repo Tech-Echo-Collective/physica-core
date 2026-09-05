@@ -1,0 +1,34 @@
+{
+  "id": "group-representation",
+  "title": "Group Representation",
+  "description": "A homomorphism from a group to the invertible linear transformations of a vector space, representing group multiplication by composition of linear maps.",
+  "domains": [
+    "mathematics",
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Linear representation of a group"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "group-homomorphism",
+      "note": "Multiplication must be preserved."
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra",
+      "note": "The representation acts by invertible linear maps."
+    },
+    {
+      "type": "generalizes",
+      "target": "irreducible-representation",
+      "note": "Irreducibility adds an invariant-subspace restriction."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Representations describe rotational symmetry and angular-momentum states."
+    }
+  ]
+}

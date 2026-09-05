@@ -2,6 +2,14 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.6.0 - 2026-09-05
+
+- Add 49 concepts for broad physics fields, groups, thermal/statistical physics and shared probability tools (179 concepts, 519 relations).
+- Keep classical Hamiltonian functions distinct from quantum Hamiltonian operators; add field actions separately from the existing mechanical action.
+- Explicitly connect geodesics and Christoffel symbols to GR as applications of shared geometry.
+- Preserve all 130 previous IDs, definitions, aliases and relations; add 137 relations without schema changes.
+- Record primary mathematical and physics sources in docs/field-sources.md. Browsing parents and future Atlas mapping candidates remain consumer-owned.
+
 ## 0.5.0 - 2026-09-05
 
 - Add 83 concepts spanning all initial physics and mathematics entry topics (130 concepts, 382 relations).

@@ -1,0 +1,22 @@
+{
+  "id": "propagator",
+  "title": "Propagator",
+  "description": "In quantum field theory, a two-point field correlation or Green function with specified ordering and boundary conditions; the Feynman propagator uses time ordering and appears in perturbative diagrams.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Quantum-field propagator"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-field"
+    },
+    {
+      "type": "used-in",
+      "target": "feynman-diagram",
+      "note": "Internal lines represent propagator factors according to the chosen theory and convention."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "group-homomorphism",
+  "title": "Group Homomorphism",
+  "description": "A map between groups that preserves multiplication, f(ab) = f(a)f(b), and therefore preserves identity elements and inverses.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Homomorphism of groups"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "group",
+      "note": "The map respects group operations."
+    },
+    {
+      "type": "used-in",
+      "target": "group-representation",
+      "note": "A representation is a homomorphism into invertible linear maps."
+    }
+  ]
+}

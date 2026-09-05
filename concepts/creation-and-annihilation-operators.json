@@ -1,0 +1,28 @@
+{
+  "id": "creation-and-annihilation-operators",
+  "title": "Creation and Annihilation Operators",
+  "description": "Operators that raise or lower occupation in specified particle modes, with bosonic commutation or fermionic anticommutation relations and the appropriate normalization on Fock states.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Creation operator",
+    "Annihilation operator",
+    "Particle ladder operators"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "fock-space"
+    },
+    {
+      "type": "requires",
+      "target": "linear-operator"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field",
+      "note": "Free-field mode expansions are expressed through creation and annihilation operators."
+    }
+  ]
+}

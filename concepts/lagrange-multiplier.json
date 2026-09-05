@@ -25,6 +25,11 @@
       "type": "used-in",
       "target": "variational-principle",
       "note": "Multipliers incorporate regular constraints into variational equations."
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-ensemble",
+      "note": "Equilibrium probabilities can be obtained by constrained entropy maximization."
     }
   ]
 }

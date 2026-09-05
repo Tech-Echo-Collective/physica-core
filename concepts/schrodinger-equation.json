@@ -22,6 +22,11 @@
       "type": "requires",
       "target": "self-adjoint-operator",
       "note": "A self-adjoint Hamiltonian gives unitary dynamics under the appropriate evolution hypotheses."
+    },
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian",
+      "note": "The Hamiltonian operator specifies the equation's generator."
     }
   ]
 }

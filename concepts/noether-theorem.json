@@ -25,6 +25,11 @@
       "type": "used-in",
       "target": "lagrangian-mechanics",
       "note": "Continuous symmetries reveal conserved mechanical quantities."
+    },
+    {
+      "type": "used-in",
+      "target": "classical-field-theory",
+      "note": "The field-theoretic version relates global continuous variational symmetries to conserved currents; gauge redundancy needs separate care."
     }
   ]
 }

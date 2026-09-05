@@ -1,0 +1,21 @@
+{
+  "id": "feynman-diagram",
+  "title": "Feynman Diagram",
+  "description": "A graphical representation of a term in a perturbative expansion of quantum-field correlation functions or amplitudes, with lines and vertices encoding mathematical factors rather than literal particle trajectories.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Feynman graph"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "propagator"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "fock-space",
+  "title": "Fock Space",
+  "description": "The Hilbert direct sum of all n-particle sectors including the vacuum sector, constructed from symmetric tensor powers of a one-particle space for bosons or antisymmetric powers for fermions.",
+  "domains": [
+    "quantum-physics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Particle Fock space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "hilbert-space"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory",
+      "note": "Fock representations describe free particles and perturbative asymptotic states, not every interacting representation without qualification."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "quantum-hamiltonian",
+  "title": "Quantum Hamiltonian",
+  "description": "A self-adjoint energy operator generating quantum time evolution under the appropriate domain and evolution assumptions, distinct from the classical Hamiltonian function on phase space.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Hamiltonian operator",
+    "Quantum energy operator"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-observable"
+    },
+    {
+      "type": "used-in",
+      "target": "schrodinger-equation"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory"
+    }
+  ]
+}

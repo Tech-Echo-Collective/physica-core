@@ -1,0 +1,24 @@
+{
+  "id": "probability-theory",
+  "title": "Probability Theory",
+  "description": "The mathematical study of uncertainty using probability spaces, random variables, distributions, and their relationships. It provides a framework for assigning consistent probabilities to events and analyzing random phenomena.",
+  "domains": [
+    "mathematics",
+    "probability"
+  ],
+  "aliases": [
+    "Mathematical probability"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "statistical-mechanics",
+      "note": "Probabilities describe microscopic states, ensemble averages, and fluctuations."
+    },
+    {
+      "type": "used-in",
+      "target": "mathematical-methods",
+      "note": "Probability is a supporting mathematical framework for physical models with uncertainty or many microscopic possibilities."
+    }
+  ]
+}

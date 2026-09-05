@@ -1,0 +1,29 @@
+{
+  "id": "lie-algebra",
+  "title": "Lie Algebra",
+  "description": "A vector space over the real or complex numbers with a bilinear antisymmetric bracket satisfying the Jacobi identity; a Lie group's tangent space at the identity carries such a bracket.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Real or complex Lie algebra"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-space",
+      "note": "The bracket is a bilinear operation on a vector space."
+    },
+    {
+      "type": "used-in",
+      "target": "lie-group",
+      "note": "The associated Lie algebra describes infinitesimal group structure."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Commutators encode continuous-symmetry generators."
+    }
+  ]
+}

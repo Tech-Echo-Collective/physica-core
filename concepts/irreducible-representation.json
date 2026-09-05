@@ -1,0 +1,24 @@
+{
+  "id": "irreducible-representation",
+  "title": "Irreducible Representation",
+  "description": "A nonzero linear group representation with no invariant subspaces except the zero subspace and the whole representation space.",
+  "domains": [
+    "mathematics",
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Irrep"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "group-representation",
+      "note": "Irreducibility is a property of a representation."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Rotational multiplets are organized by irreducible representations."
+    }
+  ]
+}

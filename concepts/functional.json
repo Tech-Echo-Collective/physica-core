@@ -20,6 +20,11 @@
       "type": "generalizes",
       "target": "action-functional",
       "note": "An action is a particular functional used to specify dynamics."
+    },
+    {
+      "type": "generalizes",
+      "target": "field-action",
+      "note": "A field action is a scalar-valued functional of field configurations."
     }
   ]
 }

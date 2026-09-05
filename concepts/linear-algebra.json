@@ -8,5 +8,11 @@
   "aliases": [
     "Vector and matrix algebra"
   ],
-  "relations": []
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "mathematical-methods",
+      "note": "Vector and operator techniques support physical models."
+    }
+  ]
 }

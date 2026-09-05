@@ -1,0 +1,23 @@
+{
+  "id": "group",
+  "title": "Group",
+  "description": "A set equipped with an associative binary operation, an identity element, and an inverse for every element.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Abstract group"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "group-theory",
+      "note": "Groups encode composable invertible transformations."
+    },
+    {
+      "type": "generalizes",
+      "target": "lie-group",
+      "note": "Lie groups add compatible smooth structure."
+    }
+  ]
+}

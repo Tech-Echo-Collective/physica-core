@@ -1,0 +1,23 @@
+{
+  "id": "first-law-of-thermodynamics",
+  "title": "First Law of Thermodynamics",
+  "description": "Energy conservation for thermodynamic processes; for a closed system with unchanged bulk kinetic and potential energies, ΔU = Q − W, with heat Q entering and work W done by the system.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "First law of thermodynamics energy balance"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "internal-energy",
+      "note": "The energy balance distinguishes stored energy from transfer."
+    },
+    {
+      "type": "used-in",
+      "target": "thermodynamics",
+      "note": "The law constrains energy exchange."
+    }
+  ]
+}

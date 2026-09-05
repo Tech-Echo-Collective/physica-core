@@ -1,0 +1,28 @@
+{
+  "id": "canonical-ensemble",
+  "title": "Canonical Ensemble",
+  "description": "An equilibrium ensemble at fixed temperature, volume, and particle number, with microscopic probabilities proportional to exp(−E/kBT) and energy allowed to fluctuate.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [
+    "NVT ensemble"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "statistical-ensemble",
+      "note": "It specifies an equilibrium probability distribution."
+    },
+    {
+      "type": "requires",
+      "target": "temperature",
+      "note": "Temperature is fixed by a thermal reservoir."
+    },
+    {
+      "type": "used-in",
+      "target": "partition-function",
+      "note": "Its normalization defines the canonical partition function."
+    }
+  ]
+}

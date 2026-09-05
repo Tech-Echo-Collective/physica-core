@@ -1,0 +1,23 @@
+{
+  "id": "microstate",
+  "title": "Microstate",
+  "description": "A complete microscopic specification of a system in its chosen model, such as particle positions and momenta classically or a pure quantum state.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Microscopic state"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "macrostate",
+      "note": "Many microscopic configurations can realize one macrostate."
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-ensemble",
+      "note": "Ensembles assign probabilities over microscopic states."
+    }
+  ]
+}

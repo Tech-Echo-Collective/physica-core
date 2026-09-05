@@ -19,6 +19,11 @@
       "type": "requires",
       "target": "first-variation",
       "note": "Stationarity is expressed by vanishing admissible first variations."
+    },
+    {
+      "type": "used-in",
+      "target": "mathematical-methods",
+      "note": "Stationary-function methods formulate physical models."
     }
   ]
 }
