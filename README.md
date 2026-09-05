@@ -1,7 +1,12 @@
 # Physica Core
 
 Physica Core is the language-neutral ontology, schema, and contract layer shared
-by Atlas Physicus, Illuminatio Physica, and Theatrum Physicum.
+by [Atlas Physicus](https://github.com/Tech-Echo-Collective/atlas-physicus),
+[Illuminatio Physica](https://github.com/Tech-Echo-Collective/illuminatio-physica),
+and [Theatrum Physicum](https://github.com/Tech-Echo-Collective/theatrum-physicum).
+These three distinct projects form **Tech Echo Physica**, a Tech Echo Collective
+project family for exploring physics through research mapping, knowledge
+structures, and interactive physical systems.
 
 Current version: **0.8.0**. This is an early, intentionally small contract. It
 is not a frozen 1.0 standard.
@@ -30,7 +35,7 @@ pin a Core release or commit and consume the data at build or ingestion time.
 
 ## Atlas compatibility boundary
 
-Physics Atlas already has a separate `physics-field-ontology-v1` used to
+Atlas Physicus already has a separate `physics-field-ontology-v1` used to
 classify papers for field-specific metrics. A research field such as `gr-qc`
 is not the same entity as a learnable concept such as `geodesic`. Core does not
 replace that ontology or its `field_id` relationships. A future Atlas

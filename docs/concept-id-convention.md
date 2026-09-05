@@ -46,7 +46,7 @@ ID after resolving an alias.
 
 ## Atlas field IDs are a separate namespace
 
-Physics Atlas already uses identifiers such as `gr-qc` and `quant-ph` for its
+Atlas Physicus already uses identifiers such as `gr-qc` and `quant-ph` for its
 research-field classification ontology. Core concept IDs identify ideas, not
 paper-classification buckets. Products must keep the columns and mappings
 explicitly separate:

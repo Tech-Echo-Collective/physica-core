@@ -9,7 +9,7 @@ to call another product at runtime.
 
 ### Existing boundary
 
-The current Physics Atlas implementation has canonical `science_domains`,
+The current Atlas Physicus implementation has canonical `science_domains`,
 `research_fields`, and `paper_fields`. Its `physics-field-ontology-v1` supports
 paper classification and metric calculation. Core concepts serve a different
 purpose and must not be inserted into that field hierarchy.
