@@ -1,0 +1,23 @@
+{
+  "id": "coordinate-chart",
+  "title": "Coordinate Chart",
+  "description": "A homeomorphism from an open region of a manifold onto an open region of Euclidean space, assigning local coordinates to its points.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Local chart",
+    "Coordinate patch"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "manifold"
+    },
+    {
+      "type": "used-in",
+      "target": "smooth-atlas",
+      "note": "Compatible charts form an atlas."
+    }
+  ]
+}

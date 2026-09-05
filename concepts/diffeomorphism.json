@@ -1,0 +1,22 @@
+{
+  "id": "diffeomorphism",
+  "title": "Diffeomorphism",
+  "description": "An invertible smooth map between smooth manifolds with a smooth inverse, expressing equivalence of their smooth structures.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Smooth isomorphism"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-map"
+    },
+    {
+      "type": "used-in",
+      "target": "smooth-atlas",
+      "note": "Overlap transitions are Euclidean diffeomorphisms."
+    }
+  ]
+}

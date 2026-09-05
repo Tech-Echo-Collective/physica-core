@@ -1,0 +1,22 @@
+{
+  "id": "smooth-map",
+  "title": "Smooth Map",
+  "description": "A map between smooth manifolds whose local expressions in compatible coordinates are infinitely differentiable.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "C-infinity map"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "generalizes",
+      "target": "diffeomorphism",
+      "note": "Diffeomorphisms additionally have smooth inverses."
+    }
+  ]
+}

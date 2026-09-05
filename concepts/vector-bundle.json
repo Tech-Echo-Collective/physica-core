@@ -1,0 +1,26 @@
+{
+  "id": "vector-bundle",
+  "title": "Vector Bundle",
+  "description": "In this record, a smooth real vector bundle is a fixed-rank family of real vector spaces over a smooth manifold, with smooth local trivializations that act linearly on each fiber.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Smooth real vector bundle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    },
+    {
+      "type": "used-in",
+      "target": "tensor-field",
+      "note": "Tensor fields are sections of tensor bundles."
+    }
+  ]
+}

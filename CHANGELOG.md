@@ -2,6 +2,13 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.4.0 - 2026-09-05
+
+- Add 16 concepts across coordinates, maps, manifold structures, operations on forms, integration, and cohomology (47 concepts, 131 relations).
+- Record smooth-map/diffeomorphism and smooth/complex/symplectic refinements explicitly.
+- Add the smooth-atlas prerequisite without redefining existing concept IDs or relation types.
+- Keep product browse levels, editorial groups, and layout outside the ontology.
+
 ## 0.3.0 - 2026-09-05
 
 - Add Manifold and the differential-form concepts Wedge Product, Exterior Derivative, Closed Form, and Exact Form (31 concepts, 86 relations).

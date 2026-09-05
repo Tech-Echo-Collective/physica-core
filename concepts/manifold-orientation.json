@@ -1,0 +1,23 @@
+{
+  "id": "manifold-orientation",
+  "title": "Manifold Orientation",
+  "description": "A globally compatible, continuously varying choice of orientation for the tangent space at every point of a smooth manifold, available precisely when the manifold is orientable.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Orientation of a manifold",
+    "Orientation of a smooth manifold"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "tangent-space"
+    },
+    {
+      "type": "used-in",
+      "target": "integration-of-differential-forms",
+      "note": "The chosen orientation determines the sign of an integral of a top-degree form."
+    }
+  ]
+}

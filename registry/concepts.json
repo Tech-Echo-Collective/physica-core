@@ -1,5 +1,5 @@
 {
-  "core_version": "0.3.0",
+  "core_version": "0.4.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-mechanics",
@@ -130,6 +130,50 @@
       ]
     },
     {
+      "id": "complex-manifold",
+      "title": "Complex Manifold",
+      "description": "A Hausdorff, second-countable space with local complex coordinates whose overlap transitions are biholomorphic, determining an underlying smooth manifold of even real dimension.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Complex analytic manifold"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-geometry"
+        }
+      ]
+    },
+    {
+      "id": "coordinate-chart",
+      "title": "Coordinate Chart",
+      "description": "A homeomorphism from an open region of a manifold onto an open region of Euclidean space, assigning local coordinates to its points.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Local chart",
+        "Coordinate patch"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "smooth-atlas",
+          "note": "Compatible charts form an atlas."
+        }
+      ]
+    },
+    {
       "id": "cotangent-space",
       "title": "Cotangent Space",
       "description": "The linear dual of a tangent space, consisting of covectors that map tangent vectors at a point of a smooth manifold to scalars.",
@@ -152,6 +196,54 @@
           "type": "derived-from",
           "target": "tangent-space",
           "note": "The cotangent space is obtained as the linear dual of the tangent space at the same point."
+        }
+      ]
+    },
+    {
+      "id": "de-rham-cohomology",
+      "title": "de Rham Cohomology",
+      "description": "The cohomology of the complex of smooth differential forms, whose positive-degree groups are closed forms modulo exact forms and whose degree-zero group consists of locally constant functions.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Differential-form cohomology",
+        "De Rham cohomology groups"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "closed-form"
+        },
+        {
+          "type": "requires",
+          "target": "exact-form"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-geometry"
+        }
+      ]
+    },
+    {
+      "id": "diffeomorphism",
+      "title": "Diffeomorphism",
+      "description": "An invertible smooth map between smooth manifolds with a smooth inverse, expressing equivalence of their smooth structures.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Smooth isomorphism"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-map"
+        },
+        {
+          "type": "used-in",
+          "target": "smooth-atlas",
+          "note": "Overlap transitions are Euclidean diffeomorphisms."
         }
       ]
     },
@@ -334,6 +426,62 @@
       ]
     },
     {
+      "id": "integration-of-differential-forms",
+      "title": "Integration of Differential Forms",
+      "description": "Coordinate-independent integration of compactly supported smooth k-forms over oriented k-dimensional smooth manifolds, defined through pullbacks in oriented charts and a partition of unity.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Integration of forms",
+        "Differential-form integration"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "manifold-orientation"
+        },
+        {
+          "type": "requires",
+          "target": "pullback-of-differential-forms"
+        },
+        {
+          "type": "used-in",
+          "target": "de-rham-cohomology",
+          "note": "Integrals over cycles can detect nonzero cohomology classes."
+        }
+      ]
+    },
+    {
+      "id": "interior-product",
+      "title": "Interior Product",
+      "description": "The operation i_X that inserts a smooth vector field X into the first argument of a differential k-form, producing a (k-1)-form for positive k and acting as zero on functions.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Interior multiplication",
+        "Contraction of a differential form"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "differential-form"
+        },
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "used-in",
+          "target": "lie-derivative",
+          "note": "On differential forms, Cartan's formula is L_X = d i_X + i_X d."
+        }
+      ]
+    },
+    {
       "id": "lagrangian-mechanics",
       "title": "Lagrangian Mechanics",
       "description": "A formulation of classical mechanics in which equations of motion follow from a Lagrangian and a stationary-action variational principle rather than directly from force balance.",
@@ -379,6 +527,28 @@
           "type": "derived-from",
           "target": "metric",
           "note": "It is uniquely determined by the metric through the Koszul formula."
+        }
+      ]
+    },
+    {
+      "id": "lie-derivative",
+      "title": "Lie Derivative",
+      "description": "The rate of change of a tensor field measured after transporting it back along the local flow generated by a smooth vector field, which on differential forms obeys Cartan's formula L_X = d i_X + i_X d.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Lie differentiation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tensor-field"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-geometry"
         }
       ]
     },
@@ -429,6 +599,29 @@
           "type": "generalizes",
           "target": "smooth-manifold",
           "note": "A smooth manifold adds a compatible smooth atlas to an underlying topological manifold."
+        }
+      ]
+    },
+    {
+      "id": "manifold-orientation",
+      "title": "Manifold Orientation",
+      "description": "A globally compatible, continuously varying choice of orientation for the tangent space at every point of a smooth manifold, available precisely when the manifold is orientable.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Orientation of a manifold",
+        "Orientation of a smooth manifold"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "used-in",
+          "target": "integration-of-differential-forms",
+          "note": "The chosen orientation determines the sign of an integral of a top-degree form."
         }
       ]
     },
@@ -512,6 +705,33 @@
       ]
     },
     {
+      "id": "poincare-lemma",
+      "title": "Poincaré Lemma",
+      "description": "The result that every closed differential form of positive degree is locally exact on a smooth manifold, with global exactness on star-shaped open subsets of Euclidean space.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Poincare lemma",
+        "Local exactness of closed forms"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "closed-form"
+        },
+        {
+          "type": "requires",
+          "target": "exact-form"
+        },
+        {
+          "type": "used-in",
+          "target": "de-rham-cohomology",
+          "note": "It gives vanishing positive-degree de Rham cohomology on star-shaped domains."
+        }
+      ]
+    },
+    {
       "id": "pseudo-riemannian-manifold",
       "title": "Pseudo-Riemannian Manifold",
       "description": "A smooth manifold equipped with a nondegenerate symmetric metric tensor of arbitrary signature, encompassing both Riemannian and Lorentzian geometries.",
@@ -541,6 +761,38 @@
           "type": "generalizes",
           "target": "lorentzian-manifold",
           "note": "Lorentzian manifolds are the one-timelike-direction signature special case."
+        }
+      ]
+    },
+    {
+      "id": "pullback-of-differential-forms",
+      "title": "Pullback of Differential Forms",
+      "description": "For a smooth map f from M to N, the operation sending a differential k-form on N to a k-form on M by applying the differential of f to each tangent-vector argument before evaluating the original form.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Pullback of forms",
+        "Differential-form pullback"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "differential-form"
+        },
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-map"
+        },
+        {
+          "type": "used-in",
+          "target": "de-rham-cohomology",
+          "note": "Pullback commutes with exterior differentiation and induces maps on de Rham cohomology."
         }
       ]
     },
@@ -672,6 +924,31 @@
       ]
     },
     {
+      "id": "smooth-atlas",
+      "title": "Smooth Atlas",
+      "description": "A covering collection of coordinate charts whose overlap transitions are infinitely differentiable, specifying a smooth structure after maximal extension.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "C-infinity atlas"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "coordinate-chart"
+        },
+        {
+          "type": "requires",
+          "target": "calculus"
+        },
+        {
+          "type": "used-in",
+          "target": "smooth-manifold"
+        }
+      ]
+    },
+    {
       "id": "smooth-manifold",
       "title": "Smooth Manifold",
       "description": "A topological manifold equipped with a compatible smooth atlas, making differentiation of functions, curves, and maps well-defined across coordinate charts.",
@@ -699,6 +976,43 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-atlas",
+          "note": "A maximal smooth atlas specifies the smooth structure."
+        },
+        {
+          "type": "generalizes",
+          "target": "complex-manifold",
+          "note": "Forgetting the holomorphic structure leaves an underlying real smooth manifold; this does not assert that every smooth manifold admits a complex structure."
+        },
+        {
+          "type": "generalizes",
+          "target": "symplectic-manifold",
+          "note": "Forgetting the chosen symplectic form leaves a smooth manifold; this does not assert that every smooth manifold admits such a form."
+        }
+      ]
+    },
+    {
+      "id": "smooth-map",
+      "title": "Smooth Map",
+      "description": "A map between smooth manifolds whose local expressions in compatible coordinates are infinitely differentiable.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "C-infinity map"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "generalizes",
+          "target": "diffeomorphism",
+          "note": "Diffeomorphisms additionally have smooth inverses."
         }
       ]
     },
@@ -720,6 +1034,81 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "stokes-theorem",
+      "title": "Stokes' Theorem",
+      "description": "For an oriented smooth n-manifold M with boundary and a compactly supported smooth (n-1)-form omega, the integral of d omega over M equals the integral of the boundary pullback of omega with the induced boundary orientation.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Generalized Stokes theorem",
+        "Stokes-Cartan theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "integration-of-differential-forms"
+        },
+        {
+          "type": "requires",
+          "target": "exterior-derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "de-rham-cohomology"
+        }
+      ]
+    },
+    {
+      "id": "submanifold",
+      "title": "Submanifold",
+      "description": "In this record, an embedded smooth submanifold is a subset of a smooth manifold that is locally a coordinate plane in suitable ambient charts, with the induced topology and smooth structure.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Embedded submanifold",
+        "Smooth embedded submanifold"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "coordinate-chart"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-map"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-geometry"
+        }
+      ]
+    },
+    {
+      "id": "symplectic-manifold",
+      "title": "Symplectic Manifold",
+      "description": "A smooth manifold equipped with a closed differential 2-form that is nondegenerate at every point, necessarily giving the manifold even dimension.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Symplectic manifolds"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "closed-form"
         }
       ]
     },
@@ -797,6 +1186,32 @@
         {
           "type": "requires",
           "target": "calculus"
+        }
+      ]
+    },
+    {
+      "id": "vector-bundle",
+      "title": "Vector Bundle",
+      "description": "In this record, a smooth real vector bundle is a fixed-rank family of real vector spaces over a smooth manifold, with smooth local trivializations that act linearly on each fiber.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Smooth real vector bundle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        },
+        {
+          "type": "used-in",
+          "target": "tensor-field",
+          "note": "Tensor fields are sections of tensor bundles."
         }
       ]
     },

@@ -1,0 +1,25 @@
+{
+  "id": "smooth-atlas",
+  "title": "Smooth Atlas",
+  "description": "A covering collection of coordinate charts whose overlap transitions are infinitely differentiable, specifying a smooth structure after maximal extension.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "C-infinity atlas"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "coordinate-chart"
+    },
+    {
+      "type": "requires",
+      "target": "calculus"
+    },
+    {
+      "type": "used-in",
+      "target": "smooth-manifold"
+    }
+  ]
+}

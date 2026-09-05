@@ -23,7 +23,7 @@ Core ID. A paper mapping can remain an Atlas record such as:
 {
   "paper_id": "atlas-owned-paper-id",
   "concept_id": "geodesic",
-  "core_version": "0.3.0",
+  "core_version": "0.4.0",
   "mapping_method": "reviewed-manual"
 }
 ```
@@ -60,7 +60,7 @@ A Theatrum template can declare the concepts it demonstrates:
 ```json
 {
   "id": "schwarzschild-geodesic-demo",
-  "core_version": "0.3.0",
+  "core_version": "0.4.0",
   "concept_ids": [
     "schwarzschild-spacetime",
     "geodesic",
@@ -84,7 +84,7 @@ URL, transport, authentication, endpoint, or business-operation fields.
 
 ## Version pinning
 
-Consumers must not track `main` as a production contract. Pin `v0.3.0` or an
+Consumers must not track `main` as a production contract. Pin `v0.4.0` or an
 exact commit, record the selected Core version with mappings/templates, and
 upgrade deliberately after running consumer tests. Generated language bindings
 may be added later, but JSON Schema and JSON data remain authoritative.

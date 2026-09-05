@@ -1,0 +1,27 @@
+{
+  "id": "stokes-theorem",
+  "title": "Stokes' Theorem",
+  "description": "For an oriented smooth n-manifold M with boundary and a compactly supported smooth (n-1)-form omega, the integral of d omega over M equals the integral of the boundary pullback of omega with the induced boundary orientation.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Generalized Stokes theorem",
+    "Stokes-Cartan theorem"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "integration-of-differential-forms"
+    },
+    {
+      "type": "requires",
+      "target": "exterior-derivative"
+    },
+    {
+      "type": "used-in",
+      "target": "de-rham-cohomology"
+    }
+  ]
+}

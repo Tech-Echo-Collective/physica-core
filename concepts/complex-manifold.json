@@ -1,0 +1,21 @@
+{
+  "id": "complex-manifold",
+  "title": "Complex Manifold",
+  "description": "A Hausdorff, second-countable space with local complex coordinates whose overlap transitions are biholomorphic, determining an underlying smooth manifold of even real dimension.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Complex analytic manifold"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "used-in",
+      "target": "differential-geometry"
+    }
+  ]
+}

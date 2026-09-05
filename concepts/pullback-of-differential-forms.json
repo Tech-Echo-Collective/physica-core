@@ -1,0 +1,32 @@
+{
+  "id": "pullback-of-differential-forms",
+  "title": "Pullback of Differential Forms",
+  "description": "For a smooth map f from M to N, the operation sending a differential k-form on N to a k-form on M by applying the differential of f to each tangent-vector argument before evaluating the original form.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Pullback of forms",
+    "Differential-form pullback"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "differential-form"
+    },
+    {
+      "type": "requires",
+      "target": "tangent-space"
+    },
+    {
+      "type": "requires",
+      "target": "smooth-map"
+    },
+    {
+      "type": "used-in",
+      "target": "de-rham-cohomology",
+      "note": "Pullback commutes with exterior differentiation and induces maps on de Rham cohomology."
+    }
+  ]
+}

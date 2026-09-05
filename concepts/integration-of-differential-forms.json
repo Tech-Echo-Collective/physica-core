@@ -1,0 +1,28 @@
+{
+  "id": "integration-of-differential-forms",
+  "title": "Integration of Differential Forms",
+  "description": "Coordinate-independent integration of compactly supported smooth k-forms over oriented k-dimensional smooth manifolds, defined through pullbacks in oriented charts and a partition of unity.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Integration of forms",
+    "Differential-form integration"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "manifold-orientation"
+    },
+    {
+      "type": "requires",
+      "target": "pullback-of-differential-forms"
+    },
+    {
+      "type": "used-in",
+      "target": "de-rham-cohomology",
+      "note": "Integrals over cycles can detect nonzero cohomology classes."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "de-rham-cohomology",
+  "title": "de Rham Cohomology",
+  "description": "The cohomology of the complex of smooth differential forms, whose positive-degree groups are closed forms modulo exact forms and whose degree-zero group consists of locally constant functions.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Differential-form cohomology",
+    "De Rham cohomology groups"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "closed-form"
+    },
+    {
+      "type": "requires",
+      "target": "exact-form"
+    },
+    {
+      "type": "used-in",
+      "target": "differential-geometry"
+    }
+  ]
+}

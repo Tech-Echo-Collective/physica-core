@@ -1,0 +1,27 @@
+{
+  "id": "poincare-lemma",
+  "title": "Poincaré Lemma",
+  "description": "The result that every closed differential form of positive degree is locally exact on a smooth manifold, with global exactness on star-shaped open subsets of Euclidean space.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Poincare lemma",
+    "Local exactness of closed forms"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "closed-form"
+    },
+    {
+      "type": "requires",
+      "target": "exact-form"
+    },
+    {
+      "type": "used-in",
+      "target": "de-rham-cohomology",
+      "note": "It gives vanishing positive-degree de Rham cohomology on star-shaped domains."
+    }
+  ]
+}

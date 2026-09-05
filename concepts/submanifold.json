@@ -1,0 +1,26 @@
+{
+  "id": "submanifold",
+  "title": "Submanifold",
+  "description": "In this record, an embedded smooth submanifold is a subset of a smooth manifold that is locally a coordinate plane in suitable ambient charts, with the induced topology and smooth structure.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Embedded submanifold",
+    "Smooth embedded submanifold"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "coordinate-chart"
+    },
+    {
+      "type": "requires",
+      "target": "smooth-map"
+    },
+    {
+      "type": "used-in",
+      "target": "differential-geometry"
+    }
+  ]
+}

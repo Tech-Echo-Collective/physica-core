@@ -2,10 +2,18 @@
   "id": "smooth-manifold",
   "title": "Smooth Manifold",
   "description": "A topological manifold equipped with a compatible smooth atlas, making differentiation of functions, curves, and maps well-defined across coordinate charts.",
-  "domains": ["mathematics"],
-  "aliases": ["Differentiable manifold", "C-infinity manifold"],
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Differentiable manifold",
+    "C-infinity manifold"
+  ],
   "relations": [
-    { "type": "requires", "target": "manifold" },
+    {
+      "type": "requires",
+      "target": "manifold"
+    },
     {
       "type": "generalizes",
       "target": "pseudo-riemannian-manifold",
@@ -18,6 +26,21 @@
     {
       "type": "requires",
       "target": "linear-algebra"
+    },
+    {
+      "type": "requires",
+      "target": "smooth-atlas",
+      "note": "A maximal smooth atlas specifies the smooth structure."
+    },
+    {
+      "type": "generalizes",
+      "target": "complex-manifold",
+      "note": "Forgetting the holomorphic structure leaves an underlying real smooth manifold; this does not assert that every smooth manifold admits a complex structure."
+    },
+    {
+      "type": "generalizes",
+      "target": "symplectic-manifold",
+      "note": "Forgetting the chosen symplectic form leaves a smooth manifold; this does not assert that every smooth manifold admits such a form."
     }
   ]
 }

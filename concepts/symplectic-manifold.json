@@ -1,0 +1,22 @@
+{
+  "id": "symplectic-manifold",
+  "title": "Symplectic Manifold",
+  "description": "A smooth manifold equipped with a closed differential 2-form that is nondegenerate at every point, necessarily giving the manifold even dimension.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Symplectic manifolds"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "smooth-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "closed-form"
+    }
+  ]
+}
