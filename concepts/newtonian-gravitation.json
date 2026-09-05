@@ -1,0 +1,28 @@
+{
+  "id": "newtonian-gravitation",
+  "title": "Newtonian Gravitation",
+  "description": "The classical theory of gravitational attraction in which point masses exert an attractive inverse-square force on each other, with forces superposed for distributions of matter. It is distinct from the relativistic account of gravity as spacetime geometry.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Newton's law of universal gravitation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "force"
+    },
+    {
+      "type": "used-in",
+      "target": "kepler-orbit",
+      "note": "The isolated Newtonian two-body interaction produces Keplerian relative orbits."
+    },
+    {
+      "type": "used-in",
+      "target": "central-force-motion",
+      "note": "A fixed point source is an important attractive inverse-square central force."
+    }
+  ]
+}
+

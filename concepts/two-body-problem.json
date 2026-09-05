@@ -1,0 +1,27 @@
+{
+  "id": "two-body-problem",
+  "title": "Two-Body Problem",
+  "description": "Determining the motion of two mutually interacting bodies. In Newtonian mechanics, an isolated pair with equal-and-opposite internal forces separates into center-of-mass motion and relative motion governed by the reduced mass; an additional central-force assumption permits the usual orbital reduction.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Classical two-body problem"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "center-of-mass"
+    },
+    {
+      "type": "requires",
+      "target": "reduced-mass"
+    },
+    {
+      "type": "derived-from",
+      "target": "newtons-second-law",
+      "note": "The separated equations follow by summing and subtracting the two particle equations with equal-and-opposite internal forces."
+    }
+  ]
+}
+

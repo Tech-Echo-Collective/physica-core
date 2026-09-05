@@ -1,0 +1,26 @@
+{
+  "id": "reduced-mass",
+  "title": "Reduced Mass",
+  "description": "The effective inertial parameter multiplying relative acceleration in the separated Newtonian two-body problem. For two positive masses it is their product divided by their sum, and approaches the lighter mass when the other mass becomes much larger.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Two-body reduced mass"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "center-of-mass"
+    },
+    {
+      "type": "used-in",
+      "target": "two-body-problem"
+    },
+    {
+      "type": "used-in",
+      "target": "kepler-orbit"
+    }
+  ]
+}
+

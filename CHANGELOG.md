@@ -2,6 +2,14 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.7.0 - 2026-09-05
+
+- Add 38 concepts for Newtonian foundations, work and energy, rotation, oscillators, central-force motion, and shared ODE/phase-space tools (217 concepts, 636 relations).
+- Preserve all 179 prior concept records, including all 519 prior relations, without changing schemas or the eleven domains.
+- Treat driven/damped oscillator families as inclusive of zero drive/damping; do not encode the pendulum's small-angle approximation as a subtype.
+- Distinguish isolated two-body reduction from the inverse-square Kepler case, and scalar moments of inertia from the surrounding tensor formulation.
+- Review primary sources in docs/mechanics-sources.md. Formula displays, browsing membership and future Theatrum candidate mappings remain consumer-owned.
+
 ## 0.6.0 - 2026-09-05
 
 - Add 49 concepts for broad physics fields, groups, thermal/statistical physics and shared probability tools (179 concepts, 519 relations).

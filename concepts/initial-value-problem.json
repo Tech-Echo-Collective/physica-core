@@ -1,0 +1,30 @@
+{
+  "id": "initial-value-problem",
+  "title": "Initial Value Problem",
+  "description": "A differential equation or system supplied with values of its unknown state at one independent-variable value. These initial data select a trajectory when suitable existence and uniqueness conditions hold; the data alone do not guarantee a well-posed problem.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "IVP",
+    "Initial-value problem",
+    "Cauchy initial value problem"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "ordinary-differential-equation",
+      "note": "The introductory route here treats ordinary differential equations; initial-data problems for PDEs require further structure."
+    },
+    {
+      "type": "used-in",
+      "target": "mathematical-methods"
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics",
+      "note": "Mechanical prediction requires suitable initial positions and velocities or equivalent state data."
+    }
+  ]
+}
+

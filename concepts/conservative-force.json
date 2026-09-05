@@ -1,0 +1,22 @@
+{
+  "id": "conservative-force",
+  "title": "Conservative Force",
+  "description": "A position-dependent force whose work between any two points in its domain is independent of the connecting path. Under suitable regularity this is equivalent to a single-valued potential energy with force equal to its negative gradient.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Conservative force field"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "work"
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics"
+    }
+  ]
+}
+

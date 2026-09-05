@@ -1,0 +1,28 @@
+{
+  "id": "potential-energy",
+  "title": "Potential Energy",
+  "description": "Energy assigned to a configuration for conservative mechanical interactions, with differences fixed by minus the work of the conservative force. The reference value is arbitrary, while the spatial variation determines that force.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Mechanical potential energy"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "conservative-force"
+    },
+    {
+      "type": "used-in",
+      "target": "lagrangian",
+      "note": "For standard velocity-independent conservative interactions, the Lagrangian includes minus the potential energy."
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian",
+      "note": "For standard time-independent Cartesian particle models, the Hamiltonian is the sum of kinetic and potential energies."
+    }
+  ]
+}
+

@@ -1,0 +1,21 @@
+{
+  "id": "kinematics",
+  "title": "Kinematics",
+  "description": "The description of motion through positions, velocities, accelerations, and their time dependence, without specifying the forces responsible for that motion.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "position"
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics",
+      "note": "Kinematic quantities describe the trajectories that Newtonian dynamics predicts."
+    }
+  ]
+}
+

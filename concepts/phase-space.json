@@ -1,0 +1,33 @@
+{
+  "id": "phase-space",
+  "title": "Phase Space",
+  "description": "A space whose points specify instantaneous states of a dynamical system. In finite-dimensional Hamiltonian mechanics its local coordinates include both generalized positions and conjugate momenta, unlike configuration space, which records configurations alone.",
+  "domains": [
+    "mathematics",
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Hamiltonian phase space",
+    "Mechanical state space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "configuration-space"
+    },
+    {
+      "type": "requires",
+      "target": "generalized-momentum"
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian-mechanics"
+    },
+    {
+      "type": "used-in",
+      "target": "statistical-mechanics",
+      "note": "Classical microscopic states and ensembles may be represented on phase space."
+    }
+  ]
+}
+

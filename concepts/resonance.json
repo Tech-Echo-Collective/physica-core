@@ -1,0 +1,19 @@
+{
+  "id": "resonance",
+  "title": "Resonance",
+  "description": "An enhanced response when a system is driven near a characteristic frequency. The location and width of a resonance depend on damping, the measured response, and the drive; displacement and power peaks need not occur at the same frequency.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Mechanical resonance"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "driven-harmonic-oscillator",
+      "note": "The linear driven oscillator supplies the introductory mechanical model; resonance also occurs in other systems."
+    }
+  ]
+}
+

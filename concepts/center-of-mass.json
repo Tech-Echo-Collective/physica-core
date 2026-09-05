@@ -1,0 +1,24 @@
+{
+  "id": "center-of-mass",
+  "title": "Center of Mass",
+  "description": "The mass-weighted mean position of a material system. For a fixed Newtonian particle system whose internal forces cancel, its translational acceleration is determined by total external force divided by total mass.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Centre of mass",
+    "Mass centroid"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "position"
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics",
+      "note": "The center-of-mass coordinate separates collective translation from internal motion."
+    }
+  ]
+}
+

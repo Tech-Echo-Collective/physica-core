@@ -1,0 +1,27 @@
+{
+  "id": "damped-harmonic-oscillator",
+  "title": "Damped Harmonic Oscillator",
+  "description": "The linear oscillator family with a restoring force and nonnegative velocity-proportional damping, including the zero-damping limit. It contains underdamped, critically damped, and overdamped regimes; the latter two do not exhibit sustained back-and-forth motion.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Linearly damped oscillator"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "simple-harmonic-oscillator"
+    },
+    {
+      "type": "generalizes",
+      "target": "simple-harmonic-oscillator",
+      "note": "The model family includes zero damping, which recovers the undamped harmonic oscillator."
+    },
+    {
+      "type": "derived-from",
+      "target": "newtons-second-law",
+      "note": "Combine a linear restoring force with a force proportional and opposite to velocity."
+    }
+  ]
+}

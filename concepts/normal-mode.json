@@ -1,0 +1,31 @@
+{
+  "id": "normal-mode",
+  "title": "Normal Mode",
+  "description": "A collective motion of a linearized coupled system in which the degrees of freedom keep a fixed relative pattern. For an undamped conservative system near stable equilibrium, each oscillatory mode has one frequency obtained from a mass-and-stiffness eigenvalue problem.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Vibrational normal mode"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "simple-harmonic-oscillator"
+    },
+    {
+      "type": "requires",
+      "target": "eigenvalue"
+    },
+    {
+      "type": "requires",
+      "target": "matrix"
+    },
+    {
+      "type": "used-in",
+      "target": "oscillation",
+      "note": "Mode decomposition resolves small coupled oscillations into independent coordinates."
+    }
+  ]
+}
+

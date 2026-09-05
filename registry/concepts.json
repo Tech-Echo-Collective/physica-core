@@ -1,5 +1,5 @@
 {
-  "core_version": "0.6.0",
+  "core_version": "0.7.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -22,6 +22,27 @@
     "analogous-to"
   ],
   "concepts": [
+    {
+      "id": "acceleration",
+      "title": "Acceleration",
+      "description": "The instantaneous rate of change of velocity with respect to time in a specified reference frame. It can result from changing speed, changing direction, or both.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Instantaneous acceleration"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "velocity"
+        },
+        {
+          "type": "used-in",
+          "target": "kinematics"
+        }
+      ]
+    },
     {
       "id": "action-functional",
       "title": "Action Functional",
@@ -107,6 +128,72 @@
           "type": "used-in",
           "target": "geodesic-equation",
           "note": "Null geodesics admit affine parameters even though proper time cannot parametrize them."
+        }
+      ]
+    },
+    {
+      "id": "angular-momentum",
+      "title": "Angular Momentum",
+      "description": "In classical particle mechanics, the moment of linear momentum about a specified point, summed over the system. Its evolution is governed by torque under the appropriate reference-point and interaction assumptions; it is not generally parallel to angular velocity.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Orbital angular momentum",
+        "Classical angular momentum"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-momentum"
+        },
+        {
+          "type": "requires",
+          "target": "position"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra",
+          "note": "The particle definition uses a vector cross product."
+        },
+        {
+          "type": "used-in",
+          "target": "rotational-dynamics"
+        },
+        {
+          "type": "used-in",
+          "target": "central-force-motion",
+          "note": "A force directed toward a fixed center produces zero torque about that center."
+        }
+      ]
+    },
+    {
+      "id": "angular-velocity",
+      "title": "Angular Velocity",
+      "description": "An axial vector specifying the instantaneous rate and oriented axis of rotation relative to a chosen reference frame. A rigid body has one angular velocity shared by all its material points; finite orientation changes are not ordinary vectors.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Rotational velocity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "rigid-body"
+        },
+        {
+          "type": "requires",
+          "target": "velocity"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra",
+          "note": "The three-dimensional description uses vectors and the cross product."
+        },
+        {
+          "type": "used-in",
+          "target": "rotational-dynamics"
         }
       ]
     },
@@ -283,6 +370,55 @@
         {
           "type": "used-in",
           "target": "light-cone"
+        }
+      ]
+    },
+    {
+      "id": "center-of-mass",
+      "title": "Center of Mass",
+      "description": "The mass-weighted mean position of a material system. For a fixed Newtonian particle system whose internal forces cancel, its translational acceleration is determined by total external force divided by total mass.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Centre of mass",
+        "Mass centroid"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "position"
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics",
+          "note": "The center-of-mass coordinate separates collective translation from internal motion."
+        }
+      ]
+    },
+    {
+      "id": "central-force-motion",
+      "title": "Central-Force Motion",
+      "description": "Classical particle motion under a force directed along the separation from a fixed center and depending only on that separation. Angular momentum is conserved; for nonzero angular momentum the trajectory lies in a fixed plane, and radial motion admits an effective-potential description.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Classical central-force problem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "newtons-second-law"
+        },
+        {
+          "type": "requires",
+          "target": "angular-momentum"
+        },
+        {
+          "type": "generalizes",
+          "target": "kepler-orbit",
+          "note": "Attractive inverse-square forces give the Kepler special case of central-force motion."
         }
       ]
     },
@@ -560,6 +696,53 @@
       ]
     },
     {
+      "id": "conservation-of-linear-momentum",
+      "title": "Conservation of Linear Momentum",
+      "description": "Constancy of a system's total linear momentum when there is no net external force. For a fixed Newtonian particle system, the standard derivation assumes that the internal forces cancel in the total momentum balance.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Linear momentum conservation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-momentum"
+        },
+        {
+          "type": "derived-from",
+          "target": "newtons-second-law",
+          "note": "Summing particle momentum balances yields conservation when internal forces cancel and the net external force vanishes."
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "conservative-force",
+      "title": "Conservative Force",
+      "description": "A position-dependent force whose work between any two points in its domain is independent of the connecting path. Under suitable regularity this is equivalent to a single-valued potential energy with force equal to its negative gradient.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Conservative force field"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "work"
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics"
+        }
+      ]
+    },
+    {
       "id": "continuity",
       "title": "Continuity",
       "description": "The property that a function's values approach its value at a point as inputs approach that point within its domain; continuity on a domain requires this at every point.",
@@ -753,6 +936,33 @@
       ]
     },
     {
+      "id": "damped-harmonic-oscillator",
+      "title": "Damped Harmonic Oscillator",
+      "description": "The linear oscillator family with a restoring force and nonnegative velocity-proportional damping, including the zero-damping limit. It contains underdamped, critically damped, and overdamped regimes; the latter two do not exhibit sustained back-and-forth motion.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Linearly damped oscillator"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "simple-harmonic-oscillator"
+        },
+        {
+          "type": "generalizes",
+          "target": "simple-harmonic-oscillator",
+          "note": "The model family includes zero damping, which recovers the undamped harmonic oscillator."
+        },
+        {
+          "type": "derived-from",
+          "target": "newtons-second-law",
+          "note": "Combine a linear restoring force with a force proportional and opposite to velocity."
+        }
+      ]
+    },
+    {
       "id": "de-rham-cohomology",
       "title": "de Rham Cohomology",
       "description": "The cohomology of the complex of smooth differential forms, whose positive-degree groups are closed forms modulo exact forms and whose degree-zero group consists of locally constant functions.",
@@ -879,6 +1089,59 @@
         {
           "type": "requires",
           "target": "smooth-manifold"
+        }
+      ]
+    },
+    {
+      "id": "driven-harmonic-oscillator",
+      "title": "Driven Harmonic Oscillator",
+      "description": "A linear restoring-force oscillator family with an externally prescribed drive and optional linear damping, including zero drive as a limiting case. Its motion combines homogeneous transients with a forced response; sinusoidal forcing reveals frequency-dependent amplitude and phase.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Forced harmonic oscillator"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "damped-harmonic-oscillator"
+        },
+        {
+          "type": "generalizes",
+          "target": "damped-harmonic-oscillator",
+          "note": "Setting the prescribed drive to zero recovers the free damped oscillator family."
+        },
+        {
+          "type": "used-in",
+          "target": "resonance",
+          "note": "The sinusoidally forced linear model is a standard quantitative example of resonance."
+        }
+      ]
+    },
+    {
+      "id": "effective-potential",
+      "title": "Effective Potential",
+      "description": "A reduced potential that incorporates eliminated degrees of freedom or fixed conserved quantities. In a conservative central-force problem, fixing angular momentum adds a centrifugal term to the physical potential, leaving a one-dimensional radial energy equation.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Effective potential energy"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "potential-energy"
+        },
+        {
+          "type": "requires",
+          "target": "angular-momentum"
+        },
+        {
+          "type": "used-in",
+          "target": "central-force-motion",
+          "note": "At fixed angular momentum it encodes radial turning points and circular-orbit stability."
         }
       ]
     },
@@ -1285,6 +1548,33 @@
           "type": "used-in",
           "target": "quantum-field-theory",
           "note": "Fock representations describe free particles and perturbative asymptotic states, not every interacting representation without qualification."
+        }
+      ]
+    },
+    {
+      "id": "force",
+      "title": "Force",
+      "description": "A vector quantity representing a mechanical interaction that contributes to the change of a body's momentum. In Newtonian particle mechanics, the net force is the vector sum of the forces acting on that particle.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Mechanical force"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-space",
+          "note": "Forces in ordinary Euclidean mechanics are added as vectors."
+        },
+        {
+          "type": "generalizes",
+          "target": "conservative-force",
+          "note": "A conservative force is the restricted class with path-independent work; general forces need not have this property."
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics"
         }
       ]
     },
@@ -2000,6 +2290,35 @@
       ]
     },
     {
+      "id": "initial-value-problem",
+      "title": "Initial Value Problem",
+      "description": "A differential equation or system supplied with values of its unknown state at one independent-variable value. These initial data select a trajectory when suitable existence and uniqueness conditions hold; the data alone do not guarantee a well-posed problem.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "IVP",
+        "Initial-value problem",
+        "Cauchy initial value problem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "ordinary-differential-equation",
+          "note": "The introductory route here treats ordinary differential equations; initial-data problems for PDEs require further structure."
+        },
+        {
+          "type": "used-in",
+          "target": "mathematical-methods"
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics",
+          "note": "Mechanical prediction requires suitable initial positions and velocities or equivalent state data."
+        }
+      ]
+    },
+    {
       "id": "inner-product-space",
       "title": "Inner Product Space",
       "description": "A real or complex vector space with a positive-definite symmetric bilinear or Hermitian sesquilinear form, which determines lengths and orthogonality.",
@@ -2152,6 +2471,81 @@
           "type": "used-in",
           "target": "quantum-mechanics",
           "note": "Rotational multiplets are organized by irreducible representations."
+        }
+      ]
+    },
+    {
+      "id": "kepler-orbit",
+      "title": "Kepler Orbit",
+      "description": "A trajectory in an attractive inverse-square central force. Nonradial Newtonian two-body relative trajectories are conic sections: circles or ellipses for bound motion, a parabola at zero relative energy, and hyperbolas for positive relative energy.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Keplerian orbit"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "central-force-motion"
+        },
+        {
+          "type": "requires",
+          "target": "effective-potential"
+        },
+        {
+          "type": "requires",
+          "target": "two-body-problem"
+        },
+        {
+          "type": "derived-from",
+          "target": "newtonian-gravitation",
+          "note": "The gravitational two-body case follows from the attractive inverse-square law and the relative equation of motion."
+        }
+      ]
+    },
+    {
+      "id": "kinematics",
+      "title": "Kinematics",
+      "description": "The description of motion through positions, velocities, accelerations, and their time dependence, without specifying the forces responsible for that motion.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "position"
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics",
+          "note": "Kinematic quantities describe the trajectories that Newtonian dynamics predicts."
+        }
+      ]
+    },
+    {
+      "id": "kinetic-energy",
+      "title": "Kinetic Energy",
+      "description": "The energy associated with motion in a specified reference frame. For a nonrelativistic particle it is one half the mass times the squared speed; a system's particle kinetic energies add.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "velocity"
+        },
+        {
+          "type": "used-in",
+          "target": "lagrangian",
+          "note": "For a standard mechanical system with a velocity-independent potential, the Lagrangian is kinetic energy minus potential energy."
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian",
+          "note": "For the standard Cartesian particle model, the Hamiltonian contains kinetic energy expressed in canonical momenta."
         }
       ]
     },
@@ -2603,6 +2997,32 @@
         {
           "type": "used-in",
           "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "linear-momentum",
+      "title": "Linear Momentum",
+      "description": "The translational momentum of a particle or system. For a Newtonian particle it is mass times velocity; the total momentum of a particle system is the vector sum of its constituent momenta.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Newtonian momentum"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "velocity"
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics"
+        },
+        {
+          "type": "used-in",
+          "target": "generalized-momentum",
+          "note": "For a standard Cartesian particle Lagrangian without a velocity-dependent potential, the canonical momentum equals the Newtonian linear momentum."
         }
       ]
     },
@@ -3075,6 +3495,33 @@
       ]
     },
     {
+      "id": "moment-of-inertia",
+      "title": "Moment of Inertia",
+      "description": "A measure of mass distribution relative to a specified rotation axis, given by mass weighted by squared perpendicular distance. General three-dimensional rigid-body rotation requires an inertia tensor; the scalar moment is its projection along the chosen axis.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Rotational inertia",
+        "Mass moment of inertia"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "rigid-body"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra",
+          "note": "An inertia tensor is a symmetric linear map; its axis projections give scalar moments."
+        },
+        {
+          "type": "used-in",
+          "target": "rotational-dynamics"
+        }
+      ]
+    },
+    {
       "id": "multiple-integral",
       "title": "Multiple Integral",
       "description": "An integral of a function over a region with two or more independent variables, accumulating values against an area or volume element; repeated one-dimensional integration is justified under appropriate integrability conditions.",
@@ -3124,6 +3571,84 @@
       ]
     },
     {
+      "id": "newtonian-gravitation",
+      "title": "Newtonian Gravitation",
+      "description": "The classical theory of gravitational attraction in which point masses exert an attractive inverse-square force on each other, with forces superposed for distributions of matter. It is distinct from the relativistic account of gravity as spacetime geometry.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Newton's law of universal gravitation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "force"
+        },
+        {
+          "type": "used-in",
+          "target": "kepler-orbit",
+          "note": "The isolated Newtonian two-body interaction produces Keplerian relative orbits."
+        },
+        {
+          "type": "used-in",
+          "target": "central-force-motion",
+          "note": "A fixed point source is an important attractive inverse-square central force."
+        }
+      ]
+    },
+    {
+      "id": "newtonian-mechanics",
+      "title": "Newtonian Mechanics",
+      "description": "The force-based formulation of classical mechanics, using Newton's laws to relate interactions, inertia, and the motion of particles or systems of particles in a specified reference frame.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Newtonian dynamics"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "newtons-second-law"
+        },
+        {
+          "type": "used-in",
+          "target": "classical-mechanics",
+          "note": "A formulation of classical dynamics, alongside the Lagrangian and Hamiltonian formulations; this is not a special-case taxonomy edge."
+        }
+      ]
+    },
+    {
+      "id": "newtons-second-law",
+      "title": "Newton's Second Law",
+      "description": "The dynamical law relating the net force on a material system to its momentum change. For a fixed-mass Newtonian particle in an inertial frame, the net force equals its mass times its acceleration.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Newton's second law of motion"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "force"
+        },
+        {
+          "type": "requires",
+          "target": "acceleration"
+        },
+        {
+          "type": "requires",
+          "target": "inertial-reference-frame"
+        },
+        {
+          "type": "requires",
+          "target": "linear-momentum"
+        }
+      ]
+    },
+    {
       "id": "noether-theorem",
       "title": "Noether's Theorem",
       "description": "Noether's first theorem associates differentiable continuous variational symmetries with quantities conserved along Euler-Lagrange solutions, including symmetries of the Lagrangian up to a total derivative.",
@@ -3155,6 +3680,80 @@
           "type": "used-in",
           "target": "classical-field-theory",
           "note": "The field-theoretic version relates global continuous variational symmetries to conserved currents; gauge redundancy needs separate care."
+        }
+      ]
+    },
+    {
+      "id": "normal-mode",
+      "title": "Normal Mode",
+      "description": "A collective motion of a linearized coupled system in which the degrees of freedom keep a fixed relative pattern. For an undamped conservative system near stable equilibrium, each oscillatory mode has one frequency obtained from a mass-and-stiffness eigenvalue problem.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Vibrational normal mode"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "simple-harmonic-oscillator"
+        },
+        {
+          "type": "requires",
+          "target": "eigenvalue"
+        },
+        {
+          "type": "requires",
+          "target": "matrix"
+        },
+        {
+          "type": "used-in",
+          "target": "oscillation",
+          "note": "Mode decomposition resolves small coupled oscillations into independent coordinates."
+        }
+      ]
+    },
+    {
+      "id": "ordinary-differential-equation",
+      "title": "Ordinary Differential Equation",
+      "description": "An equation relating unknown functions of one independent variable to their derivatives with respect to that variable. It may be scalar or a system, linear or nonlinear, and is a shared mathematical construction rather than a physics-specific law.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "ODE",
+        "Ordinary differential equations"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "mathematical-methods"
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics",
+          "note": "Equations of motion for finitely many mechanical degrees of freedom commonly form ODE systems."
+        }
+      ]
+    },
+    {
+      "id": "oscillation",
+      "title": "Oscillation",
+      "description": "Repeated variation of a dynamical quantity about a reference state or between extrema. Oscillations may be linear or nonlinear, free or driven, and need not remain exactly periodic when dissipation changes their amplitude.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Oscillatory motion"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "kinematics"
         }
       ]
     },
@@ -3264,6 +3863,38 @@
       ]
     },
     {
+      "id": "phase-space",
+      "title": "Phase Space",
+      "description": "A space whose points specify instantaneous states of a dynamical system. In finite-dimensional Hamiltonian mechanics its local coordinates include both generalized positions and conjugate momenta, unlike configuration space, which records configurations alone.",
+      "domains": [
+        "mathematics",
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Hamiltonian phase space",
+        "Mechanical state space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "configuration-space"
+        },
+        {
+          "type": "requires",
+          "target": "generalized-momentum"
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian-mechanics"
+        },
+        {
+          "type": "used-in",
+          "target": "statistical-mechanics",
+          "note": "Classical microscopic states and ensembles may be represented on phase space."
+        }
+      ]
+    },
+    {
       "id": "poincare-lemma",
       "title": "Poincaré Lemma",
       "description": "The result that every closed differential form of positive degree is locally exact on a smooth manifold, with global exactness on star-shaped open subsets of Euclidean space.",
@@ -3287,6 +3918,82 @@
           "type": "used-in",
           "target": "de-rham-cohomology",
           "note": "It gives vanishing positive-degree de Rham cohomology on star-shaped domains."
+        }
+      ]
+    },
+    {
+      "id": "poisson-bracket",
+      "title": "Poisson Bracket",
+      "description": "A bilinear, antisymmetric operation on classical observables that obeys the Leibniz and Jacobi identities. In canonical phase coordinates it is built from paired position and momentum derivatives and describes Hamiltonian evolution and generators of transformations.",
+      "domains": [
+        "mathematics",
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Canonical Poisson bracket",
+        "Poisson brackets"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "phase-space"
+        },
+        {
+          "type": "requires",
+          "target": "partial-derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "position",
+      "title": "Position",
+      "description": "The location of a point relative to a chosen spatial reference system. In Euclidean mechanics, a chosen origin identifies that location with a position vector, whose coordinates may depend on time.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Position vector"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-space",
+          "note": "The Euclidean position-vector representation uses vector components after choosing an origin."
+        },
+        {
+          "type": "used-in",
+          "target": "kinematics"
+        }
+      ]
+    },
+    {
+      "id": "potential-energy",
+      "title": "Potential Energy",
+      "description": "Energy assigned to a configuration for conservative mechanical interactions, with differences fixed by minus the work of the conservative force. The reference value is arbitrary, while the spatial variation determines that force.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Mechanical potential energy"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "conservative-force"
+        },
+        {
+          "type": "used-in",
+          "target": "lagrangian",
+          "note": "For standard velocity-independent conservative interactions, the Lagrangian includes minus the potential energy."
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian",
+          "note": "For standard time-independent Cartesian particle models, the Hamiltonian is the sum of kinetic and potential energies."
         }
       ]
     },
@@ -3721,6 +4428,31 @@
       ]
     },
     {
+      "id": "reduced-mass",
+      "title": "Reduced Mass",
+      "description": "The effective inertial parameter multiplying relative acceleration in the separated Newtonian two-body problem. For two positive masses it is their product divided by their sum, and approaches the lighter mass when the other mass becomes much larger.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Two-body reduced mass"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "center-of-mass"
+        },
+        {
+          "type": "used-in",
+          "target": "two-body-problem"
+        },
+        {
+          "type": "used-in",
+          "target": "kepler-orbit"
+        }
+      ]
+    },
+    {
       "id": "relativity",
       "title": "Relativity",
       "description": "The family of physical theories relating spacetime, motion, and reference frames, including special relativity and the general-relativistic description of gravitation.",
@@ -3761,6 +4493,24 @@
         {
           "type": "used-in",
           "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "resonance",
+      "title": "Resonance",
+      "description": "An enhanced response when a system is driven near a characteristic frequency. The location and width of a resonance depend on damping, the measured response, and the drive; displacement and power peaks need not occur at the same frequency.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Mechanical resonance"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "driven-harmonic-oscillator",
+          "note": "The linear driven oscillator supplies the introductory mechanical model; resonance also occurs in other systems."
         }
       ]
     },
@@ -3892,6 +4642,65 @@
         {
           "type": "requires",
           "target": "metric"
+        }
+      ]
+    },
+    {
+      "id": "rigid-body",
+      "title": "Rigid Body",
+      "description": "An idealized extended body for which the Euclidean distance between every pair of material points remains constant during motion. It can translate and rotate, while deformation and internal elastic modes are excluded.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Rigid object"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "position"
+        },
+        {
+          "type": "used-in",
+          "target": "rotational-dynamics"
+        },
+        {
+          "type": "used-in",
+          "target": "kinematics"
+        }
+      ]
+    },
+    {
+      "id": "rotational-dynamics",
+      "title": "Rotational Dynamics",
+      "description": "The classical study of rotational motion and its changes under applied torques, using angular momentum and mass distribution. Rigid bodies are central models, but their motion need not remain about a single fixed axis.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Dynamics of rotation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "newtonian-mechanics"
+        },
+        {
+          "type": "requires",
+          "target": "torque"
+        },
+        {
+          "type": "requires",
+          "target": "angular-momentum"
+        },
+        {
+          "type": "requires",
+          "target": "moment-of-inertia",
+          "note": "A standard prerequisite for the rigid-body models studied in rotational dynamics."
+        },
+        {
+          "type": "used-in",
+          "target": "classical-mechanics"
         }
       ]
     },
@@ -4074,6 +4883,66 @@
           "type": "used-in",
           "target": "quantum-observable",
           "note": "The standard sharp-observable formalism uses self-adjoint operators."
+        }
+      ]
+    },
+    {
+      "id": "simple-harmonic-oscillator",
+      "title": "Simple Harmonic Oscillator",
+      "description": "An undriven, undamped dynamical model with a linear restoring force proportional to displacement from a stable equilibrium. Its nonzero motions are sinusoidal with an amplitude-independent frequency.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "SHO",
+        "Simple harmonic motion"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "ordinary-differential-equation"
+        },
+        {
+          "type": "derived-from",
+          "target": "newtons-second-law",
+          "note": "For a constant mass acted on by a linear restoring force."
+        },
+        {
+          "type": "used-in",
+          "target": "normal-mode",
+          "note": "Each positive-frequency undamped linear normal coordinate obeys an independent harmonic-oscillator equation."
+        },
+        {
+          "type": "used-in",
+          "target": "simple-pendulum",
+          "note": "Approximates planar pendulum librations only at small angular amplitude."
+        }
+      ]
+    },
+    {
+      "id": "simple-pendulum",
+      "title": "Simple Pendulum",
+      "description": "An ideal point mass constrained at a fixed distance from a pivot in a uniform gravitational field. For planar motion without friction its angular equation is nonlinear; only small oscillations about the downward equilibrium are approximately harmonic.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Mathematical pendulum"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "holonomic-constraint",
+          "note": "The bob remains a fixed distance from the pivot."
+        },
+        {
+          "type": "requires",
+          "target": "ordinary-differential-equation"
+        },
+        {
+          "type": "derived-from",
+          "target": "newtons-second-law",
+          "note": "The tangential force equation gives the planar angular dynamics."
         }
       ]
     },
@@ -4657,6 +5526,62 @@
       ]
     },
     {
+      "id": "torque",
+      "title": "Torque",
+      "description": "The moment of a force about a specified reference point, obtained from the lever-arm vector crossed with the force. Torques from different applied forces add; torque is not a force and its value generally depends on the reference point.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Moment of force"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "force"
+        },
+        {
+          "type": "requires",
+          "target": "position"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra",
+          "note": "Three-dimensional torque is represented by a cross product."
+        },
+        {
+          "type": "used-in",
+          "target": "rotational-dynamics"
+        }
+      ]
+    },
+    {
+      "id": "two-body-problem",
+      "title": "Two-Body Problem",
+      "description": "Determining the motion of two mutually interacting bodies. In Newtonian mechanics, an isolated pair with equal-and-opposite internal forces separates into center-of-mass motion and relative motion governed by the reduced mass; an additional central-force assumption permits the usual orbital reduction.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Classical two-body problem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "center-of-mass"
+        },
+        {
+          "type": "requires",
+          "target": "reduced-mass"
+        },
+        {
+          "type": "derived-from",
+          "target": "newtons-second-law",
+          "note": "The separated equations follow by summing and subtracting the two particle equations with equal-and-opposite internal forces."
+        }
+      ]
+    },
+    {
       "id": "variance",
       "title": "Variance",
       "description": "For a real random variable with a finite mean, the expected squared deviation from that mean. A finite second moment gives Var(X) = E[X²] − E[X]²; if the second moment diverges, the variance need not be finite.",
@@ -4763,6 +5688,31 @@
       ]
     },
     {
+      "id": "velocity",
+      "title": "Velocity",
+      "description": "The instantaneous rate of change of position with respect to time in a specified reference frame. It is a vector; its magnitude is speed and its direction is tangent to a differentiable trajectory when the velocity is nonzero.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Instantaneous velocity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "position"
+        },
+        {
+          "type": "requires",
+          "target": "derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "kinematics"
+        }
+      ]
+    },
+    {
       "id": "wavefunction",
       "title": "Wavefunction",
       "description": "A complex probability-amplitude representation of a pure quantum state, commonly as a function of configuration coordinates, with additional components when spin or other internal degrees of freedom are present.",
@@ -4800,6 +5750,68 @@
         {
           "type": "requires",
           "target": "differential-form"
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "title": "Work",
+      "description": "Mechanical energy transfer associated with a force acting through displacement of its point of application. Along a trajectory, infinitesimal work is the scalar product of force and displacement, integrated over the motion.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Mechanical work"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "force"
+        },
+        {
+          "type": "requires",
+          "target": "riemann-integral",
+          "note": "Parameterizing the trajectory converts work to an ordinary definite integral."
+        },
+        {
+          "type": "requires",
+          "target": "inner-product-space",
+          "note": "The Euclidean dot product selects the component of force along the displacement."
+        },
+        {
+          "type": "used-in",
+          "target": "first-law-of-thermodynamics",
+          "note": "Mechanical work is one contribution to energy transfer across a thermodynamic system boundary."
+        }
+      ]
+    },
+    {
+      "id": "work-energy-theorem",
+      "title": "Work–Energy Theorem",
+      "description": "The statement that net work along a particle's actual trajectory equals its kinetic-energy change. In Newtonian mechanics it follows by integrating the scalar product of the equation of motion with displacement.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Work–kinetic energy theorem",
+        "Work-energy principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "work"
+        },
+        {
+          "type": "requires",
+          "target": "kinetic-energy"
+        },
+        {
+          "type": "derived-from",
+          "target": "newtons-second-law"
+        },
+        {
+          "type": "used-in",
+          "target": "newtonian-mechanics"
         }
       ]
     }

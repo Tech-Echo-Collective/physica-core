@@ -1,0 +1,34 @@
+{
+  "id": "simple-harmonic-oscillator",
+  "title": "Simple Harmonic Oscillator",
+  "description": "An undriven, undamped dynamical model with a linear restoring force proportional to displacement from a stable equilibrium. Its nonzero motions are sinusoidal with an amplitude-independent frequency.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "SHO",
+    "Simple harmonic motion"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "ordinary-differential-equation"
+    },
+    {
+      "type": "derived-from",
+      "target": "newtons-second-law",
+      "note": "For a constant mass acted on by a linear restoring force."
+    },
+    {
+      "type": "used-in",
+      "target": "normal-mode",
+      "note": "Each positive-frequency undamped linear normal coordinate obeys an independent harmonic-oscillator equation."
+    },
+    {
+      "type": "used-in",
+      "target": "simple-pendulum",
+      "note": "Approximates planar pendulum librations only at small angular amplitude."
+    }
+  ]
+}
+

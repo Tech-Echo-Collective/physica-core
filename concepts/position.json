@@ -1,0 +1,23 @@
+{
+  "id": "position",
+  "title": "Position",
+  "description": "The location of a point relative to a chosen spatial reference system. In Euclidean mechanics, a chosen origin identifies that location with a position vector, whose coordinates may depend on time.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Position vector"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-space",
+      "note": "The Euclidean position-vector representation uses vector components after choosing an origin."
+    },
+    {
+      "type": "used-in",
+      "target": "kinematics"
+    }
+  ]
+}
+

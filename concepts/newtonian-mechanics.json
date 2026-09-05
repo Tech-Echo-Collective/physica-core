@@ -1,0 +1,23 @@
+{
+  "id": "newtonian-mechanics",
+  "title": "Newtonian Mechanics",
+  "description": "The force-based formulation of classical mechanics, using Newton's laws to relate interactions, inertia, and the motion of particles or systems of particles in a specified reference frame.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Newtonian dynamics"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "newtons-second-law"
+    },
+    {
+      "type": "used-in",
+      "target": "classical-mechanics",
+      "note": "A formulation of classical dynamics, alongside the Lagrangian and Hamiltonian formulations; this is not a special-case taxonomy edge."
+    }
+  ]
+}
+

@@ -1,0 +1,27 @@
+{
+  "id": "central-force-motion",
+  "title": "Central-Force Motion",
+  "description": "Classical particle motion under a force directed along the separation from a fixed center and depending only on that separation. Angular momentum is conserved; for nonzero angular momentum the trajectory lies in a fixed plane, and radial motion admits an effective-potential description.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Classical central-force problem"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "newtons-second-law"
+    },
+    {
+      "type": "requires",
+      "target": "angular-momentum"
+    },
+    {
+      "type": "generalizes",
+      "target": "kepler-orbit",
+      "note": "Attractive inverse-square forces give the Kepler special case of central-force motion."
+    }
+  ]
+}
+

@@ -1,0 +1,22 @@
+{
+  "id": "acceleration",
+  "title": "Acceleration",
+  "description": "The instantaneous rate of change of velocity with respect to time in a specified reference frame. It can result from changing speed, changing direction, or both.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Instantaneous acceleration"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "velocity"
+    },
+    {
+      "type": "used-in",
+      "target": "kinematics"
+    }
+  ]
+}
+

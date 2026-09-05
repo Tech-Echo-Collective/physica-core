@@ -1,0 +1,30 @@
+{
+  "id": "newtons-second-law",
+  "title": "Newton's Second Law",
+  "description": "The dynamical law relating the net force on a material system to its momentum change. For a fixed-mass Newtonian particle in an inertial frame, the net force equals its mass times its acceleration.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Newton's second law of motion"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "force"
+    },
+    {
+      "type": "requires",
+      "target": "acceleration"
+    },
+    {
+      "type": "requires",
+      "target": "inertial-reference-frame"
+    },
+    {
+      "type": "requires",
+      "target": "linear-momentum"
+    }
+  ]
+}
+

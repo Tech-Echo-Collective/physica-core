@@ -1,0 +1,31 @@
+{
+  "id": "kepler-orbit",
+  "title": "Kepler Orbit",
+  "description": "A trajectory in an attractive inverse-square central force. Nonradial Newtonian two-body relative trajectories are conic sections: circles or ellipses for bound motion, a parabola at zero relative energy, and hyperbolas for positive relative energy.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Keplerian orbit"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "central-force-motion"
+    },
+    {
+      "type": "requires",
+      "target": "effective-potential"
+    },
+    {
+      "type": "requires",
+      "target": "two-body-problem"
+    },
+    {
+      "type": "derived-from",
+      "target": "newtonian-gravitation",
+      "note": "The gravitational two-body case follows from the attractive inverse-square law and the relative equation of motion."
+    }
+  ]
+}
+

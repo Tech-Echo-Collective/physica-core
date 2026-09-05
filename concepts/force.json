@@ -1,0 +1,28 @@
+{
+  "id": "force",
+  "title": "Force",
+  "description": "A vector quantity representing a mechanical interaction that contributes to the change of a body's momentum. In Newtonian particle mechanics, the net force is the vector sum of the forces acting on that particle.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Mechanical force"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-space",
+      "note": "Forces in ordinary Euclidean mechanics are added as vectors."
+    },
+    {
+      "type": "generalizes",
+      "target": "conservative-force",
+      "note": "A conservative force is the restricted class with path-independent work; general forces need not have this property."
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics"
+    }
+  ]
+}
+

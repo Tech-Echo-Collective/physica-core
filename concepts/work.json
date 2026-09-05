@@ -1,0 +1,33 @@
+{
+  "id": "work",
+  "title": "Work",
+  "description": "Mechanical energy transfer associated with a force acting through displacement of its point of application. Along a trajectory, infinitesimal work is the scalar product of force and displacement, integrated over the motion.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Mechanical work"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "force"
+    },
+    {
+      "type": "requires",
+      "target": "riemann-integral",
+      "note": "Parameterizing the trajectory converts work to an ordinary definite integral."
+    },
+    {
+      "type": "requires",
+      "target": "inner-product-space",
+      "note": "The Euclidean dot product selects the component of force along the displacement."
+    },
+    {
+      "type": "used-in",
+      "target": "first-law-of-thermodynamics",
+      "note": "Mechanical work is one contribution to energy transfer across a thermodynamic system boundary."
+    }
+  ]
+}
+

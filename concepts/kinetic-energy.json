@@ -1,0 +1,26 @@
+{
+  "id": "kinetic-energy",
+  "title": "Kinetic Energy",
+  "description": "The energy associated with motion in a specified reference frame. For a nonrelativistic particle it is one half the mass times the squared speed; a system's particle kinetic energies add.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "velocity"
+    },
+    {
+      "type": "used-in",
+      "target": "lagrangian",
+      "note": "For a standard mechanical system with a velocity-independent potential, the Lagrangian is kinetic energy minus potential energy."
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian",
+      "note": "For the standard Cartesian particle model, the Hamiltonian contains kinetic energy expressed in canonical momenta."
+    }
+  ]
+}
+

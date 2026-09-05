@@ -1,0 +1,31 @@
+{
+  "id": "angular-velocity",
+  "title": "Angular Velocity",
+  "description": "An axial vector specifying the instantaneous rate and oriented axis of rotation relative to a chosen reference frame. A rigid body has one angular velocity shared by all its material points; finite orientation changes are not ordinary vectors.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Rotational velocity"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "rigid-body"
+    },
+    {
+      "type": "requires",
+      "target": "velocity"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra",
+      "note": "The three-dimensional description uses vectors and the cross product."
+    },
+    {
+      "type": "used-in",
+      "target": "rotational-dynamics"
+    }
+  ]
+}
+

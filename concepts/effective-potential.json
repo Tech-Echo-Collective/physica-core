@@ -1,0 +1,27 @@
+{
+  "id": "effective-potential",
+  "title": "Effective Potential",
+  "description": "A reduced potential that incorporates eliminated degrees of freedom or fixed conserved quantities. In a conservative central-force problem, fixing angular momentum adds a centrifugal term to the physical potential, leaving a one-dimensional radial energy equation.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Effective potential energy"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "potential-energy"
+    },
+    {
+      "type": "requires",
+      "target": "angular-momentum"
+    },
+    {
+      "type": "used-in",
+      "target": "central-force-motion",
+      "note": "At fixed angular momentum it encodes radial turning points and circular-orbit stability."
+    }
+  ]
+}
+

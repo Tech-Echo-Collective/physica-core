@@ -1,0 +1,18 @@
+{
+  "id": "oscillation",
+  "title": "Oscillation",
+  "description": "Repeated variation of a dynamical quantity about a reference state or between extrema. Oscillations may be linear or nonlinear, free or driven, and need not remain exactly periodic when dissipation changes their amplitude.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Oscillatory motion"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "kinematics"
+    }
+  ]
+}
+

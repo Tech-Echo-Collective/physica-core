@@ -1,0 +1,27 @@
+{
+  "id": "conservation-of-linear-momentum",
+  "title": "Conservation of Linear Momentum",
+  "description": "Constancy of a system's total linear momentum when there is no net external force. For a fixed Newtonian particle system, the standard derivation assumes that the internal forces cancel in the total momentum balance.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Linear momentum conservation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-momentum"
+    },
+    {
+      "type": "derived-from",
+      "target": "newtons-second-law",
+      "note": "Summing particle momentum balances yields conservation when internal forces cancel and the net external force vanishes."
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics"
+    }
+  ]
+}
+

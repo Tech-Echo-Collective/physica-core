@@ -1,0 +1,28 @@
+{
+  "id": "simple-pendulum",
+  "title": "Simple Pendulum",
+  "description": "An ideal point mass constrained at a fixed distance from a pivot in a uniform gravitational field. For planar motion without friction its angular equation is nonlinear; only small oscillations about the downward equilibrium are approximately harmonic.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Mathematical pendulum"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "holonomic-constraint",
+      "note": "The bob remains a fixed distance from the pivot."
+    },
+    {
+      "type": "requires",
+      "target": "ordinary-differential-equation"
+    },
+    {
+      "type": "derived-from",
+      "target": "newtons-second-law",
+      "note": "The tangential force equation gives the planar angular dynamics."
+    }
+  ]
+}
+

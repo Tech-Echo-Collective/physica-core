@@ -1,0 +1,26 @@
+{
+  "id": "velocity",
+  "title": "Velocity",
+  "description": "The instantaneous rate of change of position with respect to time in a specified reference frame. It is a vector; its magnitude is speed and its direction is tangent to a differentiable trajectory when the velocity is nonzero.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Instantaneous velocity"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "position"
+    },
+    {
+      "type": "requires",
+      "target": "derivative"
+    },
+    {
+      "type": "used-in",
+      "target": "kinematics"
+    }
+  ]
+}
+

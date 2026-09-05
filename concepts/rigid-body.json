@@ -1,0 +1,26 @@
+{
+  "id": "rigid-body",
+  "title": "Rigid Body",
+  "description": "An idealized extended body for which the Euclidean distance between every pair of material points remains constant during motion. It can translate and rotate, while deformation and internal elastic modes are excluded.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Rigid object"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "position"
+    },
+    {
+      "type": "used-in",
+      "target": "rotational-dynamics"
+    },
+    {
+      "type": "used-in",
+      "target": "kinematics"
+    }
+  ]
+}
+

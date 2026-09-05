@@ -1,0 +1,31 @@
+{
+  "id": "work-energy-theorem",
+  "title": "Work–Energy Theorem",
+  "description": "The statement that net work along a particle's actual trajectory equals its kinetic-energy change. In Newtonian mechanics it follows by integrating the scalar product of the equation of motion with displacement.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Work–kinetic energy theorem",
+    "Work-energy principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "work"
+    },
+    {
+      "type": "requires",
+      "target": "kinetic-energy"
+    },
+    {
+      "type": "derived-from",
+      "target": "newtons-second-law"
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics"
+    }
+  ]
+}
+

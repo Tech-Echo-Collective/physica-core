@@ -1,0 +1,28 @@
+{
+  "id": "moment-of-inertia",
+  "title": "Moment of Inertia",
+  "description": "A measure of mass distribution relative to a specified rotation axis, given by mass weighted by squared perpendicular distance. General three-dimensional rigid-body rotation requires an inertia tensor; the scalar moment is its projection along the chosen axis.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Rotational inertia",
+    "Mass moment of inertia"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "rigid-body"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra",
+      "note": "An inertia tensor is a symmetric linear map; its axis projections give scalar moments."
+    },
+    {
+      "type": "used-in",
+      "target": "rotational-dynamics"
+    }
+  ]
+}
+

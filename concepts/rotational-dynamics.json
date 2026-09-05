@@ -1,0 +1,35 @@
+{
+  "id": "rotational-dynamics",
+  "title": "Rotational Dynamics",
+  "description": "The classical study of rotational motion and its changes under applied torques, using angular momentum and mass distribution. Rigid bodies are central models, but their motion need not remain about a single fixed axis.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Dynamics of rotation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "newtonian-mechanics"
+    },
+    {
+      "type": "requires",
+      "target": "torque"
+    },
+    {
+      "type": "requires",
+      "target": "angular-momentum"
+    },
+    {
+      "type": "requires",
+      "target": "moment-of-inertia",
+      "note": "A standard prerequisite for the rigid-body models studied in rotational dynamics."
+    },
+    {
+      "type": "used-in",
+      "target": "classical-mechanics"
+    }
+  ]
+}
+

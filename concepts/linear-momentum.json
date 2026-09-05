@@ -1,0 +1,27 @@
+{
+  "id": "linear-momentum",
+  "title": "Linear Momentum",
+  "description": "The translational momentum of a particle or system. For a Newtonian particle it is mass times velocity; the total momentum of a particle system is the vector sum of its constituent momenta.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Newtonian momentum"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "velocity"
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics"
+    },
+    {
+      "type": "used-in",
+      "target": "generalized-momentum",
+      "note": "For a standard Cartesian particle Lagrangian without a velocity-dependent potential, the canonical momentum equals the Newtonian linear momentum."
+    }
+  ]
+}
+

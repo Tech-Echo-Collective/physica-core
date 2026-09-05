@@ -1,0 +1,31 @@
+{
+  "id": "torque",
+  "title": "Torque",
+  "description": "The moment of a force about a specified reference point, obtained from the lever-arm vector crossed with the force. Torques from different applied forces add; torque is not a force and its value generally depends on the reference point.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Moment of force"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "force"
+    },
+    {
+      "type": "requires",
+      "target": "position"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra",
+      "note": "Three-dimensional torque is represented by a cross product."
+    },
+    {
+      "type": "used-in",
+      "target": "rotational-dynamics"
+    }
+  ]
+}
+

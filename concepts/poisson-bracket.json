@@ -1,0 +1,28 @@
+{
+  "id": "poisson-bracket",
+  "title": "Poisson Bracket",
+  "description": "A bilinear, antisymmetric operation on classical observables that obeys the Leibniz and Jacobi identities. In canonical phase coordinates it is built from paired position and momentum derivatives and describes Hamiltonian evolution and generators of transformations.",
+  "domains": [
+    "mathematics",
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Canonical Poisson bracket",
+    "Poisson brackets"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "phase-space"
+    },
+    {
+      "type": "requires",
+      "target": "partial-derivative"
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian-mechanics"
+    }
+  ]
+}
+

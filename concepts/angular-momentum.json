@@ -1,0 +1,37 @@
+{
+  "id": "angular-momentum",
+  "title": "Angular Momentum",
+  "description": "In classical particle mechanics, the moment of linear momentum about a specified point, summed over the system. Its evolution is governed by torque under the appropriate reference-point and interaction assumptions; it is not generally parallel to angular velocity.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Orbital angular momentum",
+    "Classical angular momentum"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-momentum"
+    },
+    {
+      "type": "requires",
+      "target": "position"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra",
+      "note": "The particle definition uses a vector cross product."
+    },
+    {
+      "type": "used-in",
+      "target": "rotational-dynamics"
+    },
+    {
+      "type": "used-in",
+      "target": "central-force-motion",
+      "note": "A force directed toward a fixed center produces zero torque about that center."
+    }
+  ]
+}
+

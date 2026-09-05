@@ -1,0 +1,27 @@
+{
+  "id": "driven-harmonic-oscillator",
+  "title": "Driven Harmonic Oscillator",
+  "description": "A linear restoring-force oscillator family with an externally prescribed drive and optional linear damping, including zero drive as a limiting case. Its motion combines homogeneous transients with a forced response; sinusoidal forcing reveals frequency-dependent amplitude and phase.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Forced harmonic oscillator"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "damped-harmonic-oscillator"
+    },
+    {
+      "type": "generalizes",
+      "target": "damped-harmonic-oscillator",
+      "note": "Setting the prescribed drive to zero recovers the free damped oscillator family."
+    },
+    {
+      "type": "used-in",
+      "target": "resonance",
+      "note": "The sinusoidally forced linear model is a standard quantitative example of resonance."
+    }
+  ]
+}

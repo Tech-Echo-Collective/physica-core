@@ -1,0 +1,28 @@
+{
+  "id": "ordinary-differential-equation",
+  "title": "Ordinary Differential Equation",
+  "description": "An equation relating unknown functions of one independent variable to their derivatives with respect to that variable. It may be scalar or a system, linear or nonlinear, and is a shared mathematical construction rather than a physics-specific law.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "ODE",
+    "Ordinary differential equations"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "derivative"
+    },
+    {
+      "type": "used-in",
+      "target": "mathematical-methods"
+    },
+    {
+      "type": "used-in",
+      "target": "newtonian-mechanics",
+      "note": "Equations of motion for finitely many mechanical degrees of freedom commonly form ODE systems."
+    }
+  ]
+}
+
