@@ -1,0 +1,27 @@
+{
+  "id": "affine-parameter",
+  "title": "Affine Parameter",
+  "description": "A parameter along a geodesic for which its tangent parallel-transports itself, determined up to λ ↦ aλ + b with nonzero constant a.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Affine parametrization"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "affine-connection"
+    },
+    {
+      "type": "requires",
+      "target": "parallel-transport"
+    },
+    {
+      "type": "used-in",
+      "target": "geodesic-equation",
+      "note": "Null geodesics admit affine parameters even though proper time cannot parametrize them."
+    }
+  ]
+}

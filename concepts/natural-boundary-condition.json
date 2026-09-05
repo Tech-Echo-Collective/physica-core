@@ -1,0 +1,25 @@
+{
+  "id": "natural-boundary-condition",
+  "title": "Natural Boundary Condition",
+  "description": "A boundary condition derived by requiring boundary terms in the first variation to vanish for permitted endpoint variations, rather than prescribing those boundary values in advance.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Natural boundary conditions",
+    "Variational boundary condition"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "first-variation",
+      "note": "Allowing endpoint variations retains boundary contributions."
+    },
+    {
+      "type": "used-in",
+      "target": "euler-lagrange-equation",
+      "note": "Natural conditions supplement the interior Euler-Lagrange equation when boundary values are free."
+    }
+  ]
+}

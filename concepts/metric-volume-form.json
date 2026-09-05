@@ -1,0 +1,31 @@
+{
+  "id": "metric-volume-form",
+  "title": "Metric Volume Form",
+  "description": "On an oriented pseudo-Riemannian manifold, the metric determines a top-degree form with coordinate factor sqrt(|det g|); without orientation it determines a volume density.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Riemannian volume form",
+    "Metric volume element"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "requires",
+      "target": "manifold-orientation"
+    },
+    {
+      "type": "requires",
+      "target": "differential-form"
+    },
+    {
+      "type": "used-in",
+      "target": "integration-of-differential-forms"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "minkowski-metric",
+  "title": "Minkowski Metric",
+  "description": "The flat Lorentzian metric of Minkowski spacetime, represented in inertial Cartesian coordinates by diag(-1, 1, 1, 1) when x⁰ = ct.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Minkowski tensor",
+    "Eta metric"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "requires",
+      "target": "metric-signature"
+    },
+    {
+      "type": "used-in",
+      "target": "minkowski-spacetime"
+    },
+    {
+      "type": "used-in",
+      "target": "lorentz-transformation"
+    }
+  ]
+}

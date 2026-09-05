@@ -1,0 +1,26 @@
+{
+  "id": "connection-transformation-law",
+  "title": "Connection Transformation Law",
+  "description": "The coordinate-change rule for connection coefficients includes second derivatives of the coordinate transformation, explaining why Christoffel symbols are not tensor components.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Transformation law of Christoffel symbols"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "connection-coefficients"
+    },
+    {
+      "type": "requires",
+      "target": "coordinate-chart"
+    },
+    {
+      "type": "used-in",
+      "target": "christoffel-symbol"
+    }
+  ]
+}

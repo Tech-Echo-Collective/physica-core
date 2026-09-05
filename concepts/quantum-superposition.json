@@ -1,0 +1,22 @@
+{
+  "id": "quantum-superposition",
+  "title": "Quantum Superposition",
+  "description": "The formation of a pure quantum state from a nonzero complex linear combination of state vectors followed by normalization, retaining relative phases rather than mixing classical probabilities.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Superposition of quantum states",
+    "Superposition principle in quantum mechanics"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "pure-quantum-state"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics"
+    }
+  ]
+}

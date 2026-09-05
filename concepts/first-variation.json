@@ -1,0 +1,25 @@
+{
+  "id": "first-variation",
+  "title": "First Variation",
+  "description": "The first-order change of a differentiable functional under an admissible perturbation, computed as d J[y + epsilon eta] / d epsilon at epsilon = 0.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "First variation of a functional",
+    "Variational differential"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "functional",
+      "note": "Variations differentiate functionals with respect to perturbations."
+    },
+    {
+      "type": "used-in",
+      "target": "variational-principle",
+      "note": "Stationarity requires the first variation to vanish for all admissible perturbations."
+    }
+  ]
+}

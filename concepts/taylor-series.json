@@ -1,0 +1,23 @@
+{
+  "id": "taylor-series",
+  "title": "Taylor Series",
+  "description": "The power series about a point whose coefficients are the function's successive derivatives there divided by factorials; an infinitely differentiable function need not equal this series.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Taylor expansion",
+    "Taylor power series"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "derivative"
+    },
+    {
+      "type": "used-in",
+      "target": "calculus",
+      "note": "Taylor polynomials and remainder estimates support local approximation."
+    }
+  ]
+}

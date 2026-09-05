@@ -1,0 +1,30 @@
+{
+  "id": "noether-theorem",
+  "title": "Noether's Theorem",
+  "description": "Noether's first theorem associates differentiable continuous variational symmetries with quantities conserved along Euler-Lagrange solutions, including symmetries of the Lagrangian up to a total derivative.",
+  "domains": [
+    "classical-mechanics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Noether theorem",
+    "Noether's first theorem"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "euler-lagrange-equation",
+      "note": "The conservation law holds along solutions of the variational equations."
+    },
+    {
+      "type": "requires",
+      "target": "action-functional",
+      "note": "The relevant symmetry preserves the variational action, allowing boundary terms."
+    },
+    {
+      "type": "used-in",
+      "target": "lagrangian-mechanics",
+      "note": "Continuous symmetries reveal conserved mechanical quantities."
+    }
+  ]
+}

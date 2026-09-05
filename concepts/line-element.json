@@ -1,0 +1,30 @@
+{
+  "id": "line-element",
+  "title": "Line Element",
+  "description": "The coordinate expression ds² = g_ab dx^a dx^b for a metric's infinitesimal quadratic interval; it need not be positive in indefinite signature.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Metric line element"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "requires",
+      "target": "coordinate-chart"
+    },
+    {
+      "type": "used-in",
+      "target": "proper-time"
+    },
+    {
+      "type": "used-in",
+      "target": "schwarzschild-spacetime"
+    }
+  ]
+}

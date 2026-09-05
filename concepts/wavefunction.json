@@ -1,0 +1,23 @@
+{
+  "id": "wavefunction",
+  "title": "Wavefunction",
+  "description": "A complex probability-amplitude representation of a pure quantum state, commonly as a function of configuration coordinates, with additional components when spin or other internal degrees of freedom are present.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Wave function",
+    "Quantum wavefunction"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "pure-quantum-state"
+    },
+    {
+      "type": "used-in",
+      "target": "schrodinger-equation",
+      "note": "Wave mechanics expresses state evolution through the wavefunction."
+    }
+  ]
+}

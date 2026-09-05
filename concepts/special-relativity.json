@@ -16,6 +16,14 @@
     {
       "type": "requires",
       "target": "linear-algebra"
+    },
+    {
+      "type": "requires",
+      "target": "principle-of-relativity"
+    },
+    {
+      "type": "requires",
+      "target": "lorentz-transformation"
     }
   ]
 }

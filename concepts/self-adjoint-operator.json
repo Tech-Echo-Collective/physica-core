@@ -1,0 +1,27 @@
+{
+  "id": "self-adjoint-operator",
+  "title": "Self-adjoint Operator",
+  "description": "A densely defined linear operator on a Hilbert space equal to its adjoint in both action and domain; in finite dimensions this is a Hermitian matrix in an orthonormal basis.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Self-adjoint linear operator"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-operator"
+    },
+    {
+      "type": "requires",
+      "target": "hilbert-space"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-observable",
+      "note": "The standard sharp-observable formalism uses self-adjoint operators."
+    }
+  ]
+}

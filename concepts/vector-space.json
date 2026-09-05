@@ -1,0 +1,22 @@
+{
+  "id": "vector-space",
+  "title": "Vector Space",
+  "description": "A set equipped with vector addition and scalar multiplication over a field, satisfying the vector-space axioms so that linear combinations are defined.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Linear space"
+  ],
+  "relations": [
+    {
+      "type": "generalizes",
+      "target": "inner-product-space",
+      "note": "An inner product adds positive-definite geometric structure to a real or complex vector space."
+    },
+    {
+      "type": "used-in",
+      "target": "linear-algebra"
+    }
+  ]
+}

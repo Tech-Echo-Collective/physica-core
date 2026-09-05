@@ -18,6 +18,18 @@
       "type": "used-in",
       "target": "smooth-atlas",
       "note": "Compatible charts form an atlas."
+    },
+    {
+      "type": "generalizes",
+      "target": "riemann-normal-coordinates"
+    },
+    {
+      "type": "generalizes",
+      "target": "schwarzschild-coordinates"
+    },
+    {
+      "type": "generalizes",
+      "target": "kruskal-szekeres-coordinates"
     }
   ]
 }

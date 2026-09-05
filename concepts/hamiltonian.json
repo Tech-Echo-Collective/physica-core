@@ -1,0 +1,24 @@
+{
+  "id": "hamiltonian",
+  "title": "Hamiltonian",
+  "description": "A classical phase-space function H(q, p, t) generating Hamilton's equations; for a regular Lagrangian it can be constructed locally by Legendre transformation in the velocity variables.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Classical Hamiltonian",
+    "Hamiltonian function"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "legendre-transform",
+      "note": "The standard passage from a regular Lagrangian uses a Legendre transform."
+    },
+    {
+      "type": "requires",
+      "target": "generalized-momentum",
+      "note": "Canonical momenta are phase-space variables."
+    }
+  ]
+}

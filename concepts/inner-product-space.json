@@ -1,0 +1,22 @@
+{
+  "id": "inner-product-space",
+  "title": "Inner Product Space",
+  "description": "A real or complex vector space with a positive-definite symmetric bilinear or Hermitian sesquilinear form, which determines lengths and orthogonality.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Pre-Hilbert space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-space"
+    },
+    {
+      "type": "generalizes",
+      "target": "hilbert-space",
+      "note": "A Hilbert space is complete in the norm induced by its inner product."
+    }
+  ]
+}

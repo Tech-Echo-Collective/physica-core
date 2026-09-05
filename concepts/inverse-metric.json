@@ -1,0 +1,30 @@
+{
+  "id": "inverse-metric",
+  "title": "Inverse Metric",
+  "description": "The contravariant rank-two tensor whose coordinate matrix is inverse to the metric matrix, satisfying g^{ac} g_cb = δ^a_b.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Contravariant metric"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "derived-from",
+      "target": "metric"
+    },
+    {
+      "type": "used-in",
+      "target": "index-raising-and-lowering"
+    },
+    {
+      "type": "used-in",
+      "target": "christoffel-symbol"
+    }
+  ]
+}

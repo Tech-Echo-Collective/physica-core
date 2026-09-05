@@ -1,0 +1,30 @@
+{
+  "id": "proper-time",
+  "title": "Proper Time",
+  "description": "Elapsed time recorded by an ideal clock along a timelike worldline, obtained by integrating its Lorentzian interval; it cannot parameterize a null worldline.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Clock time"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lorentzian-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "used-in",
+      "target": "geodesic",
+      "note": "Proper time is an affine parameter on timelike Levi-Civita geodesics, but not on null geodesics."
+    },
+    {
+      "type": "used-in",
+      "target": "four-velocity"
+    }
+  ]
+}

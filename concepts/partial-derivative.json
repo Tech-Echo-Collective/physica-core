@@ -1,0 +1,22 @@
+{
+  "id": "partial-derivative",
+  "title": "Partial Derivative",
+  "description": "The ordinary derivative of a multivariable function with respect to one coordinate while the other coordinates are fixed, evaluated wherever that derivative exists.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Partial differentiation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "derivative"
+    },
+    {
+      "type": "used-in",
+      "target": "exterior-derivative",
+      "note": "Coordinate formulas differentiate coefficient functions with respect to individual coordinates."
+    }
+  ]
+}

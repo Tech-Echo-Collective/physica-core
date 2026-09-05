@@ -1,0 +1,24 @@
+{
+  "id": "generalized-coordinate",
+  "title": "Generalized Coordinate",
+  "description": "One of a set of independent local parameters specifying a mechanical configuration; these need not be Cartesian positions.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Generalized coordinates",
+    "Generalised coordinates"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "configuration-space",
+      "note": "The coordinates label points of configuration space."
+    },
+    {
+      "type": "generalizes",
+      "target": "cyclic-coordinate",
+      "note": "A cyclic coordinate is a generalized coordinate absent from the chosen Lagrangian."
+    }
+  ]
+}

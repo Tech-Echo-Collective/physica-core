@@ -1,0 +1,24 @@
+{
+  "id": "lagrangian-energy",
+  "title": "Lagrangian Energy",
+  "description": "The function E_L = sum_i qdot_i p_i - L; along Euler-Lagrange trajectories it is conserved when the Lagrangian has no explicit time dependence.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Lagrangian energy function",
+    "Energy function of a Lagrangian"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "generalized-momentum",
+      "note": "The energy function pairs each velocity with its conjugate momentum."
+    },
+    {
+      "type": "requires",
+      "target": "euler-lagrange-equation",
+      "note": "Its evolution obeys dE_L/dt = -partial L/partial t on solutions."
+    }
+  ]
+}

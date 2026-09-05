@@ -17,6 +17,11 @@
     {
       "type": "requires",
       "target": "closed-form"
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian",
+      "note": "Symplectic forms determine the geometric form of Hamiltonian evolution."
     }
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "id": "spacetime-interval",
+  "title": "Spacetime Interval",
+  "description": "In Minkowski spacetime, the invariant squared separation of two events, -c²Δt² + Δx² + Δy² + Δz² in the mostly-plus convention.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Invariant interval",
+    "Minkowski interval"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "minkowski-metric"
+    },
+    {
+      "type": "derived-from",
+      "target": "minkowski-metric"
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    },
+    {
+      "type": "used-in",
+      "target": "light-cone"
+    }
+  ]
+}

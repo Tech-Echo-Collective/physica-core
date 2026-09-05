@@ -1,0 +1,24 @@
+{
+  "id": "multiple-integral",
+  "title": "Multiple Integral",
+  "description": "An integral of a function over a region with two or more independent variables, accumulating values against an area or volume element; repeated one-dimensional integration is justified under appropriate integrability conditions.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Multivariable integral",
+    "Double and triple integrals"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "riemann-integral",
+      "note": "Riemann sums in several variables extend the single-variable construction used in this introduction."
+    },
+    {
+      "type": "used-in",
+      "target": "integration-of-differential-forms",
+      "note": "Local coordinate definitions of form integrals use multivariable integration."
+    }
+  ]
+}

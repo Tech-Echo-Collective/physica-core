@@ -1,0 +1,24 @@
+{
+  "id": "fundamental-lemma-of-calculus-of-variations",
+  "title": "Fundamental Lemma of Calculus of Variations",
+  "description": "If a continuous function on an open interval has zero integral against every smooth compactly supported test function, then it vanishes throughout that interval.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Fundamental lemma of the calculus of variations",
+    "Variational fundamental lemma"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "The statement relates integrals and arbitrary smooth test functions."
+    },
+    {
+      "type": "used-in",
+      "target": "euler-lagrange-equation",
+      "note": "The lemma converts the integrated stationarity condition into a differential equation."
+    }
+  ]
+}

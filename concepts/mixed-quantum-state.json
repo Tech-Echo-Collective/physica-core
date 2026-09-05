@@ -1,0 +1,23 @@
+{
+  "id": "mixed-quantum-state",
+  "title": "Mixed Quantum State",
+  "description": "A quantum state whose density operator is not rank one, admitting statistical decompositions into pure states that need not be unique.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Mixed state",
+    "Statistical quantum state"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Mixed states describe ensembles and reduced states of entangled systems."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "relativity-of-simultaneity",
+  "title": "Relativity of Simultaneity",
+  "description": "Spatially separated events judged simultaneous in one inertial frame need not be simultaneous in another frame moving relative to it.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Relative simultaneity"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lorentz-transformation"
+    },
+    {
+      "type": "derived-from",
+      "target": "lorentz-transformation"
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

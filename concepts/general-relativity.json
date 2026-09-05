@@ -42,6 +42,14 @@
       "type": "generalizes",
       "target": "special-relativity",
       "note": "Special relativity is recovered in the flat-spacetime, nongravitating limit and locally in freely falling frames."
+    },
+    {
+      "type": "requires",
+      "target": "equivalence-principle"
+    },
+    {
+      "type": "requires",
+      "target": "einstein-field-equations"
     }
   ]
 }

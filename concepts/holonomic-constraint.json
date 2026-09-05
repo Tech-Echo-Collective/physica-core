@@ -1,0 +1,24 @@
+{
+  "id": "holonomic-constraint",
+  "title": "Holonomic Constraint",
+  "description": "A mechanical constraint expressible as an equation among configuration variables and possibly time, without an independent dependence on velocities.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Holonomic constraints",
+    "Integrable mechanical constraint"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "configuration-space",
+      "note": "The constraint restricts the permitted configurations."
+    },
+    {
+      "type": "used-in",
+      "target": "lagrangian-mechanics",
+      "note": "Regular holonomic constraints can be eliminated using suitable generalized coordinates."
+    }
+  ]
+}

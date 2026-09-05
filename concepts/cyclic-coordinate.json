@@ -1,0 +1,24 @@
+{
+  "id": "cyclic-coordinate",
+  "title": "Cyclic Coordinate",
+  "description": "A generalized coordinate on which the chosen Lagrangian has no explicit dependence, so its conjugate momentum is conserved along Euler-Lagrange solutions.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Ignorable coordinate",
+    "Cyclic coordinates"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "generalized-momentum",
+      "note": "The conserved quantity is the coordinate's conjugate momentum."
+    },
+    {
+      "type": "requires",
+      "target": "euler-lagrange-equation",
+      "note": "The conservation statement follows from the Euler-Lagrange equation."
+    }
+  ]
+}

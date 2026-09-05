@@ -1,0 +1,30 @@
+{
+  "id": "metric-signature",
+  "title": "Metric Signature",
+  "description": "The basis-independent counts of positive and negative directions of a nondegenerate real symmetric metric; Lorentzian signature has one direction of the opposite sign.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Signature of a metric"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    },
+    {
+      "type": "used-in",
+      "target": "lorentzian-manifold"
+    },
+    {
+      "type": "used-in",
+      "target": "causal-character-of-vectors"
+    }
+  ]
+}

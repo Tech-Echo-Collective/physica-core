@@ -1,0 +1,23 @@
+{
+  "id": "quantum-entanglement",
+  "title": "Quantum Entanglement",
+  "description": "For finite-dimensional composite systems, the property of a joint state that cannot be written as a convex combination of product states of the subsystems; for a pure state this reduces to failure to factor as one product vector.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Entanglement",
+    "Nonseparable quantum state"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Entanglement expresses correlations not obtainable by a statistical mixture of independent local states."
+    }
+  ]
+}

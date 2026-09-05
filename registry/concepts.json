@@ -1,5 +1,5 @@
 {
-  "core_version": "0.4.0",
+  "core_version": "0.5.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-mechanics",
@@ -17,6 +17,36 @@
     "analogous-to"
   ],
   "concepts": [
+    {
+      "id": "action-functional",
+      "title": "Action Functional",
+      "description": "A functional assigning an action value to a trajectory; in first-order mechanics S[q] is the time integral of L(q, qdot, t) over a specified interval.",
+      "domains": [
+        "classical-mechanics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Mechanical action",
+        "Action integral"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "functional",
+          "note": "The input is an entire candidate trajectory."
+        },
+        {
+          "type": "requires",
+          "target": "lagrangian",
+          "note": "The mechanical action integrates a Lagrangian."
+        },
+        {
+          "type": "used-in",
+          "target": "variational-principle",
+          "note": "Physical trajectories are characterized by stationarity, not necessarily minimization, of action."
+        }
+      ]
+    },
     {
       "id": "affine-connection",
       "title": "Affine Connection",
@@ -49,6 +79,82 @@
       ]
     },
     {
+      "id": "affine-parameter",
+      "title": "Affine Parameter",
+      "description": "A parameter along a geodesic for which its tangent parallel-transports itself, determined up to λ ↦ aλ + b with nonzero constant a.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Affine parametrization"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        },
+        {
+          "type": "requires",
+          "target": "parallel-transport"
+        },
+        {
+          "type": "used-in",
+          "target": "geodesic-equation",
+          "note": "Null geodesics admit affine parameters even though proper time cannot parametrize them."
+        }
+      ]
+    },
+    {
+      "id": "basis",
+      "title": "Basis",
+      "description": "A linearly independent spanning set of a vector space, so that every vector has a unique finite linear-combination expansion in its elements; this record uses the algebraic basis convention.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Vector-space basis",
+        "Hamel basis"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-space"
+        },
+        {
+          "type": "used-in",
+          "target": "matrix",
+          "note": "Chosen bases specify coordinates and the matrix of a finite-dimensional linear map."
+        }
+      ]
+    },
+    {
+      "id": "born-rule",
+      "title": "Born Rule",
+      "description": "The quantum probability rule assigning Tr(rho P) to a projective measurement event P in state rho, reducing to the squared projected amplitude for a normalized pure state.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Born probability rule"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-observable",
+          "note": "Projective measurements of sharp observables provide the introductory case."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
       "id": "calculus",
       "title": "Calculus",
       "description": "The mathematical study of continuous change and accumulation through derivatives, integrals, limits, and related constructions used throughout theoretical physics.",
@@ -60,6 +166,36 @@
         "Infinitesimal calculus"
       ],
       "relations": []
+    },
+    {
+      "id": "causal-character-of-vectors",
+      "title": "Causal Character of Vectors",
+      "description": "For a Lorentzian metric, a nonzero tangent vector is timelike, null or spacelike according to its metric norm and the chosen signature convention.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Timelike, null and spacelike vectors"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "lorentzian-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "metric-signature"
+        },
+        {
+          "type": "used-in",
+          "target": "geodesic",
+          "note": "Along a Levi-Civita geodesic in Lorentzian geometry the causal character of its tangent is preserved."
+        },
+        {
+          "type": "used-in",
+          "target": "light-cone"
+        }
+      ]
     },
     {
       "id": "christoffel-symbol",
@@ -104,6 +240,15 @@
           "type": "used-in",
           "target": "riemann-curvature-tensor",
           "note": "In the Levi-Civita case they enter the coordinate expression for the Riemann curvature tensor."
+        },
+        {
+          "type": "requires",
+          "target": "coordinate-basis"
+        },
+        {
+          "type": "used-in",
+          "target": "geodesic-equation",
+          "note": "Levi-Civita coefficients supply the connection terms for metric geodesics."
         }
       ]
     },
@@ -151,6 +296,139 @@
       ]
     },
     {
+      "id": "configuration-space",
+      "title": "Configuration Space",
+      "description": "The space of allowed instantaneous positions and orientations of a mechanical system, excluding velocities and momenta.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Configuration manifold",
+        "Mechanical configuration space"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "lagrangian-mechanics",
+          "note": "A mechanical trajectory is a path through configuration space."
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian",
+          "note": "Configuration variables form part of the Hamiltonian description."
+        }
+      ]
+    },
+    {
+      "id": "connection-coefficients",
+      "title": "Connection Coefficients",
+      "description": "Local functions expressing covariant derivatives of basis vector fields in a chosen frame; they do not transform as components of a tensor.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Affine connection coefficients"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        },
+        {
+          "type": "requires",
+          "target": "coordinate-basis"
+        },
+        {
+          "type": "generalizes",
+          "target": "christoffel-symbol",
+          "note": "The Core Christoffel concept is restricted to Levi-Civita coefficients in a coordinate basis."
+        },
+        {
+          "type": "used-in",
+          "target": "affine-connection"
+        }
+      ]
+    },
+    {
+      "id": "connection-transformation-law",
+      "title": "Connection Transformation Law",
+      "description": "The coordinate-change rule for connection coefficients includes second derivatives of the coordinate transformation, explaining why Christoffel symbols are not tensor components.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Transformation law of Christoffel symbols"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "connection-coefficients"
+        },
+        {
+          "type": "requires",
+          "target": "coordinate-chart"
+        },
+        {
+          "type": "used-in",
+          "target": "christoffel-symbol"
+        }
+      ]
+    },
+    {
+      "id": "continuity",
+      "title": "Continuity",
+      "description": "The property that a function's values approach its value at a point as inputs approach that point within its domain; continuity on a domain requires this at every point.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Continuity of a function",
+        "Continuous function"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "limit-of-a-function"
+        },
+        {
+          "type": "used-in",
+          "target": "calculus"
+        }
+      ]
+    },
+    {
+      "id": "coordinate-basis",
+      "title": "Coordinate Basis",
+      "description": "The local tangent basis formed by coordinate derivatives ∂/∂x^a; its basis vector fields commute, unlike a general noncoordinate frame.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Holonomic basis"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "coordinate-chart"
+        },
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "used-in",
+          "target": "connection-coefficients"
+        },
+        {
+          "type": "used-in",
+          "target": "christoffel-symbol"
+        }
+      ]
+    },
+    {
       "id": "coordinate-chart",
       "title": "Coordinate Chart",
       "description": "A homeomorphism from an open region of a manifold onto an open region of Euclidean space, assigning local coordinates to its points.",
@@ -170,6 +448,18 @@
           "type": "used-in",
           "target": "smooth-atlas",
           "note": "Compatible charts form an atlas."
+        },
+        {
+          "type": "generalizes",
+          "target": "riemann-normal-coordinates"
+        },
+        {
+          "type": "generalizes",
+          "target": "schwarzschild-coordinates"
+        },
+        {
+          "type": "generalizes",
+          "target": "kruskal-szekeres-coordinates"
         }
       ]
     },
@@ -196,6 +486,58 @@
           "type": "derived-from",
           "target": "tangent-space",
           "note": "The cotangent space is obtained as the linear dual of the tangent space at the same point."
+        },
+        {
+          "type": "requires",
+          "target": "linear-map",
+          "note": "Covectors are scalar-valued linear maps on the tangent space."
+        }
+      ]
+    },
+    {
+      "id": "curvature-singularity",
+      "title": "Curvature Singularity",
+      "description": "A genuine breakdown signaled by unbounded curvature, such as the divergence of curvature invariants at r = 0 in Schwarzschild; not every spacetime singularity is of this type.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Curvature blow-up"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "riemann-curvature-tensor"
+        },
+        {
+          "type": "used-in",
+          "target": "schwarzschild-spacetime",
+          "note": "For positive Schwarzschild mass, r = 0 is a curvature singularity; r = 2GM/c² is not."
+        }
+      ]
+    },
+    {
+      "id": "cyclic-coordinate",
+      "title": "Cyclic Coordinate",
+      "description": "A generalized coordinate on which the chosen Lagrangian has no explicit dependence, so its conjugate momentum is conserved along Euler-Lagrange solutions.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Ignorable coordinate",
+        "Cyclic coordinates"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "generalized-momentum",
+          "note": "The conserved quantity is the coordinate's conjugate momentum."
+        },
+        {
+          "type": "requires",
+          "target": "euler-lagrange-equation",
+          "note": "The conservation statement follows from the Euler-Lagrange equation."
         }
       ]
     },
@@ -222,6 +564,33 @@
         {
           "type": "used-in",
           "target": "differential-geometry"
+        }
+      ]
+    },
+    {
+      "id": "derivative",
+      "title": "Derivative",
+      "description": "For a real-valued function of one real variable, the limit of its difference quotient at a point when that finite limit exists, measuring the function's local rate of change.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Ordinary derivative",
+        "Single-variable derivative"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "limit-of-a-function"
+        },
+        {
+          "type": "used-in",
+          "target": "calculus"
+        },
+        {
+          "type": "used-in",
+          "target": "schrodinger-equation",
+          "note": "The equation differentiates a state with respect to time."
         }
       ]
     },
@@ -303,6 +672,162 @@
       ]
     },
     {
+      "id": "eigenvalue",
+      "title": "Eigenvalue",
+      "description": "A scalar lambda for a linear operator A such that A v equals lambda v for some nonzero vector v in the operator's domain, called an eigenvector.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Characteristic value",
+        "Eigenvalues and eigenvectors"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-operator"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-observable",
+          "note": "Discrete measurement values are eigenvalues; continuous spectrum need not have normalizable eigenvectors."
+        }
+      ]
+    },
+    {
+      "id": "einstein-field-equations",
+      "title": "Einstein Field Equations",
+      "description": "Equations relating the Einstein tensor and a cosmological term to matter's stress-energy tensor, thereby determining spacetime geometry subject to initial and boundary data.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Einstein equations"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "einstein-tensor"
+        },
+        {
+          "type": "requires",
+          "target": "stress-energy-tensor"
+        },
+        {
+          "type": "used-in",
+          "target": "general-relativity"
+        }
+      ]
+    },
+    {
+      "id": "einstein-tensor",
+      "title": "Einstein Tensor",
+      "description": "The symmetric tensor G_ab = R_ab - (1/2) R g_ab, constructed from Ricci curvature and its metric trace; its Levi-Civita covariant divergence vanishes.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "ricci-curvature"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "derived-from",
+          "target": "ricci-curvature"
+        },
+        {
+          "type": "used-in",
+          "target": "einstein-field-equations"
+        }
+      ]
+    },
+    {
+      "id": "equivalence-principle",
+      "title": "Equivalence Principle",
+      "description": "In its Einstein form, local nongravitational experiments in a freely falling laboratory obey special relativity; this does not eliminate tidal curvature over a finite region.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Einstein equivalence principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "special-relativity"
+        },
+        {
+          "type": "used-in",
+          "target": "general-relativity"
+        }
+      ]
+    },
+    {
+      "id": "euler-lagrange-equation",
+      "title": "Euler-Lagrange Equation",
+      "description": "The equation partial L / partial q_i - d/dt(partial L / partial qdot_i) = 0 characterizing sufficiently smooth stationary paths of a first-order action under fixed-endpoint variations.",
+      "domains": [
+        "classical-mechanics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Euler-Lagrange equations",
+        "Lagrange's equations of the second kind"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "first-variation",
+          "note": "The equation is obtained by setting the first variation to zero."
+        },
+        {
+          "type": "requires",
+          "target": "fundamental-lemma-of-calculus-of-variations",
+          "note": "Arbitrariness of interior variations yields the pointwise equation."
+        },
+        {
+          "type": "used-in",
+          "target": "lagrangian-mechanics",
+          "note": "Mechanical equations of motion follow from the chosen Lagrangian."
+        }
+      ]
+    },
+    {
+      "id": "event-horizon",
+      "title": "Event Horizon",
+      "description": "For an asymptotically flat black hole, the boundary of the region unable to send future-directed causal signals to future null infinity; it is a global causal boundary.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Black-hole event horizon"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "light-cone"
+        },
+        {
+          "type": "requires",
+          "target": "lorentzian-manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "schwarzschild-spacetime",
+          "note": "The Schwarzschild black-hole horizon is regular in suitable coordinates and is not a curvature singularity."
+        }
+      ]
+    },
+    {
       "id": "exact-form",
       "title": "Exact Form",
       "description": "A differential form omega of positive degree for which omega = d eta for a globally defined form eta of one lower degree. Every exact form is closed.",
@@ -340,6 +865,196 @@
           "type": "requires",
           "target": "calculus",
           "note": "Local expressions differentiate the coefficient functions of a differential form."
+        },
+        {
+          "type": "requires",
+          "target": "partial-derivative",
+          "note": "Coordinate expressions use partial derivatives of form coefficients."
+        }
+      ]
+    },
+    {
+      "id": "first-variation",
+      "title": "First Variation",
+      "description": "The first-order change of a differentiable functional under an admissible perturbation, computed as d J[y + epsilon eta] / d epsilon at epsilon = 0.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "First variation of a functional",
+        "Variational differential"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "functional",
+          "note": "Variations differentiate functionals with respect to perturbations."
+        },
+        {
+          "type": "used-in",
+          "target": "variational-principle",
+          "note": "Stationarity requires the first variation to vanish for all admissible perturbations."
+        }
+      ]
+    },
+    {
+      "id": "four-momentum",
+      "title": "Four-Momentum",
+      "description": "The spacetime momentum vector combining energy and spatial momentum; p^a = m u^a for massive particles, while massless particles have nonzero null four-momentum.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "4-momentum",
+        "Energy-momentum four-vector"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "four-vector"
+        },
+        {
+          "type": "used-in",
+          "target": "stress-energy-tensor"
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "four-vector",
+      "title": "Four-Vector",
+      "description": "A spacetime tangent vector whose four components transform by Lorentz transformations in inertial coordinates; arbitrary collections of four numbers need not form one.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Spacetime four-vector"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "requires",
+          "target": "lorentz-transformation"
+        },
+        {
+          "type": "generalizes",
+          "target": "four-velocity"
+        },
+        {
+          "type": "generalizes",
+          "target": "four-momentum"
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "four-velocity",
+      "title": "Four-Velocity",
+      "description": "The tangent u^a = dx^a/dτ to a timelike worldline parameterized by proper time, with metric norm -c² in mostly-plus signature.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "4-velocity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "four-vector"
+        },
+        {
+          "type": "requires",
+          "target": "proper-time"
+        },
+        {
+          "type": "used-in",
+          "target": "four-momentum",
+          "note": "For a massive point particle with rest mass m, p^a = m u^a."
+        }
+      ]
+    },
+    {
+      "id": "functional",
+      "title": "Functional",
+      "description": "A scalar-valued map whose arguments are functions or paths; in variational problems it assigns a number to each admissible candidate.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Real-valued functional",
+        "Function of a function"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus",
+          "note": "Variational functionals commonly depend on functions and their derivatives."
+        },
+        {
+          "type": "generalizes",
+          "target": "action-functional",
+          "note": "An action is a particular functional used to specify dynamics."
+        }
+      ]
+    },
+    {
+      "id": "fundamental-lemma-of-calculus-of-variations",
+      "title": "Fundamental Lemma of Calculus of Variations",
+      "description": "If a continuous function on an open interval has zero integral against every smooth compactly supported test function, then it vanishes throughout that interval.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Fundamental lemma of the calculus of variations",
+        "Variational fundamental lemma"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus",
+          "note": "The statement relates integrals and arbitrary smooth test functions."
+        },
+        {
+          "type": "used-in",
+          "target": "euler-lagrange-equation",
+          "note": "The lemma converts the integrated stationarity condition into a differential equation."
+        }
+      ]
+    },
+    {
+      "id": "fundamental-theorem-of-calculus",
+      "title": "Fundamental Theorem of Calculus",
+      "description": "For continuous f on a closed interval, the accumulated integral of f has derivative f in the interior, and any antiderivative F evaluates the interval integral as F(b) minus F(a).",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "FTC",
+        "Newton-Leibniz theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "derivative"
+        },
+        {
+          "type": "requires",
+          "target": "riemann-integral"
+        },
+        {
+          "type": "requires",
+          "target": "continuity"
         }
       ]
     },
@@ -387,6 +1102,63 @@
           "type": "generalizes",
           "target": "special-relativity",
           "note": "Special relativity is recovered in the flat-spacetime, nongravitating limit and locally in freely falling frames."
+        },
+        {
+          "type": "requires",
+          "target": "equivalence-principle"
+        },
+        {
+          "type": "requires",
+          "target": "einstein-field-equations"
+        }
+      ]
+    },
+    {
+      "id": "generalized-coordinate",
+      "title": "Generalized Coordinate",
+      "description": "One of a set of independent local parameters specifying a mechanical configuration; these need not be Cartesian positions.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Generalized coordinates",
+        "Generalised coordinates"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "configuration-space",
+          "note": "The coordinates label points of configuration space."
+        },
+        {
+          "type": "generalizes",
+          "target": "cyclic-coordinate",
+          "note": "A cyclic coordinate is a generalized coordinate absent from the chosen Lagrangian."
+        }
+      ]
+    },
+    {
+      "id": "generalized-momentum",
+      "title": "Generalized Momentum",
+      "description": "The momentum conjugate to q_i, defined by p_i = partial L / partial qdot_i; it need not equal mass times Cartesian velocity.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Generalised momentum",
+        "Canonical momentum",
+        "Conjugate momentum"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "lagrangian",
+          "note": "Conjugate momentum differentiates the Lagrangian with respect to velocity."
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian",
+          "note": "Conjugate momenta replace velocities in a regular Hamiltonian formulation."
         }
       ]
     },
@@ -422,6 +1194,266 @@
           "type": "used-in",
           "target": "schwarzschild-spacetime",
           "note": "Geodesics describe idealized free-fall and light propagation in Schwarzschild spacetime."
+        }
+      ]
+    },
+    {
+      "id": "geodesic-deviation",
+      "title": "Geodesic Deviation",
+      "description": "The curvature-controlled relative acceleration of nearby geodesics, expressed by the Jacobi equation; in spacetime it describes tidal gravitational effects.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Jacobi equation",
+        "Tidal geodesic separation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "geodesic"
+        },
+        {
+          "type": "requires",
+          "target": "riemann-curvature-tensor"
+        },
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        },
+        {
+          "type": "used-in",
+          "target": "general-relativity"
+        }
+      ]
+    },
+    {
+      "id": "geodesic-equation",
+      "title": "Geodesic Equation",
+      "description": "The affine-parameter equation ∇_v v = 0 for a curve's tangent v; coordinate connection terms compensate for a changing local basis.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Autoparallel equation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "geodesic"
+        },
+        {
+          "type": "requires",
+          "target": "affine-parameter"
+        },
+        {
+          "type": "requires",
+          "target": "connection-coefficients"
+        },
+        {
+          "type": "used-in",
+          "target": "schwarzschild-spacetime"
+        }
+      ]
+    },
+    {
+      "id": "gradient",
+      "title": "Gradient",
+      "description": "For a differentiable scalar function on Euclidean space, the vector of coordinate partial derivatives that represents its differential using the Euclidean inner product.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Gradient vector",
+        "Gradient field"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "partial-derivative"
+        },
+        {
+          "type": "requires",
+          "target": "inner-product-space"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-geometry",
+          "note": "On a Riemannian manifold the metric identifies the differential with a gradient vector field."
+        }
+      ]
+    },
+    {
+      "id": "gravitational-time-dilation",
+      "title": "Gravitational Time Dilation",
+      "description": "Differences between clock proper-time rates associated with gravitational geometry; comparing stationary clocks requires a specified stationary setting and a common time normalization.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Gravitational clock-rate shift"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "proper-time"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "used-in",
+          "target": "general-relativity"
+        },
+        {
+          "type": "used-in",
+          "target": "schwarzschild-spacetime",
+          "note": "For static observers outside r = 2GM/c², dτ = sqrt(1 - 2GM/(rc²)) dt when t is normalized at infinity."
+        }
+      ]
+    },
+    {
+      "id": "hamiltonian",
+      "title": "Hamiltonian",
+      "description": "A classical phase-space function H(q, p, t) generating Hamilton's equations; for a regular Lagrangian it can be constructed locally by Legendre transformation in the velocity variables.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Classical Hamiltonian",
+        "Hamiltonian function"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "legendre-transform",
+          "note": "The standard passage from a regular Lagrangian uses a Legendre transform."
+        },
+        {
+          "type": "requires",
+          "target": "generalized-momentum",
+          "note": "Canonical momenta are phase-space variables."
+        }
+      ]
+    },
+    {
+      "id": "hilbert-space",
+      "title": "Hilbert Space",
+      "description": "An inner product space in which every Cauchy sequence for the induced norm converges to an element of the space.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Complete inner product space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "inner-product-space"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Complex Hilbert spaces provide the standard state-space framework."
+        }
+      ]
+    },
+    {
+      "id": "holonomic-constraint",
+      "title": "Holonomic Constraint",
+      "description": "A mechanical constraint expressible as an equation among configuration variables and possibly time, without an independent dependence on velocities.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Holonomic constraints",
+        "Integrable mechanical constraint"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "configuration-space",
+          "note": "The constraint restricts the permitted configurations."
+        },
+        {
+          "type": "used-in",
+          "target": "lagrangian-mechanics",
+          "note": "Regular holonomic constraints can be eliminated using suitable generalized coordinates."
+        }
+      ]
+    },
+    {
+      "id": "index-raising-and-lowering",
+      "title": "Index Raising and Lowering",
+      "description": "The metric-induced identification between tangent and cotangent vectors, extended to tensor slots; lowering uses the metric and raising uses its inverse.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Musical isomorphisms",
+        "Raising and lowering indices"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "requires",
+          "target": "inverse-metric"
+        },
+        {
+          "type": "requires",
+          "target": "cotangent-space"
+        },
+        {
+          "type": "used-in",
+          "target": "tensor-field"
+        }
+      ]
+    },
+    {
+      "id": "inertial-reference-frame",
+      "title": "Inertial Reference Frame",
+      "description": "A nonaccelerating coordinate frame in which free particles move uniformly along straight lines; global inertial frames are available in Minkowski spacetime.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Inertial frame"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "inner-product-space",
+      "title": "Inner Product Space",
+      "description": "A real or complex vector space with a positive-definite symmetric bilinear or Hermitian sesquilinear form, which determines lengths and orthogonality.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Pre-Hilbert space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-space"
+        },
+        {
+          "type": "generalizes",
+          "target": "hilbert-space",
+          "note": "A Hilbert space is complete in the norm induced by its inner product."
         }
       ]
     },
@@ -482,6 +1514,140 @@
       ]
     },
     {
+      "id": "inverse-metric",
+      "title": "Inverse Metric",
+      "description": "The contravariant rank-two tensor whose coordinate matrix is inverse to the metric matrix, satisfying g^{ac} g_cb = δ^a_b.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Contravariant metric"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "derived-from",
+          "target": "metric"
+        },
+        {
+          "type": "used-in",
+          "target": "index-raising-and-lowering"
+        },
+        {
+          "type": "used-in",
+          "target": "christoffel-symbol"
+        }
+      ]
+    },
+    {
+      "id": "kruskal-szekeres-coordinates",
+      "title": "Kruskal–Szekeres Coordinates",
+      "description": "Coordinates regular across the Schwarzschild horizons that describe its maximal analytic extension, exposing black-hole, white-hole and two exterior regions without removing the r = 0 singularity.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Kruskal coordinates"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "schwarzschild-coordinates"
+        },
+        {
+          "type": "requires",
+          "target": "event-horizon"
+        },
+        {
+          "type": "used-in",
+          "target": "schwarzschild-spacetime"
+        }
+      ]
+    },
+    {
+      "id": "lagrange-multiplier",
+      "title": "Lagrange Multiplier",
+      "description": "An auxiliary coefficient enforcing an equality constraint in stationarity equations; under suitable regularity conditions it expresses the objective derivative as a combination of constraint derivatives.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Lagrange multipliers",
+        "Method of Lagrange multipliers"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus",
+          "note": "Multiplier equations use derivatives and regularity of constraints."
+        },
+        {
+          "type": "used-in",
+          "target": "holonomic-constraint",
+          "note": "Time-dependent multipliers can enforce mechanical position constraints."
+        },
+        {
+          "type": "used-in",
+          "target": "variational-principle",
+          "note": "Multipliers incorporate regular constraints into variational equations."
+        }
+      ]
+    },
+    {
+      "id": "lagrangian",
+      "title": "Lagrangian",
+      "description": "A function L(q, qdot, t) of configuration, velocity and time whose time integral defines the mechanical action; for standard conservative particle systems it is kinetic minus potential energy.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Lagrangian function",
+        "Mechanical Lagrangian"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "generalized-coordinate",
+          "note": "Mechanical Lagrangians are expressed in generalized coordinates and velocities."
+        },
+        {
+          "type": "used-in",
+          "target": "action-functional",
+          "note": "Integrating the Lagrangian along a trajectory constructs the mechanical action."
+        }
+      ]
+    },
+    {
+      "id": "lagrangian-energy",
+      "title": "Lagrangian Energy",
+      "description": "The function E_L = sum_i qdot_i p_i - L; along Euler-Lagrange trajectories it is conserved when the Lagrangian has no explicit time dependence.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Lagrangian energy function",
+        "Energy function of a Lagrangian"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "generalized-momentum",
+          "note": "The energy function pairs each velocity with its conjugate momentum."
+        },
+        {
+          "type": "requires",
+          "target": "euler-lagrange-equation",
+          "note": "Its evolution obeys dE_L/dt = -partial L/partial t on solutions."
+        }
+      ]
+    },
+    {
       "id": "lagrangian-mechanics",
       "title": "Lagrangian Mechanics",
       "description": "A formulation of classical mechanics in which equations of motion follow from a Lagrangian and a stationary-action variational principle rather than directly from force balance.",
@@ -499,6 +1665,65 @@
         {
           "type": "requires",
           "target": "variational-principle"
+        },
+        {
+          "type": "requires",
+          "target": "lagrangian",
+          "note": "The formulation begins with a Lagrangian for the system."
+        }
+      ]
+    },
+    {
+      "id": "legendre-transform",
+      "title": "Legendre Transform",
+      "description": "A change from a variable x to its conjugate p = grad f(x), producing g(p) = p dot x - f(x) where the gradient map can be inverted; this record concerns the smooth local transform.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Legendre transformation",
+        "Smooth Legendre transform"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "calculus",
+          "note": "The conjugate variable is defined using derivatives."
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian",
+          "note": "A regular velocity-to-momentum transformation converts a Lagrangian into a Hamiltonian."
+        }
+      ]
+    },
+    {
+      "id": "length-contraction",
+      "title": "Length Contraction",
+      "description": "An object's length parallel to uniform relative motion, measured using simultaneous endpoint positions in the observer's inertial frame, is its rest length divided by γ.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Lorentz contraction"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "lorentz-transformation"
+        },
+        {
+          "type": "requires",
+          "target": "relativity-of-simultaneity"
+        },
+        {
+          "type": "derived-from",
+          "target": "lorentz-transformation"
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
         }
       ]
     },
@@ -527,6 +1752,10 @@
           "type": "derived-from",
           "target": "metric",
           "note": "It is uniquely determined by the metric through the Koszul formula."
+        },
+        {
+          "type": "requires",
+          "target": "metric-compatibility"
         }
       ]
     },
@@ -553,6 +1782,80 @@
       ]
     },
     {
+      "id": "light-cone",
+      "title": "Light Cone",
+      "description": "In Minkowski spacetime, the null-separated events around an event form its past and future light cones; in curved spacetime the metric defines tangent-space null cones.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Null cone"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "causal-character-of-vectors"
+        },
+        {
+          "type": "used-in",
+          "target": "minkowski-spacetime"
+        },
+        {
+          "type": "used-in",
+          "target": "event-horizon"
+        }
+      ]
+    },
+    {
+      "id": "limit-of-a-function",
+      "title": "Limit of a Function",
+      "description": "A value approached by a function as its input approaches a specified accumulation point, independently of the function's value at that point.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Function limit",
+        "Limit"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "calculus",
+          "note": "Limits define local change and accumulation."
+        }
+      ]
+    },
+    {
+      "id": "line-element",
+      "title": "Line Element",
+      "description": "The coordinate expression ds² = g_ab dx^a dx^b for a metric's infinitesimal quadratic interval; it need not be positive in indefinite signature.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Metric line element"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "requires",
+          "target": "coordinate-chart"
+        },
+        {
+          "type": "used-in",
+          "target": "proper-time"
+        },
+        {
+          "type": "used-in",
+          "target": "schwarzschild-spacetime"
+        }
+      ]
+    },
+    {
       "id": "linear-algebra",
       "title": "Linear Algebra",
       "description": "The study of vector spaces, linear maps, matrices, eigenvalues, and inner products that supplies core mathematical language for classical and quantum physics.",
@@ -563,6 +1866,110 @@
         "Vector and matrix algebra"
       ],
       "relations": []
+    },
+    {
+      "id": "linear-map",
+      "title": "Linear Map",
+      "description": "A map between vector spaces over the same field that preserves addition and scalar multiplication.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Linear transformation",
+        "Linear mapping"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-space"
+        },
+        {
+          "type": "generalizes",
+          "target": "linear-operator",
+          "note": "A linear operator acts in one ambient vector space, possibly on a specified linear domain."
+        },
+        {
+          "type": "used-in",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "linear-operator",
+      "title": "Linear Operator",
+      "description": "A linear map from a vector space into itself, or from a specified linear subspace of its domain into that same ambient space when treating partially defined operators.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Linear operator on a vector space"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-map"
+        },
+        {
+          "type": "generalizes",
+          "target": "self-adjoint-operator",
+          "note": "Self-adjointness imposes an adjoint and domain condition in a Hilbert space."
+        }
+      ]
+    },
+    {
+      "id": "lorentz-boost",
+      "title": "Lorentz Boost",
+      "description": "A Lorentz transformation between inertial frames in relative uniform motion with no added spatial rotation; it mixes time with the direction of motion.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Pure boost"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "lorentz-transformation"
+        },
+        {
+          "type": "requires",
+          "target": "inertial-reference-frame"
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "lorentz-transformation",
+      "title": "Lorentz Transformation",
+      "description": "A linear transformation preserving the Minkowski metric and spacetime interval; Lorentz transformations include spatial rotations and boosts, but not translations.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Lorentz transformations"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        },
+        {
+          "type": "requires",
+          "target": "minkowski-metric"
+        },
+        {
+          "type": "generalizes",
+          "target": "lorentz-boost",
+          "note": "Pure boosts form a class of Lorentz transformations, not a subgroup by themselves."
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
+        }
+      ]
     },
     {
       "id": "lorentzian-manifold",
@@ -626,6 +2033,29 @@
       ]
     },
     {
+      "id": "matrix",
+      "title": "Matrix",
+      "description": "A rectangular array of scalars with specified row and column dimensions, used to represent linear maps once bases have been chosen in finite-dimensional spaces.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Matrices",
+        "Scalar matrix array"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "linear-map",
+          "note": "Matrix multiplication expresses the coordinate action and composition of finite-dimensional linear maps."
+        },
+        {
+          "type": "used-in",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
       "id": "metric",
       "title": "Metric",
       "description": "A smooth nondegenerate symmetric covariant rank-two tensor that defines lengths, angles, and volume in Riemannian geometry, and invariant intervals and causal structure when it has Lorentzian signature.",
@@ -645,6 +2075,132 @@
         {
           "type": "requires",
           "target": "tensor-field"
+        },
+        {
+          "type": "generalizes",
+          "target": "minkowski-metric",
+          "note": "The Minkowski metric is a particular flat Lorentzian metric."
+        }
+      ]
+    },
+    {
+      "id": "metric-compatibility",
+      "title": "Metric Compatibility",
+      "description": "The property ∇g = 0 of a connection relative to a metric, ensuring that parallel transport preserves metric pairings.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Metric-compatible connection condition"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        },
+        {
+          "type": "used-in",
+          "target": "levi-civita-connection"
+        },
+        {
+          "type": "used-in",
+          "target": "parallel-transport"
+        }
+      ]
+    },
+    {
+      "id": "metric-signature",
+      "title": "Metric Signature",
+      "description": "The basis-independent counts of positive and negative directions of a nondegenerate real symmetric metric; Lorentzian signature has one direction of the opposite sign.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Signature of a metric"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "requires",
+          "target": "linear-algebra"
+        },
+        {
+          "type": "used-in",
+          "target": "lorentzian-manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "causal-character-of-vectors"
+        }
+      ]
+    },
+    {
+      "id": "metric-volume-form",
+      "title": "Metric Volume Form",
+      "description": "On an oriented pseudo-Riemannian manifold, the metric determines a top-degree form with coordinate factor sqrt(|det g|); without orientation it determines a volume density.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Riemannian volume form",
+        "Metric volume element"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "requires",
+          "target": "manifold-orientation"
+        },
+        {
+          "type": "requires",
+          "target": "differential-form"
+        },
+        {
+          "type": "used-in",
+          "target": "integration-of-differential-forms"
+        }
+      ]
+    },
+    {
+      "id": "minkowski-metric",
+      "title": "Minkowski Metric",
+      "description": "The flat Lorentzian metric of Minkowski spacetime, represented in inertial Cartesian coordinates by diag(-1, 1, 1, 1) when x⁰ = ct.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Minkowski tensor",
+        "Eta metric"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "requires",
+          "target": "metric-signature"
+        },
+        {
+          "type": "used-in",
+          "target": "minkowski-spacetime"
+        },
+        {
+          "type": "used-in",
+          "target": "lorentz-transformation"
         }
       ]
     },
@@ -679,6 +2235,108 @@
       ]
     },
     {
+      "id": "mixed-quantum-state",
+      "title": "Mixed Quantum State",
+      "description": "A quantum state whose density operator is not rank one, admitting statistical decompositions into pure states that need not be unique.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Mixed state",
+        "Statistical quantum state"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Mixed states describe ensembles and reduced states of entangled systems."
+        }
+      ]
+    },
+    {
+      "id": "multiple-integral",
+      "title": "Multiple Integral",
+      "description": "An integral of a function over a region with two or more independent variables, accumulating values against an area or volume element; repeated one-dimensional integration is justified under appropriate integrability conditions.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Multivariable integral",
+        "Double and triple integrals"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "riemann-integral",
+          "note": "Riemann sums in several variables extend the single-variable construction used in this introduction."
+        },
+        {
+          "type": "used-in",
+          "target": "integration-of-differential-forms",
+          "note": "Local coordinate definitions of form integrals use multivariable integration."
+        }
+      ]
+    },
+    {
+      "id": "natural-boundary-condition",
+      "title": "Natural Boundary Condition",
+      "description": "A boundary condition derived by requiring boundary terms in the first variation to vanish for permitted endpoint variations, rather than prescribing those boundary values in advance.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Natural boundary conditions",
+        "Variational boundary condition"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "first-variation",
+          "note": "Allowing endpoint variations retains boundary contributions."
+        },
+        {
+          "type": "used-in",
+          "target": "euler-lagrange-equation",
+          "note": "Natural conditions supplement the interior Euler-Lagrange equation when boundary values are free."
+        }
+      ]
+    },
+    {
+      "id": "noether-theorem",
+      "title": "Noether's Theorem",
+      "description": "Noether's first theorem associates differentiable continuous variational symmetries with quantities conserved along Euler-Lagrange solutions, including symmetries of the Lagrangian up to a total derivative.",
+      "domains": [
+        "classical-mechanics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Noether theorem",
+        "Noether's first theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "euler-lagrange-equation",
+          "note": "The conservation law holds along solutions of the variational equations."
+        },
+        {
+          "type": "requires",
+          "target": "action-functional",
+          "note": "The relevant symmetry preserves the variational action, allowing boundary terms."
+        },
+        {
+          "type": "used-in",
+          "target": "lagrangian-mechanics",
+          "note": "Continuous symmetries reveal conserved mechanical quantities."
+        }
+      ]
+    },
+    {
       "id": "parallel-transport",
       "title": "Parallel Transport",
       "description": "A connection-dependent rule for moving tangent vectors along a curve while their covariant derivative along that curve vanishes.",
@@ -701,6 +2359,28 @@
         {
           "type": "requires",
           "target": "calculus"
+        }
+      ]
+    },
+    {
+      "id": "partial-derivative",
+      "title": "Partial Derivative",
+      "description": "The ordinary derivative of a multivariable function with respect to one coordinate while the other coordinates are fixed, evaluated wherever that derivative exists.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Partial differentiation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "exterior-derivative",
+          "note": "Coordinate formulas differentiate coefficient functions with respect to individual coordinates."
         }
       ]
     },
@@ -728,6 +2408,57 @@
           "type": "used-in",
           "target": "de-rham-cohomology",
           "note": "It gives vanishing positive-degree de Rham cohomology on star-shaped domains."
+        }
+      ]
+    },
+    {
+      "id": "principle-of-relativity",
+      "title": "Principle of Relativity",
+      "description": "The requirement that the laws of physics take the same form in all inertial frames; together with light-speed invariance it motivates special relativity.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Relativity principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "inertial-reference-frame"
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "proper-time",
+      "title": "Proper Time",
+      "description": "Elapsed time recorded by an ideal clock along a timelike worldline, obtained by integrating its Lorentzian interval; it cannot parameterize a null worldline.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Clock time"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "lorentzian-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        },
+        {
+          "type": "used-in",
+          "target": "geodesic",
+          "note": "Proper time is an affine parameter on timelike Levi-Civita geodesics, but not on null geodesics."
+        },
+        {
+          "type": "used-in",
+          "target": "four-velocity"
         }
       ]
     },
@@ -797,6 +2528,50 @@
       ]
     },
     {
+      "id": "pure-quantum-state",
+      "title": "Pure Quantum State",
+      "description": "A quantum state represented by a rank-one density operator, equivalently by a unit vector in a complex Hilbert space up to an overall phase.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Pure state"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "quantum-entanglement",
+      "title": "Quantum Entanglement",
+      "description": "For finite-dimensional composite systems, the property of a joint state that cannot be written as a convex combination of product states of the subsystems; for a pure state this reduces to failure to factor as one product vector.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Entanglement",
+        "Nonseparable quantum state"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics",
+          "note": "Entanglement expresses correlations not obtainable by a statistical mixture of independent local states."
+        }
+      ]
+    },
+    {
       "id": "quantum-mechanics",
       "title": "Quantum Mechanics",
       "description": "The framework describing quantum states, observables, probabilities, and dynamics, with linear operators on complex vector spaces as its central mathematical structure.",
@@ -814,6 +2589,102 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "quantum-observable",
+      "title": "Quantum Observable",
+      "description": "A measurable quantity represented, for a sharp measurement in the standard Hilbert-space formalism, by a self-adjoint operator whose spectral measure determines the possible outcomes.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Observable in quantum mechanics",
+        "Sharp quantum observable"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "self-adjoint-operator"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "quantum-state",
+      "title": "Quantum State",
+      "description": "A specification of quantum measurement probabilities, represented in the standard Hilbert-space formulation by a positive trace-class operator of trace one, including pure and mixed states.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "State of a quantum system"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hilbert-space"
+        },
+        {
+          "type": "generalizes",
+          "target": "pure-quantum-state",
+          "note": "Pure states correspond to rank-one density operators."
+        },
+        {
+          "type": "generalizes",
+          "target": "mixed-quantum-state",
+          "note": "Mixed states are density operators that are not pure."
+        }
+      ]
+    },
+    {
+      "id": "quantum-superposition",
+      "title": "Quantum Superposition",
+      "description": "The formation of a pure quantum state from a nonzero complex linear combination of state vectors followed by normalization, retaining relative phases rather than mixing classical probabilities.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Superposition of quantum states",
+        "Superposition principle in quantum mechanics"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "pure-quantum-state"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "relativity-of-simultaneity",
+      "title": "Relativity of Simultaneity",
+      "description": "Spatially separated events judged simultaneous in one inertial frame need not be simultaneous in another frame moving relative to it.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Relative simultaneity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "lorentz-transformation"
+        },
+        {
+          "type": "derived-from",
+          "target": "lorentz-transformation"
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
         }
       ]
     },
@@ -876,6 +2747,58 @@
       ]
     },
     {
+      "id": "riemann-integral",
+      "title": "Riemann Integral",
+      "description": "For a bounded real function on a closed bounded interval, the common limit of tagged partition sums as the largest subinterval length tends to zero, when that limit exists independently of the tags.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Riemann integration"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "limit-of-a-function"
+        },
+        {
+          "type": "used-in",
+          "target": "calculus"
+        }
+      ]
+    },
+    {
+      "id": "riemann-normal-coordinates",
+      "title": "Riemann Normal Coordinates",
+      "description": "Coordinates constructed from the metric exponential map near a point, where Levi-Civita coefficients vanish at that point; curvature generally remains nonzero.",
+      "domains": [
+        "mathematics",
+        "relativity"
+      ],
+      "aliases": [
+        "Normal coordinates",
+        "Geodesic normal coordinates"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "geodesic"
+        },
+        {
+          "type": "requires",
+          "target": "levi-civita-connection"
+        },
+        {
+          "type": "used-in",
+          "target": "equivalence-principle"
+        },
+        {
+          "type": "used-in",
+          "target": "christoffel-symbol"
+        }
+      ]
+    },
+    {
       "id": "riemannian-manifold",
       "title": "Riemannian Manifold",
       "description": "A smooth manifold equipped with a smoothly varying positive-definite metric tensor, defining lengths, angles, volumes, and geodesic distance.",
@@ -893,6 +2816,82 @@
         {
           "type": "requires",
           "target": "metric"
+        }
+      ]
+    },
+    {
+      "id": "schrodinger-equation",
+      "title": "Schrödinger Equation",
+      "description": "The evolution equation i hbar d|psi>/dt = H(t)|psi> for a closed quantum system's state vector, with H the Hamiltonian operator and suitable domain conditions.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Schrodinger equation",
+        "Time-dependent Schrödinger equation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "pure-quantum-state"
+        },
+        {
+          "type": "requires",
+          "target": "derivative"
+        },
+        {
+          "type": "requires",
+          "target": "self-adjoint-operator",
+          "note": "A self-adjoint Hamiltonian gives unitary dynamics under the appropriate evolution hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "schwarzschild-coordinates",
+      "title": "Schwarzschild Coordinates",
+      "description": "Coordinates (t, r, θ, φ) displaying Schwarzschild symmetry, with r an areal radius; the usual chart is singular at the black-hole horizon.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Schwarzschild chart"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "coordinate-chart"
+        },
+        {
+          "type": "requires",
+          "target": "schwarzschild-spacetime"
+        },
+        {
+          "type": "used-in",
+          "target": "schwarzschild-spacetime"
+        }
+      ]
+    },
+    {
+      "id": "schwarzschild-radius",
+      "title": "Schwarzschild Radius",
+      "description": "The length r_s = 2GM/c² associated with a mass M; it is the horizon's areal radius for the Schwarzschild black-hole solution, not for every material body.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Gravitational radius 2GM/c²"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "schwarzschild-spacetime"
+        },
+        {
+          "type": "used-in",
+          "target": "event-horizon",
+          "note": "Its horizon interpretation applies to the Schwarzschild black-hole geometry."
         }
       ]
     },
@@ -920,6 +2919,57 @@
         {
           "type": "requires",
           "target": "metric"
+        }
+      ]
+    },
+    {
+      "id": "second-variation",
+      "title": "Second Variation",
+      "description": "The second-order variation of a sufficiently smooth functional under admissible perturbations, represented by a quadratic form that helps distinguish minima from other stationary points.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Second variation of a functional"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "first-variation",
+          "note": "Second-order analysis follows the first-order stationarity test."
+        },
+        {
+          "type": "used-in",
+          "target": "variational-principle",
+          "note": "Nonnegative second variation is necessary for a local minimum under standard smoothness assumptions."
+        }
+      ]
+    },
+    {
+      "id": "self-adjoint-operator",
+      "title": "Self-adjoint Operator",
+      "description": "A densely defined linear operator on a Hilbert space equal to its adjoint in both action and domain; in finite dimensions this is a Hermitian matrix in an orthonormal basis.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Self-adjoint linear operator"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "linear-operator"
+        },
+        {
+          "type": "requires",
+          "target": "hilbert-space"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-observable",
+          "note": "The standard sharp-observable formalism uses self-adjoint operators."
         }
       ]
     },
@@ -1017,6 +3067,36 @@
       ]
     },
     {
+      "id": "spacetime-interval",
+      "title": "Spacetime Interval",
+      "description": "In Minkowski spacetime, the invariant squared separation of two events, -c²Δt² + Δx² + Δy² + Δz² in the mostly-plus convention.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Invariant interval",
+        "Minkowski interval"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "minkowski-metric"
+        },
+        {
+          "type": "derived-from",
+          "target": "minkowski-metric"
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
+        },
+        {
+          "type": "used-in",
+          "target": "light-cone"
+        }
+      ]
+    },
+    {
       "id": "special-relativity",
       "title": "Special Relativity",
       "description": "The theory of space and time for inertial physics without gravitation, built on Lorentz invariance and a frame-independent speed of light.",
@@ -1034,6 +3114,14 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        },
+        {
+          "type": "requires",
+          "target": "principle-of-relativity"
+        },
+        {
+          "type": "requires",
+          "target": "lorentz-transformation"
         }
       ]
     },
@@ -1061,6 +3149,34 @@
         {
           "type": "used-in",
           "target": "de-rham-cohomology"
+        },
+        {
+          "type": "generalizes",
+          "target": "fundamental-theorem-of-calculus",
+          "note": "On an oriented interval, Stokes' theorem recovers endpoint evaluation of the integral of a derivative."
+        }
+      ]
+    },
+    {
+      "id": "stress-energy-tensor",
+      "title": "Stress–Energy Tensor",
+      "description": "A tensor encoding local energy density, momentum density, energy flux and stresses; the symmetric matter tensor supplies the source term in Einstein's equations.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Energy-momentum tensor",
+        "Stress-energy-momentum tensor"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tensor-field"
+        },
+        {
+          "type": "used-in",
+          "target": "einstein-field-equations"
         }
       ]
     },
@@ -1109,6 +3225,11 @@
         {
           "type": "requires",
           "target": "closed-form"
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian",
+          "note": "Symplectic forms determine the geometric form of Hamiltonian evolution."
         }
       ]
     },
@@ -1130,6 +3251,34 @@
         {
           "type": "requires",
           "target": "linear-algebra"
+        },
+        {
+          "type": "requires",
+          "target": "vector-space",
+          "note": "A tangent space is a vector space of directions at a point."
+        }
+      ]
+    },
+    {
+      "id": "taylor-series",
+      "title": "Taylor Series",
+      "description": "The power series about a point whose coefficients are the function's successive derivatives there divided by factorials; an infinitely differentiable function need not equal this series.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Taylor expansion",
+        "Taylor power series"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "calculus",
+          "note": "Taylor polynomials and remainder estimates support local approximation."
         }
       ]
     },
@@ -1167,6 +3316,47 @@
           "type": "generalizes",
           "target": "metric",
           "note": "A metric is a nondegenerate symmetric covariant rank-two tensor field."
+        },
+        {
+          "type": "generalizes",
+          "target": "stress-energy-tensor"
+        },
+        {
+          "type": "generalizes",
+          "target": "einstein-tensor"
+        },
+        {
+          "type": "generalizes",
+          "target": "inverse-metric"
+        }
+      ]
+    },
+    {
+      "id": "time-dilation",
+      "title": "Time Dilation",
+      "description": "In special relativity, elapsed coordinate time in an inertial frame exceeds a moving clock's proper time; at constant speed, Δt = γ Δτ.",
+      "domains": [
+        "relativity"
+      ],
+      "aliases": [
+        "Kinematic time dilation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "lorentz-transformation"
+        },
+        {
+          "type": "requires",
+          "target": "proper-time"
+        },
+        {
+          "type": "derived-from",
+          "target": "lorentz-transformation"
+        },
+        {
+          "type": "used-in",
+          "target": "special-relativity"
         }
       ]
     },
@@ -1186,6 +3376,11 @@
         {
           "type": "requires",
           "target": "calculus"
+        },
+        {
+          "type": "requires",
+          "target": "first-variation",
+          "note": "Stationarity is expressed by vanishing admissible first variations."
         }
       ]
     },
@@ -1212,6 +3407,51 @@
           "type": "used-in",
           "target": "tensor-field",
           "note": "Tensor fields are sections of tensor bundles."
+        }
+      ]
+    },
+    {
+      "id": "vector-space",
+      "title": "Vector Space",
+      "description": "A set equipped with vector addition and scalar multiplication over a field, satisfying the vector-space axioms so that linear combinations are defined.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Linear space"
+      ],
+      "relations": [
+        {
+          "type": "generalizes",
+          "target": "inner-product-space",
+          "note": "An inner product adds positive-definite geometric structure to a real or complex vector space."
+        },
+        {
+          "type": "used-in",
+          "target": "linear-algebra"
+        }
+      ]
+    },
+    {
+      "id": "wavefunction",
+      "title": "Wavefunction",
+      "description": "A complex probability-amplitude representation of a pure quantum state, commonly as a function of configuration coordinates, with additional components when spin or other internal degrees of freedom are present.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Wave function",
+        "Quantum wavefunction"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "pure-quantum-state"
+        },
+        {
+          "type": "used-in",
+          "target": "schrodinger-equation",
+          "note": "Wave mechanics expresses state evolution through the wavefunction."
         }
       ]
     },

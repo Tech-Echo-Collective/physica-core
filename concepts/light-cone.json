@@ -1,0 +1,25 @@
+{
+  "id": "light-cone",
+  "title": "Light Cone",
+  "description": "In Minkowski spacetime, the null-separated events around an event form its past and future light cones; in curved spacetime the metric defines tangent-space null cones.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Null cone"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "causal-character-of-vectors"
+    },
+    {
+      "type": "used-in",
+      "target": "minkowski-spacetime"
+    },
+    {
+      "type": "used-in",
+      "target": "event-horizon"
+    }
+  ]
+}

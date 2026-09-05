@@ -1,0 +1,25 @@
+{
+  "id": "generalized-momentum",
+  "title": "Generalized Momentum",
+  "description": "The momentum conjugate to q_i, defined by p_i = partial L / partial qdot_i; it need not equal mass times Cartesian velocity.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Generalised momentum",
+    "Canonical momentum",
+    "Conjugate momentum"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lagrangian",
+      "note": "Conjugate momentum differentiates the Lagrangian with respect to velocity."
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian",
+      "note": "Conjugate momenta replace velocities in a regular Hamiltonian formulation."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "functional",
+  "title": "Functional",
+  "description": "A scalar-valued map whose arguments are functions or paths; in variational problems it assigns a number to each admissible candidate.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Real-valued functional",
+    "Function of a function"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "Variational functionals commonly depend on functions and their derivatives."
+    },
+    {
+      "type": "generalizes",
+      "target": "action-functional",
+      "note": "An action is a particular functional used to specify dynamics."
+    }
+  ]
+}

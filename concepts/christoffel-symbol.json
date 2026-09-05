@@ -41,6 +41,15 @@
       "type": "used-in",
       "target": "riemann-curvature-tensor",
       "note": "In the Levi-Civita case they enter the coordinate expression for the Riemann curvature tensor."
+    },
+    {
+      "type": "requires",
+      "target": "coordinate-basis"
+    },
+    {
+      "type": "used-in",
+      "target": "geodesic-equation",
+      "note": "Levi-Civita coefficients supply the connection terms for metric geodesics."
     }
   ]
 }

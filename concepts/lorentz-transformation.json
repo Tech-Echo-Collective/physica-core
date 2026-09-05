@@ -1,0 +1,30 @@
+{
+  "id": "lorentz-transformation",
+  "title": "Lorentz Transformation",
+  "description": "A linear transformation preserving the Minkowski metric and spacetime interval; Lorentz transformations include spatial rotations and boosts, but not translations.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Lorentz transformations"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-algebra"
+    },
+    {
+      "type": "requires",
+      "target": "minkowski-metric"
+    },
+    {
+      "type": "generalizes",
+      "target": "lorentz-boost",
+      "note": "Pure boosts form a class of Lorentz transformations, not a subgroup by themselves."
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

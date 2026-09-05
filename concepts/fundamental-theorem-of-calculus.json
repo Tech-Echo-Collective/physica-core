@@ -1,0 +1,26 @@
+{
+  "id": "fundamental-theorem-of-calculus",
+  "title": "Fundamental Theorem of Calculus",
+  "description": "For continuous f on a closed interval, the accumulated integral of f has derivative f in the interior, and any antiderivative F evaluates the interval integral as F(b) minus F(a).",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "FTC",
+    "Newton-Leibniz theorem"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "derivative"
+    },
+    {
+      "type": "requires",
+      "target": "riemann-integral"
+    },
+    {
+      "type": "requires",
+      "target": "continuity"
+    }
+  ]
+}

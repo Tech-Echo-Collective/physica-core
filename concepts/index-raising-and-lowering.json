@@ -1,0 +1,31 @@
+{
+  "id": "index-raising-and-lowering",
+  "title": "Index Raising and Lowering",
+  "description": "The metric-induced identification between tangent and cotangent vectors, extended to tensor slots; lowering uses the metric and raising uses its inverse.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Musical isomorphisms",
+    "Raising and lowering indices"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "requires",
+      "target": "inverse-metric"
+    },
+    {
+      "type": "requires",
+      "target": "cotangent-space"
+    },
+    {
+      "type": "used-in",
+      "target": "tensor-field"
+    }
+  ]
+}

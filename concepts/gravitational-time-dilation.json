@@ -1,0 +1,31 @@
+{
+  "id": "gravitational-time-dilation",
+  "title": "Gravitational Time Dilation",
+  "description": "Differences between clock proper-time rates associated with gravitational geometry; comparing stationary clocks requires a specified stationary setting and a common time normalization.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Gravitational clock-rate shift"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "proper-time"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "used-in",
+      "target": "general-relativity"
+    },
+    {
+      "type": "used-in",
+      "target": "schwarzschild-spacetime",
+      "note": "For static observers outside r = 2GM/c², dτ = sqrt(1 - 2GM/(rc²)) dt when t is normalized at infinity."
+    }
+  ]
+}

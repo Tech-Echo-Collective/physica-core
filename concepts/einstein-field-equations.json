@@ -1,0 +1,26 @@
+{
+  "id": "einstein-field-equations",
+  "title": "Einstein Field Equations",
+  "description": "Equations relating the Einstein tensor and a cosmological term to matter's stress-energy tensor, thereby determining spacetime geometry subject to initial and boundary data.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Einstein equations"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "einstein-tensor"
+    },
+    {
+      "type": "requires",
+      "target": "stress-energy-tensor"
+    },
+    {
+      "type": "used-in",
+      "target": "general-relativity"
+    }
+  ]
+}

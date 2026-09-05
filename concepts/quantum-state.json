@@ -1,0 +1,27 @@
+{
+  "id": "quantum-state",
+  "title": "Quantum State",
+  "description": "A specification of quantum measurement probabilities, represented in the standard Hilbert-space formulation by a positive trace-class operator of trace one, including pure and mixed states.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "State of a quantum system"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "hilbert-space"
+    },
+    {
+      "type": "generalizes",
+      "target": "pure-quantum-state",
+      "note": "Pure states correspond to rank-one density operators."
+    },
+    {
+      "type": "generalizes",
+      "target": "mixed-quantum-state",
+      "note": "Mixed states are density operators that are not pure."
+    }
+  ]
+}

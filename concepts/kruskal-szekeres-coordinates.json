@@ -1,0 +1,26 @@
+{
+  "id": "kruskal-szekeres-coordinates",
+  "title": "Kruskal–Szekeres Coordinates",
+  "description": "Coordinates regular across the Schwarzschild horizons that describe its maximal analytic extension, exposing black-hole, white-hole and two exterior regions without removing the r = 0 singularity.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Kruskal coordinates"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "schwarzschild-coordinates"
+    },
+    {
+      "type": "requires",
+      "target": "event-horizon"
+    },
+    {
+      "type": "used-in",
+      "target": "schwarzschild-spacetime"
+    }
+  ]
+}

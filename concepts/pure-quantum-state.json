@@ -1,0 +1,21 @@
+{
+  "id": "pure-quantum-state",
+  "title": "Pure Quantum State",
+  "description": "A quantum state represented by a rank-one density operator, equivalently by a unit vector in a complex Hilbert space up to an overall phase.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Pure state"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics"
+    }
+  ]
+}

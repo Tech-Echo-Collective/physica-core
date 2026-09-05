@@ -1,0 +1,22 @@
+{
+  "id": "linear-operator",
+  "title": "Linear Operator",
+  "description": "A linear map from a vector space into itself, or from a specified linear subspace of its domain into that same ambient space when treating partially defined operators.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Linear operator on a vector space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-map"
+    },
+    {
+      "type": "generalizes",
+      "target": "self-adjoint-operator",
+      "note": "Self-adjointness imposes an adjoint and domain condition in a Hilbert space."
+    }
+  ]
+}

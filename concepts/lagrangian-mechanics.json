@@ -16,6 +16,11 @@
     {
       "type": "requires",
       "target": "variational-principle"
+    },
+    {
+      "type": "requires",
+      "target": "lagrangian",
+      "note": "The formulation begins with a Lagrangian for the system."
     }
   ]
 }

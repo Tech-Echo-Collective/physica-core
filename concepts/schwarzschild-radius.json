@@ -1,0 +1,23 @@
+{
+  "id": "schwarzschild-radius",
+  "title": "Schwarzschild Radius",
+  "description": "The length r_s = 2GM/c² associated with a mass M; it is the horizon's areal radius for the Schwarzschild black-hole solution, not for every material body.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Gravitational radius 2GM/c²"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "schwarzschild-spacetime"
+    },
+    {
+      "type": "used-in",
+      "target": "event-horizon",
+      "note": "Its horizon interpretation applies to the Schwarzschild black-hole geometry."
+    }
+  ]
+}

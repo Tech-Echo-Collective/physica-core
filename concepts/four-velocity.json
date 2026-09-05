@@ -1,0 +1,26 @@
+{
+  "id": "four-velocity",
+  "title": "Four-Velocity",
+  "description": "The tangent u^a = dx^a/dτ to a timelike worldline parameterized by proper time, with metric norm -c² in mostly-plus signature.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "4-velocity"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "four-vector"
+    },
+    {
+      "type": "requires",
+      "target": "proper-time"
+    },
+    {
+      "type": "used-in",
+      "target": "four-momentum",
+      "note": "For a massive point particle with rest mass m, p^a = m u^a."
+    }
+  ]
+}

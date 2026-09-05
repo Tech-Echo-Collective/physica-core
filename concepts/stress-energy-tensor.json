@@ -1,0 +1,23 @@
+{
+  "id": "stress-energy-tensor",
+  "title": "Stress–Energy Tensor",
+  "description": "A tensor encoding local energy density, momentum density, energy flux and stresses; the symmetric matter tensor supplies the source term in Einstein's equations.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Energy-momentum tensor",
+    "Stress-energy-momentum tensor"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "tensor-field"
+    },
+    {
+      "type": "used-in",
+      "target": "einstein-field-equations"
+    }
+  ]
+}

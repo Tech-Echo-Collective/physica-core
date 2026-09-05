@@ -21,6 +21,11 @@
       "type": "derived-from",
       "target": "tangent-space",
       "note": "The cotangent space is obtained as the linear dual of the tangent space at the same point."
+    },
+    {
+      "type": "requires",
+      "target": "linear-map",
+      "note": "Covectors are scalar-valued linear maps on the tangent space."
     }
   ]
 }

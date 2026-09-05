@@ -1,0 +1,27 @@
+{
+  "id": "derivative",
+  "title": "Derivative",
+  "description": "For a real-valued function of one real variable, the limit of its difference quotient at a point when that finite limit exists, measuring the function's local rate of change.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Ordinary derivative",
+    "Single-variable derivative"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "limit-of-a-function"
+    },
+    {
+      "type": "used-in",
+      "target": "calculus"
+    },
+    {
+      "type": "used-in",
+      "target": "schrodinger-equation",
+      "note": "The equation differentiates a state with respect to time."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "riemann-normal-coordinates",
+  "title": "Riemann Normal Coordinates",
+  "description": "Coordinates constructed from the metric exponential map near a point, where Levi-Civita coefficients vanish at that point; curvature generally remains nonzero.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Normal coordinates",
+    "Geodesic normal coordinates"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "geodesic"
+    },
+    {
+      "type": "requires",
+      "target": "levi-civita-connection"
+    },
+    {
+      "type": "used-in",
+      "target": "equivalence-principle"
+    },
+    {
+      "type": "used-in",
+      "target": "christoffel-symbol"
+    }
+  ]
+}

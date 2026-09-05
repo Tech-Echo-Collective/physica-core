@@ -1,0 +1,26 @@
+{
+  "id": "schwarzschild-coordinates",
+  "title": "Schwarzschild Coordinates",
+  "description": "Coordinates (t, r, θ, φ) displaying Schwarzschild symmetry, with r an areal radius; the usual chart is singular at the black-hole horizon.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Schwarzschild chart"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "coordinate-chart"
+    },
+    {
+      "type": "requires",
+      "target": "schwarzschild-spacetime"
+    },
+    {
+      "type": "used-in",
+      "target": "schwarzschild-spacetime"
+    }
+  ]
+}

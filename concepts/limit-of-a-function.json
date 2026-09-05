@@ -1,0 +1,19 @@
+{
+  "id": "limit-of-a-function",
+  "title": "Limit of a Function",
+  "description": "A value approached by a function as its input approaches a specified accumulation point, independently of the function's value at that point.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Function limit",
+    "Limit"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "calculus",
+      "note": "Limits define local change and accumulation."
+    }
+  ]
+}

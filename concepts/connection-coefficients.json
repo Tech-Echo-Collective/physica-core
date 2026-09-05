@@ -1,0 +1,31 @@
+{
+  "id": "connection-coefficients",
+  "title": "Connection Coefficients",
+  "description": "Local functions expressing covariant derivatives of basis vector fields in a chosen frame; they do not transform as components of a tensor.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Affine connection coefficients"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "affine-connection"
+    },
+    {
+      "type": "requires",
+      "target": "coordinate-basis"
+    },
+    {
+      "type": "generalizes",
+      "target": "christoffel-symbol",
+      "note": "The Core Christoffel concept is restricted to Levi-Civita coefficients in a coordinate basis."
+    },
+    {
+      "type": "used-in",
+      "target": "affine-connection"
+    }
+  ]
+}

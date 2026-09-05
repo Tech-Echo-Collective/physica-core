@@ -1,0 +1,28 @@
+{
+  "id": "einstein-tensor",
+  "title": "Einstein Tensor",
+  "description": "The symmetric tensor G_ab = R_ab - (1/2) R g_ab, constructed from Ricci curvature and its metric trace; its Levi-Civita covariant divergence vanishes.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "ricci-curvature"
+    },
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "derived-from",
+      "target": "ricci-curvature"
+    },
+    {
+      "type": "used-in",
+      "target": "einstein-field-equations"
+    }
+  ]
+}

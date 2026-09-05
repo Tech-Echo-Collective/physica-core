@@ -1,0 +1,25 @@
+{
+  "id": "lorentz-boost",
+  "title": "Lorentz Boost",
+  "description": "A Lorentz transformation between inertial frames in relative uniform motion with no added spatial rotation; it mixes time with the direction of motion.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Pure boost"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lorentz-transformation"
+    },
+    {
+      "type": "requires",
+      "target": "inertial-reference-frame"
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "principle-of-relativity",
+  "title": "Principle of Relativity",
+  "description": "The requirement that the laws of physics take the same form in all inertial frames; together with light-speed invariance it motivates special relativity.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Relativity principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "inertial-reference-frame"
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "action-functional",
+  "title": "Action Functional",
+  "description": "A functional assigning an action value to a trajectory; in first-order mechanics S[q] is the time integral of L(q, qdot, t) over a specified interval.",
+  "domains": [
+    "classical-mechanics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Mechanical action",
+    "Action integral"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "functional",
+      "note": "The input is an entire candidate trajectory."
+    },
+    {
+      "type": "requires",
+      "target": "lagrangian",
+      "note": "The mechanical action integrates a Lagrangian."
+    },
+    {
+      "type": "used-in",
+      "target": "variational-principle",
+      "note": "Physical trajectories are characterized by stationarity, not necessarily minimization, of action."
+    }
+  ]
+}

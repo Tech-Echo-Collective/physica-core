@@ -1,0 +1,21 @@
+{
+  "id": "riemann-integral",
+  "title": "Riemann Integral",
+  "description": "For a bounded real function on a closed bounded interval, the common limit of tagged partition sums as the largest subinterval length tends to zero, when that limit exists independently of the tags.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Riemann integration"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "limit-of-a-function"
+    },
+    {
+      "type": "used-in",
+      "target": "calculus"
+    }
+  ]
+}

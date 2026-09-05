@@ -1,0 +1,23 @@
+{
+  "id": "curvature-singularity",
+  "title": "Curvature Singularity",
+  "description": "A genuine breakdown signaled by unbounded curvature, such as the divergence of curvature invariants at r = 0 in Schwarzschild; not every spacetime singularity is of this type.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Curvature blow-up"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "riemann-curvature-tensor"
+    },
+    {
+      "type": "used-in",
+      "target": "schwarzschild-spacetime",
+      "note": "For positive Schwarzschild mass, r = 0 is a curvature singularity; r = 2GM/c² is not."
+    }
+  ]
+}

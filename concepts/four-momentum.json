@@ -1,0 +1,26 @@
+{
+  "id": "four-momentum",
+  "title": "Four-Momentum",
+  "description": "The spacetime momentum vector combining energy and spatial momentum; p^a = m u^a for massive particles, while massless particles have nonzero null four-momentum.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "4-momentum",
+    "Energy-momentum four-vector"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "four-vector"
+    },
+    {
+      "type": "used-in",
+      "target": "stress-energy-tensor"
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

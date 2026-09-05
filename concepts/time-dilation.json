@@ -1,0 +1,29 @@
+{
+  "id": "time-dilation",
+  "title": "Time Dilation",
+  "description": "In special relativity, elapsed coordinate time in an inertial frame exceeds a moving clock's proper time; at constant speed, Δt = γ Δτ.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Kinematic time dilation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lorentz-transformation"
+    },
+    {
+      "type": "requires",
+      "target": "proper-time"
+    },
+    {
+      "type": "derived-from",
+      "target": "lorentz-transformation"
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

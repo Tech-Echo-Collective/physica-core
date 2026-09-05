@@ -2,6 +2,14 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.5.0 - 2026-09-05
+
+- Add 83 concepts spanning all initial physics and mathematics entry topics (130 concepts, 382 relations).
+- Add explicit vector-space/operator, pure/mixed quantum-state, Lorentz-boost and four-vector refinements without treating navigation membership as subtyping.
+- Connect the expanded subjects to the existing geometry backbone and record primary university sources in docs/overview-sources.md.
+- Preserve all existing IDs, descriptions, aliases and relations; reuse Affine Connection for its existing covariant-derivative identity.
+- Retain the same schema, domains and five-relation vocabulary. No product layout, routing or browse metadata enters Core.
+
 ## 0.4.0 - 2026-09-05
 
 - Add 16 concepts across coordinates, maps, manifold structures, operations on forms, integration, and cohomology (47 concepts, 131 relations).

@@ -1,0 +1,27 @@
+{
+  "id": "gradient",
+  "title": "Gradient",
+  "description": "For a differentiable scalar function on Euclidean space, the vector of coordinate partial derivatives that represents its differential using the Euclidean inner product.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Gradient vector",
+    "Gradient field"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "partial-derivative"
+    },
+    {
+      "type": "requires",
+      "target": "inner-product-space"
+    },
+    {
+      "type": "used-in",
+      "target": "differential-geometry",
+      "note": "On a Riemannian manifold the metric identifies the differential with a gradient vector field."
+    }
+  ]
+}

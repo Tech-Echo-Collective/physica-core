@@ -18,6 +18,11 @@
     {
       "type": "requires",
       "target": "tensor-field"
+    },
+    {
+      "type": "generalizes",
+      "target": "minkowski-metric",
+      "note": "The Minkowski metric is a particular flat Lorentzian metric."
     }
   ]
 }

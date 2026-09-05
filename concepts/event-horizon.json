@@ -1,0 +1,27 @@
+{
+  "id": "event-horizon",
+  "title": "Event Horizon",
+  "description": "For an asymptotically flat black hole, the boundary of the region unable to send future-directed causal signals to future null infinity; it is a global causal boundary.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Black-hole event horizon"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "light-cone"
+    },
+    {
+      "type": "requires",
+      "target": "lorentzian-manifold"
+    },
+    {
+      "type": "used-in",
+      "target": "schwarzschild-spacetime",
+      "note": "The Schwarzschild black-hole horizon is regular in suitable coordinates and is not a curvature singularity."
+    }
+  ]
+}

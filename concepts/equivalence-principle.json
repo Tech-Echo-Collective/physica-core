@@ -1,0 +1,22 @@
+{
+  "id": "equivalence-principle",
+  "title": "Equivalence Principle",
+  "description": "In its Einstein form, local nongravitational experiments in a freely falling laboratory obey special relativity; this does not eliminate tidal curvature over a finite region.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Einstein equivalence principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "special-relativity"
+    },
+    {
+      "type": "used-in",
+      "target": "general-relativity"
+    }
+  ]
+}

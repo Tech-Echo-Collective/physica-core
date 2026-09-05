@@ -1,0 +1,25 @@
+{
+  "id": "legendre-transform",
+  "title": "Legendre Transform",
+  "description": "A change from a variable x to its conjugate p = grad f(x), producing g(p) = p dot x - f(x) where the gradient map can be inverted; this record concerns the smooth local transform.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Legendre transformation",
+    "Smooth Legendre transform"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "The conjugate variable is defined using derivatives."
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian",
+      "note": "A regular velocity-to-momentum transformation converts a Lagrangian into a Hamiltonian."
+    }
+  ]
+}

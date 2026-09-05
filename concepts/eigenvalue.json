@@ -1,0 +1,23 @@
+{
+  "id": "eigenvalue",
+  "title": "Eigenvalue",
+  "description": "A scalar lambda for a linear operator A such that A v equals lambda v for some nonzero vector v in the operator's domain, called an eigenvector.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Characteristic value",
+    "Eigenvalues and eigenvectors"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-operator"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-observable",
+      "note": "Discrete measurement values are eigenvalues; continuous spectrum need not have normalizable eigenvectors."
+    }
+  ]
+}

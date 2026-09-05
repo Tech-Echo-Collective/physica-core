@@ -1,0 +1,29 @@
+{
+  "id": "length-contraction",
+  "title": "Length Contraction",
+  "description": "An object's length parallel to uniform relative motion, measured using simultaneous endpoint positions in the observer's inertial frame, is its rest length divided by γ.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Lorentz contraction"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lorentz-transformation"
+    },
+    {
+      "type": "requires",
+      "target": "relativity-of-simultaneity"
+    },
+    {
+      "type": "derived-from",
+      "target": "lorentz-transformation"
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

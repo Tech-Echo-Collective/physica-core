@@ -1,0 +1,23 @@
+{
+  "id": "matrix",
+  "title": "Matrix",
+  "description": "A rectangular array of scalars with specified row and column dimensions, used to represent linear maps once bases have been chosen in finite-dimensional spaces.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Matrices",
+    "Scalar matrix array"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "linear-map",
+      "note": "Matrix multiplication expresses the coordinate action and composition of finite-dimensional linear maps."
+    },
+    {
+      "type": "used-in",
+      "target": "linear-algebra"
+    }
+  ]
+}

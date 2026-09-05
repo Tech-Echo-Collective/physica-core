@@ -1,0 +1,27 @@
+{
+  "id": "schrodinger-equation",
+  "title": "Schrödinger Equation",
+  "description": "The evolution equation i hbar d|psi>/dt = H(t)|psi> for a closed quantum system's state vector, with H the Hamiltonian operator and suitable domain conditions.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Schrodinger equation",
+    "Time-dependent Schrödinger equation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "pure-quantum-state"
+    },
+    {
+      "type": "requires",
+      "target": "derivative"
+    },
+    {
+      "type": "requires",
+      "target": "self-adjoint-operator",
+      "note": "A self-adjoint Hamiltonian gives unitary dynamics under the appropriate evolution hypotheses."
+    }
+  ]
+}

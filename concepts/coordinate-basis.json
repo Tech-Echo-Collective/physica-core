@@ -1,0 +1,30 @@
+{
+  "id": "coordinate-basis",
+  "title": "Coordinate Basis",
+  "description": "The local tangent basis formed by coordinate derivatives ∂/∂x^a; its basis vector fields commute, unlike a general noncoordinate frame.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Holonomic basis"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "coordinate-chart"
+    },
+    {
+      "type": "requires",
+      "target": "tangent-space"
+    },
+    {
+      "type": "used-in",
+      "target": "connection-coefficients"
+    },
+    {
+      "type": "used-in",
+      "target": "christoffel-symbol"
+    }
+  ]
+}

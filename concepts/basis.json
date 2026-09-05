@@ -1,0 +1,23 @@
+{
+  "id": "basis",
+  "title": "Basis",
+  "description": "A linearly independent spanning set of a vector space, so that every vector has a unique finite linear-combination expansion in its elements; this record uses the algebraic basis convention.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Vector-space basis",
+    "Hamel basis"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-space"
+    },
+    {
+      "type": "used-in",
+      "target": "matrix",
+      "note": "Chosen bases specify coordinates and the matrix of a finite-dimensional linear map."
+    }
+  ]
+}

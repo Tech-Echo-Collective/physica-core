@@ -1,0 +1,30 @@
+{
+  "id": "causal-character-of-vectors",
+  "title": "Causal Character of Vectors",
+  "description": "For a Lorentzian metric, a nonzero tangent vector is timelike, null or spacelike according to its metric norm and the chosen signature convention.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Timelike, null and spacelike vectors"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lorentzian-manifold"
+    },
+    {
+      "type": "requires",
+      "target": "metric-signature"
+    },
+    {
+      "type": "used-in",
+      "target": "geodesic",
+      "note": "Along a Levi-Civita geodesic in Lorentzian geometry the causal character of its tangent is preserved."
+    },
+    {
+      "type": "used-in",
+      "target": "light-cone"
+    }
+  ]
+}

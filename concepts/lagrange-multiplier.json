@@ -1,0 +1,30 @@
+{
+  "id": "lagrange-multiplier",
+  "title": "Lagrange Multiplier",
+  "description": "An auxiliary coefficient enforcing an equality constraint in stationarity equations; under suitable regularity conditions it expresses the objective derivative as a combination of constraint derivatives.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Lagrange multipliers",
+    "Method of Lagrange multipliers"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "Multiplier equations use derivatives and regularity of constraints."
+    },
+    {
+      "type": "used-in",
+      "target": "holonomic-constraint",
+      "note": "Time-dependent multipliers can enforce mechanical position constraints."
+    },
+    {
+      "type": "used-in",
+      "target": "variational-principle",
+      "note": "Multipliers incorporate regular constraints into variational equations."
+    }
+  ]
+}

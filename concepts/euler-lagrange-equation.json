@@ -1,0 +1,30 @@
+{
+  "id": "euler-lagrange-equation",
+  "title": "Euler-Lagrange Equation",
+  "description": "The equation partial L / partial q_i - d/dt(partial L / partial qdot_i) = 0 characterizing sufficiently smooth stationary paths of a first-order action under fixed-endpoint variations.",
+  "domains": [
+    "classical-mechanics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Euler-Lagrange equations",
+    "Lagrange's equations of the second kind"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "first-variation",
+      "note": "The equation is obtained by setting the first variation to zero."
+    },
+    {
+      "type": "requires",
+      "target": "fundamental-lemma-of-calculus-of-variations",
+      "note": "Arbitrariness of interior variations yields the pointwise equation."
+    },
+    {
+      "type": "used-in",
+      "target": "lagrangian-mechanics",
+      "note": "Mechanical equations of motion follow from the chosen Lagrangian."
+    }
+  ]
+}

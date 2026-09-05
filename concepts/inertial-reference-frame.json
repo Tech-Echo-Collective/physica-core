@@ -1,0 +1,17 @@
+{
+  "id": "inertial-reference-frame",
+  "title": "Inertial Reference Frame",
+  "description": "A nonaccelerating coordinate frame in which free particles move uniformly along straight lines; global inertial frames are available in Minkowski spacetime.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Inertial frame"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

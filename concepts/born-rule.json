@@ -1,0 +1,26 @@
+{
+  "id": "born-rule",
+  "title": "Born Rule",
+  "description": "The quantum probability rule assigning Tr(rho P) to a projective measurement event P in state rho, reducing to the squared projected amplitude for a normalized pure state.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Born probability rule"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-observable",
+      "note": "Projective measurements of sharp observables provide the introductory case."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics"
+    }
+  ]
+}

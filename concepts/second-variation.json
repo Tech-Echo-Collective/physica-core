@@ -1,0 +1,24 @@
+{
+  "id": "second-variation",
+  "title": "Second Variation",
+  "description": "The second-order variation of a sufficiently smooth functional under admissible perturbations, represented by a quadratic form that helps distinguish minima from other stationary points.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Second variation of a functional"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "first-variation",
+      "note": "Second-order analysis follows the first-order stationarity test."
+    },
+    {
+      "type": "used-in",
+      "target": "variational-principle",
+      "note": "Nonnegative second variation is necessary for a local minimum under standard smoothness assumptions."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "metric-compatibility",
+  "title": "Metric Compatibility",
+  "description": "The property ∇g = 0 of a connection relative to a metric, ensuring that parallel transport preserves metric pairings.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Metric-compatible connection condition"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "metric"
+    },
+    {
+      "type": "requires",
+      "target": "affine-connection"
+    },
+    {
+      "type": "used-in",
+      "target": "levi-civita-connection"
+    },
+    {
+      "type": "used-in",
+      "target": "parallel-transport"
+    }
+  ]
+}

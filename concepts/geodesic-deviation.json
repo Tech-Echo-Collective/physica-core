@@ -1,0 +1,31 @@
+{
+  "id": "geodesic-deviation",
+  "title": "Geodesic Deviation",
+  "description": "The curvature-controlled relative acceleration of nearby geodesics, expressed by the Jacobi equation; in spacetime it describes tidal gravitational effects.",
+  "domains": [
+    "mathematics",
+    "relativity"
+  ],
+  "aliases": [
+    "Jacobi equation",
+    "Tidal geodesic separation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "geodesic"
+    },
+    {
+      "type": "requires",
+      "target": "riemann-curvature-tensor"
+    },
+    {
+      "type": "requires",
+      "target": "affine-connection"
+    },
+    {
+      "type": "used-in",
+      "target": "general-relativity"
+    }
+  ]
+}

@@ -23,6 +23,10 @@
       "type": "derived-from",
       "target": "metric",
       "note": "It is uniquely determined by the metric through the Koszul formula."
+    },
+    {
+      "type": "requires",
+      "target": "metric-compatibility"
     }
   ]
 }

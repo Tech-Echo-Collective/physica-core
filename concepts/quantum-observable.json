@@ -1,0 +1,22 @@
+{
+  "id": "quantum-observable",
+  "title": "Quantum Observable",
+  "description": "A measurable quantity represented, for a sharp measurement in the standard Hilbert-space formalism, by a self-adjoint operator whose spectral measure determines the possible outcomes.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Observable in quantum mechanics",
+    "Sharp quantum observable"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "self-adjoint-operator"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics"
+    }
+  ]
+}

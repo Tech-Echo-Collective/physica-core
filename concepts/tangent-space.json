@@ -16,6 +16,11 @@
     {
       "type": "requires",
       "target": "linear-algebra"
+    },
+    {
+      "type": "requires",
+      "target": "vector-space",
+      "note": "A tangent space is a vector space of directions at a point."
     }
   ]
 }

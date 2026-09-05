@@ -1,0 +1,24 @@
+{
+  "id": "lagrangian",
+  "title": "Lagrangian",
+  "description": "A function L(q, qdot, t) of configuration, velocity and time whose time integral defines the mechanical action; for standard conservative particle systems it is kinetic minus potential energy.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Lagrangian function",
+    "Mechanical Lagrangian"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "generalized-coordinate",
+      "note": "Mechanical Lagrangians are expressed in generalized coordinates and velocities."
+    },
+    {
+      "type": "used-in",
+      "target": "action-functional",
+      "note": "Integrating the Lagrangian along a trajectory constructs the mechanical action."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "configuration-space",
+  "title": "Configuration Space",
+  "description": "The space of allowed instantaneous positions and orientations of a mechanical system, excluding velocities and momenta.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Configuration manifold",
+    "Mechanical configuration space"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "lagrangian-mechanics",
+      "note": "A mechanical trajectory is a path through configuration space."
+    },
+    {
+      "type": "used-in",
+      "target": "hamiltonian",
+      "note": "Configuration variables form part of the Hamiltonian description."
+    }
+  ]
+}

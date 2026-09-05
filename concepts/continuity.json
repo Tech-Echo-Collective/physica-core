@@ -1,0 +1,22 @@
+{
+  "id": "continuity",
+  "title": "Continuity",
+  "description": "The property that a function's values approach its value at a point as inputs approach that point within its domain; continuity on a domain requires this at every point.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Continuity of a function",
+    "Continuous function"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "limit-of-a-function"
+    },
+    {
+      "type": "used-in",
+      "target": "calculus"
+    }
+  ]
+}

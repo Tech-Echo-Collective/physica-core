@@ -1,0 +1,27 @@
+{
+  "id": "linear-map",
+  "title": "Linear Map",
+  "description": "A map between vector spaces over the same field that preserves addition and scalar multiplication.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [
+    "Linear transformation",
+    "Linear mapping"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-space"
+    },
+    {
+      "type": "generalizes",
+      "target": "linear-operator",
+      "note": "A linear operator acts in one ambient vector space, possibly on a specified linear domain."
+    },
+    {
+      "type": "used-in",
+      "target": "linear-algebra"
+    }
+  ]
+}

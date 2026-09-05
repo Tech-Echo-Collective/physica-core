@@ -1,0 +1,33 @@
+{
+  "id": "four-vector",
+  "title": "Four-Vector",
+  "description": "A spacetime tangent vector whose four components transform by Lorentz transformations in inertial coordinates; arbitrary collections of four numbers need not form one.",
+  "domains": [
+    "relativity"
+  ],
+  "aliases": [
+    "Spacetime four-vector"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "tangent-space"
+    },
+    {
+      "type": "requires",
+      "target": "lorentz-transformation"
+    },
+    {
+      "type": "generalizes",
+      "target": "four-velocity"
+    },
+    {
+      "type": "generalizes",
+      "target": "four-momentum"
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hilbert-space",
+  "title": "Hilbert Space",
+  "description": "An inner product space in which every Cauchy sequence for the induced norm converges to an element of the space.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Complete inner product space"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "inner-product-space"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-mechanics",
+      "note": "Complex Hilbert spaces provide the standard state-space framework."
+    }
+  ]
+}
