@@ -1,0 +1,23 @@
+{
+  "id": "heat",
+  "title": "Heat",
+  "description": "Energy transferred across a system boundary because of a temperature difference; it is a process quantity rather than energy stored in a state.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Thermodynamic heat"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "temperature",
+      "note": "A temperature difference identifies this mode of energy transfer."
+    },
+    {
+      "type": "used-in",
+      "target": "first-law-of-thermodynamics",
+      "note": "Signed heat input enters the closed-system energy balance."
+    }
+  ]
+}

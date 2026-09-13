@@ -1,5 +1,5 @@
 {
-  "core_version": "0.12.1",
+  "core_version": "0.13.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -75,6 +75,27 @@
           "type": "used-in",
           "target": "variational-principle",
           "note": "Physical trajectories are characterized by stationarity, not necessarily minimization, of action."
+        }
+      ]
+    },
+    {
+      "id": "adiabatic-process",
+      "title": "Adiabatic Process",
+      "description": "A thermodynamic process with no heat transfer across the system boundary throughout the process; work or, for an open system, matter can still transfer energy.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "heat",
+          "note": "Adiabaticity excludes heat transfer throughout the process."
+        },
+        {
+          "type": "used-in",
+          "target": "carnot-cycle",
+          "note": "Two reversible adiabatic stages connect the hot and cold isotherms."
         }
       ]
     },
@@ -203,6 +224,66 @@
       ]
     },
     {
+      "id": "atomic-orbital",
+      "title": "Atomic Orbital",
+      "description": "A one-electron spatial wavefunction associated with an atom. Its squared magnitude determines a position probability density; orbital descriptions of many-electron atoms use an appropriate one-electron approximation.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Atomic electron orbital"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "wavefunction",
+          "note": "An orbital is a spatial wavefunction rather than a particle path."
+        }
+      ]
+    },
+    {
+      "id": "atomic-physics",
+      "title": "Atomic Physics",
+      "description": "The study of atomic electronic structure, transitions between atomic states, and interactions of atoms and ions with radiation and external fields.",
+      "domains": [
+        "quantum-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-mechanics",
+          "note": "Quantum theory supplies the modern description of atomic states and transitions."
+        }
+      ]
+    },
+    {
+      "id": "azimuthal-quantum-number",
+      "title": "Azimuthal Quantum Number",
+      "description": "The nonnegative integer ell that labels an atomic orbital's angular momentum magnitude and subshell. The familiar s, p, d and f subshells have ell equal to 0, 1, 2 and 3.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Orbital angular momentum quantum number"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-angular-momentum",
+          "note": "Ell specifies an eigenvalue of the squared orbital angular momentum operator."
+        },
+        {
+          "type": "used-in",
+          "target": "atomic-orbital",
+          "note": "Ell labels the orbital's angular factor and subshell."
+        }
+      ]
+    },
+    {
       "id": "basis",
       "title": "Basis",
       "description": "A linearly independent spanning set of a vector space, so that every vector has a unique finite linear-combination expansion in its elements; this record uses the algebraic basis convention.",
@@ -252,6 +333,30 @@
         {
           "type": "derived-from",
           "target": "work-energy-theorem"
+        }
+      ]
+    },
+    {
+      "id": "bohr-model",
+      "title": "Bohr Model",
+      "description": "A historical atomic model that combines Coulomb-bound circular electron orbits with discrete angular momentum and radiative transitions. It reproduces the leading hydrogenic energy spectrum but does not give the modern orbital description.",
+      "domains": [
+        "quantum-physics",
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Rutherford–Bohr model"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "coulomb-law",
+          "note": "Coulomb attraction provides the model's centripetal force."
+        },
+        {
+          "type": "requires",
+          "target": "angular-momentum",
+          "note": "The historical quantization postulate constrains the classical circular-orbit angular momentum."
         }
       ]
     },
@@ -449,6 +554,34 @@
           "type": "used-in",
           "target": "hamilton-jacobi-equation",
           "note": "A generating function can construct canonical coordinates in which the transformed Hamiltonian vanishes; the resulting condition is the Hamilton–Jacobi equation."
+        }
+      ]
+    },
+    {
+      "id": "carnot-cycle",
+      "title": "Carnot Cycle",
+      "description": "An ideal reversible cycle composed of two isothermal heat-exchange stages and two adiabatic stages, setting the maximum heat-engine efficiency between two reservoirs.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Reversible Carnot cycle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "isothermal-process",
+          "note": "Reversible isothermal stages provide heat exchange at each reservoir temperature."
+        },
+        {
+          "type": "requires",
+          "target": "adiabatic-process",
+          "note": "Reversible adiabatic stages connect the two isotherms without heat transfer."
+        },
+        {
+          "type": "used-in",
+          "target": "heat-engine",
+          "note": "The reversible cycle supplies the maximum efficiency for engines using the same two reservoirs."
         }
       ]
     },
@@ -1720,6 +1853,25 @@
       ]
     },
     {
+      "id": "electron-configuration",
+      "title": "Electron Configuration",
+      "description": "A specification of electron occupations of orbitals or subshells in an atom or molecule. Atomic configurations are commonly written as shell and subshell labels with superscripts giving their electron counts.",
+      "domains": [
+        "quantum-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Electronic configuration"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "atomic-orbital",
+          "note": "An atomic configuration specifies occupation of atomic orbitals and their subshell groupings."
+        }
+      ]
+    },
+    {
       "id": "enthalpy",
       "title": "Enthalpy",
       "description": "A thermodynamic potential defined by adding pressure times volume to internal energy. Equality between an enthalpy change and exchanged heat requires additional process conditions.",
@@ -1735,6 +1887,36 @@
         {
           "type": "used-in",
           "target": "thermodynamics"
+        }
+      ]
+    },
+    {
+      "id": "equipartition-theorem",
+      "title": "Equipartition Theorem",
+      "description": "A classical equilibrium result assigning an average energy kBT/2 to each independent additive quadratic term in the energy, under the theorem's phase-space assumptions.",
+      "domains": [
+        "statistical-physics",
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Equipartition of energy theorem",
+        "Law of equipartition"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "temperature",
+          "note": "Equilibrium temperature sets the energy scale kBT."
+        },
+        {
+          "type": "derived-from",
+          "target": "boltzmann-distribution",
+          "note": "Canonical averaging of an independent quadratic energy term yields kBT/2."
+        },
+        {
+          "type": "used-in",
+          "target": "heat-capacity",
+          "note": "Counting active quadratic terms predicts classical ideal-gas heat capacities."
         }
       ]
     },
@@ -2869,6 +3051,81 @@
       ]
     },
     {
+      "id": "heat",
+      "title": "Heat",
+      "description": "Energy transferred across a system boundary because of a temperature difference; it is a process quantity rather than energy stored in a state.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Thermodynamic heat"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "temperature",
+          "note": "A temperature difference identifies this mode of energy transfer."
+        },
+        {
+          "type": "used-in",
+          "target": "first-law-of-thermodynamics",
+          "note": "Signed heat input enters the closed-system energy balance."
+        }
+      ]
+    },
+    {
+      "id": "heat-capacity",
+      "title": "Heat Capacity",
+      "description": "A system's thermal response under specified constraints, relating heat input to temperature change; constant-volume and constant-pressure heat capacities are distinct.",
+      "domains": [
+        "thermodynamics",
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Thermal capacity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "heat",
+          "note": "Heat capacity connects constrained heat input with thermal response."
+        },
+        {
+          "type": "requires",
+          "target": "temperature",
+          "note": "The response is measured per change in temperature."
+        }
+      ]
+    },
+    {
+      "id": "heat-engine",
+      "title": "Heat Engine",
+      "description": "A device that produces net work by taking in heat and rejecting part of it, typically through a cycle of its working substance.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Thermal engine"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "heat",
+          "note": "Heat received and rejected are inputs to the engine's energy accounting."
+        },
+        {
+          "type": "requires",
+          "target": "first-law-of-thermodynamics",
+          "note": "Zero stored-energy change over a cycle relates net heat to net work."
+        },
+        {
+          "type": "requires",
+          "target": "second-law-of-thermodynamics",
+          "note": "The second law limits conversion efficiency between thermal reservoirs."
+        }
+      ]
+    },
+    {
       "id": "helmholtz-free-energy",
       "title": "Helmholtz Free Energy",
       "description": "The thermodynamic potential obtained by subtracting temperature times entropy from internal energy. In the usual closed-system setting it is minimized at equilibrium under fixed temperature, volume, and particle number.",
@@ -2975,6 +3232,36 @@
       ]
     },
     {
+      "id": "hydrogen-like-atom",
+      "title": "Hydrogen-like Atom",
+      "description": "An atom or ion consisting of a nucleus and one electron. Its simplest bound-state model is a two-body Coulomb problem with an analytic nonrelativistic spectrum.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Hydrogenic atom",
+        "One-electron atom"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "schrodinger-equation",
+          "note": "The introductory spectrum follows from the stationary Coulomb Schrödinger problem."
+        },
+        {
+          "type": "requires",
+          "target": "coulomb-law",
+          "note": "Electrostatic attraction sets the central binding potential."
+        },
+        {
+          "type": "requires",
+          "target": "reduced-mass",
+          "note": "The relative-coordinate mass accounts for nuclear as well as electronic motion."
+        }
+      ]
+    },
+    {
       "id": "hydrostatic-equilibrium",
       "title": "Hydrostatic Equilibrium",
       "description": "Mechanical balance in a fluid at rest, where pressure gradients balance body forces such as gravity.",
@@ -2996,6 +3283,55 @@
         {
           "type": "derived-from",
           "target": "newtons-second-law"
+        }
+      ]
+    },
+    {
+      "id": "ideal-gas",
+      "title": "Ideal Gas",
+      "description": "A gas model that neglects molecular excluded volume and interaction energy, providing an approximation to sufficiently dilute classical gases.",
+      "domains": [
+        "statistical-physics",
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Classical ideal gas"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "kinetic-theory-of-gases",
+          "note": "Negligible molecular volume and non-collision interactions define the basic kinetic gas model."
+        }
+      ]
+    },
+    {
+      "id": "ideal-gas-law",
+      "title": "Ideal Gas Law",
+      "description": "The equilibrium equation of state pV = NkBT = nRT relating an ideal gas's pressure, volume, temperature, and amount.",
+      "domains": [
+        "thermodynamics",
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Ideal gas equation",
+        "Ideal gas equation of state"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "ideal-gas",
+          "note": "The equation describes the ideal-gas model and approximates sufficiently dilute real gases."
+        },
+        {
+          "type": "requires",
+          "target": "pressure",
+          "note": "The pressure in the equation is absolute pressure."
+        },
+        {
+          "type": "requires",
+          "target": "temperature",
+          "note": "The temperature in the equation is absolute temperature."
         }
       ]
     },
@@ -3289,6 +3625,71 @@
       ]
     },
     {
+      "id": "isobaric-process",
+      "title": "Isobaric Process",
+      "description": "A thermodynamic process in which the system pressure remains constant while other state variables can change.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Constant-pressure process"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "pressure",
+          "note": "The pressure of the system is the constrained variable."
+        },
+        {
+          "type": "used-in",
+          "target": "heat-capacity",
+          "note": "Constant-pressure heating defines the C_p thermal response."
+        }
+      ]
+    },
+    {
+      "id": "isochoric-process",
+      "title": "Isochoric Process",
+      "description": "A thermodynamic process at constant system volume; it has no pressure-volume boundary work, although other forms of work may still occur.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Constant-volume process",
+        "Isovolumetric process"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "heat-capacity",
+          "note": "Fixed-volume heating isolates the C_V response when no other work occurs."
+        }
+      ]
+    },
+    {
+      "id": "isothermal-process",
+      "title": "Isothermal Process",
+      "description": "A thermodynamic process during which the system temperature stays constant; heat may be exchanged and other state variables may change.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [
+        "Constant-temperature process"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "temperature",
+          "note": "The defining constraint fixes temperature during the process."
+        },
+        {
+          "type": "used-in",
+          "target": "carnot-cycle",
+          "note": "Two reversible isothermal stages exchange heat at the reservoir temperatures."
+        }
+      ]
+    },
+    {
       "id": "isotropic-hooke-law",
       "title": "Isotropic Hooke Law",
       "description": "The linear elastic constitutive relation between Cauchy stress and infinitesimal strain in an isotropic material, determined by two independent elastic moduli.",
@@ -3382,6 +3783,30 @@
           "type": "used-in",
           "target": "hamiltonian",
           "note": "For the standard Cartesian particle model, the Hamiltonian contains kinetic energy expressed in canonical momenta."
+        }
+      ]
+    },
+    {
+      "id": "kinetic-theory-of-gases",
+      "title": "Kinetic Theory of Gases",
+      "description": "The microscopic study of gas behavior through molecular motion and collisions, connecting statistical averages to pressure, temperature, and transport.",
+      "domains": [
+        "statistical-physics",
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Gas kinetic theory"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "newtonian-mechanics",
+          "note": "Classical molecular trajectories and collisions obey Newtonian mechanics."
+        },
+        {
+          "type": "used-in",
+          "target": "dynamic-viscosity",
+          "note": "Molecular momentum transport gives kinetic estimates of dilute-gas viscosity."
         }
       ]
     },
@@ -4063,6 +4488,29 @@
       ]
     },
     {
+      "id": "magnetic-quantum-number",
+      "title": "Magnetic Quantum Number",
+      "description": "A dimensionless label m for the projection of a quantum angular momentum along a chosen axis. Orbital, spin and total-angular-momentum projections have their own magnetic quantum numbers.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Angular momentum projection quantum number"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-angular-momentum",
+          "note": "The number labels an angular momentum projection eigenvalue."
+        },
+        {
+          "type": "used-in",
+          "target": "zeeman-effect",
+          "note": "Magnetic sublevels acquire projection-dependent energy shifts."
+        }
+      ]
+    },
+    {
       "id": "manifold",
       "title": "Manifold",
       "description": "A Hausdorff, second-countable topological space locally modeled on Euclidean space of a fixed dimension. This record uses the convention of manifolds without boundary.",
@@ -4186,6 +4634,36 @@
       ]
     },
     {
+      "id": "maxwell-boltzmann-speed-distribution",
+      "title": "Maxwell–Boltzmann Speed Distribution",
+      "description": "The equilibrium probability density for molecular speed in a classical gas, obtained by summing the velocity distribution over directions in three dimensions.",
+      "domains": [
+        "statistical-physics",
+        "probability"
+      ],
+      "aliases": [
+        "Maxwell speed distribution",
+        "Maxwell distribution of molecular speeds"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "probability-distribution",
+          "note": "Probabilities for speed intervals are integrals of a normalized density."
+        },
+        {
+          "type": "requires",
+          "target": "kinetic-energy",
+          "note": "The translational Boltzmann weight uses the nonrelativistic energy mv²/2."
+        },
+        {
+          "type": "derived-from",
+          "target": "boltzmann-distribution",
+          "note": "Integrating the kinetic-energy Boltzmann weight over velocity directions supplies the 4πv² factor."
+        }
+      ]
+    },
+    {
       "id": "maxwell-equations",
       "title": "Maxwell’s Equations",
       "description": "Four coupled classical field equations relating electric and magnetic fields to total charge and current densities.",
@@ -4218,6 +4696,29 @@
           "type": "requires",
           "target": "curl",
           "note": "Needed for the scoped maxwell’s equations formulation."
+        }
+      ]
+    },
+    {
+      "id": "mean-free-path",
+      "title": "Mean Free Path",
+      "description": "In gas kinetic theory, the average distance a molecule travels between successive collisions with other molecules.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Molecular mean free path"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "probability-distribution",
+          "note": "A distribution of free-flight distances defines their mean."
+        },
+        {
+          "type": "used-in",
+          "target": "dynamic-viscosity",
+          "note": "The molecular flight distance enters kinetic estimates of momentum transport and viscosity."
         }
       ]
     },
@@ -4963,6 +5464,30 @@
       ]
     },
     {
+      "id": "pauli-exclusion-principle",
+      "title": "Pauli Exclusion Principle",
+      "description": "Identical fermions cannot occupy the same complete one-particle quantum state. For atomic electrons, opposite spin projections allow at most two electrons in a given spatial orbital.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Pauli exclusion"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state",
+          "note": "Exclusion concerns identical occupation of a complete one-particle state."
+        },
+        {
+          "type": "used-in",
+          "target": "electron-configuration",
+          "note": "It limits the allowed atomic orbital occupancies."
+        }
+      ]
+    },
+    {
       "id": "phase-space",
       "title": "Phase Space",
       "description": "A space whose points specify instantaneous states of a dynamical system. In finite-dimensional Hamiltonian mechanics its local coordinates include both generalized positions and conjugate momenta, unlike configuration space, which records configurations alone.",
@@ -5137,6 +5662,30 @@
         {
           "type": "used-in",
           "target": "fluid-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "principal-quantum-number",
+      "title": "Principal Quantum Number",
+      "description": "The positive integer n that labels an atomic electron shell. In the nonrelativistic one-electron Coulomb problem it also labels the energy level, while multi-electron orbital energies need additional information.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Atomic shell number"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "hydrogen-like-atom",
+          "note": "The Coulomb bound levels are indexed by n."
+        },
+        {
+          "type": "used-in",
+          "target": "electron-configuration",
+          "note": "Atomic configuration notation includes the occupied shell index."
         }
       ]
     },
@@ -5344,6 +5893,30 @@
         {
           "type": "used-in",
           "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "quantum-angular-momentum",
+      "title": "Quantum Angular Momentum",
+      "description": "Angular momentum represented by quantum observables whose Cartesian components obey a noncommuting rotation algebra. It includes orbital, intrinsic-spin and total angular momentum.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Quantum angular momentum operator",
+        "Angular momentum operator"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-observable",
+          "note": "Angular momentum components are measurable quantities represented by self-adjoint operators."
+        },
+        {
+          "type": "used-in",
+          "target": "hydrogen-like-atom",
+          "note": "Commuting angular momentum observables separate and label the central Coulomb eigenproblem."
         }
       ]
     },
@@ -5938,6 +6511,29 @@
       ]
     },
     {
+      "id": "rydberg-formula",
+      "title": "Rydberg Formula",
+      "description": "The relation expressing hydrogen spectral-line wavenumbers as differences of inverse squared principal quantum numbers.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Rydberg equation"
+      ],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "bohr-model",
+          "note": "The hydrogen form follows from Bohr energies and the photon energy–frequency relation."
+        },
+        {
+          "type": "used-in",
+          "target": "spectral-line",
+          "note": "It predicts leading wavelengths within the hydrogen spectral series."
+        }
+      ]
+    },
+    {
       "id": "schrodinger-equation",
       "title": "Schrödinger Equation",
       "description": "The evolution equation i hbar d|psi>/dt = H(t)|psi> for a closed quantum system's state vector, with H the Hamiltonian operator and suitable domain conditions.",
@@ -6378,6 +6974,69 @@
       ]
     },
     {
+      "id": "spectral-line",
+      "title": "Spectral Line",
+      "description": "A localized excess or deficit of intensity over a narrow frequency range in a radiation spectrum. Atomic and molecular emission or absorption transitions produce characteristic lines.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "atomic-physics",
+          "note": "Measured line frequencies reveal atomic internal transitions."
+        }
+      ]
+    },
+    {
+      "id": "spin-angular-momentum",
+      "title": "Spin Angular Momentum",
+      "description": "Intrinsic quantum angular momentum carried by particles, independent of orbital motion. A particle's spin quantum number fixes its allowed magnitude and projection values; an electron has spin one-half.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Intrinsic quantum angular momentum",
+        "Quantum spin"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-angular-momentum",
+          "note": "Spin observables obey the angular momentum algebra."
+        },
+        {
+          "type": "used-in",
+          "target": "zeeman-effect",
+          "note": "Electronic spin contributes to the atom's magnetic interaction."
+        }
+      ]
+    },
+    {
+      "id": "stark-effect",
+      "title": "Stark Effect",
+      "description": "The displacement or splitting of atomic or molecular spectral lines when an applied electric field changes the energy levels. The response can be linear or quadratic in the field, depending on the states and their degeneracies.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-field",
+          "note": "An external electric field is the perturbation defining the effect."
+        },
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian",
+          "note": "The model describes the shift by adding an electric interaction to the atomic Hamiltonian."
+        }
+      ]
+    },
+    {
       "id": "statistical-ensemble",
       "title": "Statistical Ensemble",
       "description": "A probability distribution over possible microscopic states of a system, used to calculate averages and fluctuations subject to specified macroscopic conditions.",
@@ -6744,6 +7403,22 @@
           "type": "used-in",
           "target": "statistical-mechanics",
           "note": "Macroscopic entropy is related to microscopic state statistics."
+        }
+      ]
+    },
+    {
+      "id": "thermodynamic-process",
+      "title": "Thermodynamic Process",
+      "description": "A change of a system's thermodynamic state under specified interactions or constraints; intermediate states need not remain in equilibrium.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "heat-engine",
+          "note": "A working substance follows a repeatable cycle of processes to deliver net work."
         }
       ]
     },
@@ -7223,6 +7898,28 @@
         {
           "type": "used-in",
           "target": "newtonian-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "zeeman-effect",
+      "title": "Zeeman Effect",
+      "description": "The splitting of spectral lines in a static magnetic field through shifts of the underlying energy levels. Electronic orbital and spin magnetic moments contribute to the atomic effect.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "magnetic-field",
+          "note": "A static external magnetic field induces the energy changes."
+        },
+        {
+          "type": "requires",
+          "target": "spectral-line",
+          "note": "The spectroscopic effect is resolved as splitting of transition lines."
         }
       ]
     }

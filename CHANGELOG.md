@@ -2,6 +2,13 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.13.0 - 2026-09-13
+
+- Add 30 reviewed atomic, quantum-angular-momentum and thermal concepts with 59 independently evidenced relations (305 concepts, 838 relations).
+- Preserve all 275 previous records, eleven domains and relation semantics. Keep classical angular momentum, quantum angular momentum, gas models and their equations as separate identities.
+- State Coulomb, orbital, spin, field-perturbation and classical gas regimes explicitly. Heat is energy in transfer, not stored internal energy; constrained process laws retain their assumptions.
+- Read exact Wikipedia revisions live and cross-check independent university/textbook references. No article bodies are stored. [Source and boundary notes](docs/atomic-thermal-sources.md); consumer-owned formulas, homes and admission receipts are in Illuminatio v0.13.0.
+
 ## 0.12.1 - 2026-09-13
 
 - Pre-publication identity correction: remove the critical-angle alias from Total Internal Reflection and the equation alias from Thin Lens. A threshold, a phenomenon, a model and its formula are distinct identities.

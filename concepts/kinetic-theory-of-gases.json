@@ -1,0 +1,24 @@
+{
+  "id": "kinetic-theory-of-gases",
+  "title": "Kinetic Theory of Gases",
+  "description": "The microscopic study of gas behavior through molecular motion and collisions, connecting statistical averages to pressure, temperature, and transport.",
+  "domains": [
+    "statistical-physics",
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Gas kinetic theory"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "newtonian-mechanics",
+      "note": "Classical molecular trajectories and collisions obey Newtonian mechanics."
+    },
+    {
+      "type": "used-in",
+      "target": "dynamic-viscosity",
+      "note": "Molecular momentum transport gives kinetic estimates of dilute-gas viscosity."
+    }
+  ]
+}

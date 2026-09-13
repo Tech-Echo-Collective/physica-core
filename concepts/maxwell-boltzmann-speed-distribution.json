@@ -1,0 +1,30 @@
+{
+  "id": "maxwell-boltzmann-speed-distribution",
+  "title": "Maxwell–Boltzmann Speed Distribution",
+  "description": "The equilibrium probability density for molecular speed in a classical gas, obtained by summing the velocity distribution over directions in three dimensions.",
+  "domains": [
+    "statistical-physics",
+    "probability"
+  ],
+  "aliases": [
+    "Maxwell speed distribution",
+    "Maxwell distribution of molecular speeds"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "probability-distribution",
+      "note": "Probabilities for speed intervals are integrals of a normalized density."
+    },
+    {
+      "type": "requires",
+      "target": "kinetic-energy",
+      "note": "The translational Boltzmann weight uses the nonrelativistic energy mv²/2."
+    },
+    {
+      "type": "derived-from",
+      "target": "boltzmann-distribution",
+      "note": "Integrating the kinetic-energy Boltzmann weight over velocity directions supplies the 4πv² factor."
+    }
+  ]
+}

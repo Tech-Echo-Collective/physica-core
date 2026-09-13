@@ -1,0 +1,19 @@
+{
+  "id": "atomic-orbital",
+  "title": "Atomic Orbital",
+  "description": "A one-electron spatial wavefunction associated with an atom. Its squared magnitude determines a position probability density; orbital descriptions of many-electron atoms use an appropriate one-electron approximation.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Atomic electron orbital"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "wavefunction",
+      "note": "An orbital is a spatial wavefunction rather than a particle path."
+    }
+  ]
+}

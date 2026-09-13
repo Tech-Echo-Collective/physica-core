@@ -1,0 +1,30 @@
+{
+  "id": "equipartition-theorem",
+  "title": "Equipartition Theorem",
+  "description": "A classical equilibrium result assigning an average energy kBT/2 to each independent additive quadratic term in the energy, under the theorem's phase-space assumptions.",
+  "domains": [
+    "statistical-physics",
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Equipartition of energy theorem",
+    "Law of equipartition"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "temperature",
+      "note": "Equilibrium temperature sets the energy scale kBT."
+    },
+    {
+      "type": "derived-from",
+      "target": "boltzmann-distribution",
+      "note": "Canonical averaging of an independent quadratic energy term yields kBT/2."
+    },
+    {
+      "type": "used-in",
+      "target": "heat-capacity",
+      "note": "Counting active quadratic terms predicts classical ideal-gas heat capacities."
+    }
+  ]
+}

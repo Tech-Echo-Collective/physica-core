@@ -1,0 +1,30 @@
+{
+  "id": "ideal-gas-law",
+  "title": "Ideal Gas Law",
+  "description": "The equilibrium equation of state pV = NkBT = nRT relating an ideal gas's pressure, volume, temperature, and amount.",
+  "domains": [
+    "thermodynamics",
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Ideal gas equation",
+    "Ideal gas equation of state"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "ideal-gas",
+      "note": "The equation describes the ideal-gas model and approximates sufficiently dilute real gases."
+    },
+    {
+      "type": "requires",
+      "target": "pressure",
+      "note": "The pressure in the equation is absolute pressure."
+    },
+    {
+      "type": "requires",
+      "target": "temperature",
+      "note": "The temperature in the equation is absolute temperature."
+    }
+  ]
+}

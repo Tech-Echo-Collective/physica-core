@@ -1,0 +1,23 @@
+{
+  "id": "isobaric-process",
+  "title": "Isobaric Process",
+  "description": "A thermodynamic process in which the system pressure remains constant while other state variables can change.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Constant-pressure process"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "pressure",
+      "note": "The pressure of the system is the constrained variable."
+    },
+    {
+      "type": "used-in",
+      "target": "heat-capacity",
+      "note": "Constant-pressure heating defines the C_p thermal response."
+    }
+  ]
+}

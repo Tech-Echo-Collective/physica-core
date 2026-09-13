@@ -1,0 +1,23 @@
+{
+  "id": "mean-free-path",
+  "title": "Mean Free Path",
+  "description": "In gas kinetic theory, the average distance a molecule travels between successive collisions with other molecules.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Molecular mean free path"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "probability-distribution",
+      "note": "A distribution of free-flight distances defines their mean."
+    },
+    {
+      "type": "used-in",
+      "target": "dynamic-viscosity",
+      "note": "The molecular flight distance enters kinetic estimates of momentum transport and viscosity."
+    }
+  ]
+}

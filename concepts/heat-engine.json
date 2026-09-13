@@ -1,0 +1,28 @@
+{
+  "id": "heat-engine",
+  "title": "Heat Engine",
+  "description": "A device that produces net work by taking in heat and rejecting part of it, typically through a cycle of its working substance.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Thermal engine"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "heat",
+      "note": "Heat received and rejected are inputs to the engine's energy accounting."
+    },
+    {
+      "type": "requires",
+      "target": "first-law-of-thermodynamics",
+      "note": "Zero stored-energy change over a cycle relates net heat to net work."
+    },
+    {
+      "type": "requires",
+      "target": "second-law-of-thermodynamics",
+      "note": "The second law limits conversion efficiency between thermal reservoirs."
+    }
+  ]
+}

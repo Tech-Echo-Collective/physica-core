@@ -1,0 +1,16 @@
+{
+  "id": "thermodynamic-process",
+  "title": "Thermodynamic Process",
+  "description": "A change of a system's thermodynamic state under specified interactions or constraints; intermediate states need not remain in equilibrium.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "heat-engine",
+      "note": "A working substance follows a repeatable cycle of processes to deliver net work."
+    }
+  ]
+}

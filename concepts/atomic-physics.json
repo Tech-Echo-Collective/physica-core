@@ -1,0 +1,17 @@
+{
+  "id": "atomic-physics",
+  "title": "Atomic Physics",
+  "description": "The study of atomic electronic structure, transitions between atomic states, and interactions of atoms and ions with radiation and external fields.",
+  "domains": [
+    "quantum-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-mechanics",
+      "note": "Quantum theory supplies the modern description of atomic states and transitions."
+    }
+  ]
+}

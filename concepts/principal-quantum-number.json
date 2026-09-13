@@ -1,0 +1,24 @@
+{
+  "id": "principal-quantum-number",
+  "title": "Principal Quantum Number",
+  "description": "The positive integer n that labels an atomic electron shell. In the nonrelativistic one-electron Coulomb problem it also labels the energy level, while multi-electron orbital energies need additional information.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Atomic shell number"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "hydrogen-like-atom",
+      "note": "The Coulomb bound levels are indexed by n."
+    },
+    {
+      "type": "used-in",
+      "target": "electron-configuration",
+      "note": "Atomic configuration notation includes the occupied shell index."
+    }
+  ]
+}

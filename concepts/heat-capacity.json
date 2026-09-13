@@ -1,0 +1,24 @@
+{
+  "id": "heat-capacity",
+  "title": "Heat Capacity",
+  "description": "A system's thermal response under specified constraints, relating heat input to temperature change; constant-volume and constant-pressure heat capacities are distinct.",
+  "domains": [
+    "thermodynamics",
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Thermal capacity"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "heat",
+      "note": "Heat capacity connects constrained heat input with thermal response."
+    },
+    {
+      "type": "requires",
+      "target": "temperature",
+      "note": "The response is measured per change in temperature."
+    }
+  ]
+}

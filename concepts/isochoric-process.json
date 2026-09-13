@@ -1,0 +1,19 @@
+{
+  "id": "isochoric-process",
+  "title": "Isochoric Process",
+  "description": "A thermodynamic process at constant system volume; it has no pressure-volume boundary work, although other forms of work may still occur.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Constant-volume process",
+    "Isovolumetric process"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "heat-capacity",
+      "note": "Fixed-volume heating isolates the C_V response when no other work occurs."
+    }
+  ]
+}

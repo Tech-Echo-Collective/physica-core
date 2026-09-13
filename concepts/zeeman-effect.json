@@ -1,0 +1,22 @@
+{
+  "id": "zeeman-effect",
+  "title": "Zeeman Effect",
+  "description": "The splitting of spectral lines in a static magnetic field through shifts of the underlying energy levels. Electronic orbital and spin magnetic moments contribute to the atomic effect.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "magnetic-field",
+      "note": "A static external magnetic field induces the energy changes."
+    },
+    {
+      "type": "requires",
+      "target": "spectral-line",
+      "note": "The spectroscopic effect is resolved as splitting of transition lines."
+    }
+  ]
+}

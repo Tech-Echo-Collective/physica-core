@@ -1,0 +1,24 @@
+{
+  "id": "bohr-model",
+  "title": "Bohr Model",
+  "description": "A historical atomic model that combines Coulomb-bound circular electron orbits with discrete angular momentum and radiative transitions. It reproduces the leading hydrogenic energy spectrum but does not give the modern orbital description.",
+  "domains": [
+    "quantum-physics",
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Rutherford–Bohr model"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "coulomb-law",
+      "note": "Coulomb attraction provides the model's centripetal force."
+    },
+    {
+      "type": "requires",
+      "target": "angular-momentum",
+      "note": "The historical quantization postulate constrains the classical circular-orbit angular momentum."
+    }
+  ]
+}

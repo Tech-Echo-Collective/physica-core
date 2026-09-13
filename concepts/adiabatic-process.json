@@ -1,0 +1,21 @@
+{
+  "id": "adiabatic-process",
+  "title": "Adiabatic Process",
+  "description": "A thermodynamic process with no heat transfer across the system boundary throughout the process; work or, for an open system, matter can still transfer energy.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "heat",
+      "note": "Adiabaticity excludes heat transfer throughout the process."
+    },
+    {
+      "type": "used-in",
+      "target": "carnot-cycle",
+      "note": "Two reversible adiabatic stages connect the hot and cold isotherms."
+    }
+  ]
+}

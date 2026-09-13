@@ -1,0 +1,24 @@
+{
+  "id": "pauli-exclusion-principle",
+  "title": "Pauli Exclusion Principle",
+  "description": "Identical fermions cannot occupy the same complete one-particle quantum state. For atomic electrons, opposite spin projections allow at most two electrons in a given spatial orbital.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Pauli exclusion"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state",
+      "note": "Exclusion concerns identical occupation of a complete one-particle state."
+    },
+    {
+      "type": "used-in",
+      "target": "electron-configuration",
+      "note": "It limits the allowed atomic orbital occupancies."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "electron-configuration",
+  "title": "Electron Configuration",
+  "description": "A specification of electron occupations of orbitals or subshells in an atom or molecule. Atomic configurations are commonly written as shell and subshell labels with superscripts giving their electron counts.",
+  "domains": [
+    "quantum-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Electronic configuration"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "atomic-orbital",
+      "note": "An atomic configuration specifies occupation of atomic orbitals and their subshell groupings."
+    }
+  ]
+}

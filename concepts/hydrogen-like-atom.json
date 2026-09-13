@@ -1,0 +1,30 @@
+{
+  "id": "hydrogen-like-atom",
+  "title": "Hydrogen-like Atom",
+  "description": "An atom or ion consisting of a nucleus and one electron. Its simplest bound-state model is a two-body Coulomb problem with an analytic nonrelativistic spectrum.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Hydrogenic atom",
+    "One-electron atom"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "schrodinger-equation",
+      "note": "The introductory spectrum follows from the stationary Coulomb Schrödinger problem."
+    },
+    {
+      "type": "requires",
+      "target": "coulomb-law",
+      "note": "Electrostatic attraction sets the central binding potential."
+    },
+    {
+      "type": "requires",
+      "target": "reduced-mass",
+      "note": "The relative-coordinate mass accounts for nuclear as well as electronic motion."
+    }
+  ]
+}

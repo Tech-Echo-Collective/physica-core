@@ -1,0 +1,24 @@
+{
+  "id": "quantum-angular-momentum",
+  "title": "Quantum Angular Momentum",
+  "description": "Angular momentum represented by quantum observables whose Cartesian components obey a noncommuting rotation algebra. It includes orbital, intrinsic-spin and total angular momentum.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Quantum angular momentum operator",
+    "Angular momentum operator"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-observable",
+      "note": "Angular momentum components are measurable quantities represented by self-adjoint operators."
+    },
+    {
+      "type": "used-in",
+      "target": "hydrogen-like-atom",
+      "note": "Commuting angular momentum observables separate and label the central Coulomb eigenproblem."
+    }
+  ]
+}

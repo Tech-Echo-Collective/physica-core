@@ -1,0 +1,19 @@
+{
+  "id": "ideal-gas",
+  "title": "Ideal Gas",
+  "description": "A gas model that neglects molecular excluded volume and interaction energy, providing an approximation to sufficiently dilute classical gases.",
+  "domains": [
+    "statistical-physics",
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Classical ideal gas"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "kinetic-theory-of-gases",
+      "note": "Negligible molecular volume and non-collision interactions define the basic kinetic gas model."
+    }
+  ]
+}

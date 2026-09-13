@@ -1,0 +1,24 @@
+{
+  "id": "azimuthal-quantum-number",
+  "title": "Azimuthal Quantum Number",
+  "description": "The nonnegative integer ell that labels an atomic orbital's angular momentum magnitude and subshell. The familiar s, p, d and f subshells have ell equal to 0, 1, 2 and 3.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Orbital angular momentum quantum number"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-angular-momentum",
+      "note": "Ell specifies an eigenvalue of the squared orbital angular momentum operator."
+    },
+    {
+      "type": "used-in",
+      "target": "atomic-orbital",
+      "note": "Ell labels the orbital's angular factor and subshell."
+    }
+  ]
+}

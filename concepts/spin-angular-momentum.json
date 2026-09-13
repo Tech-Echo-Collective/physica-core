@@ -1,0 +1,25 @@
+{
+  "id": "spin-angular-momentum",
+  "title": "Spin Angular Momentum",
+  "description": "Intrinsic quantum angular momentum carried by particles, independent of orbital motion. A particle's spin quantum number fixes its allowed magnitude and projection values; an electron has spin one-half.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Intrinsic quantum angular momentum",
+    "Quantum spin"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-angular-momentum",
+      "note": "Spin observables obey the angular momentum algebra."
+    },
+    {
+      "type": "used-in",
+      "target": "zeeman-effect",
+      "note": "Electronic spin contributes to the atom's magnetic interaction."
+    }
+  ]
+}

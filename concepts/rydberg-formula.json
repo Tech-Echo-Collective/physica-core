@@ -1,0 +1,23 @@
+{
+  "id": "rydberg-formula",
+  "title": "Rydberg Formula",
+  "description": "The relation expressing hydrogen spectral-line wavenumbers as differences of inverse squared principal quantum numbers.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Rydberg equation"
+  ],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "bohr-model",
+      "note": "The hydrogen form follows from Bohr energies and the photon energy–frequency relation."
+    },
+    {
+      "type": "used-in",
+      "target": "spectral-line",
+      "note": "It predicts leading wavelengths within the hydrogen spectral series."
+    }
+  ]
+}

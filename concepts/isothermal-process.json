@@ -1,0 +1,23 @@
+{
+  "id": "isothermal-process",
+  "title": "Isothermal Process",
+  "description": "A thermodynamic process during which the system temperature stays constant; heat may be exchanged and other state variables may change.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Constant-temperature process"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "temperature",
+      "note": "The defining constraint fixes temperature during the process."
+    },
+    {
+      "type": "used-in",
+      "target": "carnot-cycle",
+      "note": "Two reversible isothermal stages exchange heat at the reservoir temperatures."
+    }
+  ]
+}

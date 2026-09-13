@@ -1,0 +1,23 @@
+{
+  "id": "magnetic-quantum-number",
+  "title": "Magnetic Quantum Number",
+  "description": "A dimensionless label m for the projection of a quantum angular momentum along a chosen axis. Orbital, spin and total-angular-momentum projections have their own magnetic quantum numbers.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Angular momentum projection quantum number"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-angular-momentum",
+      "note": "The number labels an angular momentum projection eigenvalue."
+    },
+    {
+      "type": "used-in",
+      "target": "zeeman-effect",
+      "note": "Magnetic sublevels acquire projection-dependent energy shifts."
+    }
+  ]
+}

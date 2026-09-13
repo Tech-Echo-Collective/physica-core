@@ -1,0 +1,22 @@
+{
+  "id": "stark-effect",
+  "title": "Stark Effect",
+  "description": "The displacement or splitting of atomic or molecular spectral lines when an applied electric field changes the energy levels. The response can be linear or quadratic in the field, depending on the states and their degeneracies.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-field",
+      "note": "An external electric field is the perturbation defining the effect."
+    },
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian",
+      "note": "The model describes the shift by adding an electric interaction to the atomic Hamiltonian."
+    }
+  ]
+}

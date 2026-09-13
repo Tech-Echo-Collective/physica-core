@@ -1,0 +1,28 @@
+{
+  "id": "carnot-cycle",
+  "title": "Carnot Cycle",
+  "description": "An ideal reversible cycle composed of two isothermal heat-exchange stages and two adiabatic stages, setting the maximum heat-engine efficiency between two reservoirs.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [
+    "Reversible Carnot cycle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "isothermal-process",
+      "note": "Reversible isothermal stages provide heat exchange at each reservoir temperature."
+    },
+    {
+      "type": "requires",
+      "target": "adiabatic-process",
+      "note": "Reversible adiabatic stages connect the two isotherms without heat transfer."
+    },
+    {
+      "type": "used-in",
+      "target": "heat-engine",
+      "note": "The reversible cycle supplies the maximum efficiency for engines using the same two reservoirs."
+    }
+  ]
+}

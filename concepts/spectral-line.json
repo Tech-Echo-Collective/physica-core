@@ -1,0 +1,16 @@
+{
+  "id": "spectral-line",
+  "title": "Spectral Line",
+  "description": "A localized excess or deficit of intensity over a narrow frequency range in a radiation spectrum. Atomic and molecular emission or absorption transitions produce characteristic lines.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "atomic-physics",
+      "note": "Measured line frequencies reveal atomic internal transitions."
+    }
+  ]
+}
