@@ -2,6 +2,11 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.12.1 - 2026-09-13
+
+- Pre-publication identity correction: remove the critical-angle alias from Total Internal Reflection and the equation alias from Thin Lens. A threshold, a phenomenon, a model and its formula are distinct identities.
+- Keep the immutable v0.12.0 checkpoint; Illuminatio v0.12.0 pins this corrected v0.12.1 release.
+
 ## 0.12.0 - 2026-09-13
 
 - Add 31 scoped classical optics and continuum-mechanics concepts and 61 evidence-backed relations (275 concepts, 779 relations).

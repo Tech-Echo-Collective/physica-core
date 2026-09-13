@@ -1,5 +1,5 @@
 {
-  "core_version": "0.12.0",
+  "core_version": "0.12.1",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -6783,8 +6783,7 @@
         "classical-field-theory"
       ],
       "aliases": [
-        "Thin-lens approximation",
-        "Thin-lens equation"
+        "Thin-lens approximation"
       ],
       "relations": [
         {
@@ -6866,8 +6865,7 @@
         "classical-field-theory"
       ],
       "aliases": [
-        "TIR",
-        "Critical angle of total internal reflection"
+        "TIR"
       ],
       "relations": [
         {
