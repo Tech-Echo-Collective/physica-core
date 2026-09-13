@@ -1,0 +1,19 @@
+{
+  "id": "bose-einstein-condensate",
+  "title": "Bose–Einstein Condensate",
+  "description": "A state of bosonic matter characterized by macroscopic occupation of a single-particle quantum state, with the ideal Bose gas providing an introductory equilibrium model.",
+  "domains": [
+    "statistical-physics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "BEC"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "bose-einstein-statistics",
+      "note": "The ideal-gas condensation mechanism follows from bosonic occupation statistics."
+    }
+  ]
+}

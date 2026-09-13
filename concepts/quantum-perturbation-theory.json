@@ -1,0 +1,23 @@
+{
+  "id": "quantum-perturbation-theory",
+  "title": "Quantum Perturbation Theory",
+  "description": "Approximation methods that expand quantum energies, states, or transition amplitudes around a solvable Hamiltonian when the added interaction is sufficiently weak.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Perturbation theory (quantum mechanics)"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian",
+      "note": "The calculation separates an unperturbed energy operator from a small added interaction."
+    },
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation",
+      "note": "Expanding the stationary Schrödinger eigenproblem gives successive energy and state corrections."
+    }
+  ]
+}

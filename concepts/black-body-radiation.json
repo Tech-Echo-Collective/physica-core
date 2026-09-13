@@ -1,0 +1,20 @@
+{
+  "id": "black-body-radiation",
+  "title": "Black-Body Radiation",
+  "description": "Equilibrium thermal electromagnetic radiation with a spectrum fixed by temperature, realized ideally in a cavity or emitted by a perfect absorber.",
+  "domains": [
+    "statistical-physics",
+    "thermodynamics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Blackbody radiation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "temperature",
+      "note": "Absolute temperature specifies the equilibrium black-body spectrum."
+    }
+  ]
+}

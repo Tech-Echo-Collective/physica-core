@@ -1,0 +1,23 @@
+{
+  "id": "quantum-tunnelling",
+  "title": "Quantum Tunnelling",
+  "description": "Quantum transmission through a potential barrier that would forbid passage by a classical particle with the same total energy.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Quantum tunneling"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "wavefunction",
+      "note": "The wave amplitude extends into the classically forbidden barrier region."
+    },
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation",
+      "note": "Matching stationary Schrödinger solutions gives a nonzero transmitted component."
+    }
+  ]
+}

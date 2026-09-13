@@ -1,0 +1,16 @@
+{
+  "id": "brillouin-zone",
+  "title": "Brillouin Zone",
+  "description": "A reciprocal-space region used to organize waves in a crystal; the first Brillouin zone is the Wigner–Seitz cell of the reciprocal lattice.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "electronic-band-structure",
+      "note": "Restricting Bloch wavevectors to one first zone avoids reciprocal-lattice-equivalent labels in the reduced-zone band description."
+    }
+  ]
+}

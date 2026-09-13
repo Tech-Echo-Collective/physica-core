@@ -1,0 +1,24 @@
+{
+  "id": "fermi-gas",
+  "title": "Fermi Gas",
+  "description": "An ideal many-particle model of noninteracting identical fermions whose equilibrium populations obey Fermi–Dirac statistics.",
+  "domains": [
+    "statistical-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Ideal Fermi gas"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "fermi-dirac-statistics",
+      "note": "The ideal gas's single-particle populations obey Fermi–Dirac statistics."
+    },
+    {
+      "type": "used-in",
+      "target": "solid-state-physics",
+      "note": "The free-electron gas is an introductory approximation for electronic properties of metals."
+    }
+  ]
+}

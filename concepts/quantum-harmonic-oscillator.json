@@ -1,0 +1,23 @@
+{
+  "id": "quantum-harmonic-oscillator",
+  "title": "Quantum Harmonic Oscillator",
+  "description": "The quantum model of a particle in a quadratic confining potential, with equally spaced energy levels and a nonzero ground-state energy.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "QHO"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian",
+      "note": "The energy operator combines kinetic energy with a positive quadratic potential."
+    },
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation",
+      "note": "Normalizable stationary solutions determine the oscillator spectrum."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "fermi-golden-rule",
+  "title": "Fermi's Golden Rule",
+  "description": "A weak-coupling approximation for the transition rate from an initial quantum energy eigenstate into an accessible continuum of final states.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Fermi golden rule"
+  ],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "quantum-perturbation-theory",
+      "note": "The continuum rate follows from first-order time-dependent transition amplitudes."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-scattering",
+      "note": "Weak-potential scattering rates can be converted into cross sections."
+    }
+  ]
+}

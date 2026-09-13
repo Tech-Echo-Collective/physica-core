@@ -1,0 +1,20 @@
+{
+  "id": "geometric-phase",
+  "title": "Geometric Phase",
+  "description": "A phase contribution determined by the geometry of a quantum-state path, distinct from the phase accumulated from energy and elapsed time.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state"
+    },
+    {
+      "type": "used-in",
+      "target": "adiabatic-theorem"
+    }
+  ]
+}

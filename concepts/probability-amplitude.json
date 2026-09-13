@@ -1,0 +1,20 @@
+{
+  "id": "probability-amplitude",
+  "title": "Probability Amplitude",
+  "description": "A complex quantity whose squared magnitude gives an outcome probability, with relative phases controlling interference between indistinguishable alternatives.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "born-rule"
+    },
+    {
+      "type": "used-in",
+      "target": "wavefunction"
+    }
+  ]
+}

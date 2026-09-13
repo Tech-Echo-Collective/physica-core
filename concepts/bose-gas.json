@@ -1,0 +1,24 @@
+{
+  "id": "bose-gas",
+  "title": "Bose Gas",
+  "description": "An ideal many-particle model of noninteracting identical bosons, with equilibrium state populations governed by Bose–Einstein statistics.",
+  "domains": [
+    "statistical-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Ideal Bose gas"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "bose-einstein-statistics",
+      "note": "Bose–Einstein statistics governs the equilibrium populations of the ideal model."
+    },
+    {
+      "type": "used-in",
+      "target": "bose-einstein-condensate",
+      "note": "The ideal Bose gas supplies a baseline model of condensation."
+    }
+  ]
+}

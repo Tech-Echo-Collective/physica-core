@@ -1,0 +1,22 @@
+{
+  "id": "quantum-statistical-mechanics",
+  "title": "Quantum Statistical Mechanics",
+  "description": "The statistical description of quantum many-particle systems, using quantum ensembles and density operators to connect microscopic states with thermal behavior.",
+  "domains": [
+    "statistical-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "density-matrix",
+      "note": "A density matrix represents the statistical quantum state."
+    },
+    {
+      "type": "requires",
+      "target": "statistical-ensemble",
+      "note": "Quantum thermal descriptions specify ensembles of microscopic states."
+    }
+  ]
+}

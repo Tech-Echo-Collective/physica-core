@@ -1,0 +1,26 @@
+{
+  "id": "heisenberg-equation-of-motion",
+  "title": "Heisenberg Equation of Motion",
+  "description": "An operator evolution law expressing Hamiltonian-generated change as a commutator, with an extra term for explicit time dependence.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Heisenberg equation"
+  ],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-observable"
+    }
+  ]
+}

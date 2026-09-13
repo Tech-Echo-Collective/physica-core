@@ -1,0 +1,23 @@
+{
+  "id": "born-approximation",
+  "title": "Born Approximation",
+  "description": "A weak-scattering approximation that replaces the interacting wave inside the scattering integral by the incident wave, giving the first perturbative scattering amplitude.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "First Born approximation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "scattering-amplitude",
+      "note": "The approximation estimates the outgoing scattering amplitude."
+    },
+    {
+      "type": "requires",
+      "target": "fourier-transform",
+      "note": "The first Born amplitude is proportional to the spatial Fourier transform of the potential."
+    }
+  ]
+}

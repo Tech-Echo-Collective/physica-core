@@ -1,0 +1,22 @@
+{
+  "id": "fermion",
+  "title": "Fermion",
+  "description": "A particle with half-integer spin whose identical-particle quantum states are antisymmetric under exchange, obeying the Pauli exclusion principle in ordinary three-dimensional physics.",
+  "domains": [
+    "quantum-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "spin-angular-momentum",
+      "note": "Half-integer intrinsic spin characterizes fermions in the ordinary spin-statistics setting."
+    },
+    {
+      "type": "used-in",
+      "target": "fermi-dirac-statistics",
+      "note": "Fermi–Dirac state counting applies to identical fermions."
+    }
+  ]
+}

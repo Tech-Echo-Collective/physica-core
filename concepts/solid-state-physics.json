@@ -1,0 +1,18 @@
+{
+  "id": "solid-state-physics",
+  "title": "Solid-State Physics",
+  "description": "The study of physical properties of solids and their microscopic origins, including electronic states and collective lattice behavior.",
+  "domains": [
+    "quantum-physics",
+    "quantum-mechanics",
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-mechanics",
+      "note": "The microscopic band and phonon description develops quantum mechanics in solids."
+    }
+  ]
+}

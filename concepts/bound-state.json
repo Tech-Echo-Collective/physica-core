@@ -1,0 +1,23 @@
+{
+  "id": "bound-state",
+  "title": "Bound State",
+  "description": "A normalizable quantum state confined by an interaction or boundary conditions; stationary bound states are normalizable energy eigenstates.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Quantum bound state"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "wavefunction",
+      "note": "Spatial normalizability distinguishes the scoped bound-state solutions."
+    },
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian",
+      "note": "Stationary bound-state energies solve the Hamiltonian eigenvalue problem."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "quantum-zeno-effect",
+  "title": "Quantum Zeno Effect",
+  "description": "Inhibition of transitions by sufficiently frequent suitable measurements or measurement-like interactions.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "born-rule"
+    },
+    {
+      "type": "requires",
+      "target": "schrodinger-equation"
+    }
+  ]
+}

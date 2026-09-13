@@ -1,0 +1,22 @@
+{
+  "id": "phonon",
+  "title": "Phonon",
+  "description": "A quantum of a collective vibrational normal mode of matter, described in a harmonic crystal as a bosonic lattice excitation.",
+  "domains": [
+    "quantum-physics",
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-harmonic-oscillator",
+      "note": "Harmonic lattice normal modes are quantized as independent quantum oscillators."
+    },
+    {
+      "type": "used-in",
+      "target": "heat-capacity",
+      "note": "Thermal phonon populations account for the vibrational contribution to a solid's heat capacity."
+    }
+  ]
+}

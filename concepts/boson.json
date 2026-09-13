@@ -1,0 +1,22 @@
+{
+  "id": "boson",
+  "title": "Boson",
+  "description": "A particle with integer spin whose identical-particle quantum states are symmetric under exchange, allowing multiple particles in one state in ordinary three-dimensional physics.",
+  "domains": [
+    "quantum-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "spin-angular-momentum",
+      "note": "Integer intrinsic spin characterizes bosons in the ordinary spin-statistics setting."
+    },
+    {
+      "type": "used-in",
+      "target": "bose-einstein-statistics",
+      "note": "Bose–Einstein state counting applies to identical bosons."
+    }
+  ]
+}

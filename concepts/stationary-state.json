@@ -1,0 +1,20 @@
+{
+  "id": "stationary-state",
+  "title": "Stationary State",
+  "description": "A pure energy eigenstate of a time-independent Hamiltonian whose evolution changes only an overall phase, leaving time-independent observable statistics unchanged.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian"
+    },
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation"
+    }
+  ]
+}

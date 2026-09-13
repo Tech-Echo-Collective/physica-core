@@ -1,0 +1,27 @@
+{
+  "id": "bose-einstein-statistics",
+  "title": "Bose–Einstein Statistics",
+  "description": "Quantum statistics for identical bosons, allowing any nonnegative occupation of a single-particle state; for noninteracting particles it yields the Bose–Einstein occupation distribution.",
+  "domains": [
+    "statistical-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "boson",
+      "note": "Bosonic exchange symmetry permits unrestricted nonnegative occupation of each state."
+    },
+    {
+      "type": "requires",
+      "target": "chemical-potential",
+      "note": "For conserved particles, the chemical potential fixes the mean population."
+    },
+    {
+      "type": "derived-from",
+      "target": "grand-canonical-ensemble",
+      "note": "The independent-state grand-canonical geometric sum gives the bosonic mean occupation."
+    }
+  ]
+}

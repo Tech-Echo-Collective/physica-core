@@ -1,0 +1,18 @@
+{
+  "id": "scattering-cross-section",
+  "title": "Scattering Cross Section",
+  "description": "An effective area that relates incident particle flux to a scattering rate; its differential form resolves the outgoing direction or other final-state variables.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Scattering cross-section"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "quantum-scattering",
+      "note": "Cross sections quantify measurable scattering rates and angular distributions."
+    }
+  ]
+}

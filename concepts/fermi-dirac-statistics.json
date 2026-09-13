@@ -1,0 +1,27 @@
+{
+  "id": "fermi-dirac-statistics",
+  "title": "Fermi–Dirac Statistics",
+  "description": "Quantum statistics for identical fermions, with at most one particle in each complete single-particle state; for noninteracting particles it yields the Fermi–Dirac occupation distribution.",
+  "domains": [
+    "statistical-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "fermion",
+      "note": "Fermionic state counting permits occupation zero or one per complete one-particle state."
+    },
+    {
+      "type": "requires",
+      "target": "chemical-potential",
+      "note": "The occupation depends on energy relative to the chemical potential."
+    },
+    {
+      "type": "derived-from",
+      "target": "grand-canonical-ensemble",
+      "note": "Independent fermionic occupation sums in the grand canonical ensemble yield this distribution."
+    }
+  ]
+}

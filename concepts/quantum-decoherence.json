@@ -1,0 +1,20 @@
+{
+  "id": "quantum-decoherence",
+  "title": "Quantum Decoherence",
+  "description": "Suppression of locally observable quantum interference as a system becomes correlated with unobserved environmental degrees of freedom.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "density-matrix"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-superposition"
+    }
+  ]
+}

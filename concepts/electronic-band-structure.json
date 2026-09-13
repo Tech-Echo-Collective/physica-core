@@ -1,0 +1,24 @@
+{
+  "id": "electronic-band-structure",
+  "title": "Electronic Band Structure",
+  "description": "The allowed electron-energy bands and intervening gaps of a solid, described in a periodic crystal by energies indexed by a band label and Bloch wavevector.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Electron band structure"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "bloch-theorem",
+      "note": "The periodic-crystal description uses Bloch eigenstates to label the energy bands."
+    },
+    {
+      "type": "used-in",
+      "target": "solid-state-physics",
+      "note": "Band structure helps explain electrical conduction and optical properties of solids."
+    }
+  ]
+}

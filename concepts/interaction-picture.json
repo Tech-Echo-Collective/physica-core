@@ -1,0 +1,22 @@
+{
+  "id": "interaction-picture",
+  "title": "Interaction Picture",
+  "description": "A representation that splits the Hamiltonian so operators carry a chosen reference evolution and states carry the remaining interaction evolution.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Dirac picture"
+  ],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "schrodinger-picture"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian"
+    }
+  ]
+}

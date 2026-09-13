@@ -1,0 +1,24 @@
+{
+  "id": "quantum-variational-method",
+  "title": "Quantum Variational Method",
+  "description": "A method that estimates a quantum ground-state energy by minimizing the Hamiltonian expectation value over an admissible family of trial states.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Variational method (quantum mechanics)",
+    "Quantum variational principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian",
+      "note": "The Hamiltonian defines the trial state's energy functional."
+    },
+    {
+      "type": "used-in",
+      "target": "bound-state",
+      "note": "A trial family can approximate a normalizable ground-state eigenfunction."
+    }
+  ]
+}

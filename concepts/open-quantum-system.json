@@ -1,0 +1,20 @@
+{
+  "id": "open-quantum-system",
+  "title": "Open Quantum System",
+  "description": "A quantum subsystem that interacts with an environment, so its reduced state need not evolve unitarily even when the combined system does.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "density-matrix"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-decoherence"
+    }
+  ]
+}

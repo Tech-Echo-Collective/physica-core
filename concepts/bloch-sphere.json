@@ -1,0 +1,20 @@
+{
+  "id": "bloch-sphere",
+  "title": "Bloch Sphere",
+  "description": "A geometric representation of pure two-state-system states as points on a sphere; mixed states occupy its interior in the Bloch-ball extension.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "two-state-quantum-system"
+    },
+    {
+      "type": "requires",
+      "target": "density-matrix"
+    }
+  ]
+}

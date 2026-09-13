@@ -1,0 +1,24 @@
+{
+  "id": "density-of-states",
+  "title": "Density of States",
+  "description": "The number of available physical modes or quantum states per energy interval for a specified system, independent of how those states are occupied.",
+  "domains": [
+    "statistical-physics",
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "DOS"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "fermi-gas",
+      "note": "Combining the density of states with Fermi–Dirac occupations gives particle number and energy."
+    },
+    {
+      "type": "used-in",
+      "target": "bose-gas",
+      "note": "Energy-state counting weights the Bose occupation integrals."
+    }
+  ]
+}

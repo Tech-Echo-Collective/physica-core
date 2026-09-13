@@ -1,0 +1,19 @@
+{
+  "id": "particle-in-a-box",
+  "title": "Particle in a Box",
+  "description": "An exactly solvable quantum model with a free particle inside a bounded region and impenetrable walls, producing discrete energies through boundary conditions.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Infinite potential well",
+    "Infinite square well"
+  ],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation",
+      "note": "The hard-wall boundary conditions discretize stationary Schrödinger solutions."
+    }
+  ]
+}

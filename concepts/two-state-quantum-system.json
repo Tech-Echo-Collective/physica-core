@@ -1,0 +1,22 @@
+{
+  "id": "two-state-quantum-system",
+  "title": "Two-state Quantum System",
+  "description": "A quantum system with a two-dimensional state space, allowing arbitrary superpositions and mixtures of two independent basis states.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Two-level quantum system"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "hilbert-space"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-superposition"
+    }
+  ]
+}

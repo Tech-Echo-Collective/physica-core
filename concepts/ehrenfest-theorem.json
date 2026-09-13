@@ -1,0 +1,20 @@
+{
+  "id": "ehrenfest-theorem",
+  "title": "Ehrenfest Theorem",
+  "description": "A relation between the time derivatives of quantum expectation values and Hamiltonian dynamics, yielding mean position and mean force equations.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "heisenberg-equation-of-motion"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-observable"
+    }
+  ]
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.14.0 — 2026-09-13
+
+- Add 50 independently reviewed quantum-dynamics, approximation/scattering, quantum-statistical and solid-state concepts with 95 scientific relations (55 prerequisites). Totals: 355 concepts and 933 relations, including 545 prerequisites.
+- Include the Heisenberg equation of motion, dynamical pictures, Ehrenfest theorem, Rabi dynamics, adiabatic following, geometric phase, open systems, bound-state models, tunnelling, occupation statistics and periodic-crystal foundations.
+- Preserve all 305 previous canonical records and eleven domains exactly. Article identities/revisions were read live; no article bodies are retained. Consumer-owned formulas, homes and audit receipts stay in Illuminatio.
+- Recheck every definition and edge against primary references; distinguish equation versus picture, amplitude versus cross section, particle class versus gas model, and material-specific theory versus a universal formula. See docs/quantum-core-sources.md.
+
 All notable changes to Physica Core are documented here.
 
 ## 0.13.0 - 2026-09-13

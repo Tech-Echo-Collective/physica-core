@@ -1,0 +1,20 @@
+{
+  "id": "adiabatic-theorem",
+  "title": "Adiabatic Theorem",
+  "description": "A result that sufficiently slow, smooth Hamiltonian variation keeps an initially isolated energy eigenstate close to its corresponding instantaneous eigenspace.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian"
+    },
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation"
+    }
+  ]
+}

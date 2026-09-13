@@ -1,0 +1,20 @@
+{
+  "id": "schrodinger-picture",
+  "title": "Schrödinger Picture",
+  "description": "A representation that assigns Hamiltonian-generated time evolution to state vectors while observable operators retain only any explicit time dependence.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state"
+    },
+    {
+      "type": "requires",
+      "target": "schrodinger-equation"
+    }
+  ]
+}

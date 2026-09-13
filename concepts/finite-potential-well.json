@@ -1,0 +1,24 @@
+{
+  "id": "finite-potential-well",
+  "title": "Finite Potential Well",
+  "description": "A quantum confinement model with a finite-depth low-potential region; bound-state wavefunctions extend beyond its edges and only finitely many bound levels occur in the one-dimensional square well.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Finite square well",
+    "Finite square potential well"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "wavefunction",
+      "note": "Bound energies are selected by continuity and normalizability of wavefunctions."
+    },
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation",
+      "note": "Piecewise stationary solutions and matching determine the bound-state conditions."
+    }
+  ]
+}

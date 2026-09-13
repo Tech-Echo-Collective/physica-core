@@ -1,0 +1,21 @@
+{
+  "id": "optical-theorem",
+  "title": "Optical Theorem",
+  "description": "A consequence of flux conservation that relates the total cross section to the imaginary part of the forward elastic scattering amplitude.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "scattering-amplitude",
+      "note": "The theorem uses the imaginary part of the forward elastic amplitude."
+    },
+    {
+      "type": "requires",
+      "target": "scattering-cross-section",
+      "note": "Its left side includes the total flux removed from the incident channel."
+    }
+  ]
+}

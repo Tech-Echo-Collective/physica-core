@@ -1,0 +1,22 @@
+{
+  "id": "fermi-energy",
+  "title": "Fermi Energy",
+  "description": "The zero-temperature energy difference between the highest and lowest occupied single-particle levels of noninteracting fermions, setting a characteristic degeneracy energy scale.",
+  "domains": [
+    "quantum-mechanics",
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "pauli-exclusion-principle",
+      "note": "Exclusion forces ground-state fermions to fill successively higher available single-particle states."
+    },
+    {
+      "type": "used-in",
+      "target": "fermi-gas",
+      "note": "Fermi energy supplies the degeneracy scale of the ideal fermion gas."
+    }
+  ]
+}

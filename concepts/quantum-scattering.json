@@ -1,0 +1,18 @@
+{
+  "id": "quantum-scattering",
+  "title": "Quantum Scattering",
+  "description": "The study of how incident quantum states are transformed by interactions, using outgoing amplitudes and cross sections to characterize the target and interaction.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Quantum scattering theory"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "schrodinger-equation",
+      "note": "Nonrelativistic potential-scattering states solve the stationary Schrödinger problem."
+    }
+  ]
+}

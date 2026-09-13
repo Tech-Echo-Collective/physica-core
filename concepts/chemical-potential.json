@@ -1,0 +1,22 @@
+{
+  "id": "chemical-potential",
+  "title": "Chemical Potential",
+  "description": "The thermodynamic energy variable conjugate to the amount of a species, quantifying how the appropriate thermodynamic potential changes when particles are added under specified constraints.",
+  "domains": [
+    "thermodynamics",
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "internal-energy",
+      "note": "Chemical potential is the derivative of internal energy with respect to particle number at fixed entropy and volume."
+    },
+    {
+      "type": "used-in",
+      "target": "grand-canonical-ensemble",
+      "note": "The reservoir chemical potential controls particle exchange in a grand-canonical ensemble."
+    }
+  ]
+}

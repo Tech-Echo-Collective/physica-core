@@ -1,0 +1,24 @@
+{
+  "id": "wkb-approximation",
+  "title": "WKB Approximation",
+  "description": "A semiclassical approximation that exploits slow spatial variation of the local wavelength to estimate quantum wavefunctions, quantization, and barrier transmission.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Wentzel–Kramers–Brillouin approximation",
+    "JWKB approximation"
+  ],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation",
+      "note": "Neglecting sufficiently small spatial-variation terms gives the semiclassical solution."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-tunnelling",
+      "note": "The forbidden-region solution estimates exponentially suppressed barrier transmission."
+    }
+  ]
+}

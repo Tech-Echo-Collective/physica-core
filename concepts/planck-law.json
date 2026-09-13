@@ -1,0 +1,24 @@
+{
+  "id": "planck-law",
+  "title": "Planck's Law",
+  "description": "The law giving the equilibrium black-body electromagnetic spectrum as a function of temperature and frequency or wavelength.",
+  "domains": [
+    "quantum-physics",
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Planck radiation law"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "black-body-radiation",
+      "note": "The law describes the ideal equilibrium black-body spectrum."
+    },
+    {
+      "type": "derived-from",
+      "target": "bose-einstein-statistics",
+      "note": "Bosonic photon occupations with zero chemical potential, multiplied by electromagnetic mode density, yield the law."
+    }
+  ]
+}

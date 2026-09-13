@@ -1,0 +1,23 @@
+{
+  "id": "scattering-amplitude",
+  "title": "Scattering Amplitude",
+  "description": "The complex coefficient of an outgoing scattered wave relative to the incident wave, encoding angular strength and phase in a chosen normalization.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Quantum scattering amplitude"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "wavefunction",
+      "note": "The amplitude is defined by the scattering wavefunction's far-field asymptotic form."
+    },
+    {
+      "type": "used-in",
+      "target": "scattering-cross-section",
+      "note": "Its modulus squared gives the differential cross section for the scoped elastic normalization."
+    }
+  ]
+}

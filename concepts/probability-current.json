@@ -1,0 +1,22 @@
+{
+  "id": "probability-current",
+  "title": "Probability Current",
+  "description": "A vector field describing local transport of probability and balancing changes in probability density through a continuity equation.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Probability flux"
+  ],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation"
+    },
+    {
+      "type": "requires",
+      "target": "wavefunction"
+    }
+  ]
+}

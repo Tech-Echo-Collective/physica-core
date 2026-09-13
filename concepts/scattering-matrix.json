@@ -1,0 +1,24 @@
+{
+  "id": "scattering-matrix",
+  "title": "Scattering Matrix",
+  "description": "The operator or matrix that relates asymptotic incoming quantum channels to outgoing channels and encodes their transition amplitudes.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "S-matrix",
+    "S matrix"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "wavefunction",
+      "note": "Incoming and outgoing asymptotic wave solutions define its channels."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-scattering",
+      "note": "The channel matrix organizes the possible scattering outcomes."
+    }
+  ]
+}

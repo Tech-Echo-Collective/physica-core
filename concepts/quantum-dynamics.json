@@ -1,0 +1,16 @@
+{
+  "id": "quantum-dynamics",
+  "title": "Quantum Dynamics",
+  "description": "The study of how quantum states, observables, and transition probabilities change with time.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-mechanics"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "bloch-theorem",
+  "title": "Bloch's Theorem",
+  "description": "For a Hamiltonian with lattice-translation symmetry, an energy eigenbasis can be chosen as plane waves multiplied by functions with the lattice periodicity.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "schrodinger-equation",
+      "note": "Bloch's theorem organizes stationary Schrödinger eigenstates in a periodic potential."
+    },
+    {
+      "type": "used-in",
+      "target": "electronic-band-structure",
+      "note": "Bloch wavevectors and band indices label electron energies in a periodic crystal."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "rectangular-potential-barrier",
+  "title": "Rectangular Potential Barrier",
+  "description": "A piecewise-constant quantum potential model with a finite region raised above the exterior potential, used to calculate reflection and transmission.",
+  "domains": [
+    "quantum-mechanics"
+  ],
+  "aliases": [
+    "Square potential barrier"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian",
+      "note": "The piecewise potential defines the particle's energy operator."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-tunnelling",
+      "note": "Exact matching predicts transmission even when the energy lies below the barrier."
+    }
+  ]
+}

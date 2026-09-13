@@ -1,0 +1,23 @@
+{
+  "id": "rabi-oscillation",
+  "title": "Rabi Oscillation",
+  "description": "Coherent oscillation of occupation probabilities between coupled quantum levels, typically driven by a near-resonant field.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Rabi cycle",
+    "Rabi flopping"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "two-state-quantum-system"
+    },
+    {
+      "type": "derived-from",
+      "target": "schrodinger-equation"
+    }
+  ]
+}

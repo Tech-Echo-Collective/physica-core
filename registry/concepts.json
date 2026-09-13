@@ -1,5 +1,5 @@
 {
-  "core_version": "0.13.0",
+  "core_version": "0.14.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -96,6 +96,26 @@
           "type": "used-in",
           "target": "carnot-cycle",
           "note": "Two reversible adiabatic stages connect the hot and cold isotherms."
+        }
+      ]
+    },
+    {
+      "id": "adiabatic-theorem",
+      "title": "Adiabatic Theorem",
+      "description": "A result that sufficiently slow, smooth Hamiltonian variation keeps an initially isolated energy eigenstate close to its corresponding instantaneous eigenspace.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian"
+        },
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation"
         }
       ]
     },
@@ -337,6 +357,67 @@
       ]
     },
     {
+      "id": "black-body-radiation",
+      "title": "Black-Body Radiation",
+      "description": "Equilibrium thermal electromagnetic radiation with a spectrum fixed by temperature, realized ideally in a cavity or emitted by a perfect absorber.",
+      "domains": [
+        "statistical-physics",
+        "thermodynamics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Blackbody radiation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "temperature",
+          "note": "Absolute temperature specifies the equilibrium black-body spectrum."
+        }
+      ]
+    },
+    {
+      "id": "bloch-sphere",
+      "title": "Bloch Sphere",
+      "description": "A geometric representation of pure two-state-system states as points on a sphere; mixed states occupy its interior in the Bloch-ball extension.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "two-state-quantum-system"
+        },
+        {
+          "type": "requires",
+          "target": "density-matrix"
+        }
+      ]
+    },
+    {
+      "id": "bloch-theorem",
+      "title": "Bloch's Theorem",
+      "description": "For a Hamiltonian with lattice-translation symmetry, an energy eigenbasis can be chosen as plane waves multiplied by functions with the lattice periodicity.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "schrodinger-equation",
+          "note": "Bloch's theorem organizes stationary Schrödinger eigenstates in a periodic potential."
+        },
+        {
+          "type": "used-in",
+          "target": "electronic-band-structure",
+          "note": "Bloch wavevectors and band indices label electron energies in a periodic crystal."
+        }
+      ]
+    },
+    {
       "id": "bohr-model",
       "title": "Bohr Model",
       "description": "A historical atomic model that combines Coulomb-bound circular electron orbits with discrete angular momentum and radiative transitions. It reproduces the leading hydrogenic energy spectrum but does not give the modern orbital description.",
@@ -404,6 +485,29 @@
       ]
     },
     {
+      "id": "born-approximation",
+      "title": "Born Approximation",
+      "description": "A weak-scattering approximation that replaces the interacting wave inside the scattering integral by the incident wave, giving the first perturbative scattering amplitude.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "First Born approximation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "scattering-amplitude",
+          "note": "The approximation estimates the outgoing scattering amplitude."
+        },
+        {
+          "type": "requires",
+          "target": "fourier-transform",
+          "note": "The first Born amplitude is proportional to the spatial Fourier transform of the potential."
+        }
+      ]
+    },
+    {
       "id": "born-rule",
       "title": "Born Rule",
       "description": "The quantum probability rule assigning Tr(rho P) to a projective measurement event P in state rho, reducing to the squared projected amplitude for a normalized pure state.",
@@ -426,6 +530,137 @@
         {
           "type": "used-in",
           "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "bose-einstein-condensate",
+      "title": "Bose–Einstein Condensate",
+      "description": "A state of bosonic matter characterized by macroscopic occupation of a single-particle quantum state, with the ideal Bose gas providing an introductory equilibrium model.",
+      "domains": [
+        "statistical-physics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "BEC"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "bose-einstein-statistics",
+          "note": "The ideal-gas condensation mechanism follows from bosonic occupation statistics."
+        }
+      ]
+    },
+    {
+      "id": "bose-einstein-statistics",
+      "title": "Bose–Einstein Statistics",
+      "description": "Quantum statistics for identical bosons, allowing any nonnegative occupation of a single-particle state; for noninteracting particles it yields the Bose–Einstein occupation distribution.",
+      "domains": [
+        "statistical-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "boson",
+          "note": "Bosonic exchange symmetry permits unrestricted nonnegative occupation of each state."
+        },
+        {
+          "type": "requires",
+          "target": "chemical-potential",
+          "note": "For conserved particles, the chemical potential fixes the mean population."
+        },
+        {
+          "type": "derived-from",
+          "target": "grand-canonical-ensemble",
+          "note": "The independent-state grand-canonical geometric sum gives the bosonic mean occupation."
+        }
+      ]
+    },
+    {
+      "id": "bose-gas",
+      "title": "Bose Gas",
+      "description": "An ideal many-particle model of noninteracting identical bosons, with equilibrium state populations governed by Bose–Einstein statistics.",
+      "domains": [
+        "statistical-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Ideal Bose gas"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "bose-einstein-statistics",
+          "note": "Bose–Einstein statistics governs the equilibrium populations of the ideal model."
+        },
+        {
+          "type": "used-in",
+          "target": "bose-einstein-condensate",
+          "note": "The ideal Bose gas supplies a baseline model of condensation."
+        }
+      ]
+    },
+    {
+      "id": "boson",
+      "title": "Boson",
+      "description": "A particle with integer spin whose identical-particle quantum states are symmetric under exchange, allowing multiple particles in one state in ordinary three-dimensional physics.",
+      "domains": [
+        "quantum-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "spin-angular-momentum",
+          "note": "Integer intrinsic spin characterizes bosons in the ordinary spin-statistics setting."
+        },
+        {
+          "type": "used-in",
+          "target": "bose-einstein-statistics",
+          "note": "Bose–Einstein state counting applies to identical bosons."
+        }
+      ]
+    },
+    {
+      "id": "bound-state",
+      "title": "Bound State",
+      "description": "A normalizable quantum state confined by an interaction or boundary conditions; stationary bound states are normalizable energy eigenstates.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Quantum bound state"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "wavefunction",
+          "note": "Spatial normalizability distinguishes the scoped bound-state solutions."
+        },
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian",
+          "note": "Stationary bound-state energies solve the Hamiltonian eigenvalue problem."
+        }
+      ]
+    },
+    {
+      "id": "brillouin-zone",
+      "title": "Brillouin Zone",
+      "description": "A reciprocal-space region used to organize waves in a crystal; the first Brillouin zone is the Wigner–Seitz cell of the reciprocal lattice.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "electronic-band-structure",
+          "note": "Restricting Bloch wavevectors to one first zone avoids reciprocal-lattice-equivalent labels in the reduced-zone band description."
         }
       ]
     },
@@ -687,6 +922,28 @@
           "type": "generalizes",
           "target": "kepler-orbit",
           "note": "Attractive inverse-square forces give the Kepler special case of central-force motion."
+        }
+      ]
+    },
+    {
+      "id": "chemical-potential",
+      "title": "Chemical Potential",
+      "description": "The thermodynamic energy variable conjugate to the amount of a species, quantifying how the appropriate thermodynamic potential changes when particles are added under specified constraints.",
+      "domains": [
+        "thermodynamics",
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "internal-energy",
+          "note": "Chemical potential is the derivative of internal energy with respect to particle number at fixed entropy and volume."
+        },
+        {
+          "type": "used-in",
+          "target": "grand-canonical-ensemble",
+          "note": "The reservoir chemical potential controls particle exchange in a grand-canonical ensemble."
         }
       ]
     },
@@ -1397,6 +1654,30 @@
       ]
     },
     {
+      "id": "density-of-states",
+      "title": "Density of States",
+      "description": "The number of available physical modes or quantum states per energy interval for a specified system, independent of how those states are occupied.",
+      "domains": [
+        "statistical-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "DOS"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "fermi-gas",
+          "note": "Combining the density of states with Fermi–Dirac occupations gives particle number and energy."
+        },
+        {
+          "type": "used-in",
+          "target": "bose-gas",
+          "note": "Energy-state counting weights the Bose occupation integrals."
+        }
+      ]
+    },
+    {
       "id": "derivative",
       "title": "Derivative",
       "description": "For a real-valued function of one real variable, the limit of its difference quotient at a point when that finite limit exists, measuring the function's local rate of change.",
@@ -1639,6 +1920,26 @@
       ]
     },
     {
+      "id": "ehrenfest-theorem",
+      "title": "Ehrenfest Theorem",
+      "description": "A relation between the time derivatives of quantum expectation values and Hamiltonian dynamics, yielding mean position and mean force equations.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "heisenberg-equation-of-motion"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-observable"
+        }
+      ]
+    },
+    {
       "id": "eigenvalue",
       "title": "Eigenvalue",
       "description": "A scalar lambda for a linear operator A such that A v equals lambda v for some nonzero vector v in the operator's domain, called an eigenvector.",
@@ -1872,6 +2173,30 @@
       ]
     },
     {
+      "id": "electronic-band-structure",
+      "title": "Electronic Band Structure",
+      "description": "The allowed electron-energy bands and intervening gaps of a solid, described in a periodic crystal by energies indexed by a band label and Bloch wavevector.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Electron band structure"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "bloch-theorem",
+          "note": "The periodic-crystal description uses Bloch eigenstates to label the energy bands."
+        },
+        {
+          "type": "used-in",
+          "target": "solid-state-physics",
+          "note": "Band structure helps explain electrical conduction and optical properties of solids."
+        }
+      ]
+    },
+    {
       "id": "enthalpy",
       "title": "Enthalpy",
       "description": "A thermodynamic potential defined by adding pressure times volume to internal energy. Equality between an enthalpy change and exchanged heat requires additional process conditions.",
@@ -2099,6 +2424,124 @@
       ]
     },
     {
+      "id": "fermi-dirac-statistics",
+      "title": "Fermi–Dirac Statistics",
+      "description": "Quantum statistics for identical fermions, with at most one particle in each complete single-particle state; for noninteracting particles it yields the Fermi–Dirac occupation distribution.",
+      "domains": [
+        "statistical-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "fermion",
+          "note": "Fermionic state counting permits occupation zero or one per complete one-particle state."
+        },
+        {
+          "type": "requires",
+          "target": "chemical-potential",
+          "note": "The occupation depends on energy relative to the chemical potential."
+        },
+        {
+          "type": "derived-from",
+          "target": "grand-canonical-ensemble",
+          "note": "Independent fermionic occupation sums in the grand canonical ensemble yield this distribution."
+        }
+      ]
+    },
+    {
+      "id": "fermi-energy",
+      "title": "Fermi Energy",
+      "description": "The zero-temperature energy difference between the highest and lowest occupied single-particle levels of noninteracting fermions, setting a characteristic degeneracy energy scale.",
+      "domains": [
+        "quantum-mechanics",
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "pauli-exclusion-principle",
+          "note": "Exclusion forces ground-state fermions to fill successively higher available single-particle states."
+        },
+        {
+          "type": "used-in",
+          "target": "fermi-gas",
+          "note": "Fermi energy supplies the degeneracy scale of the ideal fermion gas."
+        }
+      ]
+    },
+    {
+      "id": "fermi-gas",
+      "title": "Fermi Gas",
+      "description": "An ideal many-particle model of noninteracting identical fermions whose equilibrium populations obey Fermi–Dirac statistics.",
+      "domains": [
+        "statistical-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Ideal Fermi gas"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "fermi-dirac-statistics",
+          "note": "The ideal gas's single-particle populations obey Fermi–Dirac statistics."
+        },
+        {
+          "type": "used-in",
+          "target": "solid-state-physics",
+          "note": "The free-electron gas is an introductory approximation for electronic properties of metals."
+        }
+      ]
+    },
+    {
+      "id": "fermi-golden-rule",
+      "title": "Fermi's Golden Rule",
+      "description": "A weak-coupling approximation for the transition rate from an initial quantum energy eigenstate into an accessible continuum of final states.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Fermi golden rule"
+      ],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "quantum-perturbation-theory",
+          "note": "The continuum rate follows from first-order time-dependent transition amplitudes."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-scattering",
+          "note": "Weak-potential scattering rates can be converted into cross sections."
+        }
+      ]
+    },
+    {
+      "id": "fermion",
+      "title": "Fermion",
+      "description": "A particle with half-integer spin whose identical-particle quantum states are antisymmetric under exchange, obeying the Pauli exclusion principle in ordinary three-dimensional physics.",
+      "domains": [
+        "quantum-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "spin-angular-momentum",
+          "note": "Half-integer intrinsic spin characterizes fermions in the ordinary spin-statistics setting."
+        },
+        {
+          "type": "used-in",
+          "target": "fermi-dirac-statistics",
+          "note": "Fermi–Dirac state counting applies to identical fermions."
+        }
+      ]
+    },
+    {
       "id": "feynman-diagram",
       "title": "Feynman Diagram",
       "description": "A graphical representation of a term in a perturbative expansion of quantum-field correlation functions or amplitudes, with lines and vertices encoding mathematical factors rather than literal particle trajectories.",
@@ -2170,6 +2613,30 @@
         {
           "type": "used-in",
           "target": "classical-field-theory"
+        }
+      ]
+    },
+    {
+      "id": "finite-potential-well",
+      "title": "Finite Potential Well",
+      "description": "A quantum confinement model with a finite-depth low-potential region; bound-state wavefunctions extend beyond its edges and only finitely many bound levels occur in the one-dimensional square well.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Finite square well",
+        "Finite square potential well"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "wavefunction",
+          "note": "Bound energies are selected by continuity and normalizability of wavefunctions."
+        },
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation",
+          "note": "Piecewise stationary solutions and matching determine the bound-state conditions."
         }
       ]
     },
@@ -2758,6 +3225,26 @@
       ]
     },
     {
+      "id": "geometric-phase",
+      "title": "Geometric Phase",
+      "description": "A phase contribution determined by the geometry of a quantum-state path, distinct from the phase accumulated from energy and elapsed time.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state"
+        },
+        {
+          "type": "used-in",
+          "target": "adiabatic-theorem"
+        }
+      ]
+    },
+    {
       "id": "geometrical-optics",
       "title": "Geometrical Optics",
       "description": "An approximation that follows light rays to predict reflection, refraction and image formation when diffraction can be neglected at the scale of interest. Rays are straight in a homogeneous medium and can bend when the refractive index varies.",
@@ -3122,6 +3609,32 @@
           "type": "requires",
           "target": "second-law-of-thermodynamics",
           "note": "The second law limits conversion efficiency between thermal reservoirs."
+        }
+      ]
+    },
+    {
+      "id": "heisenberg-equation-of-motion",
+      "title": "Heisenberg Equation of Motion",
+      "description": "An operator evolution law expressing Hamiltonian-generated change as a commutator, with an extra term for explicit time dependence.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Heisenberg equation"
+      ],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-observable"
         }
       ]
     },
@@ -3496,6 +4009,28 @@
           "type": "used-in",
           "target": "de-rham-cohomology",
           "note": "Integrals over cycles can detect nonzero cohomology classes."
+        }
+      ]
+    },
+    {
+      "id": "interaction-picture",
+      "title": "Interaction Picture",
+      "description": "A representation that splits the Hamiltonian so operators carry a chosen reference evolution and states carry the remaining interaction evolution.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Dirac picture"
+      ],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "schrodinger-picture"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian"
         }
       ]
     },
@@ -5245,6 +5780,26 @@
       ]
     },
     {
+      "id": "open-quantum-system",
+      "title": "Open Quantum System",
+      "description": "A quantum subsystem that interacts with an environment, so its reduced state need not evolve unitarily even when the combined system does.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "density-matrix"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-decoherence"
+        }
+      ]
+    },
+    {
       "id": "optical-path-length",
       "title": "Optical Path Length",
       "description": "The geometric length along an optical path weighted by the refractive index encountered. In a sequence of uniform media it is the sum of each segment length times its index; it is useful for comparing accumulated optical phase.",
@@ -5265,6 +5820,27 @@
           "type": "used-in",
           "target": "interference",
           "note": "Differences in optical path contribute to the relative phase of recombined light."
+        }
+      ]
+    },
+    {
+      "id": "optical-theorem",
+      "title": "Optical Theorem",
+      "description": "A consequence of flux conservation that relates the total cross section to the imaginary part of the forward elastic scattering amplitude.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "scattering-amplitude",
+          "note": "The theorem uses the imaginary part of the forward elastic amplitude."
+        },
+        {
+          "type": "requires",
+          "target": "scattering-cross-section",
+          "note": "Its left side includes the total flux removed from the incident channel."
         }
       ]
     },
@@ -5407,6 +5983,25 @@
       ]
     },
     {
+      "id": "particle-in-a-box",
+      "title": "Particle in a Box",
+      "description": "An exactly solvable quantum model with a free particle inside a bounded region and impenetrable walls, producing discrete energies through boundary conditions.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Infinite potential well",
+        "Infinite square well"
+      ],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation",
+          "note": "The hard-wall boundary conditions discretize stationary Schrödinger solutions."
+        }
+      ]
+    },
+    {
       "id": "partition-function",
       "title": "Partition Function",
       "description": "A statistical-mechanical normalization sum or integral over weighted microscopic states; in the canonical ensemble, Z sums exp(−E/kBT) and determines equilibrium thermodynamic quantities.",
@@ -5512,6 +6107,52 @@
           "type": "used-in",
           "target": "statistical-mechanics",
           "note": "Classical microscopic states and ensembles may be represented on phase space."
+        }
+      ]
+    },
+    {
+      "id": "phonon",
+      "title": "Phonon",
+      "description": "A quantum of a collective vibrational normal mode of matter, described in a harmonic crystal as a bosonic lattice excitation.",
+      "domains": [
+        "quantum-physics",
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-harmonic-oscillator",
+          "note": "Harmonic lattice normal modes are quantized as independent quantum oscillators."
+        },
+        {
+          "type": "used-in",
+          "target": "heat-capacity",
+          "note": "Thermal phonon populations account for the vibrational contribution to a solid's heat capacity."
+        }
+      ]
+    },
+    {
+      "id": "planck-law",
+      "title": "Planck's Law",
+      "description": "The law giving the equilibrium black-body electromagnetic spectrum as a function of temperature and frequency or wavelength.",
+      "domains": [
+        "quantum-physics",
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Planck radiation law"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "black-body-radiation",
+          "note": "The law describes the ideal equilibrium black-body spectrum."
+        },
+        {
+          "type": "derived-from",
+          "target": "bose-einstein-statistics",
+          "note": "Bosonic photon occupations with zero chemical potential, multiplied by electromagnetic mode density, yield the law."
         }
       ]
     },
@@ -5707,6 +6348,48 @@
         {
           "type": "used-in",
           "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "probability-amplitude",
+      "title": "Probability Amplitude",
+      "description": "A complex quantity whose squared magnitude gives an outcome probability, with relative phases controlling interference between indistinguishable alternatives.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "born-rule"
+        },
+        {
+          "type": "used-in",
+          "target": "wavefunction"
+        }
+      ]
+    },
+    {
+      "id": "probability-current",
+      "title": "Probability Current",
+      "description": "A vector field describing local transport of probability and balancing changes in probability density through a continuity equation.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Probability flux"
+      ],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation"
+        },
+        {
+          "type": "requires",
+          "target": "wavefunction"
         }
       ]
     },
@@ -5921,6 +6604,42 @@
       ]
     },
     {
+      "id": "quantum-decoherence",
+      "title": "Quantum Decoherence",
+      "description": "Suppression of locally observable quantum interference as a system becomes correlated with unobserved environmental degrees of freedom.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "density-matrix"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-superposition"
+        }
+      ]
+    },
+    {
+      "id": "quantum-dynamics",
+      "title": "Quantum Dynamics",
+      "description": "The study of how quantum states, observables, and transition probabilities change with time.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
       "id": "quantum-entanglement",
       "title": "Quantum Entanglement",
       "description": "For finite-dimensional composite systems, the property of a joint state that cannot be written as a convex combination of product states of the subsystems; for a pure state this reduces to failure to factor as one product vector.",
@@ -6023,6 +6742,29 @@
       ]
     },
     {
+      "id": "quantum-harmonic-oscillator",
+      "title": "Quantum Harmonic Oscillator",
+      "description": "The quantum model of a particle in a quadratic confining potential, with equally spaced energy levels and a nonzero ground-state energy.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "QHO"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian",
+          "note": "The energy operator combines kinetic energy with a positive quadratic potential."
+        },
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation",
+          "note": "Normalizable stationary solutions determine the oscillator spectrum."
+        }
+      ]
+    },
+    {
       "id": "quantum-mechanics",
       "title": "Quantum Mechanics",
       "description": "The framework describing quantum states, observables, probabilities, and dynamics, with linear operators on complex vector spaces as its central mathematical structure.",
@@ -6071,6 +6813,47 @@
       ]
     },
     {
+      "id": "quantum-perturbation-theory",
+      "title": "Quantum Perturbation Theory",
+      "description": "Approximation methods that expand quantum energies, states, or transition amplitudes around a solvable Hamiltonian when the added interaction is sufficiently weak.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Perturbation theory (quantum mechanics)"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian",
+          "note": "The calculation separates an unperturbed energy operator from a small added interaction."
+        },
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation",
+          "note": "Expanding the stationary Schrödinger eigenproblem gives successive energy and state corrections."
+        }
+      ]
+    },
+    {
+      "id": "quantum-scattering",
+      "title": "Quantum Scattering",
+      "description": "The study of how incident quantum states are transformed by interactions, using outgoing amplitudes and cross sections to characterize the target and interaction.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Quantum scattering theory"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "schrodinger-equation",
+          "note": "Nonrelativistic potential-scattering states solve the stationary Schrödinger problem."
+        }
+      ]
+    },
+    {
       "id": "quantum-state",
       "title": "Quantum State",
       "description": "A specification of quantum measurement probabilities, represented in the standard Hilbert-space formulation by a positive trace-class operator of trace one, including pure and mixed states.",
@@ -6098,6 +6881,28 @@
       ]
     },
     {
+      "id": "quantum-statistical-mechanics",
+      "title": "Quantum Statistical Mechanics",
+      "description": "The statistical description of quantum many-particle systems, using quantum ensembles and density operators to connect microscopic states with thermal behavior.",
+      "domains": [
+        "statistical-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "density-matrix",
+          "note": "A density matrix represents the statistical quantum state."
+        },
+        {
+          "type": "requires",
+          "target": "statistical-ensemble",
+          "note": "Quantum thermal descriptions specify ensembles of microscopic states."
+        }
+      ]
+    },
+    {
       "id": "quantum-superposition",
       "title": "Quantum Superposition",
       "description": "The formation of a pure quantum state from a nonzero complex linear combination of state vectors followed by normalization, retaining relative phases rather than mixing classical probabilities.",
@@ -6116,6 +6921,73 @@
         {
           "type": "used-in",
           "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "quantum-tunnelling",
+      "title": "Quantum Tunnelling",
+      "description": "Quantum transmission through a potential barrier that would forbid passage by a classical particle with the same total energy.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Quantum tunneling"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "wavefunction",
+          "note": "The wave amplitude extends into the classically forbidden barrier region."
+        },
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation",
+          "note": "Matching stationary Schrödinger solutions gives a nonzero transmitted component."
+        }
+      ]
+    },
+    {
+      "id": "quantum-variational-method",
+      "title": "Quantum Variational Method",
+      "description": "A method that estimates a quantum ground-state energy by minimizing the Hamiltonian expectation value over an admissible family of trial states.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Variational method (quantum mechanics)",
+        "Quantum variational principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian",
+          "note": "The Hamiltonian defines the trial state's energy functional."
+        },
+        {
+          "type": "used-in",
+          "target": "bound-state",
+          "note": "A trial family can approximate a normalizable ground-state eigenfunction."
+        }
+      ]
+    },
+    {
+      "id": "quantum-zeno-effect",
+      "title": "Quantum Zeno Effect",
+      "description": "Inhibition of transitions by sufficiently frequent suitable measurements or measurement-like interactions.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "born-rule"
+        },
+        {
+          "type": "requires",
+          "target": "schrodinger-equation"
         }
       ]
     },
@@ -6142,6 +7014,29 @@
       ]
     },
     {
+      "id": "rabi-oscillation",
+      "title": "Rabi Oscillation",
+      "description": "Coherent oscillation of occupation probabilities between coupled quantum levels, typically driven by a near-resonant field.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Rabi cycle",
+        "Rabi flopping"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "two-state-quantum-system"
+        },
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation"
+        }
+      ]
+    },
+    {
       "id": "random-variable",
       "title": "Random Variable",
       "description": "A measurable function on a probability space that assigns a numerical value to each possible outcome. Its distribution records the probabilities of its possible values or ranges of values.",
@@ -6162,6 +7057,29 @@
           "type": "used-in",
           "target": "statistical-mechanics",
           "note": "Classical observables such as energy can be treated as random variables on an ensemble of microstates."
+        }
+      ]
+    },
+    {
+      "id": "rectangular-potential-barrier",
+      "title": "Rectangular Potential Barrier",
+      "description": "A piecewise-constant quantum potential model with a finite region raised above the exterior potential, used to calculate reflection and transmission.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Square potential barrier"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian",
+          "note": "The piecewise potential defines the particle's energy operator."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-tunnelling",
+          "note": "Exact matching predicts transmission even when the energy lies below the barrier."
         }
       ]
     },
@@ -6534,6 +7452,71 @@
       ]
     },
     {
+      "id": "scattering-amplitude",
+      "title": "Scattering Amplitude",
+      "description": "The complex coefficient of an outgoing scattered wave relative to the incident wave, encoding angular strength and phase in a chosen normalization.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Quantum scattering amplitude"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "wavefunction",
+          "note": "The amplitude is defined by the scattering wavefunction's far-field asymptotic form."
+        },
+        {
+          "type": "used-in",
+          "target": "scattering-cross-section",
+          "note": "Its modulus squared gives the differential cross section for the scoped elastic normalization."
+        }
+      ]
+    },
+    {
+      "id": "scattering-cross-section",
+      "title": "Scattering Cross Section",
+      "description": "An effective area that relates incident particle flux to a scattering rate; its differential form resolves the outgoing direction or other final-state variables.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Scattering cross-section"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "quantum-scattering",
+          "note": "Cross sections quantify measurable scattering rates and angular distributions."
+        }
+      ]
+    },
+    {
+      "id": "scattering-matrix",
+      "title": "Scattering Matrix",
+      "description": "The operator or matrix that relates asymptotic incoming quantum channels to outgoing channels and encodes their transition amplitudes.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "S-matrix",
+        "S matrix"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "wavefunction",
+          "note": "Incoming and outgoing asymptotic wave solutions define its channels."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-scattering",
+          "note": "The channel matrix organizes the possible scattering outcomes."
+        }
+      ]
+    },
+    {
       "id": "schrodinger-equation",
       "title": "Schrödinger Equation",
       "description": "The evolution equation i hbar d|psi>/dt = H(t)|psi> for a closed quantum system's state vector, with H the Hamiltonian operator and suitable domain conditions.",
@@ -6562,6 +7545,26 @@
           "type": "requires",
           "target": "quantum-hamiltonian",
           "note": "The Hamiltonian operator specifies the equation's generator."
+        }
+      ]
+    },
+    {
+      "id": "schrodinger-picture",
+      "title": "Schrödinger Picture",
+      "description": "A representation that assigns Hamiltonian-generated time evolution to state vectors while observable operators retain only any explicit time dependence.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state"
+        },
+        {
+          "type": "requires",
+          "target": "schrodinger-equation"
         }
       ]
     },
@@ -6915,6 +7918,24 @@
       "relations": []
     },
     {
+      "id": "solid-state-physics",
+      "title": "Solid-State Physics",
+      "description": "The study of physical properties of solids and their microscopic origins, including electronic states and collective lattice behavior.",
+      "domains": [
+        "quantum-physics",
+        "quantum-mechanics",
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-mechanics",
+          "note": "The microscopic band and phonon description develops quantum mechanics in solids."
+        }
+      ]
+    },
+    {
       "id": "spacetime-interval",
       "title": "Spacetime Interval",
       "description": "In Minkowski spacetime, the invariant squared separation of two events, -c²Δt² + Δx² + Δy² + Δz² in the mostly-plus convention.",
@@ -7033,6 +8054,26 @@
           "type": "requires",
           "target": "quantum-hamiltonian",
           "note": "The model describes the shift by adding an electric interaction to the atomic Hamiltonian."
+        }
+      ]
+    },
+    {
+      "id": "stationary-state",
+      "title": "Stationary State",
+      "description": "A pure energy eigenstate of a time-independent Hamiltonian whose evolution changes only an overall phase, leaving time-independent observable statistics unchanged.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian"
+        },
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation"
         }
       ]
     },
@@ -7587,6 +8628,28 @@
       ]
     },
     {
+      "id": "two-state-quantum-system",
+      "title": "Two-state Quantum System",
+      "description": "A quantum system with a two-dimensional state space, allowing arbitrary superpositions and mixtures of two independent basis states.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Two-level quantum system"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hilbert-space"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-superposition"
+        }
+      ]
+    },
+    {
       "id": "uncertainty-principle",
       "title": "Uncertainty Principle",
       "description": "A constraint on statistical spreads of quantum observables in a given state. The Robertson bound relates the product of their standard deviations to the expectation value of their commutator, subject to the relevant operator-domain conditions.",
@@ -7831,6 +8894,30 @@
         {
           "type": "requires",
           "target": "differential-form"
+        }
+      ]
+    },
+    {
+      "id": "wkb-approximation",
+      "title": "WKB Approximation",
+      "description": "A semiclassical approximation that exploits slow spatial variation of the local wavelength to estimate quantum wavefunctions, quantization, and barrier transmission.",
+      "domains": [
+        "quantum-mechanics"
+      ],
+      "aliases": [
+        "Wentzel–Kramers–Brillouin approximation",
+        "JWKB approximation"
+      ],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "schrodinger-equation",
+          "note": "Neglecting sufficiently small spatial-variation terms gives the semiclassical solution."
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-tunnelling",
+          "note": "The forbidden-region solution estimates exponentially suppressed barrier transmission."
         }
       ]
     },
