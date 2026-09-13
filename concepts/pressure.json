@@ -1,0 +1,22 @@
+{
+  "id": "pressure",
+  "title": "Pressure",
+  "description": "The scalar intensity of isotropic compressive contact force. In a fluid at rest, pressure gives normal force per unit area and is the same for every surface orientation at a point.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Fluid pressure",
+    "Mechanical pressure"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "force"
+    },
+    {
+      "type": "used-in",
+      "target": "fluid-mechanics"
+    }
+  ]
+}

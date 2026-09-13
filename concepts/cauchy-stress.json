@@ -1,0 +1,26 @@
+{
+  "id": "cauchy-stress",
+  "title": "Cauchy Stress",
+  "description": "The second-order tensor that determines contact force per unit current area on an oriented surface through a point in a continuum, including normal and shear components.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Cauchy stress tensor",
+    "True stress tensor"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "force"
+    },
+    {
+      "type": "requires",
+      "target": "linear-map"
+    },
+    {
+      "type": "used-in",
+      "target": "solid-mechanics"
+    }
+  ]
+}

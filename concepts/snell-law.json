@@ -1,0 +1,29 @@
+{
+  "id": "snell-law",
+  "title": "Snell's Law",
+  "description": "The relation between the incident and transmitted ray angles at a boundary between two isotropic optical media: each refractive index multiplies the sine of the corresponding angle to the normal.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Law of refraction",
+    "Snell–Descartes law"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "refractive-index",
+      "note": "The indices of the two media are the material inputs to this law."
+    },
+    {
+      "type": "requires",
+      "target": "refraction",
+      "note": "The law quantifies the incident and refracted ray geometry."
+    },
+    {
+      "type": "used-in",
+      "target": "geometrical-optics",
+      "note": "Ray tracing applies this law at refracting boundaries."
+    }
+  ]
+}

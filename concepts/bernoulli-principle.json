@@ -1,0 +1,30 @@
+{
+  "id": "bernoulli-principle",
+  "title": "Bernoulli Principle",
+  "description": "For steady inviscid flow of constant density under gravity, the sum of pressure, kinetic-energy density and gravitational potential-energy density is constant along a streamline.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Bernoulli equation",
+    "Bernoulli's principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "pressure"
+    },
+    {
+      "type": "requires",
+      "target": "mass-density"
+    },
+    {
+      "type": "requires",
+      "target": "velocity-field"
+    },
+    {
+      "type": "derived-from",
+      "target": "work-energy-theorem"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "thin-lens",
+  "title": "Thin Lens",
+  "description": "A lens model in which the separation of the two refracting surfaces can be neglected for image formation. For rays close to the optical axis, it relates object position, image position and focal length.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Thin-lens approximation",
+    "Thin-lens equation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "refraction",
+      "note": "A refracting lens forms an image by redirecting transmitted rays."
+    },
+    {
+      "type": "used-in",
+      "target": "geometrical-optics",
+      "note": "The approximation reduces lens image formation to ray geometry and focal length."
+    }
+  ]
+}

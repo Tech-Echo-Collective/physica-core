@@ -1,0 +1,25 @@
+{
+  "id": "polarization",
+  "title": "Polarization",
+  "description": "The pattern traced by a transverse light wave's electric-field direction as it oscillates. Linear polarization keeps that direction along a fixed transverse axis; circular and elliptical polarization rotate it.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Optical polarization",
+    "Polarisation",
+    "Polarization of light"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-field",
+      "note": "Optical polarization specifies the transverse electric-field oscillation."
+    },
+    {
+      "type": "used-in",
+      "target": "wave-optics",
+      "note": "The field's orientation matters when light passes through an analyzer or when polarized waves interfere."
+    }
+  ]
+}

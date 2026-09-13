@@ -1,0 +1,38 @@
+{
+  "id": "navier-stokes-equations",
+  "title": "Navier–Stokes Equations",
+  "description": "Continuum momentum-balance equations for Newtonian viscous fluids. The incompressible constant-property form couples velocity and pressure through pressure forces, viscous stress and body forces.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Navier Stokes equations",
+    "Incompressible Navier–Stokes system"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "fluid-continuity-equation"
+    },
+    {
+      "type": "requires",
+      "target": "pressure"
+    },
+    {
+      "type": "requires",
+      "target": "dynamic-viscosity"
+    },
+    {
+      "type": "requires",
+      "target": "partial-differential-equation"
+    },
+    {
+      "type": "derived-from",
+      "target": "newtons-second-law"
+    },
+    {
+      "type": "used-in",
+      "target": "fluid-mechanics"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "optical-path-length",
+  "title": "Optical Path Length",
+  "description": "The geometric length along an optical path weighted by the refractive index encountered. In a sequence of uniform media it is the sum of each segment length times its index; it is useful for comparing accumulated optical phase.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "OPL",
+    "Optical length"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "refractive-index",
+      "note": "The weighting of each geometric segment is the phase refractive index."
+    },
+    {
+      "type": "used-in",
+      "target": "interference",
+      "note": "Differences in optical path contribute to the relative phase of recombined light."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "law-of-reflection",
+  "title": "Law of Reflection",
+  "description": "For specular reflection, the reflected ray makes the same angle with the surface normal as the incident ray. The incident ray, reflected ray and normal lie in one plane.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Specular reflection law"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "geometrical-optics",
+      "note": "It determines reflected ray directions in ray tracing."
+    }
+  ]
+}

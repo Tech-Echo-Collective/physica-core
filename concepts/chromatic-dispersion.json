@@ -1,0 +1,24 @@
+{
+  "id": "chromatic-dispersion",
+  "title": "Chromatic Dispersion",
+  "description": "Frequency dependence of light's phase speed in a medium, equivalently frequency dependence of its refractive index. It can make different spectral components refract by different amounts.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Optical dispersion",
+    "Material dispersion"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "refractive-index",
+      "note": "The material dispersion is expressed by the variation of phase index with frequency."
+    },
+    {
+      "type": "used-in",
+      "target": "geometrical-optics",
+      "note": "Using the index at each frequency explains wavelength-dependent ray refraction in a prism."
+    }
+  ]
+}

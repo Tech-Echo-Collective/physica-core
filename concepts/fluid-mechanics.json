@@ -1,0 +1,12 @@
+{
+  "id": "fluid-mechanics",
+  "title": "Fluid Mechanics",
+  "description": "The study of liquids and gases at rest and in motion, treating their bulk properties and forces within a continuum description.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Mechanics of fluids"
+  ],
+  "relations": []
+}

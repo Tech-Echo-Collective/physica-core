@@ -1,0 +1,18 @@
+{
+  "id": "refraction",
+  "title": "Refraction",
+  "description": "A change in a light ray's direction as it propagates through regions with different optical properties. At an ordinary boundary this is associated with a change in phase speed; normal incidence need not change the direction.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Optical refraction"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "geometrical-optics",
+      "note": "Refraction redirects transmitted rays in optical ray models."
+    }
+  ]
+}

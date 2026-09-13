@@ -2,6 +2,14 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.12.0 - 2026-09-13
+
+- Add 31 scoped classical optics and continuum-mechanics concepts and 61 evidence-backed relations (275 concepts, 779 relations).
+- Preserve every prior record and the existing eleven domains; reuse mathematical concepts without duplicating them.
+- Distinguish optical phase speed from group speed, and isotropic small-strain Hooke law from lumped springs. State fluid and optical approximation limits explicitly.
+- Live Wikipedia identities and independent textbook/university references were reviewed; no article bodies are stored. Consumer-owned receipts and formulas are recorded in Illuminatio Physica v0.12.0.
+
+
 ## 0.11.0 - 2026-09-13
 
 - Add 12 reviewed classical electromagnetism and elementary vector-calculus concepts, preserving all 232 prior records.

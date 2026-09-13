@@ -1,0 +1,28 @@
+{
+  "id": "huygens-principle",
+  "title": "Huygens's Principle",
+  "description": "A construction for advancing a wavefront: each point on the current front launches secondary wavelets, and their forward envelope gives the next front. It helps visualize reflection, refraction and spreading at an aperture.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Huygens wavefront construction"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "law-of-reflection",
+      "note": "Advancing wavefronts at a reflecting boundary recovers equal ray angles."
+    },
+    {
+      "type": "used-in",
+      "target": "snell-law",
+      "note": "Wavefront geometry with two propagation speeds yields the refraction law."
+    },
+    {
+      "type": "used-in",
+      "target": "diffraction",
+      "note": "Secondary contributions across an aperture provide the introductory wave picture."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "core_version": "0.11.0",
+  "core_version": "0.12.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -226,6 +226,36 @@
       ]
     },
     {
+      "id": "bernoulli-principle",
+      "title": "Bernoulli Principle",
+      "description": "For steady inviscid flow of constant density under gravity, the sum of pressure, kinetic-energy density and gravitational potential-energy density is constant along a streamline.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Bernoulli equation",
+        "Bernoulli's principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "pressure"
+        },
+        {
+          "type": "requires",
+          "target": "mass-density"
+        },
+        {
+          "type": "requires",
+          "target": "velocity-field"
+        },
+        {
+          "type": "derived-from",
+          "target": "work-energy-theorem"
+        }
+      ]
+    },
+    {
       "id": "boltzmann-distribution",
       "title": "Boltzmann Distribution",
       "description": "The equilibrium probability law assigning each microscopic state a normalized weight proportional to the exponential of minus its energy divided by Boltzmann's constant times temperature.",
@@ -291,6 +321,29 @@
         {
           "type": "used-in",
           "target": "quantum-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "buoyancy",
+      "title": "Buoyancy",
+      "description": "The resultant upward force exerted by hydrostatic fluid pressure on an immersed body; its magnitude equals the weight of the displaced fluid under Archimedes' conditions.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Buoyant force",
+        "Upthrust",
+        "Archimedes principle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hydrostatic-equilibrium"
+        },
+        {
+          "type": "used-in",
+          "target": "fluid-mechanics"
         }
       ]
     },
@@ -396,6 +449,32 @@
           "type": "used-in",
           "target": "hamilton-jacobi-equation",
           "note": "A generating function can construct canonical coordinates in which the transformed Hamiltonian vanishes; the resulting condition is the Hamilton–Jacobi equation."
+        }
+      ]
+    },
+    {
+      "id": "cauchy-stress",
+      "title": "Cauchy Stress",
+      "description": "The second-order tensor that determines contact force per unit current area on an oriented surface through a point in a continuum, including normal and shear components.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Cauchy stress tensor",
+        "True stress tensor"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "force"
+        },
+        {
+          "type": "requires",
+          "target": "linear-map"
+        },
+        {
+          "type": "used-in",
+          "target": "solid-mechanics"
         }
       ]
     },
@@ -535,6 +614,30 @@
           "type": "used-in",
           "target": "general-relativity",
           "note": "Levi-Civita coefficients enter the coordinate expressions for spacetime covariant derivatives, geodesics and curvature."
+        }
+      ]
+    },
+    {
+      "id": "chromatic-dispersion",
+      "title": "Chromatic Dispersion",
+      "description": "Frequency dependence of light's phase speed in a medium, equivalently frequency dependence of its refractive index. It can make different spectral components refract by different amounts.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Optical dispersion",
+        "Material dispersion"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "refractive-index",
+          "note": "The material dispersion is expressed by the variation of phase index with frequency."
+        },
+        {
+          "type": "used-in",
+          "target": "geometrical-optics",
+          "note": "Using the index at each frequency explains wavelength-dependent ray refraction in a prism."
         }
       ]
     },
@@ -822,6 +925,24 @@
         {
           "type": "used-in",
           "target": "calculus"
+        }
+      ]
+    },
+    {
+      "id": "continuum-mechanics",
+      "title": "Continuum Mechanics",
+      "description": "Mechanics of matter modeled as a continuous distribution, using fields for motion, internal forces and material response at scales where molecular discreteness can be averaged.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Mechanics of continuous media"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "newtons-second-law",
+          "note": "The classical force-balance formulation uses Newton's law for material portions."
         }
       ]
     },
@@ -1247,6 +1368,29 @@
       ]
     },
     {
+      "id": "diffraction",
+      "title": "Diffraction",
+      "description": "Wave spreading and the formation of patterns around an aperture or obstacle, beyond a simple ray shadow. In the optical model here, interference between contributions from different parts of an illuminated aperture explains the pattern.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Optical diffraction"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "interference",
+          "note": "The scoped single-slit explanation uses phase-dependent cancellation of wave contributions."
+        },
+        {
+          "type": "used-in",
+          "target": "wave-optics",
+          "note": "Diffraction is an essential wave correction to ray propagation."
+        }
+      ]
+    },
+    {
       "id": "divergence",
       "title": "Divergence",
       "description": "The scalar differential operator obtained by summing the matching coordinate partial derivatives of a vector field.",
@@ -1310,6 +1454,28 @@
           "type": "used-in",
           "target": "resonance",
           "note": "The sinusoidally forced linear model is a standard quantitative example of resonance."
+        }
+      ]
+    },
+    {
+      "id": "dynamic-viscosity",
+      "title": "Dynamic Viscosity",
+      "description": "The coefficient relating viscous shear stress to shear rate in a Newtonian fluid. It measures resistance to relative deformation and has SI unit pascal-second.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Absolute viscosity",
+        "Newtonian shear viscosity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "cauchy-stress"
+        },
+        {
+          "type": "requires",
+          "target": "velocity-field"
         }
       ]
     },
@@ -1879,6 +2045,44 @@
       ]
     },
     {
+      "id": "fluid-continuity-equation",
+      "title": "Fluid Continuity Equation",
+      "description": "The local conservation equation for fluid mass, relating the rate of density change to the divergence of the mass flux.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Fluid mass continuity",
+        "Mass continuity equation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "mass-density"
+        },
+        {
+          "type": "requires",
+          "target": "velocity-field"
+        },
+        {
+          "type": "requires",
+          "target": "divergence"
+        }
+      ]
+    },
+    {
+      "id": "fluid-mechanics",
+      "title": "Fluid Mechanics",
+      "description": "The study of liquids and gases at rest and in motion, treating their bulk properties and forces within a continuum description.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Mechanics of fluids"
+      ],
+      "relations": []
+    },
+    {
       "id": "fock-space",
       "title": "Fock Space",
       "description": "The Hilbert direct sum of all n-particle sectors including the vacuum sector, constructed from symmetric tensor powers of a one-particle space for bosons or antisymmetric powers for fermions.",
@@ -2372,6 +2576,19 @@
       ]
     },
     {
+      "id": "geometrical-optics",
+      "title": "Geometrical Optics",
+      "description": "An approximation that follows light rays to predict reflection, refraction and image formation when diffraction can be neglected at the scale of interest. Rays are straight in a homogeneous medium and can bend when the refractive index varies.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Geometric optics",
+        "Ray optics"
+      ],
+      "relations": []
+    },
+    {
       "id": "gradient",
       "title": "Gradient",
       "description": "For a differentiable scalar function on Euclidean space, the vector of coordinate partial derivatives that represents its differential using the Euclidean inner product.",
@@ -2730,6 +2947,59 @@
       ]
     },
     {
+      "id": "huygens-principle",
+      "title": "Huygens's Principle",
+      "description": "A construction for advancing a wavefront: each point on the current front launches secondary wavelets, and their forward envelope gives the next front. It helps visualize reflection, refraction and spreading at an aperture.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Huygens wavefront construction"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "law-of-reflection",
+          "note": "Advancing wavefronts at a reflecting boundary recovers equal ray angles."
+        },
+        {
+          "type": "used-in",
+          "target": "snell-law",
+          "note": "Wavefront geometry with two propagation speeds yields the refraction law."
+        },
+        {
+          "type": "used-in",
+          "target": "diffraction",
+          "note": "Secondary contributions across an aperture provide the introductory wave picture."
+        }
+      ]
+    },
+    {
+      "id": "hydrostatic-equilibrium",
+      "title": "Hydrostatic Equilibrium",
+      "description": "Mechanical balance in a fluid at rest, where pressure gradients balance body forces such as gravity.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Hydrostatic balance"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "pressure"
+        },
+        {
+          "type": "requires",
+          "target": "mass-density"
+        },
+        {
+          "type": "derived-from",
+          "target": "newtons-second-law"
+        }
+      ]
+    },
+    {
       "id": "index-raising-and-lowering",
       "title": "Index Raising and Lowering",
       "description": "The metric-induced identification between tangent and cotangent vectors, extended to tensor slots; lowering uses the metric and raising uses its inverse.",
@@ -2784,6 +3054,33 @@
         {
           "type": "used-in",
           "target": "special-relativity"
+        }
+      ]
+    },
+    {
+      "id": "infinitesimal-strain",
+      "title": "Infinitesimal Strain",
+      "description": "The symmetric part of the displacement gradient, used as a linear approximation to local deformation when displacement gradients are small.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Small-strain tensor",
+        "Linear strain tensor",
+        "Infinitesimal strain tensor"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-field"
+        },
+        {
+          "type": "requires",
+          "target": "partial-derivative"
+        },
+        {
+          "type": "used-in",
+          "target": "solid-mechanics"
         }
       ]
     },
@@ -2863,6 +3160,25 @@
           "type": "used-in",
           "target": "de-rham-cohomology",
           "note": "Integrals over cycles can detect nonzero cohomology classes."
+        }
+      ]
+    },
+    {
+      "id": "interference",
+      "title": "Interference",
+      "description": "The reinforcement or cancellation produced when overlapping waves add with their relative phase taken into account. For light, fields superpose and the resulting intensity can show bright and dark fringes when the phase relationship remains stable.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Wave interference",
+        "Optical interference"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "wave-optics",
+          "note": "Coherent wave superposition accounts for optical fringe patterns."
         }
       ]
     },
@@ -2969,6 +3285,32 @@
           "type": "used-in",
           "target": "quantum-mechanics",
           "note": "Rotational multiplets are organized by irreducible representations."
+        }
+      ]
+    },
+    {
+      "id": "isotropic-hooke-law",
+      "title": "Isotropic Hooke Law",
+      "description": "The linear elastic constitutive relation between Cauchy stress and infinitesimal strain in an isotropic material, determined by two independent elastic moduli.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Hooke law for isotropic solids",
+        "Linear isotropic stress-strain law"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "cauchy-stress"
+        },
+        {
+          "type": "requires",
+          "target": "infinitesimal-strain"
+        },
+        {
+          "type": "used-in",
+          "target": "solid-mechanics"
         }
       ]
     },
@@ -3206,6 +3548,24 @@
           "type": "used-in",
           "target": "classical-mechanics",
           "note": "Lagrangian mechanics is a formulation of classical mechanical dynamics, not a distinct special-case theory."
+        }
+      ]
+    },
+    {
+      "id": "law-of-reflection",
+      "title": "Law of Reflection",
+      "description": "For specular reflection, the reflected ray makes the same angle with the surface normal as the incident ray. The incident ray, reflected ray and normal lie in one plane.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Specular reflection law"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "geometrical-optics",
+          "note": "It determines reflected ray directions in ray tracing."
         }
       ]
     },
@@ -3745,6 +4105,24 @@
       ]
     },
     {
+      "id": "mass-density",
+      "title": "Mass Density",
+      "description": "Mass per unit volume. In a continuum it may vary with position and time; total mass divided by total volume gives the volume-average density.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Volumetric mass density",
+        "Density of matter"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "fluid-continuity-equation"
+        }
+      ]
+    },
+    {
       "id": "mathematical-methods",
       "title": "Mathematical Methods",
       "description": "Mathematical techniques used to formulate, analyze, and approximate physical models, including calculus, linear algebra, differential equations, and variational methods.",
@@ -4163,6 +4541,44 @@
       ]
     },
     {
+      "id": "navier-stokes-equations",
+      "title": "Navier–Stokes Equations",
+      "description": "Continuum momentum-balance equations for Newtonian viscous fluids. The incompressible constant-property form couples velocity and pressure through pressure forces, viscous stress and body forces.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Navier Stokes equations",
+        "Incompressible Navier–Stokes system"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "fluid-continuity-equation"
+        },
+        {
+          "type": "requires",
+          "target": "pressure"
+        },
+        {
+          "type": "requires",
+          "target": "dynamic-viscosity"
+        },
+        {
+          "type": "requires",
+          "target": "partial-differential-equation"
+        },
+        {
+          "type": "derived-from",
+          "target": "newtons-second-law"
+        },
+        {
+          "type": "used-in",
+          "target": "fluid-mechanics"
+        }
+      ]
+    },
+    {
       "id": "newtonian-gravitation",
       "title": "Newtonian Gravitation",
       "description": "The classical theory of gravitational attraction in which point masses exert an attractive inverse-square force on each other, with forces superposed for distributions of matter. It is distinct from the relativistic account of gravity as spacetime geometry.",
@@ -4326,6 +4742,42 @@
           "note": "The kernel of a group homomorphism is a normal subgroup of its domain."
         }
       ]
+    },
+    {
+      "id": "optical-path-length",
+      "title": "Optical Path Length",
+      "description": "The geometric length along an optical path weighted by the refractive index encountered. In a sequence of uniform media it is the sum of each segment length times its index; it is useful for comparing accumulated optical phase.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "OPL",
+        "Optical length"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "refractive-index",
+          "note": "The weighting of each geometric segment is the phase refractive index."
+        },
+        {
+          "type": "used-in",
+          "target": "interference",
+          "note": "Differences in optical path contribute to the relative phase of recombined light."
+        }
+      ]
+    },
+    {
+      "id": "optics",
+      "title": "Optics",
+      "description": "The study of light, its propagation and interaction with matter, and the instruments that form, guide or detect it. This introductory branch develops classical ray and wave descriptions.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Classical optics"
+      ],
+      "relations": []
     },
     {
       "id": "ordinary-differential-equation",
@@ -4593,6 +5045,31 @@
       ]
     },
     {
+      "id": "polarization",
+      "title": "Polarization",
+      "description": "The pattern traced by a transverse light wave's electric-field direction as it oscillates. Linear polarization keeps that direction along a fixed transverse axis; circular and elliptical polarization rotate it.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Optical polarization",
+        "Polarisation",
+        "Polarization of light"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-field",
+          "note": "Optical polarization specifies the transverse electric-field oscillation."
+        },
+        {
+          "type": "used-in",
+          "target": "wave-optics",
+          "note": "The field's orientation matters when light passes through an analyzer or when polarized waves interfere."
+        }
+      ]
+    },
+    {
       "id": "position",
       "title": "Position",
       "description": "The location of a point relative to a chosen spatial reference system. In Euclidean mechanics, a chosen origin identifies that location with a position vector, whose coordinates may depend on time.",
@@ -4638,6 +5115,28 @@
           "type": "used-in",
           "target": "hamiltonian",
           "note": "For standard time-independent Cartesian particle models, the Hamiltonian is the sum of kinetic and potential energies."
+        }
+      ]
+    },
+    {
+      "id": "pressure",
+      "title": "Pressure",
+      "description": "The scalar intensity of isotropic compressive contact force. In a fluid at rest, pressure gives normal force per unit area and is the same for every surface orientation at a point.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Fluid pressure",
+        "Mechanical pressure"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "force"
+        },
+        {
+          "type": "used-in",
+          "target": "fluid-mechanics"
         }
       ]
     },
@@ -5119,6 +5618,43 @@
       ]
     },
     {
+      "id": "refraction",
+      "title": "Refraction",
+      "description": "A change in a light ray's direction as it propagates through regions with different optical properties. At an ordinary boundary this is associated with a change in phase speed; normal incidence need not change the direction.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Optical refraction"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "geometrical-optics",
+          "note": "Refraction redirects transmitted rays in optical ray models."
+        }
+      ]
+    },
+    {
+      "id": "refractive-index",
+      "title": "Refractive Index",
+      "description": "A dimensionless measure of optical phase propagation: in the present transparent, isotropic-medium scope, it is the speed of light in vacuum divided by the phase speed in the medium at a specified frequency.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Index of refraction",
+        "Phase refractive index"
+      ],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "geometrical-optics",
+          "note": "The index specifies ray refraction and optical path in a material."
+        }
+      ]
+    },
+    {
       "id": "relativity",
       "title": "Relativity",
       "description": "The family of physical theories relating spacetime, motion, and reference frames, including special relativity and the general-relativistic description of gravitation.",
@@ -5177,6 +5713,32 @@
           "type": "requires",
           "target": "driven-harmonic-oscillator",
           "note": "The linear driven oscillator supplies the introductory mechanical model; resonance also occurs in other systems."
+        }
+      ]
+    },
+    {
+      "id": "reynolds-number",
+      "title": "Reynolds Number",
+      "description": "A dimensionless comparison of characteristic inertial and viscous effects in a flow, formed from chosen velocity and length scales and the fluid's density and dynamic viscosity.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Re",
+        "Flow Reynolds number"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "dynamic-viscosity"
+        },
+        {
+          "type": "requires",
+          "target": "mass-density"
+        },
+        {
+          "type": "used-in",
+          "target": "navier-stokes-equations"
         }
       ]
     },
@@ -5716,6 +6278,47 @@
       ]
     },
     {
+      "id": "snell-law",
+      "title": "Snell's Law",
+      "description": "The relation between the incident and transmitted ray angles at a boundary between two isotropic optical media: each refractive index multiplies the sine of the corresponding angle to the normal.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Law of refraction",
+        "Snell–Descartes law"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "refractive-index",
+          "note": "The indices of the two media are the material inputs to this law."
+        },
+        {
+          "type": "requires",
+          "target": "refraction",
+          "note": "The law quantifies the incident and refracted ray geometry."
+        },
+        {
+          "type": "used-in",
+          "target": "geometrical-optics",
+          "note": "Ray tracing applies this law at refracting boundaries."
+        }
+      ]
+    },
+    {
+      "id": "solid-mechanics",
+      "title": "Solid Mechanics",
+      "description": "The study of forces, motion and deformation in solid materials, including elastic and irreversible responses within continuum models.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Mechanics of solids"
+      ],
+      "relations": []
+    },
+    {
       "id": "spacetime-interval",
       "title": "Spacetime Interval",
       "description": "In Minkowski spacetime, the invariant squared separation of two events, -c²Δt² + Δx² + Δy² + Δz² in the mostly-plus convention.",
@@ -6173,6 +6776,30 @@
       ]
     },
     {
+      "id": "thin-lens",
+      "title": "Thin Lens",
+      "description": "A lens model in which the separation of the two refracting surfaces can be neglected for image formation. For rays close to the optical axis, it relates object position, image position and focal length.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Thin-lens approximation",
+        "Thin-lens equation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "refraction",
+          "note": "A refracting lens forms an image by redirecting transmitted rays."
+        },
+        {
+          "type": "used-in",
+          "target": "geometrical-optics",
+          "note": "The approximation reduces lens image formation to ray geometry and focal length."
+        }
+      ]
+    },
+    {
       "id": "time-dilation",
       "title": "Time Dilation",
       "description": "In special relativity, elapsed coordinate time in an inertial frame exceeds a moving clock's proper time; at constant speed, Δt = γ Δτ.",
@@ -6228,6 +6855,30 @@
         {
           "type": "used-in",
           "target": "rotational-dynamics"
+        }
+      ]
+    },
+    {
+      "id": "total-internal-reflection",
+      "title": "Total Internal Reflection",
+      "description": "At an ideal lossless boundary, light incident from the higher-index medium above the critical angle has no propagating transmitted ray and its power is reflected back. An evanescent field can still extend into the lower-index medium.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "TIR",
+        "Critical angle of total internal reflection"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "snell-law",
+          "note": "The critical angle follows when the refracted angle reaches ninety degrees."
+        },
+        {
+          "type": "used-in",
+          "target": "geometrical-optics",
+          "note": "It bounds which rays can leave a high-index optical element."
         }
       ]
     },
@@ -6429,6 +7080,45 @@
           "target": "kinematics"
         }
       ]
+    },
+    {
+      "id": "velocity-field",
+      "title": "Velocity Field",
+      "description": "A vector field assigning the bulk velocity of a material element to its current position and time in a continuum.",
+      "domains": [
+        "classical-mechanics"
+      ],
+      "aliases": [
+        "Flow velocity",
+        "Eulerian velocity field"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "velocity"
+        },
+        {
+          "type": "requires",
+          "target": "vector-field"
+        },
+        {
+          "type": "used-in",
+          "target": "continuum-mechanics",
+          "note": "This node specifically uses the Eulerian description."
+        }
+      ]
+    },
+    {
+      "id": "wave-optics",
+      "title": "Wave Optics",
+      "description": "The classical description of light that retains its wave amplitude, phase and polarization to explain interference, diffraction and related effects.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [
+        "Physical optics"
+      ],
+      "relations": []
     },
     {
       "id": "wavefunction",

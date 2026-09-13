@@ -1,0 +1,26 @@
+{
+  "id": "fluid-continuity-equation",
+  "title": "Fluid Continuity Equation",
+  "description": "The local conservation equation for fluid mass, relating the rate of density change to the divergence of the mass flux.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Fluid mass continuity",
+    "Mass continuity equation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "mass-density"
+    },
+    {
+      "type": "requires",
+      "target": "velocity-field"
+    },
+    {
+      "type": "requires",
+      "target": "divergence"
+    }
+  ]
+}

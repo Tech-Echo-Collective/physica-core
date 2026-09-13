@@ -1,0 +1,23 @@
+{
+  "id": "buoyancy",
+  "title": "Buoyancy",
+  "description": "The resultant upward force exerted by hydrostatic fluid pressure on an immersed body; its magnitude equals the weight of the displaced fluid under Archimedes' conditions.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Buoyant force",
+    "Upthrust",
+    "Archimedes principle"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "hydrostatic-equilibrium"
+    },
+    {
+      "type": "used-in",
+      "target": "fluid-mechanics"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "isotropic-hooke-law",
+  "title": "Isotropic Hooke Law",
+  "description": "The linear elastic constitutive relation between Cauchy stress and infinitesimal strain in an isotropic material, determined by two independent elastic moduli.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Hooke law for isotropic solids",
+    "Linear isotropic stress-strain law"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "cauchy-stress"
+    },
+    {
+      "type": "requires",
+      "target": "infinitesimal-strain"
+    },
+    {
+      "type": "used-in",
+      "target": "solid-mechanics"
+    }
+  ]
+}

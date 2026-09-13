@@ -1,0 +1,25 @@
+{
+  "id": "hydrostatic-equilibrium",
+  "title": "Hydrostatic Equilibrium",
+  "description": "Mechanical balance in a fluid at rest, where pressure gradients balance body forces such as gravity.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Hydrostatic balance"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "pressure"
+    },
+    {
+      "type": "requires",
+      "target": "mass-density"
+    },
+    {
+      "type": "derived-from",
+      "target": "newtons-second-law"
+    }
+  ]
+}

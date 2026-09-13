@@ -1,0 +1,18 @@
+{
+  "id": "mass-density",
+  "title": "Mass Density",
+  "description": "Mass per unit volume. In a continuum it may vary with position and time; total mass divided by total volume gives the volume-average density.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Volumetric mass density",
+    "Density of matter"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "fluid-continuity-equation"
+    }
+  ]
+}

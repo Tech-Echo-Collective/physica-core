@@ -8,7 +8,7 @@ These three distinct projects form **Tech Echo Physica**, a Tech Echo Collective
 project family for exploring physics through research mapping, knowledge
 structures, and interactive physical systems.
 
-Current version: **0.10.0**. This is an early, intentionally small contract. It
+Current version: **0.12.0**. This is an early, intentionally small contract. It
 is not a frozen 1.0 standard.
 
 ## What Core owns

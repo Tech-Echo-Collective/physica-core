@@ -1,0 +1,26 @@
+{
+  "id": "reynolds-number",
+  "title": "Reynolds Number",
+  "description": "A dimensionless comparison of characteristic inertial and viscous effects in a flow, formed from chosen velocity and length scales and the fluid's density and dynamic viscosity.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Re",
+    "Flow Reynolds number"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "dynamic-viscosity"
+    },
+    {
+      "type": "requires",
+      "target": "mass-density"
+    },
+    {
+      "type": "used-in",
+      "target": "navier-stokes-equations"
+    }
+  ]
+}

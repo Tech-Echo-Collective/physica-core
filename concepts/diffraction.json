@@ -1,0 +1,23 @@
+{
+  "id": "diffraction",
+  "title": "Diffraction",
+  "description": "Wave spreading and the formation of patterns around an aperture or obstacle, beyond a simple ray shadow. In the optical model here, interference between contributions from different parts of an illuminated aperture explains the pattern.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Optical diffraction"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "interference",
+      "note": "The scoped single-slit explanation uses phase-dependent cancellation of wave contributions."
+    },
+    {
+      "type": "used-in",
+      "target": "wave-optics",
+      "note": "Diffraction is an essential wave correction to ray propagation."
+    }
+  ]
+}

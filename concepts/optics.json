@@ -1,0 +1,12 @@
+{
+  "id": "optics",
+  "title": "Optics",
+  "description": "The study of light, its propagation and interaction with matter, and the instruments that form, guide or detect it. This introductory branch develops classical ray and wave descriptions.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Classical optics"
+  ],
+  "relations": []
+}

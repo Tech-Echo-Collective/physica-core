@@ -1,0 +1,13 @@
+{
+  "id": "geometrical-optics",
+  "title": "Geometrical Optics",
+  "description": "An approximation that follows light rays to predict reflection, refraction and image formation when diffraction can be neglected at the scale of interest. Rays are straight in a homogeneous medium and can bend when the refractive index varies.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Geometric optics",
+    "Ray optics"
+  ],
+  "relations": []
+}

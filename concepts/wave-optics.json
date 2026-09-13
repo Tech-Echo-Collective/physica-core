@@ -1,0 +1,12 @@
+{
+  "id": "wave-optics",
+  "title": "Wave Optics",
+  "description": "The classical description of light that retains its wave amplitude, phase and polarization to explain interference, diffraction and related effects.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Physical optics"
+  ],
+  "relations": []
+}

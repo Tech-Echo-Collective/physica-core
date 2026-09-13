@@ -1,0 +1,19 @@
+{
+  "id": "refractive-index",
+  "title": "Refractive Index",
+  "description": "A dimensionless measure of optical phase propagation: in the present transparent, isotropic-medium scope, it is the speed of light in vacuum divided by the phase speed in the medium at a specified frequency.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Index of refraction",
+    "Phase refractive index"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "geometrical-optics",
+      "note": "The index specifies ray refraction and optical path in a material."
+    }
+  ]
+}

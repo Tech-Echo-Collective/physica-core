@@ -1,0 +1,18 @@
+{
+  "id": "continuum-mechanics",
+  "title": "Continuum Mechanics",
+  "description": "Mechanics of matter modeled as a continuous distribution, using fields for motion, internal forces and material response at scales where molecular discreteness can be averaged.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Mechanics of continuous media"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "newtons-second-law",
+      "note": "The classical force-balance formulation uses Newton's law for material portions."
+    }
+  ]
+}

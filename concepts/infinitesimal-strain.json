@@ -1,0 +1,27 @@
+{
+  "id": "infinitesimal-strain",
+  "title": "Infinitesimal Strain",
+  "description": "The symmetric part of the displacement gradient, used as a linear approximation to local deformation when displacement gradients are small.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Small-strain tensor",
+    "Linear strain tensor",
+    "Infinitesimal strain tensor"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-field"
+    },
+    {
+      "type": "requires",
+      "target": "partial-derivative"
+    },
+    {
+      "type": "used-in",
+      "target": "solid-mechanics"
+    }
+  ]
+}

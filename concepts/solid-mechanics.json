@@ -1,0 +1,12 @@
+{
+  "id": "solid-mechanics",
+  "title": "Solid Mechanics",
+  "description": "The study of forces, motion and deformation in solid materials, including elastic and irreversible responses within continuum models.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Mechanics of solids"
+  ],
+  "relations": []
+}

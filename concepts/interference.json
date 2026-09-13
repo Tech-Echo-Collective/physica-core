@@ -1,0 +1,19 @@
+{
+  "id": "interference",
+  "title": "Interference",
+  "description": "The reinforcement or cancellation produced when overlapping waves add with their relative phase taken into account. For light, fields superpose and the resulting intensity can show bright and dark fringes when the phase relationship remains stable.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "Wave interference",
+    "Optical interference"
+  ],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "wave-optics",
+      "note": "Coherent wave superposition accounts for optical fringe patterns."
+    }
+  ]
+}

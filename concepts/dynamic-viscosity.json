@@ -1,0 +1,22 @@
+{
+  "id": "dynamic-viscosity",
+  "title": "Dynamic Viscosity",
+  "description": "The coefficient relating viscous shear stress to shear rate in a Newtonian fluid. It measures resistance to relative deformation and has SI unit pascal-second.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Absolute viscosity",
+    "Newtonian shear viscosity"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "cauchy-stress"
+    },
+    {
+      "type": "requires",
+      "target": "velocity-field"
+    }
+  ]
+}

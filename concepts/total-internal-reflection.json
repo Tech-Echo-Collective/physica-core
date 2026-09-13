@@ -1,0 +1,24 @@
+{
+  "id": "total-internal-reflection",
+  "title": "Total Internal Reflection",
+  "description": "At an ideal lossless boundary, light incident from the higher-index medium above the critical angle has no propagating transmitted ray and its power is reflected back. An evanescent field can still extend into the lower-index medium.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [
+    "TIR",
+    "Critical angle of total internal reflection"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "snell-law",
+      "note": "The critical angle follows when the refracted angle reaches ninety degrees."
+    },
+    {
+      "type": "used-in",
+      "target": "geometrical-optics",
+      "note": "It bounds which rays can leave a high-index optical element."
+    }
+  ]
+}

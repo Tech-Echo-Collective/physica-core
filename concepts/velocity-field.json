@@ -1,0 +1,27 @@
+{
+  "id": "velocity-field",
+  "title": "Velocity Field",
+  "description": "A vector field assigning the bulk velocity of a material element to its current position and time in a continuum.",
+  "domains": [
+    "classical-mechanics"
+  ],
+  "aliases": [
+    "Flow velocity",
+    "Eulerian velocity field"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "velocity"
+    },
+    {
+      "type": "requires",
+      "target": "vector-field"
+    },
+    {
+      "type": "used-in",
+      "target": "continuum-mechanics",
+      "note": "This node specifically uses the Eulerian description."
+    }
+  ]
+}
