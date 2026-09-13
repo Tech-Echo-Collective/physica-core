@@ -1,0 +1,21 @@
+{
+  "id": "divergence",
+  "title": "Divergence",
+  "description": "The scalar differential operator obtained by summing the matching coordinate partial derivatives of a vector field.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-field",
+      "note": "Needed for the scoped divergence formulation."
+    },
+    {
+      "type": "requires",
+      "target": "partial-derivative",
+      "note": "Needed for the scoped divergence formulation."
+    }
+  ]
+}

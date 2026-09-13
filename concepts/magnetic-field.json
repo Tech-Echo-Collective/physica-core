@@ -1,0 +1,31 @@
+{
+  "id": "magnetic-field",
+  "title": "Magnetic Field",
+  "description": "The axial field B that determines the magnetic force on moving electric charges.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-charge",
+      "note": "Needed for the scoped magnetic field formulation."
+    },
+    {
+      "type": "requires",
+      "target": "velocity",
+      "note": "Needed for the scoped magnetic field formulation."
+    },
+    {
+      "type": "requires",
+      "target": "cross-product",
+      "note": "Needed for the scoped magnetic field formulation."
+    },
+    {
+      "type": "requires",
+      "target": "vector-field",
+      "note": "Needed for the scoped magnetic field formulation."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "electric-current",
+  "title": "Electric Current",
+  "description": "The signed rate at which electric charge crosses an oriented surface.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-charge",
+      "note": "Needed for the scoped electric current formulation."
+    },
+    {
+      "type": "requires",
+      "target": "derivative",
+      "note": "Needed for the scoped electric current formulation."
+    }
+  ]
+}

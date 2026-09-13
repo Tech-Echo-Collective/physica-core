@@ -1,0 +1,31 @@
+{
+  "id": "lorentz-force",
+  "title": "Lorentz Force",
+  "description": "The total classical force on a point charge from electric and magnetic fields in a specified inertial frame.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-field",
+      "note": "Needed for the scoped lorentz force formulation."
+    },
+    {
+      "type": "requires",
+      "target": "magnetic-field",
+      "note": "Needed for the scoped lorentz force formulation."
+    },
+    {
+      "type": "requires",
+      "target": "velocity",
+      "note": "Needed for the scoped lorentz force formulation."
+    },
+    {
+      "type": "requires",
+      "target": "cross-product",
+      "note": "Needed for the scoped lorentz force formulation."
+    }
+  ]
+}

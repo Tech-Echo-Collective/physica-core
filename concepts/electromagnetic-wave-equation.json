@@ -1,0 +1,26 @@
+{
+  "id": "electromagnetic-wave-equation",
+  "title": "Electromagnetic Wave Equation",
+  "description": "The homogeneous wave equations obeyed by electric and magnetic fields in a source-free vacuum.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "maxwell-equations",
+      "note": "Needed for the scoped electromagnetic wave equation formulation."
+    },
+    {
+      "type": "requires",
+      "target": "partial-differential-equation",
+      "note": "Needed for the scoped electromagnetic wave equation formulation."
+    },
+    {
+      "type": "derived-from",
+      "target": "maxwell-equations",
+      "note": "In source-free vacuum, differentiating the Maxwell system gives the homogeneous wave equations; its original constraints remain necessary."
+    }
+  ]
+}

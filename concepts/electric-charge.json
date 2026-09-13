@@ -1,0 +1,10 @@
+{
+  "id": "electric-charge",
+  "title": "Electric Charge",
+  "description": "A signed, additive property of matter that determines its electromagnetic interaction.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "electric-potential",
+  "title": "Electric Potential",
+  "description": "An electrostatic scalar field whose negative gradient gives the electric field and whose difference gives potential-energy change per charge.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-field",
+      "note": "Needed for the scoped electric potential formulation."
+    },
+    {
+      "type": "requires",
+      "target": "gradient",
+      "note": "Needed for the scoped electric potential formulation."
+    },
+    {
+      "type": "requires",
+      "target": "potential-energy",
+      "note": "Needed for the scoped electric potential formulation."
+    }
+  ]
+}

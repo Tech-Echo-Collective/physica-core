@@ -1,0 +1,26 @@
+{
+  "id": "coulomb-law",
+  "title": "Coulomb’s Law",
+  "description": "The inverse-square electrostatic force law for two stationary point charges in vacuum.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-charge",
+      "note": "Needed for the scoped coulomb’s law formulation."
+    },
+    {
+      "type": "requires",
+      "target": "force",
+      "note": "Needed for the scoped coulomb’s law formulation."
+    },
+    {
+      "type": "requires",
+      "target": "euclidean-vector",
+      "note": "Needed for the scoped coulomb’s law formulation."
+    }
+  ]
+}

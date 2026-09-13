@@ -1,0 +1,26 @@
+{
+  "id": "curl",
+  "title": "Curl",
+  "description": "The differential operator measuring local circulation of a vector field in oriented three-dimensional Euclidean space.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "vector-field",
+      "note": "Needed for the scoped curl formulation."
+    },
+    {
+      "type": "requires",
+      "target": "partial-derivative",
+      "note": "Needed for the scoped curl formulation."
+    },
+    {
+      "type": "requires",
+      "target": "cross-product",
+      "note": "Needed for the scoped curl formulation."
+    }
+  ]
+}

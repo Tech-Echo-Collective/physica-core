@@ -1,0 +1,26 @@
+{
+  "id": "electric-field",
+  "title": "Electric Field",
+  "description": "The spatial vector field giving electric force per unit stationary test charge in a chosen frame.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-charge",
+      "note": "Needed for the scoped electric field formulation."
+    },
+    {
+      "type": "requires",
+      "target": "force",
+      "note": "Needed for the scoped electric field formulation."
+    },
+    {
+      "type": "requires",
+      "target": "vector-field",
+      "note": "Needed for the scoped electric field formulation."
+    }
+  ]
+}

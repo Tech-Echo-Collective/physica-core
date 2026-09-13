@@ -2,6 +2,13 @@
 
 All notable changes to Physica Core are documented here.
 
+## 0.11.0 - 2026-09-13
+
+- Add 12 reviewed classical electromagnetism and elementary vector-calculus concepts, preserving all 232 prior records.
+- Distinguish introductory electric and magnetic fields from the existing relativistic electromagnetic two-form scope.
+- Keep electrostatic, microscopic SI, and source-free vacuum assumptions explicit. Browsing groups are not scientific subtypes.
+- Sources and scope review: [electromagnetism foundations](docs/electromagnetism-foundations.md). Wikipedia identities, formulas, editorial placements and live admission receipts remain consumer-owned.
+
 ## 0.10.0 - 2026-09-05
 
 - **BREAKING:** revise classical-mechanics prerequisites, removing 11 old relations and adding 27 scoped relations. All 229 previous IDs, definitions, aliases and domains are preserved; relation meanings and schemas are unchanged.

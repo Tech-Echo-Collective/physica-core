@@ -1,0 +1,36 @@
+{
+  "id": "maxwell-equations",
+  "title": "Maxwell’s Equations",
+  "description": "Four coupled classical field equations relating electric and magnetic fields to total charge and current densities.",
+  "domains": [
+    "classical-field-theory"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electric-field",
+      "note": "Needed for the scoped maxwell’s equations formulation."
+    },
+    {
+      "type": "requires",
+      "target": "magnetic-field",
+      "note": "Needed for the scoped maxwell’s equations formulation."
+    },
+    {
+      "type": "requires",
+      "target": "electric-current",
+      "note": "Needed for the scoped maxwell’s equations formulation."
+    },
+    {
+      "type": "requires",
+      "target": "divergence",
+      "note": "Needed for the scoped maxwell’s equations formulation."
+    },
+    {
+      "type": "requires",
+      "target": "curl",
+      "note": "Needed for the scoped maxwell’s equations formulation."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "core_version": "0.10.0",
+  "core_version": "0.11.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -922,6 +922,32 @@
       ]
     },
     {
+      "id": "coulomb-law",
+      "title": "Coulomb’s Law",
+      "description": "The inverse-square electrostatic force law for two stationary point charges in vacuum.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-charge",
+          "note": "Needed for the scoped coulomb’s law formulation."
+        },
+        {
+          "type": "requires",
+          "target": "force",
+          "note": "Needed for the scoped coulomb’s law formulation."
+        },
+        {
+          "type": "requires",
+          "target": "euclidean-vector",
+          "note": "Needed for the scoped coulomb’s law formulation."
+        }
+      ]
+    },
+    {
       "id": "creation-and-annihilation-operators",
       "title": "Creation and Annihilation Operators",
       "description": "Operators that raise or lower occupation in specified particle modes, with bosonic commutation or fermionic anticommutation relations and the appropriate normalization on Fock states.",
@@ -965,6 +991,32 @@
           "type": "requires",
           "target": "euclidean-vector",
           "note": "Uses three-dimensional vector components, lengths, and directions."
+        }
+      ]
+    },
+    {
+      "id": "curl",
+      "title": "Curl",
+      "description": "The differential operator measuring local circulation of a vector field in oriented three-dimensional Euclidean space.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-field",
+          "note": "Needed for the scoped curl formulation."
+        },
+        {
+          "type": "requires",
+          "target": "partial-derivative",
+          "note": "Needed for the scoped curl formulation."
+        },
+        {
+          "type": "requires",
+          "target": "cross-product",
+          "note": "Needed for the scoped curl formulation."
         }
       ]
     },
@@ -1195,6 +1247,27 @@
       ]
     },
     {
+      "id": "divergence",
+      "title": "Divergence",
+      "description": "The scalar differential operator obtained by summing the matching coordinate partial derivatives of a vector field.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-field",
+          "note": "Needed for the scoped divergence formulation."
+        },
+        {
+          "type": "requires",
+          "target": "partial-derivative",
+          "note": "Needed for the scoped divergence formulation."
+        }
+      ]
+    },
+    {
       "id": "dot-product",
       "title": "Dot Product",
       "description": "A scalar-valued operation on two real Euclidean vectors of the same dimension, calculated by summing the products of corresponding Cartesian components. It measures directional alignment: for nonzero vectors, it equals their lengths multiplied by the cosine of the angle between them. A vector’s dot product with itself is its squared length.",
@@ -1344,6 +1417,89 @@
       ]
     },
     {
+      "id": "electric-charge",
+      "title": "Electric Charge",
+      "description": "A signed, additive property of matter that determines its electromagnetic interaction.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": []
+    },
+    {
+      "id": "electric-current",
+      "title": "Electric Current",
+      "description": "The signed rate at which electric charge crosses an oriented surface.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-charge",
+          "note": "Needed for the scoped electric current formulation."
+        },
+        {
+          "type": "requires",
+          "target": "derivative",
+          "note": "Needed for the scoped electric current formulation."
+        }
+      ]
+    },
+    {
+      "id": "electric-field",
+      "title": "Electric Field",
+      "description": "The spatial vector field giving electric force per unit stationary test charge in a chosen frame.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-charge",
+          "note": "Needed for the scoped electric field formulation."
+        },
+        {
+          "type": "requires",
+          "target": "force",
+          "note": "Needed for the scoped electric field formulation."
+        },
+        {
+          "type": "requires",
+          "target": "vector-field",
+          "note": "Needed for the scoped electric field formulation."
+        }
+      ]
+    },
+    {
+      "id": "electric-potential",
+      "title": "Electric Potential",
+      "description": "An electrostatic scalar field whose negative gradient gives the electric field and whose difference gives potential-energy change per charge.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-field",
+          "note": "Needed for the scoped electric potential formulation."
+        },
+        {
+          "type": "requires",
+          "target": "gradient",
+          "note": "Needed for the scoped electric potential formulation."
+        },
+        {
+          "type": "requires",
+          "target": "potential-energy",
+          "note": "Needed for the scoped electric potential formulation."
+        }
+      ]
+    },
+    {
       "id": "electromagnetic-field",
       "title": "Electromagnetic Field",
       "description": "The classical field whose electric and magnetic components combine relativistically into an antisymmetric rank-two field-strength tensor, equivalently a spacetime two-form.",
@@ -1368,6 +1524,32 @@
         {
           "type": "used-in",
           "target": "classical-field-theory"
+        }
+      ]
+    },
+    {
+      "id": "electromagnetic-wave-equation",
+      "title": "Electromagnetic Wave Equation",
+      "description": "The homogeneous wave equations obeyed by electric and magnetic fields in a source-free vacuum.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "maxwell-equations",
+          "note": "Needed for the scoped electromagnetic wave equation formulation."
+        },
+        {
+          "type": "requires",
+          "target": "partial-differential-equation",
+          "note": "Needed for the scoped electromagnetic wave equation formulation."
+        },
+        {
+          "type": "derived-from",
+          "target": "maxwell-equations",
+          "note": "In source-free vacuum, differentiating the Maxwell system gives the homogeneous wave equations; its original constraints remain necessary."
         }
       ]
     },
@@ -3386,6 +3568,37 @@
       ]
     },
     {
+      "id": "lorentz-force",
+      "title": "Lorentz Force",
+      "description": "The total classical force on a point charge from electric and magnetic fields in a specified inertial frame.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-field",
+          "note": "Needed for the scoped lorentz force formulation."
+        },
+        {
+          "type": "requires",
+          "target": "magnetic-field",
+          "note": "Needed for the scoped lorentz force formulation."
+        },
+        {
+          "type": "requires",
+          "target": "velocity",
+          "note": "Needed for the scoped lorentz force formulation."
+        },
+        {
+          "type": "requires",
+          "target": "cross-product",
+          "note": "Needed for the scoped lorentz force formulation."
+        }
+      ]
+    },
+    {
       "id": "lorentz-transformation",
       "title": "Lorentz Transformation",
       "description": "A linear transformation preserving the Minkowski metric and spacetime interval; Lorentz transformations include spatial rotations and boosts, but not translations.",
@@ -3455,6 +3668,37 @@
           "type": "used-in",
           "target": "boltzmann-entropy",
           "note": "Compatible-state multiplicity defines Boltzmann entropy."
+        }
+      ]
+    },
+    {
+      "id": "magnetic-field",
+      "title": "Magnetic Field",
+      "description": "The axial field B that determines the magnetic force on moving electric charges.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-charge",
+          "note": "Needed for the scoped magnetic field formulation."
+        },
+        {
+          "type": "requires",
+          "target": "velocity",
+          "note": "Needed for the scoped magnetic field formulation."
+        },
+        {
+          "type": "requires",
+          "target": "cross-product",
+          "note": "Needed for the scoped magnetic field formulation."
+        },
+        {
+          "type": "requires",
+          "target": "vector-field",
+          "note": "Needed for the scoped magnetic field formulation."
         }
       ]
     },
@@ -3560,6 +3804,42 @@
           "type": "used-in",
           "target": "moment-of-inertia",
           "note": "Matrices represent the inertia tensor in the general three-dimensional extension; the scalar moment about a fixed axis does not require this representation."
+        }
+      ]
+    },
+    {
+      "id": "maxwell-equations",
+      "title": "Maxwell’s Equations",
+      "description": "Four coupled classical field equations relating electric and magnetic fields to total charge and current densities.",
+      "domains": [
+        "classical-field-theory"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electric-field",
+          "note": "Needed for the scoped maxwell’s equations formulation."
+        },
+        {
+          "type": "requires",
+          "target": "magnetic-field",
+          "note": "Needed for the scoped maxwell’s equations formulation."
+        },
+        {
+          "type": "requires",
+          "target": "electric-current",
+          "note": "Needed for the scoped maxwell’s equations formulation."
+        },
+        {
+          "type": "requires",
+          "target": "divergence",
+          "note": "Needed for the scoped maxwell’s equations formulation."
+        },
+        {
+          "type": "requires",
+          "target": "curl",
+          "note": "Needed for the scoped maxwell’s equations formulation."
         }
       ]
     },
@@ -6084,6 +6364,22 @@
           "type": "used-in",
           "target": "tensor-field",
           "note": "Tensor fields are sections of tensor bundles."
+        }
+      ]
+    },
+    {
+      "id": "vector-field",
+      "title": "Vector Field",
+      "description": "An assignment of a Euclidean vector to each point of a region of ordinary three-dimensional space.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "euclidean-vector",
+          "note": "Needed for the scoped vector field formulation."
         }
       ]
     },

@@ -1,0 +1,16 @@
+{
+  "id": "vector-field",
+  "title": "Vector Field",
+  "description": "An assignment of a Euclidean vector to each point of a region of ordinary three-dimensional space.",
+  "domains": [
+    "mathematics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "euclidean-vector",
+      "note": "Needed for the scoped vector field formulation."
+    }
+  ]
+}
