@@ -1,5 +1,5 @@
 {
-  "core_version": "0.15.1",
+  "core_version": "0.15.2",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -294,7 +294,8 @@
         },
         {
           "type": "requires",
-          "target": "group-representation"
+          "target": "lie-group",
+          "note": "The structure group acts smoothly on the model fiber; a linear representation is required only when that fiber is a vector space and the associated bundle is a vector bundle."
         }
       ]
     },
@@ -1040,7 +1041,8 @@
         },
         {
           "type": "requires",
-          "target": "vector-bundle"
+          "target": "vector-bundle",
+          "note": "A complex vector bundle has an underlying real vector bundle together with a compatible fiberwise complex structure."
         }
       ]
     },
@@ -3471,7 +3473,8 @@
       "relations": [
         {
           "type": "requires",
-          "target": "frobenius-theorem"
+          "target": "tangent-distribution",
+          "note": "The tangent spaces to the leaves form an integrable constant-rank distribution; the Frobenius theorem characterizes that integrability."
         },
         {
           "type": "requires",
@@ -3835,7 +3838,7 @@
     {
       "id": "gaussian-curvature",
       "title": "Gaussian Curvature",
-      "description": "At a point of a Riemannian surface, the intrinsic curvature equal to the product of the two principal curvatures and to the surface's sectional curvature.",
+      "description": "At a point of a Riemannian surface, the intrinsic curvature equal to the surface's sectional curvature. For a surface isometrically immersed in Euclidean three-space, it is also the product of the two principal curvatures.",
       "domains": [
         "mathematics",
         "mathematical-physics"
@@ -4757,7 +4760,8 @@
         },
         {
           "type": "requires",
-          "target": "affine-connection"
+          "target": "vector-bundle-connection",
+          "note": "This record uses holonomy of a connection on a vector bundle; affine holonomy is recovered on the tangent bundle."
         }
       ]
     },
@@ -5405,11 +5409,16 @@
       "relations": [
         {
           "type": "requires",
-          "target": "geodesic-deviation"
+          "target": "geodesic"
         },
         {
           "type": "requires",
           "target": "riemann-curvature-tensor"
+        },
+        {
+          "type": "used-in",
+          "target": "geodesic-deviation",
+          "note": "A Jacobi field is the infinitesimal separation field appearing in the geodesic-deviation equation."
         }
       ]
     },
@@ -5766,8 +5775,9 @@
           "target": "riemannian-manifold"
         },
         {
-          "type": "requires",
-          "target": "partial-differential-equation"
+          "type": "used-in",
+          "target": "partial-differential-equation",
+          "note": "The operator appears in elliptic, parabolic and wave equations on curved manifolds."
         }
       ]
     },
@@ -9403,7 +9413,7 @@
     {
       "id": "second-fundamental-form",
       "title": "Second Fundamental Form",
-      "description": "For an immersed submanifold with a chosen ambient connection, the normal-valued symmetric bilinear form measuring the normal component of ambient covariant differentiation.",
+      "description": "For an immersed submanifold of a Riemannian manifold, the normal-valued symmetric bilinear form obtained by projecting the ambient Levi-Civita derivative onto the normal bundle.",
       "domains": [
         "mathematics",
         "mathematical-physics"
@@ -9416,7 +9426,7 @@
         },
         {
           "type": "requires",
-          "target": "affine-connection"
+          "target": "levi-civita-connection"
         }
       ]
     },

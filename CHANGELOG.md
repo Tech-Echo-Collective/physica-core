@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.15.2 — 2026-09-14
+
+- Correct the scope of Gaussian Curvature and the Second Fundamental Form, and distinguish general associated bundles from the linear-representation special case.
+- Repair pedagogical relation directions for foliations, Jacobi fields and the Laplace–Beltrami operator; scope Holonomy to a vector-bundle connection and make the complex structure required by Chern classes explicit.
+- Preserve all 447 concept identities and the immutable `v0.15.1` checkpoint. The corrected registry has 1165 relations; no product navigation or Wikipedia article bodies are added.
+
 ## 0.15.1 — 2026-09-14
 
 - Add 50 independently reviewed differential-geometry concepts and 111 relations, for 447 concepts and 1164 relations in total.
