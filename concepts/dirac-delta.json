@@ -1,0 +1,36 @@
+{
+  "id": "dirac-delta",
+  "title": "Dirac Delta Function",
+  "description": "A distribution that evaluates a test function at a specified point, used to represent idealized point-supported sources and continuous-basis normalization.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Dirac delta",
+    "Delta distribution",
+    "Unit impulse"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "calculus",
+      "note": "The introductory distribution pairing is written using the test-function integral and a limiting point source."
+    },
+    {
+      "type": "used-in",
+      "target": "greens-function",
+      "note": "The Dirac distribution is the point source defining a Green kernel."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field",
+      "note": "Canonical equal-time field commutators contain spatial Dirac distributions."
+    },
+    {
+      "type": "used-in",
+      "target": "electric-potential",
+      "note": "A point charge is a delta-supported source of the electrostatic Poisson equation."
+    }
+  ]
+}

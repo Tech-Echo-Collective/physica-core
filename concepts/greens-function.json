@@ -1,0 +1,35 @@
+{
+  "id": "greens-function",
+  "title": "Green's Function",
+  "description": "A kernel solving a linear differential operator's point-source equation with specified boundary or initial conditions, allowing compatible distributed sources to be treated by superposition.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Green function",
+    "Green kernel"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-operator",
+      "note": "Superposition and the response-kernel construction require a linear operator."
+    },
+    {
+      "type": "requires",
+      "target": "dirac-delta",
+      "note": "The kernel's defining source is a Dirac distribution."
+    },
+    {
+      "type": "used-in",
+      "target": "electric-potential",
+      "note": "Electrostatic Green kernels reconstruct Poisson solutions for charge distributions and specified boundary data."
+    },
+    {
+      "type": "used-in",
+      "target": "propagator",
+      "note": "Free-field Feynman propagators are Green kernels up to a convention-dependent constant and pole prescription."
+    }
+  ]
+}

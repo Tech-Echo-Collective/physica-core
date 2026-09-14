@@ -1,0 +1,34 @@
+{
+  "id": "lorentz-group",
+  "title": "Lorentz Group",
+  "description": "The Lie group O(1,3) of real linear transformations preserving the Minkowski bilinear form, including rotations, boosts, and disconnected parity or time-reversal components.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "O(1,3)"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lie-group",
+      "note": "Lorentz transformations form a six-dimensional matrix Lie group."
+    },
+    {
+      "type": "requires",
+      "target": "minkowski-metric",
+      "note": "The defining matrix condition preserves the Minkowski metric."
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity",
+      "note": "Lorentz symmetry relates inertial-coordinate descriptions in special relativity."
+    },
+    {
+      "type": "used-in",
+      "target": "electromagnetic-field",
+      "note": "Relativistic electromagnetic fields transform under Lorentz representations."
+    }
+  ]
+}

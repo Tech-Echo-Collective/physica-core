@@ -1,0 +1,34 @@
+{
+  "id": "unitary-operator",
+  "title": "Unitary Operator",
+  "description": "A surjective linear operator on a complex Hilbert space that preserves inner products, equivalently a bounded operator whose adjoint is its inverse.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Unitary transformation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-operator",
+      "note": "A unitary operator is a linear map acting on one Hilbert space."
+    },
+    {
+      "type": "requires",
+      "target": "hilbert-space",
+      "note": "The defining preservation law uses the Hilbert inner product and adjoint."
+    },
+    {
+      "type": "used-in",
+      "target": "heisenberg-equation-of-motion",
+      "note": "Unitary conjugation relates Schrödinger and Heisenberg observables."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-state",
+      "note": "Unitary basis changes and closed-system dynamics preserve state norms and transition probabilities."
+    }
+  ]
+}

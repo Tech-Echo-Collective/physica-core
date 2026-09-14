@@ -1,0 +1,29 @@
+{
+  "id": "commutator",
+  "title": "Commutator",
+  "description": "In the operator and associative-algebra scope used here, the operation [A,B] = AB − BA measures the failure of multiplication or operator composition to commute.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Operator commutator"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "linear-operator",
+      "note": "The operator specialization compares the two orders of composition on a common domain."
+    },
+    {
+      "type": "used-in",
+      "target": "heisenberg-equation-of-motion",
+      "note": "Hamiltonian commutators generate Heisenberg operator evolution."
+    },
+    {
+      "type": "used-in",
+      "target": "uncertainty-principle",
+      "note": "The Robertson uncertainty bound contains the expectation of an observable commutator."
+    }
+  ]
+}

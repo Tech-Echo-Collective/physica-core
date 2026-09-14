@@ -1,0 +1,34 @@
+{
+  "id": "special-unitary-group",
+  "title": "Special Unitary Group",
+  "description": "The matrix Lie group SU(n) consisting of complex n-by-n unitary matrices with determinant one, with matrix multiplication as its group operation.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "SU(n)"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lie-group",
+      "note": "SU(n) is a compact matrix Lie group."
+    },
+    {
+      "type": "requires",
+      "target": "unitary-operator",
+      "note": "Its defining matrices preserve the standard Hermitian inner product."
+    },
+    {
+      "type": "used-in",
+      "target": "spin-angular-momentum",
+      "note": "SU(2), the double cover of spatial rotations, organizes spin angular-momentum representations."
+    },
+    {
+      "type": "used-in",
+      "target": "two-state-quantum-system",
+      "note": "The fundamental SU(2) action rotates a two-component state after an overall phase is removed."
+    }
+  ]
+}

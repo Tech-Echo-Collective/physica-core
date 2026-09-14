@@ -1,0 +1,30 @@
+{
+  "id": "poincare-group",
+  "title": "Poincaré Group",
+  "description": "The isometry group of four-dimensional Minkowski spacetime, combining spacetime translations with Lorentz transformations through a semidirect-product group law.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Poincare group",
+    "Inhomogeneous Lorentz group"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "lorentz-group",
+      "note": "The origin-preserving subgroup supplies the Lorentz part of each affine isometry."
+    },
+    {
+      "type": "used-in",
+      "target": "special-relativity",
+      "note": "Translations and Lorentz transformations form flat-spacetime kinematical symmetries."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory",
+      "note": "Relativistic fields and particle states carry suitable representations of Poincaré symmetry."
+    }
+  ]
+}

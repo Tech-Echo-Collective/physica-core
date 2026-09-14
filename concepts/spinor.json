@@ -1,0 +1,34 @@
+{
+  "id": "spinor",
+  "title": "Spinor",
+  "description": "An element of a spin representation associated with a quadratic space; rotations act through a spin double cover, and a continuously lifted full turn changes a spinor's sign.",
+  "domains": [
+    "mathematics",
+    "mathematical-physics"
+  ],
+  "aliases": [
+    "Spinor vector"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "group-representation",
+      "note": "Spinors transform in representations of spin groups rather than ordinary vector representations of the rotation group."
+    },
+    {
+      "type": "requires",
+      "target": "clifford-algebra",
+      "note": "Clifford modules give a construction of spin representations."
+    },
+    {
+      "type": "used-in",
+      "target": "spin-angular-momentum",
+      "note": "Two-component spinors carry the spin-one-half rotation representation."
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-field-theory",
+      "note": "Dirac and Weyl fields have spinor-valued components with relativistic transformation laws."
+    }
+  ]
+}
