@@ -1,0 +1,22 @@
+{
+  "id": "cosmological-redshift",
+  "title": "Cosmological Redshift",
+  "description": "The change in photon wavelength associated with propagation through an evolving cosmological background between comoving emitters and observers.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "scale-factor",
+      "note": "The background wavelength ratio equals the relative change in scale factor."
+    },
+    {
+      "type": "used-in",
+      "target": "cosmic-microwave-background",
+      "note": "Cosmic expansion redshifts the relic photon spectrum."
+    }
+  ]
+}

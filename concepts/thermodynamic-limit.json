@@ -1,0 +1,21 @@
+{
+  "id": "thermodynamic-limit",
+  "title": "Thermodynamic Limit",
+  "description": "The limit of an increasingly large system while intensive controls such as particle density are held fixed, used to define bulk thermodynamics.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "limit-of-a-function",
+      "note": "The bulk construction is a controlled limiting process."
+    },
+    {
+      "type": "used-in",
+      "target": "phase-transition",
+      "note": "Thermodynamic singularities can emerge when the number of degrees of freedom becomes infinite."
+    }
+  ]
+}

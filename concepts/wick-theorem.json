@@ -1,0 +1,25 @@
+{
+  "id": "wick-theorem",
+  "title": "Wick's Theorem",
+  "description": "An identity that rewrites time-ordered free-field products as normal-ordered products and pair contractions, enabling perturbative quantum-field calculations.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Wick theorem"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "normal-ordering"
+    },
+    {
+      "type": "requires",
+      "target": "creation-and-annihilation-operators"
+    },
+    {
+      "type": "used-in",
+      "target": "feynman-diagram"
+    }
+  ]
+}

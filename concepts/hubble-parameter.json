@@ -1,0 +1,29 @@
+{
+  "id": "hubble-parameter",
+  "title": "Hubble Parameter",
+  "description": "The instantaneous fractional expansion rate of the cosmic scale factor, whose present value is called the Hubble constant.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "Hubble Expansion Rate"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "scale-factor",
+      "note": "The parameter is the logarithmic time derivative of the scale factor."
+    },
+    {
+      "type": "requires",
+      "target": "derivative",
+      "note": "It measures an instantaneous rate of fractional change."
+    },
+    {
+      "type": "used-in",
+      "target": "friedmann-equations",
+      "note": "Friedmann evolution relates H to matter and spatial curvature."
+    }
+  ]
+}

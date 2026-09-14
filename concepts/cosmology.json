@@ -1,0 +1,14 @@
+{
+  "id": "cosmology",
+  "title": "Physical Cosmology",
+  "description": "The physical study of the universe’s large-scale structure, contents, origin, and evolution, tested against astronomical observations.",
+  "domains": [
+    "gravitation",
+    "relativity",
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Cosmology"
+  ],
+  "relations": []
+}

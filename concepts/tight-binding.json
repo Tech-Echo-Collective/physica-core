@@ -1,0 +1,27 @@
+{
+  "id": "tight-binding",
+  "title": "Tight-Binding Approximation",
+  "description": "A quantum model using localized orbitals and hopping between sites to approximate electronic states in a solid or lattice.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian",
+      "note": "On-site and hopping matrix elements define the model Hamiltonian."
+    },
+    {
+      "type": "requires",
+      "target": "atomic-orbital",
+      "note": "Localized orbitals motivate the basis for conventional electronic tight binding."
+    },
+    {
+      "type": "used-in",
+      "target": "electronic-band-structure",
+      "note": "Diagonalizing a periodic tight-binding Hamiltonian gives approximate energy bands."
+    }
+  ]
+}

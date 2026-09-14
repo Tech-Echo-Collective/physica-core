@@ -1,0 +1,26 @@
+{
+  "id": "gibbs-free-energy",
+  "title": "Gibbs Free Energy",
+  "description": "The thermodynamic potential G=U+pV−TS, suited to comparing equilibrium states at controlled temperature and pressure.",
+  "domains": [
+    "thermodynamics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "enthalpy",
+      "note": "Gibbs free energy subtracts TS from enthalpy."
+    },
+    {
+      "type": "requires",
+      "target": "thermodynamic-entropy",
+      "note": "Its thermal Legendre transform uses entropy."
+    },
+    {
+      "type": "used-in",
+      "target": "phase-transition",
+      "note": "At fixed temperature and pressure, competing phases are compared through their Gibbs potentials."
+    }
+  ]
+}

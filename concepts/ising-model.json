@@ -1,0 +1,26 @@
+{
+  "id": "ising-model",
+  "title": "Ising Model",
+  "description": "A lattice model of interacting binary variables, used to study magnetic ordering, phase transitions, and equivalent lattice-gas behavior.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "partition-function",
+      "note": "Equilibrium Ising probabilities and thermodynamics are constructed from its partition function."
+    },
+    {
+      "type": "used-in",
+      "target": "phase-transition",
+      "note": "The model exhibits phase transitions for suitable dimension, coupling, and field."
+    },
+    {
+      "type": "used-in",
+      "target": "solid-state-physics",
+      "note": "Ising variables provide simplified descriptions of magnetic ordering in solids."
+    }
+  ]
+}

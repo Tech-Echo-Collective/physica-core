@@ -1,0 +1,27 @@
+{
+  "id": "phase-transition",
+  "title": "Phase Transition",
+  "description": "A change between macroscopic phases, characterized in equilibrium theory by nonanalytic thermodynamic behavior in the appropriate infinite-system limit. Suitable order parameters distinguish many conventional phases, but no local order parameter describes every transition.",
+  "domains": [
+    "statistical-physics",
+    "thermodynamics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "thermal-equilibrium",
+      "note": "Equilibrium phase comparisons use thermodynamic equilibrium states."
+    },
+    {
+      "type": "requires",
+      "target": "thermodynamic-limit",
+      "note": "Sharp thermodynamic singularities arise in the infinite-system limit for ordinary equilibrium models."
+    },
+    {
+      "type": "used-in",
+      "target": "bose-einstein-condensate",
+      "note": "Bose–Einstein condensation is an example of an equilibrium phase transition."
+    }
+  ]
+}

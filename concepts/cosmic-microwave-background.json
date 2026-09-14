@@ -1,0 +1,27 @@
+{
+  "id": "cosmic-microwave-background",
+  "title": "Cosmic Microwave Background",
+  "description": "Relic electromagnetic radiation from the early hot universe, observed today with an almost thermal microwave spectrum and small anisotropies.",
+  "domains": [
+    "gravitation",
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "black-body-radiation",
+      "note": "Its nearly thermal spectrum is described using black-body radiation."
+    },
+    {
+      "type": "requires",
+      "target": "cosmological-redshift",
+      "note": "Expansion shifts the relic spectrum toward lower photon energies."
+    },
+    {
+      "type": "used-in",
+      "target": "cosmology",
+      "note": "The spectrum and anisotropies test cosmological models."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "recombination",
+  "title": "Cosmological Recombination",
+  "description": "The formation of neutral atoms from ions and electrons as the expanding early universe cooled, reducing free electrons and helping photons decouple.",
+  "domains": [
+    "gravitation",
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Recombination"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "hydrogen-like-atom",
+      "note": "Hydrogen binding energies and atomic states enter recombination."
+    },
+    {
+      "type": "used-in",
+      "target": "cosmic-microwave-background",
+      "note": "The falling free-electron abundance influences photon last scattering."
+    },
+    {
+      "type": "used-in",
+      "target": "cosmology",
+      "note": "Atomic recombination forms part of the thermal history of the universe."
+    }
+  ]
+}

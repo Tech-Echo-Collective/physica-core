@@ -1,0 +1,26 @@
+{
+  "id": "spin-statistics-theorem",
+  "title": "Spin–Statistics Theorem",
+  "description": "The relativistic result connecting integer spin with bosonic exchange symmetry and half-integer spin with fermionic exchange antisymmetry, under locality and positivity assumptions.",
+  "domains": [
+    "quantum-physics",
+    "statistical-physics"
+  ],
+  "aliases": [
+    "Spin-statistics theorem"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "spin-angular-momentum"
+    },
+    {
+      "type": "requires",
+      "target": "special-relativity"
+    },
+    {
+      "type": "used-in",
+      "target": "canonical-quantization"
+    }
+  ]
+}

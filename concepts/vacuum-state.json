@@ -1,0 +1,26 @@
+{
+  "id": "vacuum-state",
+  "title": "Quantum Vacuum State",
+  "description": "A lowest-energy state of a quantum field theory for the chosen time evolution; a free-field vacuum has no particle excitations but can have nonzero field correlations.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Quantum vacuum",
+    "Vacuum state"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-state"
+    },
+    {
+      "type": "requires",
+      "target": "quantum-hamiltonian"
+    },
+    {
+      "type": "used-in",
+      "target": "propagator"
+    }
+  ]
+}

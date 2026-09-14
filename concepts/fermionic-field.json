@@ -1,0 +1,23 @@
+{
+  "id": "fermionic-field",
+  "title": "Fermionic Field",
+  "description": "A quantum field whose excitations obey fermionic statistics, with the free Dirac field providing the introductory spin-one-half example.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-field"
+    },
+    {
+      "type": "requires",
+      "target": "fermion"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-electrodynamics"
+    }
+  ]
+}

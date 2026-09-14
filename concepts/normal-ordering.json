@@ -1,0 +1,21 @@
+{
+  "id": "normal-ordering",
+  "title": "Normal Ordering",
+  "description": "A reference-vacuum prescription that places quantum creation operators to the left of annihilation operators, including fermionic permutation signs when applicable.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Wick ordering"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "creation-and-annihilation-operators"
+    },
+    {
+      "type": "used-in",
+      "target": "wick-theorem"
+    }
+  ]
+}

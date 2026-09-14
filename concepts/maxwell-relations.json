@@ -1,0 +1,27 @@
+{
+  "id": "maxwell-relations",
+  "title": "Maxwell Relations",
+  "description": "Thermodynamic derivative identities obtained from equality of mixed derivatives of smooth thermodynamic potentials.",
+  "domains": [
+    "thermodynamics",
+    "mathematical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "partial-derivative",
+      "note": "The identities compare second mixed derivatives of state functions."
+    },
+    {
+      "type": "requires",
+      "target": "helmholtz-free-energy",
+      "note": "The displayed identity follows from the differential of the Helmholtz potential."
+    },
+    {
+      "type": "used-in",
+      "target": "heat-capacity",
+      "note": "Maxwell identities connect thermal response functions such as heat capacities to other measurable derivatives."
+    }
+  ]
+}

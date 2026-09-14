@@ -1,0 +1,36 @@
+{
+  "id": "flrw-metric",
+  "title": "FLRW Spacetime",
+  "description": "A family of spacetime geometries with homogeneous and isotropic spatial slices and a time-dependent cosmic scale factor.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [
+    "FLRW Metric",
+    "Friedmann–Lemaître–Robertson–Walker Metric",
+    "FRW Metric"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "metric",
+      "note": "The construction specifies the spacetime interval through a metric."
+    },
+    {
+      "type": "requires",
+      "target": "cosmological-principle",
+      "note": "Homogeneous and isotropic spatial slices are the defining symmetry assumptions."
+    },
+    {
+      "type": "used-in",
+      "target": "friedmann-equations",
+      "note": "Inserting this ansatz and compatible matter into Einstein’s equations yields Friedmann evolution."
+    },
+    {
+      "type": "used-in",
+      "target": "cosmology",
+      "note": "The FLRW geometry supplies homogeneous cosmological background models."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "effective-mass",
+  "title": "Effective Mass",
+  "description": "A band-curvature parameter describing how a wave packet responds to forces within a crystalline energy band.",
+  "domains": [
+    "quantum-mechanics",
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electronic-band-structure",
+      "note": "The band-curvature tensor is calculated from an energy dispersion."
+    },
+    {
+      "type": "requires",
+      "target": "partial-derivative",
+      "note": "The inverse effective-mass tensor uses second wavevector derivatives."
+    },
+    {
+      "type": "used-in",
+      "target": "solid-state-physics",
+      "note": "Effective masses describe carrier acceleration in crystalline bands."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "fermi-surface",
+  "title": "Fermi Surface",
+  "description": "The zero-temperature occupied-to-unoccupied boundary in momentum or crystal-wavevector space, located at the chemical potential when a band or quasiparticle description is applicable.",
+  "domains": [
+    "quantum-mechanics",
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "chemical-potential",
+      "note": "At zero temperature the occupied-state boundary is determined by the chemical potential, measured in the same energy convention as the band energies."
+    },
+    {
+      "type": "requires",
+      "target": "fermi-dirac-statistics",
+      "note": "The zero-temperature occupancy limit explains the boundary."
+    },
+    {
+      "type": "used-in",
+      "target": "electronic-band-structure",
+      "note": "Partially filled bands determine metallic Fermi surfaces."
+    }
+  ]
+}

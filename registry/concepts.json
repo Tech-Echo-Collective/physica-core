@@ -1,5 +1,5 @@
 {
-  "core_version": "0.14.1",
+  "core_version": "0.15.0",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -240,6 +240,21 @@
         {
           "type": "used-in",
           "target": "rotational-dynamics"
+        }
+      ]
+    },
+    {
+      "id": "antiparticle",
+      "title": "Antiparticle",
+      "description": "A particle's conjugate partner, with the same mass and spin but opposite additive charges; some neutral particles are their own antiparticles.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "quantum-electrodynamics"
         }
       ]
     },
@@ -1465,6 +1480,108 @@
       ]
     },
     {
+      "id": "cosmic-microwave-background",
+      "title": "Cosmic Microwave Background",
+      "description": "Relic electromagnetic radiation from the early hot universe, observed today with an almost thermal microwave spectrum and small anisotropies.",
+      "domains": [
+        "gravitation",
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "black-body-radiation",
+          "note": "Its nearly thermal spectrum is described using black-body radiation."
+        },
+        {
+          "type": "requires",
+          "target": "cosmological-redshift",
+          "note": "Expansion shifts the relic spectrum toward lower photon energies."
+        },
+        {
+          "type": "used-in",
+          "target": "cosmology",
+          "note": "The spectrum and anisotropies test cosmological models."
+        }
+      ]
+    },
+    {
+      "id": "cosmological-constant",
+      "title": "Cosmological Constant",
+      "description": "A constant term proportional to the metric in Einstein’s field equations, equivalently represented as a uniform vacuum-energy stress tensor.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "einstein-field-equations",
+          "note": "The constant multiplies the metric in the gravitational field equations."
+        },
+        {
+          "type": "used-in",
+          "target": "friedmann-equations",
+          "note": "A cosmological constant contributes to homogeneous expansion and acceleration."
+        }
+      ]
+    },
+    {
+      "id": "cosmological-principle",
+      "title": "Cosmological Principle",
+      "description": "The modeling assumption that the universe is statistically homogeneous and isotropic on sufficiently large spatial scales.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "used-in",
+          "target": "flrw-metric",
+          "note": "Homogeneous and isotropic spatial slices motivate the FLRW family of background metrics."
+        }
+      ]
+    },
+    {
+      "id": "cosmological-redshift",
+      "title": "Cosmological Redshift",
+      "description": "The change in photon wavelength associated with propagation through an evolving cosmological background between comoving emitters and observers.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "scale-factor",
+          "note": "The background wavelength ratio equals the relative change in scale factor."
+        },
+        {
+          "type": "used-in",
+          "target": "cosmic-microwave-background",
+          "note": "Cosmic expansion redshifts the relic photon spectrum."
+        }
+      ]
+    },
+    {
+      "id": "cosmology",
+      "title": "Physical Cosmology",
+      "description": "The physical study of the universe’s large-scale structure, contents, origin, and evolution, tested against astronomical observations.",
+      "domains": [
+        "gravitation",
+        "relativity",
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Cosmology"
+      ],
+      "relations": []
+    },
+    {
       "id": "cotangent-space",
       "title": "Cotangent Space",
       "description": "The linear dual of a tangent space, consisting of covectors that map tangent vectors at a point of a smooth manifold to scalars.",
@@ -1546,6 +1663,32 @@
           "type": "used-in",
           "target": "quantum-field",
           "note": "Free-field mode expansions are expressed through creation and annihilation operators."
+        }
+      ]
+    },
+    {
+      "id": "critical-phenomena",
+      "title": "Critical Phenomena",
+      "description": "Collective behavior near continuous phase transitions, where long-range correlations and fluctuations can produce singular responses and universal scaling.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "phase-transition",
+          "note": "Criticality concerns the neighborhood of suitable continuous phase transitions."
+        },
+        {
+          "type": "requires",
+          "target": "thermodynamic-limit",
+          "note": "True divergent correlation lengths refer to the thermodynamic limit."
+        },
+        {
+          "type": "used-in",
+          "target": "ising-model",
+          "note": "The Ising model supplies benchmark examples of critical behavior."
         }
       ]
     },
@@ -1904,6 +2047,31 @@
       ]
     },
     {
+      "id": "dirac-equation",
+      "title": "Dirac Equation",
+      "description": "A first-order Lorentz-covariant equation for a spinor describing spin-one-half matter, interpreted as a field equation in quantum field theory.",
+      "domains": [
+        "quantum-physics",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "spinor"
+        },
+        {
+          "type": "requires",
+          "target": "clifford-algebra"
+        },
+        {
+          "type": "used-in",
+          "target": "fermionic-field",
+          "note": "This applies to the Dirac-field example, not every fermionic field."
+        }
+      ]
+    },
+    {
       "id": "divergence",
       "title": "Divergence",
       "description": "The scalar differential operator obtained by summing the matching coordinate partial derivatives of a vector field.",
@@ -1989,6 +2157,57 @@
         {
           "type": "requires",
           "target": "velocity-field"
+        }
+      ]
+    },
+    {
+      "id": "dyson-series",
+      "title": "Dyson Series",
+      "description": "The time-ordered expansion of quantum evolution generated by an interaction-picture Hamiltonian, organizing perturbative amplitudes by powers of the interaction.",
+      "domains": [
+        "quantum-physics",
+        "quantum-mechanics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "interaction-picture"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian"
+        },
+        {
+          "type": "used-in",
+          "target": "scattering-matrix"
+        }
+      ]
+    },
+    {
+      "id": "effective-mass",
+      "title": "Effective Mass",
+      "description": "A band-curvature parameter describing how a wave packet responds to forces within a crystalline energy band.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electronic-band-structure",
+          "note": "The band-curvature tensor is calculated from an energy dispersion."
+        },
+        {
+          "type": "requires",
+          "target": "partial-derivative",
+          "note": "The inverse effective-mass tensor uses second wavevector derivatives."
+        },
+        {
+          "type": "used-in",
+          "target": "solid-state-physics",
+          "note": "Effective masses describe carrier acceleration in crystalline bands."
         }
       ]
     },
@@ -2619,6 +2838,33 @@
       ]
     },
     {
+      "id": "fermi-surface",
+      "title": "Fermi Surface",
+      "description": "The zero-temperature occupied-to-unoccupied boundary in momentum or crystal-wavevector space, located at the chemical potential when a band or quasiparticle description is applicable.",
+      "domains": [
+        "quantum-mechanics",
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "chemical-potential",
+          "note": "At zero temperature the occupied-state boundary is determined by the chemical potential, measured in the same energy convention as the band energies."
+        },
+        {
+          "type": "requires",
+          "target": "fermi-dirac-statistics",
+          "note": "The zero-temperature occupancy limit explains the boundary."
+        },
+        {
+          "type": "used-in",
+          "target": "electronic-band-structure",
+          "note": "Partially filled bands determine metallic Fermi surfaces."
+        }
+      ]
+    },
+    {
       "id": "fermion",
       "title": "Fermion",
       "description": "A particle with half-integer spin whose identical-particle quantum states are antisymmetric under exchange, obeying the Pauli exclusion principle in ordinary three-dimensional physics.",
@@ -2637,6 +2883,29 @@
           "type": "used-in",
           "target": "fermi-dirac-statistics",
           "note": "Fermi–Dirac state counting applies to identical fermions."
+        }
+      ]
+    },
+    {
+      "id": "fermionic-field",
+      "title": "Fermionic Field",
+      "description": "A quantum field whose excitations obey fermionic statistics, with the free Dirac field providing the introductory spin-one-half example.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-field"
+        },
+        {
+          "type": "requires",
+          "target": "fermion"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-electrodynamics"
         }
       ]
     },
@@ -2789,6 +3058,42 @@
           "type": "used-in",
           "target": "variational-principle",
           "note": "Stationarity requires the first variation to vanish for all admissible perturbations."
+        }
+      ]
+    },
+    {
+      "id": "flrw-metric",
+      "title": "FLRW Spacetime",
+      "description": "A family of spacetime geometries with homogeneous and isotropic spatial slices and a time-dependent cosmic scale factor.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "FLRW Metric",
+        "Friedmann–Lemaître–Robertson–Walker Metric",
+        "FRW Metric"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "metric",
+          "note": "The construction specifies the spacetime interval through a metric."
+        },
+        {
+          "type": "requires",
+          "target": "cosmological-principle",
+          "note": "Homogeneous and isotropic spatial slices are the defining symmetry assumptions."
+        },
+        {
+          "type": "used-in",
+          "target": "friedmann-equations",
+          "note": "Inserting this ansatz and compatible matter into Einstein’s equations yields Friedmann evolution."
+        },
+        {
+          "type": "used-in",
+          "target": "cosmology",
+          "note": "The FLRW geometry supplies homogeneous cosmological background models."
         }
       ]
     },
@@ -2996,6 +3301,33 @@
           "type": "used-in",
           "target": "wavefunction",
           "note": "Relates position and wave-number or momentum representations, with the appropriate normalization and momentum p = hbar k."
+        }
+      ]
+    },
+    {
+      "id": "friedmann-equations",
+      "title": "Friedmann Equations",
+      "description": "The Einstein-equation constraints and evolution equations for homogeneous, isotropic expansion sourced by cosmological matter and pressure.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "einstein-field-equations",
+          "note": "They follow from Einstein’s equations after imposing FLRW symmetry and compatible stress-energy."
+        },
+        {
+          "type": "requires",
+          "target": "flrw-metric",
+          "note": "The expansion variable and spatial curvature come from the FLRW geometry."
+        },
+        {
+          "type": "requires",
+          "target": "stress-energy-tensor",
+          "note": "Matter energy density and isotropic pressure provide the sources."
         }
       ]
     },
@@ -3355,6 +3687,32 @@
         "Ray optics"
       ],
       "relations": []
+    },
+    {
+      "id": "gibbs-free-energy",
+      "title": "Gibbs Free Energy",
+      "description": "The thermodynamic potential G=U+pV−TS, suited to comparing equilibrium states at controlled temperature and pressure.",
+      "domains": [
+        "thermodynamics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "enthalpy",
+          "note": "Gibbs free energy subtracts TS from enthalpy."
+        },
+        {
+          "type": "requires",
+          "target": "thermodynamic-entropy",
+          "note": "Its thermal Legendre transform uses entropy."
+        },
+        {
+          "type": "used-in",
+          "target": "phase-transition",
+          "note": "At fixed temperature and pressure, competing phases are compared through their Gibbs potentials."
+        }
+      ]
     },
     {
       "id": "gradient",
@@ -3851,6 +4209,35 @@
       ]
     },
     {
+      "id": "hubble-parameter",
+      "title": "Hubble Parameter",
+      "description": "The instantaneous fractional expansion rate of the cosmic scale factor, whose present value is called the Hubble constant.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [
+        "Hubble Expansion Rate"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "scale-factor",
+          "note": "The parameter is the logarithmic time derivative of the scale factor."
+        },
+        {
+          "type": "requires",
+          "target": "derivative",
+          "note": "It measures an instantaneous rate of fractional change."
+        },
+        {
+          "type": "used-in",
+          "target": "friedmann-equations",
+          "note": "Friedmann evolution relates H to matter and spatial curvature."
+        }
+      ]
+    },
+    {
       "id": "huygens-principle",
       "title": "Huygens's Principle",
       "description": "A construction for advancing a wavefront: each point on the current front launches secondary wavelets, and their forward envelope gives the next front. It helps visualize reflection, refraction and spreading at an aperture.",
@@ -4294,6 +4681,32 @@
       ]
     },
     {
+      "id": "ising-model",
+      "title": "Ising Model",
+      "description": "A lattice model of interacting binary variables, used to study magnetic ordering, phase transitions, and equivalent lattice-gas behavior.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "partition-function",
+          "note": "Equilibrium Ising probabilities and thermodynamics are constructed from its partition function."
+        },
+        {
+          "type": "used-in",
+          "target": "phase-transition",
+          "note": "The model exhibits phase transitions for suitable dimension, coupling, and field."
+        },
+        {
+          "type": "used-in",
+          "target": "solid-state-physics",
+          "note": "Ising variables provide simplified descriptions of magnetic ordering in solids."
+        }
+      ]
+    },
+    {
       "id": "isobaric-process",
       "title": "Isobaric Process",
       "description": "A thermodynamic process in which the system pressure remains constant while other state variables can change.",
@@ -4480,6 +4893,33 @@
       ]
     },
     {
+      "id": "klein-gordon-equation",
+      "title": "Klein–Gordon Equation",
+      "description": "A Lorentz-covariant second-order wave equation for a free massive scalar field; its quantum-field interpretation describes spin-zero excitations.",
+      "domains": [
+        "quantum-physics",
+        "relativity"
+      ],
+      "aliases": [
+        "Klein-Gordon equation"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "classical-scalar-field",
+          "note": "The introductory derivation starts with a classical scalar field."
+        },
+        {
+          "type": "requires",
+          "target": "special-relativity"
+        },
+        {
+          "type": "used-in",
+          "target": "canonical-quantization"
+        }
+      ]
+    },
+    {
       "id": "kruskal-szekeres-coordinates",
       "title": "Kruskal–Szekeres Coordinates",
       "description": "Coordinates regular across the Schwarzschild horizons that describe its maximal analytic extension, exposing black-hole, white-hole and two exterior regions without removing the r = 0 singularity.",
@@ -4642,6 +5082,32 @@
           "type": "used-in",
           "target": "classical-mechanics",
           "note": "Lagrangian mechanics is a formulation of classical mechanical dynamics, not a distinct special-case theory."
+        }
+      ]
+    },
+    {
+      "id": "landau-theory",
+      "title": "Landau Theory",
+      "description": "A phenomenological approach that models phase behavior using a symmetry-compatible expansion of a thermodynamic potential in an order parameter.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "phase-transition",
+          "note": "The theory models phase transitions through the behavior of a chosen order parameter."
+        },
+        {
+          "type": "requires",
+          "target": "helmholtz-free-energy",
+          "note": "At fixed volume and temperature the stable phase minimizes the Helmholtz potential."
+        },
+        {
+          "type": "requires",
+          "target": "taylor-series",
+          "note": "The phenomenological potential is expanded in powers of a small order parameter."
         }
       ]
     },
@@ -5403,6 +5869,55 @@
       ]
     },
     {
+      "id": "maxwell-relations",
+      "title": "Maxwell Relations",
+      "description": "Thermodynamic derivative identities obtained from equality of mixed derivatives of smooth thermodynamic potentials.",
+      "domains": [
+        "thermodynamics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "partial-derivative",
+          "note": "The identities compare second mixed derivatives of state functions."
+        },
+        {
+          "type": "requires",
+          "target": "helmholtz-free-energy",
+          "note": "The displayed identity follows from the differential of the Helmholtz potential."
+        },
+        {
+          "type": "used-in",
+          "target": "heat-capacity",
+          "note": "Maxwell identities connect thermal response functions such as heat capacities to other measurable derivatives."
+        }
+      ]
+    },
+    {
+      "id": "mean-field-theory",
+      "title": "Mean-Field Theory",
+      "description": "An approximation replacing the fluctuating influence of surrounding degrees of freedom with an effective average, often determined self-consistently.",
+      "domains": [
+        "statistical-physics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "expected-value",
+          "note": "The effective field is determined by suitable averages."
+        },
+        {
+          "type": "used-in",
+          "target": "ising-model",
+          "note": "A uniform mean-field approximation yields a self-consistency equation for Ising magnetization."
+        }
+      ]
+    },
+    {
       "id": "mean-free-path",
       "title": "Mean Free Path",
       "description": "In gas kinetic theory, the average distance a molecule travels between successive collisions with other molecules.",
@@ -5926,6 +6441,27 @@
       ]
     },
     {
+      "id": "normal-ordering",
+      "title": "Normal Ordering",
+      "description": "A reference-vacuum prescription that places quantum creation operators to the left of annihilation operators, including fermionic permutation signs when applicable.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Wick ordering"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "creation-and-annihilation-operators"
+        },
+        {
+          "type": "used-in",
+          "target": "wick-theorem"
+        }
+      ]
+    },
+    {
       "id": "normal-subgroup",
       "title": "Normal Subgroup",
       "description": "A subgroup preserved by conjugation with every element of its ambient group. Normality is a property relative to that ambient group.",
@@ -6279,6 +6815,33 @@
       ]
     },
     {
+      "id": "phase-transition",
+      "title": "Phase Transition",
+      "description": "A change between macroscopic phases, characterized in equilibrium theory by nonanalytic thermodynamic behavior in the appropriate infinite-system limit. Suitable order parameters distinguish many conventional phases, but no local order parameter describes every transition.",
+      "domains": [
+        "statistical-physics",
+        "thermodynamics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "thermal-equilibrium",
+          "note": "Equilibrium phase comparisons use thermodynamic equilibrium states."
+        },
+        {
+          "type": "requires",
+          "target": "thermodynamic-limit",
+          "note": "Sharp thermodynamic singularities arise in the infinite-system limit for ordinary equilibrium models."
+        },
+        {
+          "type": "used-in",
+          "target": "bose-einstein-condensate",
+          "note": "Bose–Einstein condensation is an example of an equilibrium phase transition."
+        }
+      ]
+    },
+    {
       "id": "phonon",
       "title": "Phonon",
       "description": "A quantum of a collective vibrational normal mode of matter, described in a harmonic crystal as a bosonic lattice excitation.",
@@ -6297,6 +6860,27 @@
           "type": "used-in",
           "target": "heat-capacity",
           "note": "Thermal phonon populations account for the vibrational contribution to a solid's heat capacity."
+        }
+      ]
+    },
+    {
+      "id": "photon",
+      "title": "Photon",
+      "description": "The massless, electrically neutral quantum of the electromagnetic field; a physical free photon in vacuum has two transverse helicity states.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Light quantum"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "electromagnetic-field"
+        },
+        {
+          "type": "used-in",
+          "target": "quantum-electrodynamics"
         }
       ]
     },
@@ -6838,6 +7422,31 @@
       ]
     },
     {
+      "id": "quantum-electrodynamics",
+      "title": "Quantum Electrodynamics",
+      "description": "The relativistic quantum field theory of electromagnetic interactions, coupling charged matter to the quantized electromagnetic field through local U(1) gauge symmetry.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "QED"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-field-theory"
+        },
+        {
+          "type": "requires",
+          "target": "electromagnetic-field"
+        },
+        {
+          "type": "requires",
+          "target": "gauge-symmetry"
+        }
+      ]
+    },
+    {
       "id": "quantum-entanglement",
       "title": "Quantum Entanglement",
       "description": "For finite-dimensional composite systems, the property of a joint state that cannot be written as a convex combination of product states of the subsystems; for a pure state this reduces to failure to factor as one product vector.",
@@ -7259,6 +7868,35 @@
       ]
     },
     {
+      "id": "recombination",
+      "title": "Cosmological Recombination",
+      "description": "The formation of neutral atoms from ions and electrons as the expanding early universe cooled, reducing free electrons and helping photons decouple.",
+      "domains": [
+        "gravitation",
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Recombination"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hydrogen-like-atom",
+          "note": "Hydrogen binding energies and atomic states enter recombination."
+        },
+        {
+          "type": "used-in",
+          "target": "cosmic-microwave-background",
+          "note": "The falling free-electron abundance influences photon last scattering."
+        },
+        {
+          "type": "used-in",
+          "target": "cosmology",
+          "note": "Atomic recombination forms part of the thermal history of the universe."
+        }
+      ]
+    },
+    {
       "id": "rectangular-potential-barrier",
       "title": "Rectangular Potential Barrier",
       "description": "A piecewise-constant quantum potential model with a finite region raised above the exterior potential, used to calculate reflection and transmission.",
@@ -7646,6 +8284,28 @@
           "type": "used-in",
           "target": "spectral-line",
           "note": "It predicts leading wavelengths within the hydrogen spectral series."
+        }
+      ]
+    },
+    {
+      "id": "scale-factor",
+      "title": "Cosmic Scale Factor",
+      "description": "The time-dependent factor describing how physical separations of comoving points scale in a homogeneous cosmological background.",
+      "domains": [
+        "gravitation",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "flrw-metric",
+          "note": "The scale factor multiplies the spatial part of the FLRW metric."
+        },
+        {
+          "type": "used-in",
+          "target": "cosmological-redshift",
+          "note": "Ratios of scale factors determine the cosmological redshift of freely propagating light."
         }
       ]
     },
@@ -8268,6 +8928,32 @@
       ]
     },
     {
+      "id": "spin-statistics-theorem",
+      "title": "Spin–Statistics Theorem",
+      "description": "The relativistic result connecting integer spin with bosonic exchange symmetry and half-integer spin with fermionic exchange antisymmetry, under locality and positivity assumptions.",
+      "domains": [
+        "quantum-physics",
+        "statistical-physics"
+      ],
+      "aliases": [
+        "Spin-statistics theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "spin-angular-momentum"
+        },
+        {
+          "type": "requires",
+          "target": "special-relativity"
+        },
+        {
+          "type": "used-in",
+          "target": "canonical-quantization"
+        }
+      ]
+    },
+    {
       "id": "spinor",
       "title": "Spinor",
       "description": "An element of a spin representation associated with a quadratic space; rotations act through a spin double cover, and a continuously lifted full turn changes a spinor's sign.",
@@ -8743,6 +9429,27 @@
       ]
     },
     {
+      "id": "thermodynamic-limit",
+      "title": "Thermodynamic Limit",
+      "description": "The limit of an increasingly large system while intensive controls such as particle density are held fixed, used to define bulk thermodynamics.",
+      "domains": [
+        "statistical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "limit-of-a-function",
+          "note": "The bulk construction is a controlled limiting process."
+        },
+        {
+          "type": "used-in",
+          "target": "phase-transition",
+          "note": "Thermodynamic singularities can emerge when the number of degrees of freedom becomes infinite."
+        }
+      ]
+    },
+    {
       "id": "thermodynamic-process",
       "title": "Thermodynamic Process",
       "description": "A change of a system's thermodynamic state under specified interactions or constraints; intermediate states need not remain in equilibrium.",
@@ -8806,6 +9513,33 @@
           "type": "used-in",
           "target": "geometrical-optics",
           "note": "The approximation reduces lens image formation to ray geometry and focal length."
+        }
+      ]
+    },
+    {
+      "id": "tight-binding",
+      "title": "Tight-Binding Approximation",
+      "description": "A quantum model using localized orbitals and hopping between sites to approximate electronic states in a solid or lattice.",
+      "domains": [
+        "quantum-mechanics",
+        "quantum-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian",
+          "note": "On-site and hopping matrix elements define the model Hamiltonian."
+        },
+        {
+          "type": "requires",
+          "target": "atomic-orbital",
+          "note": "Localized orbitals motivate the basis for conventional electronic tight binding."
+        },
+        {
+          "type": "used-in",
+          "target": "electronic-band-structure",
+          "note": "Diagonalizing a periodic tight-binding Hamiltonian gives approximate energy bands."
         }
       ]
     },
@@ -8996,6 +9730,32 @@
           "type": "used-in",
           "target": "quantum-state",
           "note": "Unitary basis changes and closed-system dynamics preserve state norms and transition probabilities."
+        }
+      ]
+    },
+    {
+      "id": "vacuum-state",
+      "title": "Quantum Vacuum State",
+      "description": "A lowest-energy state of a quantum field theory for the chosen time evolution; a free-field vacuum has no particle excitations but can have nonzero field correlations.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Quantum vacuum",
+        "Vacuum state"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "quantum-state"
+        },
+        {
+          "type": "requires",
+          "target": "quantum-hamiltonian"
+        },
+        {
+          "type": "used-in",
+          "target": "propagator"
         }
       ]
     },
@@ -9223,6 +9983,31 @@
         {
           "type": "requires",
           "target": "differential-form"
+        }
+      ]
+    },
+    {
+      "id": "wick-theorem",
+      "title": "Wick's Theorem",
+      "description": "An identity that rewrites time-ordered free-field products as normal-ordered products and pair contractions, enabling perturbative quantum-field calculations.",
+      "domains": [
+        "quantum-physics"
+      ],
+      "aliases": [
+        "Wick theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "normal-ordering"
+        },
+        {
+          "type": "requires",
+          "target": "creation-and-annihilation-operators"
+        },
+        {
+          "type": "used-in",
+          "target": "feynman-diagram"
         }
       ]
     },

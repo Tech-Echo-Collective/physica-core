@@ -1,0 +1,26 @@
+{
+  "id": "landau-theory",
+  "title": "Landau Theory",
+  "description": "A phenomenological approach that models phase behavior using a symmetry-compatible expansion of a thermodynamic potential in an order parameter.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "phase-transition",
+      "note": "The theory models phase transitions through the behavior of a chosen order parameter."
+    },
+    {
+      "type": "requires",
+      "target": "helmholtz-free-energy",
+      "note": "At fixed volume and temperature the stable phase minimizes the Helmholtz potential."
+    },
+    {
+      "type": "requires",
+      "target": "taylor-series",
+      "note": "The phenomenological potential is expanded in powers of a small order parameter."
+    }
+  ]
+}

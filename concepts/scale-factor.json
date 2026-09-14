@@ -1,0 +1,22 @@
+{
+  "id": "scale-factor",
+  "title": "Cosmic Scale Factor",
+  "description": "The time-dependent factor describing how physical separations of comoving points scale in a homogeneous cosmological background.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "flrw-metric",
+      "note": "The scale factor multiplies the spatial part of the FLRW metric."
+    },
+    {
+      "type": "used-in",
+      "target": "cosmological-redshift",
+      "note": "Ratios of scale factors determine the cosmological redshift of freely propagating light."
+    }
+  ]
+}

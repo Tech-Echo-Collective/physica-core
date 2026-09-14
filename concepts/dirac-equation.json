@@ -1,0 +1,25 @@
+{
+  "id": "dirac-equation",
+  "title": "Dirac Equation",
+  "description": "A first-order Lorentz-covariant equation for a spinor describing spin-one-half matter, interpreted as a field equation in quantum field theory.",
+  "domains": [
+    "quantum-physics",
+    "relativity"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "spinor"
+    },
+    {
+      "type": "requires",
+      "target": "clifford-algebra"
+    },
+    {
+      "type": "used-in",
+      "target": "fermionic-field",
+      "note": "This applies to the Dirac-field example, not every fermionic field."
+    }
+  ]
+}

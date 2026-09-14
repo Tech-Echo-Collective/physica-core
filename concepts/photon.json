@@ -1,0 +1,21 @@
+{
+  "id": "photon",
+  "title": "Photon",
+  "description": "The massless, electrically neutral quantum of the electromagnetic field; a physical free photon in vacuum has two transverse helicity states.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "Light quantum"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "electromagnetic-field"
+    },
+    {
+      "type": "used-in",
+      "target": "quantum-electrodynamics"
+    }
+  ]
+}

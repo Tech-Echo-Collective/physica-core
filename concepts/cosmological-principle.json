@@ -1,0 +1,17 @@
+{
+  "id": "cosmological-principle",
+  "title": "Cosmological Principle",
+  "description": "The modeling assumption that the universe is statistically homogeneous and isotropic on sufficiently large spatial scales.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "flrw-metric",
+      "note": "Homogeneous and isotropic spatial slices motivate the FLRW family of background metrics."
+    }
+  ]
+}

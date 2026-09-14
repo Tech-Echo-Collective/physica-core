@@ -1,0 +1,27 @@
+{
+  "id": "friedmann-equations",
+  "title": "Friedmann Equations",
+  "description": "The Einstein-equation constraints and evolution equations for homogeneous, isotropic expansion sourced by cosmological matter and pressure.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "derived-from",
+      "target": "einstein-field-equations",
+      "note": "They follow from Einstein’s equations after imposing FLRW symmetry and compatible stress-energy."
+    },
+    {
+      "type": "requires",
+      "target": "flrw-metric",
+      "note": "The expansion variable and spatial curvature come from the FLRW geometry."
+    },
+    {
+      "type": "requires",
+      "target": "stress-energy-tensor",
+      "note": "Matter energy density and isotropic pressure provide the sources."
+    }
+  ]
+}

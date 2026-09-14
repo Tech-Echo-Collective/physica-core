@@ -1,0 +1,22 @@
+{
+  "id": "mean-field-theory",
+  "title": "Mean-Field Theory",
+  "description": "An approximation replacing the fluctuating influence of surrounding degrees of freedom with an effective average, often determined self-consistently.",
+  "domains": [
+    "statistical-physics",
+    "mathematical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "expected-value",
+      "note": "The effective field is determined by suitable averages."
+    },
+    {
+      "type": "used-in",
+      "target": "ising-model",
+      "note": "A uniform mean-field approximation yields a self-consistency equation for Ising magnetization."
+    }
+  ]
+}

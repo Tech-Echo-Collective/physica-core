@@ -1,0 +1,26 @@
+{
+  "id": "critical-phenomena",
+  "title": "Critical Phenomena",
+  "description": "Collective behavior near continuous phase transitions, where long-range correlations and fluctuations can produce singular responses and universal scaling.",
+  "domains": [
+    "statistical-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "phase-transition",
+      "note": "Criticality concerns the neighborhood of suitable continuous phase transitions."
+    },
+    {
+      "type": "requires",
+      "target": "thermodynamic-limit",
+      "note": "True divergent correlation lengths refer to the thermodynamic limit."
+    },
+    {
+      "type": "used-in",
+      "target": "ising-model",
+      "note": "The Ising model supplies benchmark examples of critical behavior."
+    }
+  ]
+}

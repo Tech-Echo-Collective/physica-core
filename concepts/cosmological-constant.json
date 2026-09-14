@@ -1,0 +1,22 @@
+{
+  "id": "cosmological-constant",
+  "title": "Cosmological Constant",
+  "description": "A constant term proportional to the metric in Einstein’s field equations, equivalently represented as a uniform vacuum-energy stress tensor.",
+  "domains": [
+    "gravitation",
+    "relativity"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "einstein-field-equations",
+      "note": "The constant multiplies the metric in the gravitational field equations."
+    },
+    {
+      "type": "used-in",
+      "target": "friedmann-equations",
+      "note": "A cosmological constant contributes to homogeneous expansion and acceleration."
+    }
+  ]
+}

@@ -8,7 +8,7 @@ These three distinct projects form **Tech Echo Physica**, a Tech Echo Collective
 project family for exploring physics through research mapping, knowledge
 structures, and interactive physical systems.
 
-Current version: **0.14.1**. This is an early, intentionally small contract. It
+Current version: **0.15.0**. This is an early, intentionally small contract. It
 is not a frozen 1.0 standard.
 
 ## What Core owns
@@ -60,7 +60,7 @@ physica-core/
 
 ## Concept set
 
-Version 0.14.1 contains 365 concepts and 970 relations. It retains the initial
+Version 0.15.0 contains 397 concepts and 1053 relations. It retains the initial
 physics backbone and expands every initial subject into supporting concepts,
 including calculus, linear algebra, quantum mechanics, classical mechanics,
 variational methods and relativity. Sources are recorded in

@@ -1,0 +1,25 @@
+{
+  "id": "quantum-electrodynamics",
+  "title": "Quantum Electrodynamics",
+  "description": "The relativistic quantum field theory of electromagnetic interactions, coupling charged matter to the quantized electromagnetic field through local U(1) gauge symmetry.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [
+    "QED"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "quantum-field-theory"
+    },
+    {
+      "type": "requires",
+      "target": "electromagnetic-field"
+    },
+    {
+      "type": "requires",
+      "target": "gauge-symmetry"
+    }
+  ]
+}

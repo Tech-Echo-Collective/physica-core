@@ -1,0 +1,15 @@
+{
+  "id": "antiparticle",
+  "title": "Antiparticle",
+  "description": "A particle's conjugate partner, with the same mass and spin but opposite additive charges; some neutral particles are their own antiparticles.",
+  "domains": [
+    "quantum-physics"
+  ],
+  "aliases": [],
+  "relations": [
+    {
+      "type": "used-in",
+      "target": "quantum-electrodynamics"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "klein-gordon-equation",
+  "title": "Klein–Gordon Equation",
+  "description": "A Lorentz-covariant second-order wave equation for a free massive scalar field; its quantum-field interpretation describes spin-zero excitations.",
+  "domains": [
+    "quantum-physics",
+    "relativity"
+  ],
+  "aliases": [
+    "Klein-Gordon equation"
+  ],
+  "relations": [
+    {
+      "type": "requires",
+      "target": "classical-scalar-field",
+      "note": "The introductory derivation starts with a classical scalar field."
+    },
+    {
+      "type": "requires",
+      "target": "special-relativity"
+    },
+    {
+      "type": "used-in",
+      "target": "canonical-quantization"
+    }
+  ]
+}
