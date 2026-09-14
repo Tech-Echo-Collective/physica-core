@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.15.1 — 2026-09-14
+
+- Add 50 independently reviewed differential-geometry concepts and 111 relations, for 447 concepts and 1164 relations in total.
+- Extend the smooth-manifold spine through map rank, transversality, distributions, foliations, natural and principal bundles, bundle connections, holonomy, characteristic classes, Riemannian invariants, global and submanifold geometry, symplectic/Poisson/contact structures, complex/Kähler/Finsler geometry, geometric analysis and Ricci flow.
+- Preserve all 397 previous concept records and all five relation semantics. Keep affine connection distinct from vector-bundle connection, and retain `Covariant derivative` as the established affine-connection alias rather than creating a duplicate identity.
+- Read exact English Wikipedia identities and revisions for discovery, while definitions and relations are checked against university notes and author texts. No Wikipedia article bodies or product navigation metadata are stored in Core. See [the differential-geometry source and boundary record](docs/differential-geometry-expansion-sources.md).
+
 ## 0.14.0 — 2026-09-13
 
 - Add 50 independently reviewed quantum-dynamics, approximation/scattering, quantum-statistical and solid-state concepts with 95 scientific relations (55 prerequisites). Totals: 355 concepts and 933 relations, including 545 prerequisites.

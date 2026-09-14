@@ -1,5 +1,5 @@
 {
-  "core_version": "0.15.0",
+  "core_version": "0.15.1",
   "source_of_truth": "concepts/*.json",
   "domains": [
     "classical-field-theory",
@@ -178,6 +178,26 @@
       ]
     },
     {
+      "id": "almost-complex-manifold",
+      "title": "Almost Complex Manifold",
+      "description": "A smooth even-dimensional manifold equipped with a tangent-bundle endomorphism whose square is minus the identity, without assuming the structure is induced by complex coordinates.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "generalizes",
+          "target": "complex-manifold"
+        }
+      ]
+    },
+    {
       "id": "angular-momentum",
       "title": "Angular Momentum",
       "description": "In classical particle mechanics, the moment of linear momentum about a specified point, summed over the system. Its evolution is governed by torque under the appropriate reference-point and interaction assumptions; it is not generally parallel to angular velocity.",
@@ -255,6 +275,26 @@
         {
           "type": "used-in",
           "target": "quantum-electrodynamics"
+        }
+      ]
+    },
+    {
+      "id": "associated-bundle",
+      "title": "Associated Bundle",
+      "description": "A fiber bundle constructed from a principal bundle and an action of its structure group on a model fiber, identifying points along the diagonal group action.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "derived-from",
+          "target": "principal-bundle"
+        },
+        {
+          "type": "requires",
+          "target": "group-representation"
         }
       ]
     },
@@ -941,6 +981,26 @@
       ]
     },
     {
+      "id": "characteristic-class",
+      "title": "Characteristic Class",
+      "description": "A functorial cohomology class assigned to a bundle that measures global twisting and obstructs certain bundle structures or trivializations.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "fiber-bundle"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-topology"
+        }
+      ]
+    },
+    {
       "id": "chemical-potential",
       "title": "Chemical Potential",
       "description": "The thermodynamic energy variable conjugate to the amount of a species, quantifying how the appropriate thermodynamic potential changes when particles are added under specified constraints.",
@@ -959,6 +1019,28 @@
           "type": "used-in",
           "target": "grand-canonical-ensemble",
           "note": "The reservoir chemical potential controls particle exchange in a grand-canonical ensemble."
+        }
+      ]
+    },
+    {
+      "id": "chern-class",
+      "title": "Chern Class",
+      "description": "A sequence of characteristic classes of a complex vector bundle, lying in even-degree integral cohomology and encoding its global topology.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Chern classes"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "characteristic-class"
+        },
+        {
+          "type": "requires",
+          "target": "vector-bundle"
         }
       ]
     },
@@ -1221,6 +1303,28 @@
       ]
     },
     {
+      "id": "complex-geometry",
+      "title": "Complex Geometry",
+      "description": "The study of complex manifolds and their holomorphic, Hermitian, and Kähler structures using differential, topological, and analytic methods.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Complex differential geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "complex-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "differential-geometry"
+        }
+      ]
+    },
+    {
       "id": "complex-manifold",
       "title": "Complex Manifold",
       "description": "A Hausdorff, second-countable space with local complex coordinates whose overlap transitions are biholomorphic, determining an underlying smooth manifold of even real dimension.",
@@ -1371,6 +1475,30 @@
         {
           "type": "used-in",
           "target": "newtonian-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "contact-geometry",
+      "title": "Contact Geometry",
+      "description": "The study of odd-dimensional manifolds carrying a maximally nonintegrable hyperplane distribution, locally expressible as the kernel of a contact one-form.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "differential-form"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian-mechanics"
         }
       ]
     },
@@ -1580,6 +1708,30 @@
         "Cosmology"
       ],
       "relations": []
+    },
+    {
+      "id": "cotangent-bundle",
+      "title": "Cotangent Bundle",
+      "description": "The vector bundle whose fiber at each point of a smooth manifold is the dual of that point's tangent space, naturally carrying covectors and differential forms.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "cotangent-space"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-form"
+        }
+      ]
     },
     {
       "id": "cotangent-space",
@@ -1812,6 +1964,28 @@
       ]
     },
     {
+      "id": "darboux-theorem",
+      "title": "Darboux's Theorem",
+      "description": "Every symplectic form has the same standard local coordinate expression near each point, so symplectic manifolds have no local scalar invariants analogous to Riemannian curvature.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Darboux theorem in symplectic geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "symplectic-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "coordinate-chart"
+        }
+      ]
+    },
+    {
       "id": "de-rham-cohomology",
       "title": "de Rham Cohomology",
       "description": "The cohomology of the complex of smooth differential forms, whose positive-degree groups are closed forms modulo exact forms and whose degree-zero group consists of locally constant functions.",
@@ -1984,6 +2158,48 @@
         {
           "type": "requires",
           "target": "smooth-manifold"
+        }
+      ]
+    },
+    {
+      "id": "differential-structure",
+      "title": "Differential Structure",
+      "description": "A maximal smooth atlas on a topological manifold, determining which real-valued functions and coordinate transitions are regarded as smooth.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Smooth structure"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-atlas"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-topology"
+        }
+      ]
+    },
+    {
+      "id": "differential-topology",
+      "title": "Differential Topology",
+      "description": "The study of global properties of smooth manifolds and smooth maps that remain invariant under diffeomorphism, using tools such as transversality, distributions, and characteristic classes.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-geometry",
+          "note": "Differential topology supplies the smooth structures and global tools used throughout differential geometry."
         }
       ]
     },
@@ -2515,6 +2731,27 @@
       ]
     },
     {
+      "id": "embedding",
+      "title": "Embedding",
+      "description": "An immersion that is also a homeomorphism onto its image with the subspace topology, realizing its source as an embedded submanifold.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Smooth embedding"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "immersion"
+        },
+        {
+          "type": "used-in",
+          "target": "submanifold"
+        }
+      ]
+    },
+    {
       "id": "enthalpy",
       "title": "Enthalpy",
       "description": "A thermodynamic potential defined by adding pressure times volume to internal energy. Equality between an enthalpy change and exchanged heat requires additional process conditions.",
@@ -2709,6 +2946,26 @@
           "type": "used-in",
           "target": "statistical-mechanics",
           "note": "Ensemble expectations calculate mean physical observables such as energy."
+        }
+      ]
+    },
+    {
+      "id": "exterior-covariant-derivative",
+      "title": "Exterior Covariant Derivative",
+      "description": "The extension of a vector-bundle connection to bundle-valued differential forms, satisfying a graded Leibniz rule with ordinary exterior differentiation.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-bundle-connection"
+        },
+        {
+          "type": "generalizes",
+          "target": "exterior-derivative"
         }
       ]
     },
@@ -2931,6 +3188,28 @@
       ]
     },
     {
+      "id": "fiber-bundle",
+      "title": "Fiber Bundle",
+      "description": "In this record, a smooth fiber bundle is a smooth surjection whose total space is locally diffeomorphic over the base to a product with a typical smooth fiber.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Smooth fibre bundle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "generalizes",
+          "target": "vector-bundle"
+        }
+      ]
+    },
+    {
       "id": "field-action",
       "title": "Field Action",
       "description": "A functional of complete field configurations obtained by integrating a Lagrangian density over a spacetime region, with admissible variations and boundary data specified.",
@@ -3005,6 +3284,28 @@
           "type": "derived-from",
           "target": "schrodinger-equation",
           "note": "Piecewise stationary solutions and matching determine the bound-state conditions."
+        }
+      ]
+    },
+    {
+      "id": "finsler-manifold",
+      "title": "Finsler Manifold",
+      "description": "A smooth manifold whose tangent spaces carry smoothly varying, positively homogeneous norms with strongly convex squared norm away from the zero section.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Finsler geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "generalizes",
+          "target": "riemannian-manifold"
         }
       ]
     },
@@ -3155,6 +3456,26 @@
           "type": "used-in",
           "target": "quantum-field-theory",
           "note": "Fock representations describe free particles and perturbative asymptotic states, not every interacting representation without qualification."
+        }
+      ]
+    },
+    {
+      "id": "foliation",
+      "title": "Foliation",
+      "description": "A decomposition of a smooth manifold into disjoint connected immersed submanifolds of equal dimension that locally look like parallel coordinate slices.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "frobenius-theorem"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
         }
       ]
     },
@@ -3332,6 +3653,28 @@
       ]
     },
     {
+      "id": "frobenius-theorem",
+      "title": "Frobenius Theorem",
+      "description": "The theorem characterizing when a constant-rank tangent distribution is locally tangent to a family of immersed submanifolds: precisely when the distribution is involutive under Lie brackets.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Frobenius integrability theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tangent-distribution"
+        },
+        {
+          "type": "used-in",
+          "target": "foliation"
+        }
+      ]
+    },
+    {
       "id": "functional",
       "title": "Functional",
       "description": "A scalar-valued map whose arguments are functions or paths; in variational problems it assigns a number to each admissible candidate.",
@@ -3437,6 +3780,77 @@
           "type": "used-in",
           "target": "quantum-field-theory",
           "note": "Gauge descriptions must preserve the physical state space and observables."
+        }
+      ]
+    },
+    {
+      "id": "gauss-bonnet-theorem",
+      "title": "Gauss–Bonnet Theorem",
+      "description": "For a compact oriented Riemannian surface, the integral of Gaussian curvature together with the appropriate boundary geodesic-curvature term equals two pi times the Euler characteristic.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Gauss-Bonnet theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "gaussian-curvature"
+        },
+        {
+          "type": "requires",
+          "target": "manifold-orientation"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-topology"
+        }
+      ]
+    },
+    {
+      "id": "gauss-codazzi-equations",
+      "title": "Gauss–Codazzi Equations",
+      "description": "Compatibility equations relating the intrinsic curvature and induced connection of a submanifold to ambient curvature and its second fundamental form.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics",
+        "relativity"
+      ],
+      "aliases": [
+        "Gauss–Codazzi–Mainardi equations"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "second-fundamental-form"
+        },
+        {
+          "type": "requires",
+          "target": "riemann-curvature-tensor"
+        }
+      ]
+    },
+    {
+      "id": "gaussian-curvature",
+      "title": "Gaussian Curvature",
+      "description": "At a point of a Riemannian surface, the intrinsic curvature equal to the product of the two principal curvatures and to the surface's sectional curvature.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Gauss curvature"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "sectional-curvature"
+        },
+        {
+          "type": "used-in",
+          "target": "gauss-codazzi-equations"
         }
       ]
     },
@@ -3652,6 +4066,30 @@
         {
           "type": "used-in",
           "target": "schwarzschild-spacetime"
+        }
+      ]
+    },
+    {
+      "id": "geometric-analysis",
+      "title": "Geometric Analysis",
+      "description": "The use of differential equations and variational methods to study geometric structures, invariants, and the global shape of manifolds.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "differential-geometry"
+        },
+        {
+          "type": "requires",
+          "target": "partial-differential-equation"
+        },
+        {
+          "type": "requires",
+          "target": "variational-principle"
         }
       ]
     },
@@ -4030,6 +4468,30 @@
       ]
     },
     {
+      "id": "hamiltonian-vector-field",
+      "title": "Hamiltonian Vector Field",
+      "description": "For a function on a symplectic manifold, the unique vector field obtained by contracting the symplectic form with that field to give the differential of the function, up to sign convention.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "symplectic-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "differential-form"
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian-mechanics"
+        }
+      ]
+    },
+    {
       "id": "heat",
       "title": "Heat",
       "description": "Energy transferred across a system boundary because of a temperature difference; it is a process quantity rather than energy stored in a state.",
@@ -4152,6 +4614,28 @@
       ]
     },
     {
+      "id": "hermitian-manifold",
+      "title": "Hermitian Manifold",
+      "description": "A complex manifold equipped with a Riemannian metric compatible with its complex structure, equivalently with a smoothly varying Hermitian inner product on complex tangent spaces.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Hermitian geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "complex-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        }
+      ]
+    },
+    {
       "id": "hilbert-space",
       "title": "Hilbert Space",
       "description": "An inner product space in which every Cauchy sequence for the induced norm converges to an element of the space.",
@@ -4176,6 +4660,52 @@
           "type": "generalizes",
           "target": "fock-space",
           "note": "A Fock space is a Hilbert space with a specified particle-sector construction."
+        }
+      ]
+    },
+    {
+      "id": "hodge-star-operator",
+      "title": "Hodge Star Operator",
+      "description": "On an oriented metric manifold, the linear map sending each differential k-form to a complementary-degree form through the metric inner product and volume form.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Hodge dual"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "differential-form"
+        },
+        {
+          "type": "requires",
+          "target": "manifold-orientation"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
+        }
+      ]
+    },
+    {
+      "id": "hodge-theory",
+      "title": "Hodge Theory",
+      "description": "The study of differential forms through elliptic operators and harmonic representatives, relating analysis on a metric manifold to its topology and cohomology.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hodge-star-operator"
+        },
+        {
+          "type": "requires",
+          "target": "de-rham-cohomology"
         }
       ]
     },
@@ -4205,6 +4735,50 @@
           "type": "used-in",
           "target": "simple-pendulum",
           "note": "The fixed pivot-to-bob distance is a holonomic constraint in a constrained-mechanics description of the ideal pendulum."
+        }
+      ]
+    },
+    {
+      "id": "holonomy",
+      "title": "Holonomy",
+      "description": "The group of linear transformations of a fiber produced by parallel transport around loops based at a chosen point.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics",
+        "relativity"
+      ],
+      "aliases": [
+        "Holonomy group"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "parallel-transport"
+        },
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        }
+      ]
+    },
+    {
+      "id": "hopf-rinow-theorem",
+      "title": "Hopf–Rinow Theorem",
+      "description": "For a connected finite-dimensional Riemannian manifold, metric completeness, geodesic completeness, and compactness of closed bounded subsets are equivalent, with any two points joined by a minimizing geodesic.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Hopf-Rinow theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "riemannian-exponential-map"
+        },
+        {
+          "type": "requires",
+          "target": "riemannian-manifold"
         }
       ]
     },
@@ -4366,6 +4940,27 @@
           "type": "requires",
           "target": "temperature",
           "note": "The temperature in the equation is absolute temperature."
+        }
+      ]
+    },
+    {
+      "id": "immersion",
+      "title": "Immersion",
+      "description": "A smooth map whose differential is injective at every point, so it locally embeds each tangent space even when the map is not globally one-to-one.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Immersion in differential geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-map"
+        },
+        {
+          "type": "used-in",
+          "target": "submanifold"
         }
       ]
     },
@@ -4798,6 +5393,49 @@
       ]
     },
     {
+      "id": "jacobi-field",
+      "title": "Jacobi Field",
+      "description": "A vector field along a geodesic that satisfies the linearized geodesic equation and describes infinitesimal variations through nearby geodesics.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "geodesic-deviation"
+        },
+        {
+          "type": "requires",
+          "target": "riemann-curvature-tensor"
+        }
+      ]
+    },
+    {
+      "id": "kahler-manifold",
+      "title": "Kähler Manifold",
+      "description": "A complex manifold with a Hermitian metric whose associated real two-form is closed, unifying compatible complex, Riemannian, and symplectic structures.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Kähler geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hermitian-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "symplectic-manifold"
+        }
+      ]
+    },
+    {
       "id": "kepler-orbit",
       "title": "Kepler Orbit",
       "description": "A trajectory in an attractive inverse-square central force. Nonradial Newtonian two-body relative trajectories are conic sections: circles or ellipses for bound motion, a parabola at zero relative energy, and hyperbolas for positive relative energy.",
@@ -5108,6 +5746,28 @@
           "type": "requires",
           "target": "taylor-series",
           "note": "The phenomenological potential is expanded in powers of a small order parameter."
+        }
+      ]
+    },
+    {
+      "id": "laplace-beltrami-operator",
+      "title": "Laplace–Beltrami Operator",
+      "description": "The metric-dependent second-order differential operator on functions given by the divergence of the gradient, generalizing the Euclidean Laplacian to Riemannian and pseudo-Riemannian manifolds.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Beltrami–Laplace operator"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "riemannian-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "partial-differential-equation"
         }
       ]
     },
@@ -5896,6 +6556,28 @@
       ]
     },
     {
+      "id": "mean-curvature",
+      "title": "Mean Curvature",
+      "description": "The trace of the second fundamental form, or its normalized version by convention, giving a normal vector that measures the first variation of submanifold volume.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Mean curvature vector"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "second-fundamental-form"
+        },
+        {
+          "type": "requires",
+          "target": "inverse-metric"
+        }
+      ]
+    },
+    {
       "id": "mean-field-theory",
       "title": "Mean-Field Theory",
       "description": "An approximation replacing the fluctuating influence of surrounding degrees of freedom with an effective average, often determined self-consistently.",
@@ -6207,6 +6889,32 @@
         {
           "type": "used-in",
           "target": "rotational-dynamics"
+        }
+      ]
+    },
+    {
+      "id": "momentum-map",
+      "title": "Momentum Map",
+      "description": "A map from a symplectic manifold to the dual of a Lie algebra whose components generate the infinitesimal symmetry action as Hamiltonian vector fields.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Moment map"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "hamiltonian-vector-field"
+        },
+        {
+          "type": "requires",
+          "target": "lie-group"
+        },
+        {
+          "type": "used-in",
+          "target": "noether-theorem"
         }
       ]
     },
@@ -6734,6 +7442,28 @@
       ]
     },
     {
+      "id": "partition-of-unity",
+      "title": "Partition of Unity",
+      "description": "A locally finite family of nonnegative smooth functions subordinate to an open cover whose pointwise sum equals one, allowing local constructions to be patched globally.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Smooth partition of unity"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "vector-bundle",
+          "note": "Partitions of unity patch local bundle data and help construct bundle metrics and connections."
+        }
+      ]
+    },
+    {
       "id": "path-integral-formulation",
       "title": "Path Integral Formulation",
       "description": "A quantum formulation using appropriately defined or regulated sums over histories, with oscillatory action weights exp(i S / hbar) in real time, extending from particle paths to field configurations.",
@@ -6993,6 +7723,28 @@
       ]
     },
     {
+      "id": "poisson-manifold",
+      "title": "Poisson Manifold",
+      "description": "A smooth manifold equipped with a Poisson bracket on smooth functions, equivalently a bivector field whose induced bracket satisfies the Jacobi identity.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Poisson geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "poisson-bracket"
+        },
+        {
+          "type": "generalizes",
+          "target": "symplectic-manifold"
+        }
+      ]
+    },
+    {
       "id": "polarization",
       "title": "Polarization",
       "description": "The pattern traced by a transverse light wave's electric-field direction as it oscillates. Linear polarization keeps that direction along a fixed transverse axis; circular and elliptical polarization rotate it.",
@@ -7085,6 +7837,32 @@
         {
           "type": "used-in",
           "target": "fluid-mechanics"
+        }
+      ]
+    },
+    {
+      "id": "principal-bundle",
+      "title": "Principal Bundle",
+      "description": "A fiber bundle equipped with a free and transitive action of a structure group on each fiber, locally modeled on the product of the base with that group.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Principal G-bundle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "fiber-bundle"
+        },
+        {
+          "type": "requires",
+          "target": "lie-group"
+        },
+        {
+          "type": "used-in",
+          "target": "gauge-symmetry"
         }
       ]
     },
@@ -8099,6 +8877,32 @@
       ]
     },
     {
+      "id": "ricci-flow",
+      "title": "Ricci Flow",
+      "description": "A geometric evolution equation that changes a Riemannian metric in the direction of minus twice its Ricci curvature, smoothing curvature while the solution exists.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Hamilton's Ricci flow"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "ricci-curvature"
+        },
+        {
+          "type": "requires",
+          "target": "partial-differential-equation"
+        },
+        {
+          "type": "used-in",
+          "target": "geometric-analysis"
+        }
+      ]
+    },
+    {
       "id": "riemann-curvature-tensor",
       "title": "Riemann Curvature Tensor",
       "description": "The tensor of an affine connection that measures the noncommutativity of covariant derivatives and the failure of the connection to be locally flat.",
@@ -8176,6 +8980,52 @@
         {
           "type": "used-in",
           "target": "christoffel-symbol"
+        }
+      ]
+    },
+    {
+      "id": "riemannian-exponential-map",
+      "title": "Riemannian Exponential Map",
+      "description": "At a point of a Riemannian manifold, the map sending a tangent vector to the point reached at unit parameter by the geodesic with that initial velocity, wherever defined.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Geodesic exponential map"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "geodesic"
+        },
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        }
+      ]
+    },
+    {
+      "id": "riemannian-geometry",
+      "title": "Riemannian Geometry",
+      "description": "The study of smooth manifolds equipped with positive-definite metric tensors and the induced notions of length, distance, geodesics, volume, and curvature.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "riemannian-manifold"
+        },
+        {
+          "type": "requires",
+          "target": "levi-civita-connection"
+        },
+        {
+          "type": "used-in",
+          "target": "differential-geometry"
         }
       ]
     },
@@ -8284,6 +9134,54 @@
           "type": "used-in",
           "target": "spectral-line",
           "note": "It predicts leading wavelengths within the hydrogen spectral series."
+        }
+      ]
+    },
+    {
+      "id": "sards-theorem",
+      "title": "Sard's Theorem",
+      "description": "For a sufficiently differentiable map between manifolds, the set of critical values has measure zero in the target.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Morse–Sard theorem"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-map"
+        },
+        {
+          "type": "used-in",
+          "target": "transversality"
+        }
+      ]
+    },
+    {
+      "id": "scalar-curvature",
+      "title": "Scalar Curvature",
+      "description": "The scalar obtained by tracing the Ricci curvature with the inverse metric, summarizing the average sectional curvature through a point.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics",
+        "relativity"
+      ],
+      "aliases": [
+        "Ricci scalar"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "ricci-curvature"
+        },
+        {
+          "type": "requires",
+          "target": "inverse-metric"
+        },
+        {
+          "type": "used-in",
+          "target": "einstein-field-equations"
         }
       ]
     },
@@ -8503,6 +9401,26 @@
       ]
     },
     {
+      "id": "second-fundamental-form",
+      "title": "Second Fundamental Form",
+      "description": "For an immersed submanifold with a chosen ambient connection, the normal-valued symmetric bilinear form measuring the normal component of ambient covariant differentiation.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "submanifold"
+        },
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        }
+      ]
+    },
+    {
       "id": "second-law-of-thermodynamics",
       "title": "Second Law of Thermodynamics",
       "description": "The thermodynamic law that total entropy cannot decrease in an isolated system, restricting process direction beyond energy conservation.",
@@ -8546,6 +9464,27 @@
           "type": "used-in",
           "target": "variational-principle",
           "note": "Nonnegative second variation is necessary for a local minimum under standard smoothness assumptions."
+        }
+      ]
+    },
+    {
+      "id": "sectional-curvature",
+      "title": "Sectional Curvature",
+      "description": "The Gaussian curvature assigned by a Riemannian metric to each two-dimensional tangent plane, obtained by contracting the Riemann curvature tensor with a spanning pair.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics",
+        "relativity"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "riemann-curvature-tensor"
+        },
+        {
+          "type": "requires",
+          "target": "metric"
         }
       ]
     },
@@ -9200,6 +10139,47 @@
       ]
     },
     {
+      "id": "submersion",
+      "title": "Submersion",
+      "description": "A smooth map whose differential is surjective at every point, locally giving a projection onto the target manifold.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Submersion in differential geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "smooth-map"
+        },
+        {
+          "type": "used-in",
+          "target": "fiber-bundle"
+        }
+      ]
+    },
+    {
+      "id": "symplectic-geometry",
+      "title": "Symplectic Geometry",
+      "description": "The study of smooth manifolds equipped with closed nondegenerate two-forms and of transformations preserving that structure, providing the natural geometry of Hamiltonian mechanics.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "symplectic-manifold"
+        },
+        {
+          "type": "used-in",
+          "target": "hamiltonian-mechanics"
+        }
+      ]
+    },
+    {
       "id": "symplectic-manifold",
       "title": "Symplectic Manifold",
       "description": "A smooth manifold equipped with a closed differential 2-form that is nondegenerate at every point, necessarily giving the manifold even dimension.",
@@ -9223,6 +10203,47 @@
           "type": "used-in",
           "target": "hamiltonian",
           "note": "Symplectic forms determine the geometric form of Hamiltonian evolution."
+        }
+      ]
+    },
+    {
+      "id": "tangent-bundle",
+      "title": "Tangent Bundle",
+      "description": "The vector bundle formed by the disjoint union of all tangent spaces of a smooth manifold, with the natural projection sending each tangent vector to its base point.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tangent-space"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-manifold"
+        }
+      ]
+    },
+    {
+      "id": "tangent-distribution",
+      "title": "Tangent Distribution",
+      "description": "A smoothly varying choice of a fixed-dimensional linear subspace of each tangent space, forming a vector subbundle of the tangent bundle when its rank is constant.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Distribution in differential geometry"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "tangent-bundle"
+        },
+        {
+          "type": "used-in",
+          "target": "frobenius-theorem"
         }
       ]
     },
@@ -9603,6 +10624,29 @@
       ]
     },
     {
+      "id": "torsion-tensor",
+      "title": "Torsion Tensor",
+      "description": "The tensor measuring the antisymmetric failure of an affine connection to reproduce the Lie bracket of vector fields.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics",
+        "relativity"
+      ],
+      "aliases": [
+        "Connection torsion"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "affine-connection"
+        },
+        {
+          "type": "requires",
+          "target": "vector-field"
+        }
+      ]
+    },
+    {
       "id": "total-internal-reflection",
       "title": "Total Internal Reflection",
       "description": "At an ideal lossless boundary, light incident from the higher-index medium above the critical angle has no propagating transmitted ray and its power is reflected back. An evanescent field can still extend into the lower-index medium.",
@@ -9622,6 +10666,27 @@
           "type": "used-in",
           "target": "geometrical-optics",
           "note": "It bounds which rays can leave a high-index optical element."
+        }
+      ]
+    },
+    {
+      "id": "transversality",
+      "title": "Transversality",
+      "description": "A condition that a smooth map meet a submanifold with tangent directions that together span the ambient tangent space at every intersection point.",
+      "domains": [
+        "mathematics"
+      ],
+      "aliases": [
+        "Transverse intersection"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "submanifold"
+        },
+        {
+          "type": "requires",
+          "target": "smooth-map"
         }
       ]
     },
@@ -9844,6 +10909,28 @@
       ]
     },
     {
+      "id": "vector-bundle-connection",
+      "title": "Vector Bundle Connection",
+      "description": "A differential operator on sections of a vector bundle that obeys a Leibniz rule and specifies how sections are differentiated along tangent directions.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics"
+      ],
+      "aliases": [
+        "Connection on a vector bundle"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "vector-bundle"
+        },
+        {
+          "type": "requires",
+          "target": "differential-form"
+        }
+      ]
+    },
+    {
       "id": "vector-field",
       "title": "Vector Field",
       "description": "An assignment of a Euclidean vector to each point of a region of ordinary three-dimensional space.",
@@ -9983,6 +11070,29 @@
         {
           "type": "requires",
           "target": "differential-form"
+        }
+      ]
+    },
+    {
+      "id": "weyl-tensor",
+      "title": "Weyl Tensor",
+      "description": "The trace-free part of the Riemann curvature tensor in dimension at least three, invariant under conformal rescaling in its mixed-index form.",
+      "domains": [
+        "mathematics",
+        "mathematical-physics",
+        "relativity"
+      ],
+      "aliases": [
+        "Conformal curvature tensor"
+      ],
+      "relations": [
+        {
+          "type": "requires",
+          "target": "riemann-curvature-tensor"
+        },
+        {
+          "type": "requires",
+          "target": "ricci-curvature"
         }
       ]
     },

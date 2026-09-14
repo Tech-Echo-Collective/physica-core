@@ -8,7 +8,7 @@ These three distinct projects form **Tech Echo Physica**, a Tech Echo Collective
 project family for exploring physics through research mapping, knowledge
 structures, and interactive physical systems.
 
-Current version: **0.15.0**. This is an early, intentionally small contract. It
+Current version: **0.15.1**. This is an early, intentionally small contract. It
 is not a frozen 1.0 standard.
 
 ## What Core owns
@@ -60,14 +60,17 @@ physica-core/
 
 ## Concept set
 
-Version 0.15.0 contains 397 concepts and 1053 relations. It retains the initial
+Version 0.15.1 contains 447 concepts and 1164 relations. It retains the initial
 physics backbone and expands every initial subject into supporting concepts,
 including calculus, linear algebra, quantum mechanics, classical mechanics,
 variational methods and relativity. Sources are recorded in
 docs/geometry-sources.md, docs/overview-sources.md, docs/field-sources.md and
 docs/mechanics-sources.md. Transform and later foundation additions are reviewed
 in docs/transform-methods-sources.md and docs/live-foundations-sources.md.
-The latest release adds quantum dynamics, bound states and scattering, quantum statistics and solid-state foundations; see [reviewed sources](docs/quantum-core-sources.md). The earlier atomic and thermal review remains unchanged.
+The latest release adds a reviewed differential-geometry spine from differential
+topology and bundles through curvature, symplectic and complex geometry, and
+Ricci flow; see [reviewed sources](docs/differential-geometry-expansion-sources.md).
+The earlier quantum, atomic, and thermal reviews remain unchanged.
 The earlier 0.10.0 release added elementary vectors and audited classical-mechanics
 prerequisites. Existing IDs are preserved, but those removed relations require a deliberate registry upgrade; see
 [the 0.10.0 audit and migration notes](docs/mechanics-prerequisite-audit.md).

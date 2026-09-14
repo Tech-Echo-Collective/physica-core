@@ -1,0 +1,1 @@
+{"id":"sards-theorem","title":"Sard's Theorem","description":"For a sufficiently differentiable map between manifolds, the set of critical values has measure zero in the target.","domains":["mathematics"],"aliases":["Morse–Sard theorem"],"relations":[{"type":"requires","target":"smooth-map"},{"type":"used-in","target":"transversality"}]}

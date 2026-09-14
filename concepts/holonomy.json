@@ -1,0 +1,1 @@
+{"id":"holonomy","title":"Holonomy","description":"The group of linear transformations of a fiber produced by parallel transport around loops based at a chosen point.","domains":["mathematics","mathematical-physics","relativity"],"aliases":["Holonomy group"],"relations":[{"type":"requires","target":"parallel-transport"},{"type":"requires","target":"affine-connection"}]}

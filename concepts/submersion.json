@@ -1,0 +1,1 @@
+{"id":"submersion","title":"Submersion","description":"A smooth map whose differential is surjective at every point, locally giving a projection onto the target manifold.","domains":["mathematics"],"aliases":["Submersion in differential geometry"],"relations":[{"type":"requires","target":"smooth-map"},{"type":"used-in","target":"fiber-bundle"}]}

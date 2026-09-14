@@ -1,0 +1,1 @@
+{"id":"transversality","title":"Transversality","description":"A condition that a smooth map meet a submanifold with tangent directions that together span the ambient tangent space at every intersection point.","domains":["mathematics"],"aliases":["Transverse intersection"],"relations":[{"type":"requires","target":"submanifold"},{"type":"requires","target":"smooth-map"}]}

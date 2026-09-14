@@ -1,0 +1,1 @@
+{"id":"foliation","title":"Foliation","description":"A decomposition of a smooth manifold into disjoint connected immersed submanifolds of equal dimension that locally look like parallel coordinate slices.","domains":["mathematics","mathematical-physics"],"aliases":[],"relations":[{"type":"requires","target":"frobenius-theorem"},{"type":"requires","target":"smooth-manifold"}]}

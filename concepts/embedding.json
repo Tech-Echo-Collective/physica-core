@@ -1,0 +1,1 @@
+{"id":"embedding","title":"Embedding","description":"An immersion that is also a homeomorphism onto its image with the subspace topology, realizing its source as an embedded submanifold.","domains":["mathematics"],"aliases":["Smooth embedding"],"relations":[{"type":"requires","target":"immersion"},{"type":"used-in","target":"submanifold"}]}

@@ -1,0 +1,1 @@
+{"id":"immersion","title":"Immersion","description":"A smooth map whose differential is injective at every point, so it locally embeds each tangent space even when the map is not globally one-to-one.","domains":["mathematics"],"aliases":["Immersion in differential geometry"],"relations":[{"type":"requires","target":"smooth-map"},{"type":"used-in","target":"submanifold"}]}
